@@ -6,6 +6,6 @@ export interface FGRecipe {
   mDisplayName: string;
   mIngredients: ItemAmount[];
   mProduct: ItemAmount[];
-  mManufactoringDuration: 16;
+  mManufactoringDuration: number;
   mProducedIn: ObjectReference[];
 }
