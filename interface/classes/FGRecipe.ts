@@ -1,5 +1,5 @@
-import { ItemAmount } from './ItemAmount';
-import { ObjectReference } from './references';
+import { ItemAmount } from '../structs/ItemAmount';
+import { ObjectReference } from '../references';
 
 export interface FGRecipe {
   mDisplayNameOverride: boolean;
