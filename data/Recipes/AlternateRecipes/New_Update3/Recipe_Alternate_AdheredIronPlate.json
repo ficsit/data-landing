@@ -1,5 +1,6 @@
 {
   "name": "Recipe_Alternate_AdheredIronPlate_C",
+  "class": "FGRecipe",
   "properties": {
     "mDisplayNameOverride": true,
     "mDisplayName": "Alternate: Adhered Iron Plate",
