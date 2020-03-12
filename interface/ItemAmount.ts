@@ -1,7 +1,7 @@
 import { integer } from './primitives';
-import { PackageReference } from './references';
+import { ObjectReference } from './references';
 
 export interface ItemAmount {
-  ClassName: PackageReference;
+  ClassName: ObjectReference;
   Amount: integer;
 }

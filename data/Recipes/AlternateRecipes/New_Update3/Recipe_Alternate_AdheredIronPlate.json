@@ -6,15 +6,19 @@
     "mIngredients": [
       {
         "ItemClass": {
-          "__reference": "package",
-          "package": "Resource/Parts/IronPlate/Desc_IronPlate"
+          "__reference": {
+            "package": "Resource/Parts/IronPlate/Desc_IronPlate",
+            "name": "Desc_IronPlate_C"
+          }
         },
         "Amount": 3
       },
       {
         "ItemClass": {
-          "__reference": "package",
-          "package": "Resource/Parts/Rubber/Desc_Rubber"
+          "__reference": {
+            "package": "Resource/Parts/Rubber/Desc_Rubber",
+            "name": "Desc_Rubber_C"
+          }
         },
         "Amount": 1
       }
@@ -22,8 +26,10 @@
     "mProduct": [
       {
         "ItemClass": {
-          "__reference": "package",
-          "package": "Resource/Parts/IronPlateReinforced/Desc_IronPlateReinforced"
+          "__reference": {
+            "package": "Resource/Parts/IronPlateReinforced/Desc_IronPlateReinforced",
+            "name": "Desc_IronPlateReinforced_C"
+          }
         },
         "Amount": 1
       }
