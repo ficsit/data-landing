@@ -1,0 +1,40 @@
+{
+  "name": "Recipes/AlternateRecipes/New_Update3/Recipe_Alternate_AdheredIronPlate.Recipe_Alternate_AdheredIronPlate_C",
+  "properties": {
+    "mDisplayNameOverride": true,
+    "mDisplayName": "Alternate: Adhered Iron Plate",
+    "mIngredients": [
+      {
+        "ItemClass": {
+          "__reference": "package",
+          "package": "Resource/Parts/IronPlate/Desc_IronPlate"
+        },
+        "Amount": 3
+      },
+      {
+        "ItemClass": {
+          "__reference": "package",
+          "package": "Resource/Parts/Rubber/Desc_Rubber"
+        },
+        "Amount": 1
+      }
+    ],
+    "mProduct": [
+      {
+        "ItemClass": {
+          "__reference": "package",
+          "package": "Resource/Parts/IronPlateReinforced/Desc_IronPlateReinforced"
+        },
+        "Amount": 1
+      }
+    ],
+    "mManufactoringDuration": 16,
+    "mProducedIn": [
+      {
+        "__reference": "object",
+        "package": "Buildable/Factory/AssemblerMk1/Build_AssemblerMk1",
+        "name": "Build_AssemblerMk1_C"
+      }
+    ]
+  }
+}
