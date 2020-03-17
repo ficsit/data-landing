@@ -1,0 +1,1 @@
+export interface UFGReplicationGraphNode_AlwaysRelevant_ForConnection {}

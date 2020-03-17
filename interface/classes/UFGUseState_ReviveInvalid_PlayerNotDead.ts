@@ -1,0 +1,1 @@
+export interface UFGUseState_ReviveInvalid_PlayerNotDead {}

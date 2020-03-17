@@ -1,0 +1,16 @@
+export enum EFGSignificanceType {
+  Creature,
+  AudioVolume,
+  GenericTickHelper,
+  ConveyorBelt,
+  Factory,
+  LowDistanceGainSignificance,
+  MidDistanceGainSignificance,
+  HighDistanceGainSignificance,
+  AmbientSoundSpline,
+  CustomDistanceGainSignificance,
+  ParticleSignificance,
+  TrainSignificance,
+  PipelineSignificance,
+  MAX,
+}

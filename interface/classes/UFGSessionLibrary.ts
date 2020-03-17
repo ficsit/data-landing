@@ -1,0 +1,1 @@
+export interface UFGSessionLibrary {}

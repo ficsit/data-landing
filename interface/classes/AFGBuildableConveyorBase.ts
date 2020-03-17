@@ -1,0 +1,32 @@
+import { float } from '../native/primitive';
+import { FConveyorBeltItems } from '../structs/FConveyorBeltItems';
+
+import { UFGFactoryConnectionComponent } from './UFGFactoryConnectionComponent';
+import { UPresistentConveyorPackagingData } from './UPresistentConveyorPackagingData';
+
+export interface AFGBuildableConveyorBase {
+  /**
+   * held here, but created by conveyors when replicated, as we don't want to create it unless it's used.
+   */
+  PresistentConveyorPackagingDataObject: UPresistentConveyorPackagingData;
+
+  /**
+   * Speed of this conveyor.
+   */
+  mSpeed: float;
+
+  /**
+   * All the locally simulated resource offsets on the conveyor belt.
+   */
+  mItems: FConveyorBeltItems;
+
+  /**
+   * First connection on conveyor belt, Connections are always in the same order, mConnection0 is the input, mConnection1 is the output.
+   */
+  mConnection0: UFGFactoryConnectionComponent;
+
+  /**
+   * Second connection on conveyor belt
+   */
+  mConnection1: UFGFactoryConnectionComponent;
+}
