@@ -1,7 +1,9 @@
 import { float } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
-export interface AFGWeaponInstantFire {
+import { AFGWeapon } from './AFGWeapon';
+
+export interface AFGWeaponInstantFire extends AFGWeapon {
   /**
    * Instant hit damage
    */

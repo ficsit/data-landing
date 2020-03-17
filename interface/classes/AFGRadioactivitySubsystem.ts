@@ -1,7 +1,9 @@
 import { AActor, UObject } from '../native/classes';
 import { FRadioactiveSource } from '../structs/FRadioactiveSource';
 
-export interface AFGRadioactivitySubsystem {
+import { AFGSubsystem } from './AFGSubsystem';
+
+export interface AFGRadioactivitySubsystem extends AFGSubsystem {
   /**
    * All the radioactive sources.
    */

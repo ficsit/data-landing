@@ -1,1 +1,3 @@
-export interface UFGCombatFunctionLibrary {}
+import { Unknown } from '../native/unknown';
+
+export interface UFGCombatFunctionLibrary extends Unknown<'UBlueprintFunctionLibrary'> {}

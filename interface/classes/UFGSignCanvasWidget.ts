@@ -7,7 +7,7 @@ import { UFGSignElementDragWidget } from './UFGSignElementDragWidget';
 import { UFGSignElementWidget } from './UFGSignElementWidget';
 import { UFGSignInteractWidget } from './UFGSignInteractWidget';
 
-export interface UFGSignCanvasWidget {
+export interface UFGSignCanvasWidget extends Unknown<'UUserWidget'> {
   /**
    * Size Box that holds our Canvas, its size is set to absolute and the canvas fills that space
    */

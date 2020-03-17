@@ -1,7 +1,8 @@
+import { AFGBuildableFactory } from './AFGBuildableFactory';
 import { AFGGamePhaseManager } from './AFGGamePhaseManager';
 import { UFGInventoryComponent } from './UFGInventoryComponent';
 
-export interface AFGBuildableSpaceElevator {
+export interface AFGBuildableSpaceElevator extends AFGBuildableFactory {
   /**
    * Our input inventory, shared for all input connections.
    */

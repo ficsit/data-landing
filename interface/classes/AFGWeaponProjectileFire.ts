@@ -1,6 +1,8 @@
 import { FProjectileData } from '../structs/FProjectileData';
 
-export interface AFGWeaponProjectileFire {
+import { AFGWeapon } from './AFGWeapon';
+
+export interface AFGWeaponProjectileFire extends AFGWeapon {
   /**
    * weapon config
    */

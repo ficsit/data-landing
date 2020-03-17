@@ -1,13 +1,15 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { float, int32 } from '../native/primitive';
 import { classReference } from '../native/references';
 import { FTrackGraph } from '../structs/FTrackGraph';
 
 import { AFGBuildableRailroadSwitchControl } from './AFGBuildableRailroadSwitchControl';
+import { AFGSubsystem } from './AFGSubsystem';
 import { AFGTrain } from './AFGTrain';
 import { AFGTrainStationIdentifier } from './AFGTrainStationIdentifier';
 import { UFGRailroadVehicleSoundComponent } from './UFGRailroadVehicleSoundComponent';
 
-export interface AFGRailroadSubsystem {
+export interface AFGRailroadSubsystem extends AFGSubsystem, IFGSaveInterface {
   mConnectDistance: float;
 
   /**

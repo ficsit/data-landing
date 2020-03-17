@@ -1,7 +1,9 @@
 import { Unknown } from '../native/unknown';
 import { FSignWallData } from '../structs/FSignWallData';
 
-export interface AFGBuildableSignWall {
+import { AFGBuildableWall } from './AFGBuildableWall';
+
+export interface AFGBuildableSignWall extends AFGBuildableWall {
   /**
    * Root Component that holds all the sign elements, text, mesh etc.
    */

@@ -1,6 +1,7 @@
 import { EResourceForm } from '../enums/EResourceForm';
 import { EStackSize } from '../enums/EStackSize';
 import { FSlateBrush, UStaticMesh, UTexture2D } from '../native/assets';
+import { UObject } from '../native/classes';
 import { float, localized } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Color } from '../native/structs';
@@ -8,7 +9,7 @@ import { FItemView } from '../structs/FItemView';
 
 import { UFGItemCategory } from './UFGItemCategory';
 
-export interface UFGItemDescriptor {
+export interface UFGItemDescriptor extends UObject {
   mUseDisplayNameAndDescription: boolean;
 
   /**

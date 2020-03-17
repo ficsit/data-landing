@@ -1,6 +1,8 @@
 import { FItemAmount } from '../structs/FItemAmount';
 
-export interface UFGUnlockGiveItem {
+import { UFGUnlock } from './UFGUnlock';
+
+export interface UFGUnlockGiveItem extends UFGUnlock {
   /**
    * The items you get from this unlock
    */

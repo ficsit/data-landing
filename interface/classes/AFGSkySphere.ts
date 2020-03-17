@@ -1,7 +1,8 @@
+import { AActor } from '../native/classes';
 import { float } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
-export interface AFGSkySphere {
+export interface AFGSkySphere extends AActor, Unknown<'ICurvePanningInterface'> {
   /**
    * How the sunlight changes during the day
    */

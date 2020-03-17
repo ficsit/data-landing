@@ -2,10 +2,11 @@ import { ETrainPlatformConnectionType } from '../enums/ETrainPlatformConnectionT
 import { uint8 } from '../native/primitive';
 
 import { AFGBuildableTrainPlatform } from './AFGBuildableTrainPlatform';
+import { UFGConnectionComponent } from './UFGConnectionComponent';
 import { UFGRailroadTrackConnectionComponent } from './UFGRailroadTrackConnectionComponent';
 import { UFGTrainPlatformConnection } from './UFGTrainPlatformConnection';
 
-export interface UFGTrainPlatformConnection {
+export interface UFGTrainPlatformConnection extends UFGConnectionComponent {
   mComponentDirection: uint8;
 
   /**

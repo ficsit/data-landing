@@ -1,1 +1,3 @@
-export interface UFGHeightFoliageUserData {}
+import { Unknown } from '../native/unknown';
+
+export interface UFGHeightFoliageUserData extends Unknown<'UAssetUserData'> {}

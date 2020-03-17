@@ -3,8 +3,9 @@ import { classReference } from '../native/references';
 
 import { UFGBuildCategory } from './UFGBuildCategory';
 import { UFGBuildSubCategory } from './UFGBuildSubCategory';
+import { UFGItemDescriptor } from './UFGItemDescriptor';
 
-export interface UFGBuildDescriptor {
+export interface UFGBuildDescriptor extends UFGItemDescriptor {
   /**
    * The category in the build menu for this building
    */

@@ -1,7 +1,9 @@
 import { float } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
-export interface AFGGolfCartDispenser {
+import { AFGEquipment } from './AFGEquipment';
+
+export interface AFGGolfCartDispenser extends AFGEquipment {
   /**
    * Trace distance when building. * /
    */

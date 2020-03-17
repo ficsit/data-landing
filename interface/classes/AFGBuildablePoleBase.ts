@@ -1,6 +1,8 @@
 import { float } from '../native/primitive';
 
-export interface AFGBuildablePoleBase {
+import { AFGBuildable } from './AFGBuildable';
+
+export interface AFGBuildablePoleBase extends AFGBuildable {
   /**
    * Can this pole stack.
    */

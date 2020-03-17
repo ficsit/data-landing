@@ -2,12 +2,12 @@ import { ECompassViewDistance } from '../enums/ECompassViewDistance';
 import { EFogOfWarRevealType } from '../enums/EFogOfWarRevealType';
 import { ERepresentationType } from '../enums/ERepresentationType';
 import { UTexture2D } from '../native/assets';
-import { AActor } from '../native/classes';
+import { AActor, UObject } from '../native/classes';
 import { float, localized } from '../native/primitive';
 import { LinearColor } from '../native/structs';
 import { Unknown } from '../native/unknown';
 
-export interface UFGActorRepresentation {
+export interface UFGActorRepresentation extends UObject {
   /**
    * This is the real actor that this representation represents
    */

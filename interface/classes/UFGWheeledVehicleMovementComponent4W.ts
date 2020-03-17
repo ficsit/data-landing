@@ -1,6 +1,7 @@
 import { float } from '../native/primitive';
+import { Unknown } from '../native/unknown';
 
-export interface UFGWheeledVehicleMovementComponent4W {
+export interface UFGWheeledVehicleMovementComponent4W extends Unknown<'UWheeledVehicleMovementComponent4W'> {
   /**
    * Use Jace's super awesome custom gearbox or not
    */

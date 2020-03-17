@@ -2,9 +2,10 @@ import { float } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
 import { UFGAudioMessage } from './UFGAudioMessage';
+import { UFGBaseUI } from './UFGBaseUI';
 import { UFGInteractWidget } from './UFGInteractWidget';
 
-export interface UFGGameUI {
+export interface UFGGameUI extends UFGBaseUI {
   /**
    * so if you already are listening for mouse input you might get this and your own event
    */

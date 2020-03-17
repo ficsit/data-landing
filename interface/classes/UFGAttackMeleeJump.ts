@@ -2,7 +2,9 @@ import { float } from '../native/primitive';
 import { Vector } from '../native/structs';
 import { Unknown } from '../native/unknown';
 
-export interface UFGAttackMeleeJump {
+import { UFGAttackMelee } from './UFGAttackMelee';
+
+export interface UFGAttackMeleeJump extends UFGAttackMelee {
   /**
    * From where in relation to the target should the jump start
    */

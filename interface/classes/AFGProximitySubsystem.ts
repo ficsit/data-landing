@@ -1,10 +1,11 @@
+import { AActor } from '../native/classes';
 import { int32 } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 import { FMapAreaParticleCollection } from '../structs/FMapAreaParticleCollection';
 
 import { AFGPlayerController } from './AFGPlayerController';
 
-export interface AFGProximitySubsystem {
+export interface AFGProximitySubsystem extends AActor {
   mOwningController: AFGPlayerController;
 
   mRootComponent: Unknown<'USceneComponent'>;

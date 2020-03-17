@@ -1,10 +1,12 @@
+import { IFGSignificanceInterface } from '../interfaces/IFGSignificanceInterface';
 import { float } from '../native/primitive';
 import { FConveyorBeltItems } from '../structs/FConveyorBeltItems';
 
+import { AFGBuildable } from './AFGBuildable';
 import { UFGFactoryConnectionComponent } from './UFGFactoryConnectionComponent';
 import { UPresistentConveyorPackagingData } from './UPresistentConveyorPackagingData';
 
-export interface AFGBuildableConveyorBase {
+export interface AFGBuildableConveyorBase extends AFGBuildable, IFGSignificanceInterface {
   /**
    * held here, but created by conveyors when replicated, as we don't want to create it unless it's used.
    */

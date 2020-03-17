@@ -1,1 +1,3 @@
-export interface UFGFoliageIdentifier_VehicleDestroyable {}
+import { UFGFoliageIdentifier } from './UFGFoliageIdentifier';
+
+export interface UFGFoliageIdentifier_VehicleDestroyable extends UFGFoliageIdentifier {}

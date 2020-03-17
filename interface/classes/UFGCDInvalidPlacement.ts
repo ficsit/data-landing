@@ -1,1 +1,3 @@
-export interface UFGCDInvalidPlacement {}
+import { UFGConstructDisqualifier } from './UFGConstructDisqualifier';
+
+export interface UFGCDInvalidPlacement extends UFGConstructDisqualifier {}

@@ -5,7 +5,7 @@ import { Unknown } from '../native/unknown';
 
 import { UFGActorRepresentation } from './UFGActorRepresentation';
 
-export interface UFGCompassObjectWidget {
+export interface UFGCompassObjectWidget extends Unknown<'UUserWidget'> {
   mTexture: UTexture2D;
 
   mText: localized;

@@ -1,6 +1,8 @@
 import { float } from '../native/primitive';
 
-export interface AFGJetPack {
+import { AFGEquipment } from './AFGEquipment';
+
+export interface AFGJetPack extends AFGEquipment {
   /**
    * The duration we've held down thrust this flight, only resets when Landed
    */

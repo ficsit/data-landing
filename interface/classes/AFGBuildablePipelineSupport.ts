@@ -2,10 +2,11 @@ import { UStaticMesh } from '../native/assets';
 import { float } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
+import { AFGBuildablePoleBase } from './AFGBuildablePoleBase';
 import { UFGColoredInstanceMeshProxy } from './UFGColoredInstanceMeshProxy';
 import { UFGPipeConnectionComponentBase } from './UFGPipeConnectionComponentBase';
 
-export interface AFGBuildablePipelineSupport {
+export interface AFGBuildablePipelineSupport extends AFGBuildablePoleBase {
   /**
    * This supports length.
    */

@@ -1,6 +1,8 @@
 import { FDropPackage } from '../structs/FDropPackage';
 
-export interface UFGDropPodSettings {
+import { UFGSettings } from './UFGSettings';
+
+export interface UFGDropPodSettings extends UFGSettings {
   /**
    * List of all available drop packages
    */

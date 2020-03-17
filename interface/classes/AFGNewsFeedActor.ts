@@ -1,8 +1,9 @@
+import { AActor } from '../native/classes';
 import { localized } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 import { FNewsFeedMap } from '../structs/FNewsFeedMap';
 
-export interface AFGNewsFeedActor {
+export interface AFGNewsFeedActor extends AActor {
   /**
    * Fired when we get the result back from the HTTP Get request
    */

@@ -4,7 +4,7 @@ import { AFGTrain } from './AFGTrain';
 import { UFGLocomotiveMovementComponent } from './UFGLocomotiveMovementComponent';
 import { UFGRailroadVehicleMovementComponent } from './UFGRailroadVehicleMovementComponent';
 
-export interface UFGRailroadVehicleSoundComponent {
+export interface UFGRailroadVehicleSoundComponent extends Unknown<'USceneComponent'> {
   /**
    * Movement component of the first vehicle in the train.
    */

@@ -3,9 +3,10 @@ import { Vector } from '../native/structs';
 import { Unknown } from '../native/unknown';
 
 import { AFGBuildablePipeline } from './AFGBuildablePipeline';
+import { AFGFactoryHologram } from './AFGFactoryHologram';
 import { UFGPipeConnectionComponent } from './UFGPipeConnectionComponent';
 
-export interface AFGPipelineAttachmentHologram {
+export interface AFGPipelineAttachmentHologram extends AFGFactoryHologram {
   /**
    * Used to limit the placement in turns. What's the maximum offset to check from center to detect the curve.
    */

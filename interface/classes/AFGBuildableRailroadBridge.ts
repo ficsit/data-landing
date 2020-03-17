@@ -1,8 +1,9 @@
 import { Unknown } from '../native/unknown';
 
+import { AFGBuildable } from './AFGBuildable';
 import { UFGSplineComponent } from './UFGSplineComponent';
 
-export interface AFGBuildableRailroadBridge {
+export interface AFGBuildableRailroadBridge extends AFGBuildable {
   /**
    * The spline component for this bridge.
    */

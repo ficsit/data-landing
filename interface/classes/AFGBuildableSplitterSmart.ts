@@ -4,9 +4,10 @@ import { Unknown } from '../native/unknown';
 import { FInventoryItem } from '../structs/FInventoryItem';
 import { FSplitterSortRule } from '../structs/FSplitterSortRule';
 
+import { AFGBuildableAttachmentSplitter } from './AFGBuildableAttachmentSplitter';
 import { UFGItemDescriptor } from './UFGItemDescriptor';
 
-export interface AFGBuildableSplitterSmart {
+export interface AFGBuildableSplitterSmart extends AFGBuildableAttachmentSplitter {
   OnSortRulesChangedDelegate: Unknown<'FOnSortRulesChanged'>;
 
   /**

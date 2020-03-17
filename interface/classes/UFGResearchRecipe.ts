@@ -4,10 +4,11 @@ import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 
 import { UFGItemDescriptor } from './UFGItemDescriptor';
+import { UFGRecipe } from './UFGRecipe';
 import { UFGResearchRecipe } from './UFGResearchRecipe';
 import { UFGSchematic } from './UFGSchematic';
 
-export interface UFGResearchRecipe {
+export interface UFGResearchRecipe extends UFGRecipe {
   /**
    * Items that make this research available once it enters the players inventory
    */

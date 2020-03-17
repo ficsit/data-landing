@@ -1,6 +1,7 @@
+import { UObject } from '../native/classes';
 import { float, localized } from '../native/primitive';
 
-export interface UFGBuildGunState {
+export interface UFGBuildGunState extends UObject {
   /**
    * Time (in seconds) it takes for the action (eg. Build, dismantle)
    */

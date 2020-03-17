@@ -3,8 +3,9 @@ import { classReference } from '../native/references';
 import { Vector } from '../native/structs';
 
 import { AFGDecorationActor } from './AFGDecorationActor';
+import { UFGEquipmentDescriptor } from './UFGEquipmentDescriptor';
 
-export interface UFGDecorationDescriptor {
+export interface UFGDecorationDescriptor extends UFGEquipmentDescriptor {
   /**
    * The static mesh we want for representing the decoration when placed on ground.
    */

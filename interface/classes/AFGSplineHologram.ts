@@ -2,7 +2,9 @@ import { ESplineHologramBuildStep } from '../enums/ESplineHologramBuildStep';
 import { uint8 } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
-export interface AFGSplineHologram {
+import { AFGBuildableHologram } from './AFGBuildableHologram';
+
+export interface AFGSplineHologram extends AFGBuildableHologram {
   /**
    * The spline component we're placing.
    */

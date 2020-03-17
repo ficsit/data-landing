@@ -3,9 +3,10 @@ import { objectReference } from '../native/references';
 import { Vector } from '../native/structs';
 import { Unknown } from '../native/unknown';
 
+import { AFGBuildable } from './AFGBuildable';
 import { UFGCircuitConnectionComponent } from './UFGCircuitConnectionComponent';
 
-export interface AFGBuildableWire {
+export interface AFGBuildableWire extends AFGBuildable {
   /**
    * Maximum length a wire may be. [cm]
    */

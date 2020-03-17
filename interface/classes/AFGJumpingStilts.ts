@@ -1,7 +1,9 @@
 import { float } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
-export interface AFGJumpingStilts {
+import { AFGEquipment } from './AFGEquipment';
+
+export interface AFGJumpingStilts extends AFGEquipment {
   /**
    * The UCurveFloat to use to override the default fall damage curve
    */

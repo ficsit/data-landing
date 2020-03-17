@@ -1,10 +1,11 @@
 import { AActor } from '../native/classes';
 import { float, int8, uint8 } from '../native/primitive';
 
+import { AFGBuildableFactory } from './AFGBuildableFactory';
 import { UFGInventoryComponent } from './UFGInventoryComponent';
 import { UFGReplicationDetailInventoryComponent } from './UFGReplicationDetailInventoryComponent';
 
-export interface AFGBuildableDockingStation {
+export interface AFGBuildableDockingStation extends AFGBuildableFactory {
   /**
    * SizeX of storage inventory
    */

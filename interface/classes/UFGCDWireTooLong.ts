@@ -1,1 +1,3 @@
-export interface UFGCDWireTooLong {}
+import { UFGConstructDisqualifier } from './UFGConstructDisqualifier';
+
+export interface UFGCDWireTooLong extends UFGConstructDisqualifier {}

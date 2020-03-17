@@ -1,6 +1,8 @@
 import { int32 } from '../native/primitive';
 
-export interface AFGBuildableAutomatedWorkBench {
+import { AFGBuildableManufacturer } from './AFGBuildableManufacturer';
+
+export interface AFGBuildableAutomatedWorkBench extends AFGBuildableManufacturer {
   /**
    * Size of the input inventory for the workbench
    */

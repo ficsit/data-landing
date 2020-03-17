@@ -1,3 +1,9 @@
+import { IFGAggroTargetInterface } from '../interfaces/IFGAggroTargetInterface';
+import { IFGColorInterface } from '../interfaces/IFGColorInterface';
+import { IFGDismantleInterface } from '../interfaces/IFGDismantleInterface';
+import { IFGDockableInterface } from '../interfaces/IFGDockableInterface';
+import { IFGSignificanceInterface } from '../interfaces/IFGSignificanceInterface';
+import { IFGUseableInterface } from '../interfaces/IFGUseableInterface';
 import { float, localized, uint8 } from '../native/primitive';
 import { classReference } from '../native/references';
 import { LinearColor, Vector } from '../native/structs';
@@ -5,12 +11,20 @@ import { Unknown } from '../native/unknown';
 import { FNetConstructionID } from '../structs/FNetConstructionID';
 import { FVehiclePhysicsData } from '../structs/FVehiclePhysicsData';
 
+import { AFGDriveablePawn } from './AFGDriveablePawn';
 import { AFGHologram } from './AFGHologram';
 import { UFGDamageType } from './UFGDamageType';
 import { UFGHealthComponent } from './UFGHealthComponent';
 import { UFGRecipe } from './UFGRecipe';
 
-export interface AFGVehicle {
+export interface AFGVehicle
+  extends AFGDriveablePawn,
+    IFGUseableInterface,
+    IFGDismantleInterface,
+    IFGAggroTargetInterface,
+    IFGDockableInterface,
+    IFGColorInterface,
+    IFGSignificanceInterface {
   /**
    * The human readable name for this vehicle.
    */

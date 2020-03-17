@@ -3,9 +3,10 @@ import { UStaticMesh } from '../native/assets';
 import { Unknown } from '../native/unknown';
 
 import { AFGBuildableConveyorLift } from './AFGBuildableConveyorLift';
+import { AFGSplineHologram } from './AFGSplineHologram';
 import { UFGFactoryConnectionComponent } from './UFGFactoryConnectionComponent';
 
-export interface AFGConveyorLiftHologram {
+export interface AFGConveyorLiftHologram extends AFGSplineHologram {
   /**
    * The two connection components for this conveyor.
    */

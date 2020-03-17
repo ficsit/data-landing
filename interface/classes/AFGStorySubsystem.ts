@@ -1,12 +1,14 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { classReference } from '../native/references';
 import { FItemFoundData } from '../structs/FItemFoundData';
 import { FResearchTreeMessageData } from '../structs/FResearchTreeMessageData';
 import { FSchematicMessagePair } from '../structs/FSchematicMessagePair';
 
 import { AFGCharacterPlayer } from './AFGCharacterPlayer';
+import { AFGSubsystem } from './AFGSubsystem';
 import { UFGMessageBase } from './UFGMessageBase';
 
-export interface AFGStorySubsystem {
+export interface AFGStorySubsystem extends AFGSubsystem, IFGSaveInterface {
   mActivePlayers: AFGCharacterPlayer[];
 
   /**

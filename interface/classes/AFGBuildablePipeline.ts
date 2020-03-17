@@ -1,3 +1,4 @@
+import { IFGFluidIntegrantInterface } from '../interfaces/IFGFluidIntegrantInterface';
 import { AActor } from '../native/classes';
 import { float } from '../native/primitive';
 import { classReference, objectReference } from '../native/references';
@@ -6,12 +7,13 @@ import { FFluidBox } from '../structs/FFluidBox';
 import { FQuantizedPipelineIndicatorData } from '../structs/FQuantizedPipelineIndicatorData';
 import { FStringPair } from '../structs/FStringPair';
 
+import { AFGBuildablePipeBase } from './AFGBuildablePipeBase';
 import { UFGItemDescriptor } from './UFGItemDescriptor';
 import { UFGPipeConnectionComponent } from './UFGPipeConnectionComponent';
 import { UFGPipelineFlowIndicatorComponent } from './UFGPipelineFlowIndicatorComponent';
 import { UFGSoundSplineComponent } from './UFGSoundSplineComponent';
 
-export interface AFGBuildablePipeline {
+export interface AFGBuildablePipeline extends AFGBuildablePipeBase, IFGFluidIntegrantInterface {
   /**
    * Inner Radius of this pipe. Used for flow calculations. [cm]
    */

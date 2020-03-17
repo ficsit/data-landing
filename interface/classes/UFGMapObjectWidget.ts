@@ -1,8 +1,10 @@
+import { Unknown } from '../native/unknown';
+
 import { AFGMinimapCaptureActor } from './AFGMinimapCaptureActor';
 import { UFGActorRepresentation } from './UFGActorRepresentation';
 import { UFGMapWidget } from './UFGMapWidget';
 
-export interface UFGMapObjectWidget {
+export interface UFGMapObjectWidget extends Unknown<'UUserWidget'> {
   mActorRepresentation: UFGActorRepresentation;
 
   mMapWidget: UFGMapWidget;

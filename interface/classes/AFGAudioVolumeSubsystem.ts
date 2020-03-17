@@ -1,1 +1,3 @@
-export interface AFGAudioVolumeSubsystem {}
+import { AFGSubsystem } from './AFGSubsystem';
+
+export interface AFGAudioVolumeSubsystem extends AFGSubsystem {}

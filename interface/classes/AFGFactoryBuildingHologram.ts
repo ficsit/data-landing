@@ -1,5 +1,7 @@
 import { Unknown } from '../native/unknown';
 
-export interface AFGFactoryBuildingHologram {
+import { AFGBuildableHologram } from './AFGBuildableHologram';
+
+export interface AFGFactoryBuildingHologram extends AFGBuildableHologram {
   mBuildingMesh: Unknown<'UStaticMeshComponent'>;
 }

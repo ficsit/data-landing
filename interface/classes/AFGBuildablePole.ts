@@ -1,10 +1,11 @@
 import { UStaticMesh } from '../native/assets';
 import { float } from '../native/primitive';
 
+import { AFGBuildablePoleBase } from './AFGBuildablePoleBase';
 import { UFGColoredInstanceMeshProxy } from './UFGColoredInstanceMeshProxy';
 import { UFGFactoryConnectionComponent } from './UFGFactoryConnectionComponent';
 
-export interface AFGBuildablePole {
+export interface AFGBuildablePole extends AFGBuildablePoleBase {
   /**
    * This poles height.
    */

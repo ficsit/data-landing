@@ -1,7 +1,8 @@
+import { AActor } from '../native/classes';
 import { int32, uint8 } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
-export interface AFGRenderTargetStage {
+export interface AFGRenderTargetStage extends AActor {
   /**
    * If we create a dynamic render target (that is, a new one every time), then this is it's x size
    */

@@ -1,1 +1,3 @@
-export interface UFGInventoryComponentBeltSlot {}
+import { UFGInventoryComponent } from './UFGInventoryComponent';
+
+export interface UFGInventoryComponentBeltSlot extends UFGInventoryComponent {}

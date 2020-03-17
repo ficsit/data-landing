@@ -1,10 +1,12 @@
+import { IFGFluidIntegrantInterface } from '../interfaces/IFGFluidIntegrantInterface';
 import { float } from '../native/primitive';
 import { FFluidBox } from '../structs/FFluidBox';
 import { FQuantizedReservoirIndicatorData } from '../structs/FQuantizedReservoirIndicatorData';
 
+import { AFGBuildableFactory } from './AFGBuildableFactory';
 import { UFGPipeConnectionComponent } from './UFGPipeConnectionComponent';
 
-export interface AFGBuildablePipeReservoir {
+export interface AFGBuildablePipeReservoir extends AFGBuildableFactory, IFGFluidIntegrantInterface {
   /**
    * When stacking reservoirs how high above should it place
    */

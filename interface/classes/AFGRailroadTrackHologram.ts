@@ -2,9 +2,10 @@ import { UStaticMesh } from '../native/assets';
 import { float } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
+import { AFGSplineHologram } from './AFGSplineHologram';
 import { UFGRailroadTrackConnectionComponent } from './UFGRailroadTrackConnectionComponent';
 
-export interface AFGRailroadTrackHologram {
+export interface AFGRailroadTrackHologram extends AFGSplineHologram {
   /**
    * Length restriction of the track. [cm]
    */

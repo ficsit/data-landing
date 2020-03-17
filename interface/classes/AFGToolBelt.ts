@@ -1,6 +1,8 @@
 import { int32 } from '../native/primitive';
 
-export interface AFGToolBelt {
+import { AFGEquipment } from './AFGEquipment';
+
+export interface AFGToolBelt extends AFGEquipment {
   /**
    * How many arm slots are added by this belt
    */

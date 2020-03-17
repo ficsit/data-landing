@@ -1,7 +1,9 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
+import { AActor } from '../native/classes';
 import { Unknown } from '../native/unknown';
 import { FRemovedInstanceArray } from '../structs/FRemovedInstanceArray';
 
-export interface AFGFoliageRemoval {
+export interface AFGFoliageRemoval extends AActor, IFGSaveInterface {
   /**
    * Instances to remove, has custom "ReplicatedUsing", so we get a notify for each instance replicated
    */

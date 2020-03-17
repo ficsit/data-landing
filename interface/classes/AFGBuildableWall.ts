@@ -1,6 +1,8 @@
 import { float } from '../native/primitive';
 
-export interface AFGBuildableWall {
+import { AFGBuildableFactoryBuilding } from './AFGBuildableFactoryBuilding';
+
+export interface AFGBuildableWall extends AFGBuildableFactoryBuilding {
   /**
    * Width of the wall
    */

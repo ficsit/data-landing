@@ -9,7 +9,7 @@ import { AFGJumpingStilts } from './AFGJumpingStilts';
 import { AFGParachute } from './AFGParachute';
 import { UFGLadderComponent } from './UFGLadderComponent';
 
-export interface UFGCharacterMovementComponent {
+export interface UFGCharacterMovementComponent extends Unknown<'UCharacterMovementComponent'> {
   /**
    * Timestamp of last time we jumped
    */

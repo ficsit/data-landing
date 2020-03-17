@@ -2,11 +2,12 @@ import { EFreightCargoType } from '../enums/EFreightCargoType';
 import { float, int8, uint8 } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
+import { AFGBuildableTrainPlatform } from './AFGBuildableTrainPlatform';
 import { UFGFactoryConnectionComponent } from './UFGFactoryConnectionComponent';
 import { UFGInventoryComponent } from './UFGInventoryComponent';
 import { UFGPipeConnectionComponent } from './UFGPipeConnectionComponent';
 
-export interface AFGBuildableTrainPlatformCargo {
+export interface AFGBuildableTrainPlatformCargo extends AFGBuildableTrainPlatform {
   /**
    * The freight cargo type this platform can interface with ( conveyor vs. pipes )
    */

@@ -8,12 +8,13 @@ import { FSurfaceParticlePair } from '../structs/FSurfaceParticlePair';
 import { FTireParticleCollection } from '../structs/FTireParticleCollection';
 import { FTireTrackDecalDetails } from '../structs/FTireTrackDecalDetails';
 
+import { AFGVehicle } from './AFGVehicle';
 import { UFGInventoryComponent } from './UFGInventoryComponent';
 import { UFGItemDescriptor } from './UFGItemDescriptor';
 import { UFGTargetPointLinkedList } from './UFGTargetPointLinkedList';
 import { UFGWorkBench } from './UFGWorkBench';
 
-export interface AFGWheeledVehicle {
+export interface AFGWheeledVehicle extends AFGVehicle {
   /**
    * Workbench component
    */

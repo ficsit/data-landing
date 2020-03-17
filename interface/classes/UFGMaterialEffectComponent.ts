@@ -1,7 +1,7 @@
 import { Unknown } from '../native/unknown';
 import { FCachedMaterialArray } from '../structs/FCachedMaterialArray';
 
-export interface UFGMaterialEffectComponent {
+export interface UFGMaterialEffectComponent extends Unknown<'UActorComponent'> {
   /**
    * Meshes affected by the material effect.
    */

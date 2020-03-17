@@ -1,3 +1,5 @@
+import { IFGExtractableResourceInterface } from '../interfaces/IFGExtractableResourceInterface';
+import { IFGSignificanceInterface } from '../interfaces/IFGSignificanceInterface';
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 
@@ -5,7 +7,12 @@ import { UFGResourceDescriptor } from './UFGResourceDescriptor';
 import { UFGSharedPostProcessSettings } from './UFGSharedPostProcessSettings';
 import { UFGWaterAudio } from './UFGWaterAudio';
 
-export interface AFGWaterVolume {
+export interface AFGWaterVolume
+  extends Unknown<'APhysicsVolume'>,
+    IFGExtractableResourceInterface,
+    Unknown<'IInterface_PostProcessVolume'>,
+    Unknown<'INavRelevantInterface'>,
+    IFGSignificanceInterface {
   /**
    * Specify what typ of nav area blocker this is ( defaults to null )
    */

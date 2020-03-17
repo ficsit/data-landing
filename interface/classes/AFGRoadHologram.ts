@@ -1,6 +1,7 @@
+import { AFGSplineHologram } from './AFGSplineHologram';
 import { UFGRoadConnectionComponent } from './UFGRoadConnectionComponent';
 
-export interface AFGRoadHologram {
+export interface AFGRoadHologram extends AFGSplineHologram {
   /**
    * The connections we have.
    */

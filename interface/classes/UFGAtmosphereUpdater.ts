@@ -1,6 +1,7 @@
+import { UObject } from '../native/classes';
 import { Unknown } from '../native/unknown';
 
-export interface UFGAtmosphereUpdater {
+export interface UFGAtmosphereUpdater extends UObject {
   /**
    * The worlds we want to affect
    */

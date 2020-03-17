@@ -1,5 +1,6 @@
+import { AActor } from '../native/classes';
 import { float } from '../native/primitive';
 
-export interface AFGRadioactiveActor {
+export interface AFGRadioactiveActor extends AActor {
   mRadioactiveDecay: float;
 }

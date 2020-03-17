@@ -1,1 +1,3 @@
-export interface AFGDowsingStickAttachment {}
+import { AFGEquipmentAttachment } from './AFGEquipmentAttachment';
+
+export interface AFGDowsingStickAttachment extends AFGEquipmentAttachment {}

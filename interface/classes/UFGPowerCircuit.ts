@@ -1,7 +1,9 @@
 import { float } from '../native/primitive';
 import { FPowerCircuitStats } from '../structs/FPowerCircuitStats';
 
-export interface UFGPowerCircuit {
+import { UFGCircuit } from './UFGCircuit';
+
+export interface UFGPowerCircuit extends UFGCircuit {
   /**
    * Total amount of energy that can be produced in the circuit. Used for stats.
    */

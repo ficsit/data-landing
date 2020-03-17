@@ -1,1 +1,3 @@
-export interface UFGCDTrackTrunToSharp {}
+import { UFGConstructDisqualifier } from './UFGConstructDisqualifier';
+
+export interface UFGCDTrackTrunToSharp extends UFGConstructDisqualifier {}

@@ -1,6 +1,7 @@
+import { UObject } from '../native/classes';
 import { float, int32 } from '../native/primitive';
 
-export interface UFGSaveSession {
+export interface UFGSaveSession extends UObject {
   /**
    * How often in seconds to autosave, a value of < 0 means disabled
    */

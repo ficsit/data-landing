@@ -1,6 +1,7 @@
 import { EArmEquipment } from '../enums/EArmEquipment';
 import { EBackEquipment } from '../enums/EBackEquipment';
 import { EEquipmentSlot } from '../enums/EEquipmentSlot';
+import { AActor } from '../native/classes';
 import { int32 } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Vector } from '../native/structs';
@@ -8,7 +9,7 @@ import { Vector } from '../native/structs';
 import { AFGCharacterPlayer } from './AFGCharacterPlayer';
 import { AFGEquipment } from './AFGEquipment';
 
-export interface AFGEquipmentAttachment {
+export interface AFGEquipmentAttachment extends AActor {
   /**
    * The class of the equipment that spawned this attachment
    */

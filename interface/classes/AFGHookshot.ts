@@ -1,7 +1,9 @@
 import { float } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
-export interface AFGHookshot {
+import { AFGEquipment } from './AFGEquipment';
+
+export interface AFGHookshot extends AFGEquipment {
   /**
    * How far we will trace to try and find something to attach to
    */

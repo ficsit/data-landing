@@ -2,6 +2,7 @@ import { EIncludeInBuilds } from '../enums/EIncludeInBuilds';
 import { ESchematicCategory } from '../enums/ESchematicCategory';
 import { ESchematicType } from '../enums/ESchematicType';
 import { FSlateBrush } from '../native/assets';
+import { UObject } from '../native/classes';
 import { float, int32, localized } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
@@ -11,7 +12,7 @@ import { UFGSchematic } from './UFGSchematic';
 import { UFGSchematicCategory } from './UFGSchematicCategory';
 import { UFGUnlock } from './UFGUnlock';
 
-export interface UFGSchematic {
+export interface UFGSchematic extends UObject {
   /**
    * What type of schematic is this.
    */

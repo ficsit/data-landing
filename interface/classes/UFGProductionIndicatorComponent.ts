@@ -1,6 +1,6 @@
 import { Unknown } from '../native/unknown';
 
-export interface UFGProductionIndicatorComponent {
+export interface UFGProductionIndicatorComponent extends Unknown<'UActorComponent'> {
   /**
    * Dynamic instance of the material
    */

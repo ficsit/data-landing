@@ -1,5 +1,8 @@
 import { ECameraMode } from '../enums/ECameraMode';
 import { EResourceForm } from '../enums/EResourceForm';
+import { IFGAggroTargetInterface } from '../interfaces/IFGAggroTargetInterface';
+import { IFGRadiationInterface } from '../interfaces/IFGRadiationInterface';
+import { IFGUseableInterface } from '../interfaces/IFGUseableInterface';
 import { AActor } from '../native/classes';
 import { float, int32, int8 } from '../native/primitive';
 import { classReference } from '../native/references';
@@ -11,6 +14,7 @@ import { FItemAmount } from '../structs/FItemAmount';
 import { FUseState } from '../structs/FUseState';
 
 import { AFGBuildGun } from './AFGBuildGun';
+import { AFGCharacterBase } from './AFGCharacterBase';
 import { AFGCharacterPlayer } from './AFGCharacterPlayer';
 import { AFGDriveablePawn } from './AFGDriveablePawn';
 import { AFGEquipment } from './AFGEquipment';
@@ -24,7 +28,11 @@ import { UFGInventoryComponent } from './UFGInventoryComponent';
 import { UFGInventoryComponentBeltSlot } from './UFGInventoryComponentBeltSlot';
 import { UFGOutlineComponent } from './UFGOutlineComponent';
 
-export interface AFGCharacterPlayer {
+export interface AFGCharacterPlayer
+  extends AFGCharacterBase,
+    IFGAggroTargetInterface,
+    IFGUseableInterface,
+    IFGRadiationInterface {
   /**
    * Base turn rate, in deg/sec. Other scaling may affect final turn rate.
    */

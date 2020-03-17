@@ -1,10 +1,11 @@
 import { UStaticMesh } from '../native/assets';
 import { float } from '../native/primitive';
 
+import { AFGBuildableFactory } from './AFGBuildableFactory';
 import { UFGColoredInstanceMeshProxy } from './UFGColoredInstanceMeshProxy';
 import { UFGPipeConnectionComponentBase } from './UFGPipeConnectionComponentBase';
 
-export interface AFGBuildablePipePart {
+export interface AFGBuildablePipePart extends AFGBuildableFactory {
   /**
    * This supports length.
    */

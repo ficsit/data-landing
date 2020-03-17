@@ -1,11 +1,12 @@
 import { EResourcePurity } from '../enums/EResourcePurity';
 import { float, int32 } from '../native/primitive';
 import { classReference } from '../native/references';
+import { Unknown } from '../native/unknown';
 import { FRadiationVisualization } from '../structs/FRadiationVisualization';
 
 import { UFGDamageType } from './UFGDamageType';
 
-export interface UFGRadiationSettings {
+export interface UFGRadiationSettings extends Unknown<'UDeveloperSettings'> {
   mRadiationDamageType: classReference<UFGDamageType>;
 
   mMaxIntensity: float;

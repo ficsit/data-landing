@@ -1,6 +1,8 @@
 import { FPoleHeightMesh } from '../structs/FPoleHeightMesh';
 
-export interface UFGPoleDescriptor {
+import { UFGBuildingDescriptor } from './UFGBuildingDescriptor';
+
+export interface UFGPoleDescriptor extends UFGBuildingDescriptor {
   /**
    * Array with meshes and their heights for the pole.
    */

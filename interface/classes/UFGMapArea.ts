@@ -1,9 +1,10 @@
+import { UObject } from '../native/classes';
 import { localized } from '../native/primitive';
 import { classReference } from '../native/references';
 
 import { UFGMapAreaZoneDescriptor } from './UFGMapAreaZoneDescriptor';
 
-export interface UFGMapArea {
+export interface UFGMapArea extends UObject {
   /**
    * This is the name we at CSS gave this area
    */

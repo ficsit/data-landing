@@ -6,7 +6,7 @@ import { UFGErrorMessage } from './UFGErrorMessage';
 import { UFGMusicManager } from './UFGMusicManager';
 import { UFGSaveSystem } from './UFGSaveSystem';
 
-export interface UFGGameInstance {
+export interface UFGGameInstance extends Unknown<'UGameInstance'> {
   /**
    * The global save system
    */

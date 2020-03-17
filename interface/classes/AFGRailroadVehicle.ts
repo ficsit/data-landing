@@ -2,8 +2,9 @@ import { float } from '../native/primitive';
 import { FRailroadTrackPosition } from '../structs/FRailroadTrackPosition';
 
 import { AFGTrain } from './AFGTrain';
+import { AFGVehicle } from './AFGVehicle';
 
-export interface AFGRailroadVehicle {
+export interface AFGRailroadVehicle extends AFGVehicle {
   /**
    * The train this vehicle is part of, updated from the railroad subsystem
    */

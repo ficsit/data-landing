@@ -2,8 +2,9 @@ import { int32, uint8 } from '../native/primitive';
 
 import { AFGBuildableWire } from './AFGBuildableWire';
 import { UFGCircuitConnectionComponent } from './UFGCircuitConnectionComponent';
+import { UFGConnectionComponent } from './UFGConnectionComponent';
 
-export interface UFGCircuitConnectionComponent {
+export interface UFGCircuitConnectionComponent extends UFGConnectionComponent {
   /**
    * How many connections this component can have connected.
    */

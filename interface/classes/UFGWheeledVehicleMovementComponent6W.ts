@@ -4,7 +4,7 @@ import { FVehicleDifferential6WData } from '../structs/FVehicleDifferential6WDat
 import { FVehicleEngineData6W } from '../structs/FVehicleEngineData6W';
 import { FVehicleTransmissionData6W } from '../structs/FVehicleTransmissionData6W';
 
-export interface UFGWheeledVehicleMovementComponent6W {
+export interface UFGWheeledVehicleMovementComponent6W extends Unknown<'UWheeledVehicleMovementComponent'> {
   /**
    * Engine
    */

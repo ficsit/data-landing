@@ -1,11 +1,12 @@
 import { Unknown } from '../native/unknown';
 import { FSignData } from '../structs/FSignData';
 
+import { UFGInteractWidget } from './UFGInteractWidget';
 import { UFGSignCanvasWidget } from './UFGSignCanvasWidget';
 import { UFGSignElementListWidget } from './UFGSignElementListWidget';
 import { UFGSignElementSettingsWidget } from './UFGSignElementSettingsWidget';
 
-export interface UFGSignInteractWidget {
+export interface UFGSignInteractWidget extends UFGInteractWidget {
   /**
    * Widget reference that holds a list of all active elements and allows for creation / deletion of sign elements
    */

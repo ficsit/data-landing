@@ -1,5 +1,6 @@
 import { ESchematicCategory } from '../enums/ESchematicCategory';
 import { classReference } from '../native/references';
+import { Unknown } from '../native/unknown';
 
 import { UFGSchematicCategory } from './UFGSchematicCategory';
 import { UFGUnlockArmEquipmentSlot } from './UFGUnlockArmEquipmentSlot';
@@ -10,7 +11,7 @@ import { UFGUnlockMap } from './UFGUnlockMap';
 import { UFGUnlockRecipe } from './UFGUnlockRecipe';
 import { UFGUnlockScannableResource } from './UFGUnlockScannableResource';
 
-export interface UFGDeveloperSettings {
+export interface UFGDeveloperSettings extends Unknown<'UDeveloperSettings'> {
   mGreedyFocusInPIE: boolean;
 
   mUnlockRecipeClass: classReference<UFGUnlockRecipe>;

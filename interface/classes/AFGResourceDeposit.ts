@@ -3,9 +3,10 @@ import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 import { FResourceDepositPackage } from '../structs/FResourceDepositPackage';
 
+import { AFGResourceNode } from './AFGResourceNode';
 import { UFGResourceDescriptor } from './UFGResourceDescriptor';
 
-export interface AFGResourceDeposit {
+export interface AFGResourceDeposit extends AFGResourceNode {
   /**
    * Valid if mLootTableIndex is not INDEX_NONE
    */

@@ -1,9 +1,11 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
+import { AActor } from '../native/classes';
 import { float, int32 } from '../native/primitive';
 
 import { AFGTargetPoint } from './AFGTargetPoint';
 import { AFGWheeledVehicle } from './AFGWheeledVehicle';
 
-export interface AFGTargetPoint {
+export interface AFGTargetPoint extends AActor, IFGSaveInterface {
   /**
    * Reference to the next target point ( used in linked list )
    */

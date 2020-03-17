@@ -1,1 +1,3 @@
-export interface UFGCDTrackTooShort {}
+import { UFGConstructDisqualifier } from './UFGConstructDisqualifier';
+
+export interface UFGCDTrackTooShort extends UFGConstructDisqualifier {}

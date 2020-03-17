@@ -1,12 +1,13 @@
 import { ETrainPlatformDockingStatus } from '../enums/ETrainPlatformDockingStatus';
 import { Unknown } from '../native/unknown';
 
+import { AFGBuildableFactory } from './AFGBuildableFactory';
 import { AFGBuildableRailroadStation } from './AFGBuildableRailroadStation';
 import { AFGBuildableRailroadTrack } from './AFGBuildableRailroadTrack';
 import { AFGRailroadVehicle } from './AFGRailroadVehicle';
 import { UFGTrainPlatformConnection } from './UFGTrainPlatformConnection';
 
-export interface AFGBuildableTrainPlatform {
+export interface AFGBuildableTrainPlatform extends AFGBuildableFactory {
   mRailroadTrack: AFGBuildableRailroadTrack;
 
   mPlatformConnections: UFGTrainPlatformConnection[];

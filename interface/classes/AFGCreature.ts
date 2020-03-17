@@ -4,11 +4,12 @@ import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 import { FMoveSpeedPair } from '../structs/FMoveSpeedPair';
 
+import { AFGCharacterBase } from './AFGCharacterBase';
 import { AFGCreatureSpawner } from './AFGCreatureSpawner';
 import { AFGItemPickup } from './AFGItemPickup';
 import { AFGSplinePath } from './AFGSplinePath';
 
-export interface AFGCreature {
+export interface AFGCreature extends AFGCharacterBase {
   /**
    * How big navmesh do we want to generate
    */

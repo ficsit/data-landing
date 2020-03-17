@@ -1,1 +1,3 @@
-export interface UFGCDBeltMustSnap {}
+import { UFGConstructDisqualifier } from './UFGConstructDisqualifier';
+
+export interface UFGCDBeltMustSnap extends UFGConstructDisqualifier {}

@@ -1,6 +1,7 @@
+import { AFGPoleHologram } from './AFGPoleHologram';
 import { UFGFactoryConnectionComponent } from './UFGFactoryConnectionComponent';
 
-export interface AFGConveyorPoleHologram {
+export interface AFGConveyorPoleHologram extends AFGPoleHologram {
   /**
    * The connection conveyors snap to, used when placing a pole automatically.
    */

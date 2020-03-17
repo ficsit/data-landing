@@ -1,3 +1,5 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
+import { AActor } from '../native/classes';
 import { float, int32 } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
@@ -7,7 +9,7 @@ import { AFGCreature } from './AFGCreature';
 import { AFGSplinePath } from './AFGSplinePath';
 import { UFGCreatureSpawnerDebugComponent } from './UFGCreatureSpawnerDebugComponent';
 
-export interface AFGCreatureSpawner {
+export interface AFGCreatureSpawner extends AActor, IFGSaveInterface {
   /**
    * For showing a preview of what will happen in the editor
    */

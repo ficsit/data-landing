@@ -3,8 +3,9 @@ import { classReference } from '../native/references';
 
 import { UFGInventoryComponent } from './UFGInventoryComponent';
 import { UFGItemDescriptor } from './UFGItemDescriptor';
+import { UFGPipeConnectionComponentBase } from './UFGPipeConnectionComponentBase';
 
-export interface UFGPipeConnectionComponent {
+export interface UFGPipeConnectionComponent extends UFGPipeConnectionComponentBase {
   /**
    * The inventory of this connection. This can be null in many cases.
    */

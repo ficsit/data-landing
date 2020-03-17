@@ -1,1 +1,3 @@
-export interface AFGConveyorPoleStackable {}
+import { AFGBuildablePole } from './AFGBuildablePole';
+
+export interface AFGConveyorPoleStackable extends AFGBuildablePole {}

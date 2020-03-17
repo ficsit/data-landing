@@ -1,3 +1,7 @@
+import { IFGColorInterface } from '../interfaces/IFGColorInterface';
+import { IFGDismantleInterface } from '../interfaces/IFGDismantleInterface';
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
+import { IFGUseableInterface } from '../interfaces/IFGUseableInterface';
 import { AActor } from '../native/classes';
 import { float, int32, localized, uint8 } from '../native/primitive';
 import { classReference } from '../native/references';
@@ -13,7 +17,12 @@ import { UFGInteractWidget } from './UFGInteractWidget';
 import { UFGMaterialEffect_Build } from './UFGMaterialEffect_Build';
 import { UFGRecipe } from './UFGRecipe';
 
-export interface AFGBuildable {
+export interface AFGBuildable
+  extends AActor,
+    IFGDismantleInterface,
+    IFGSaveInterface,
+    IFGColorInterface,
+    IFGUseableInterface {
   /**
    * The hologram class to use for constructing this object.
    */

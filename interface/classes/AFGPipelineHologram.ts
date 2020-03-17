@@ -4,10 +4,11 @@ import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 
 import { AFGPipelineSupportHologram } from './AFGPipelineSupportHologram';
+import { AFGSplineHologram } from './AFGSplineHologram';
 import { UFGPipeConnectionComponentBase } from './UFGPipeConnectionComponentBase';
 import { UFGRecipe } from './UFGRecipe';
 
-export interface AFGPipelineHologram {
+export interface AFGPipelineHologram extends AFGSplineHologram {
   /**
    * Used to redirect input and construct poles when needed
    */

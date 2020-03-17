@@ -7,7 +7,7 @@ import { FSimulatedActorTransform } from '../structs/FSimulatedActorTransform';
 import { FSimulatedItemDropTransform } from '../structs/FSimulatedItemDropTransform';
 import { FSimulatedMeshTransform } from '../structs/FSimulatedMeshTransform';
 
-export interface AFGCrashSiteDebris {
+export interface AFGCrashSiteDebris extends AActor {
   /**
    * Description of which meshes to spawn.
    */

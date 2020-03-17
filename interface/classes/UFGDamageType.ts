@@ -3,7 +3,7 @@ import { EPlayOnDamageEvent } from '../enums/EPlayOnDamageEvent';
 import { float } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
-export interface UFGDamageType {
+export interface UFGDamageType extends Unknown<'UDamageType'> {
   /**
    * When pawn take damage from a source, they play this take damage event
    */

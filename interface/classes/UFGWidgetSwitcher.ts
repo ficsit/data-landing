@@ -3,7 +3,7 @@ import { Unknown } from '../native/unknown';
 
 import { UFGMenuBase } from './UFGMenuBase';
 
-export interface UFGWidgetSwitcher {
+export interface UFGWidgetSwitcher extends Unknown<'UWidgetSwitcher'> {
   mFadeOutTime: float;
 
   mOnWidgetSet: Unknown<'FOnActiveWidgetSet'>;

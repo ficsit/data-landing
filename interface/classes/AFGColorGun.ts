@@ -3,7 +3,9 @@ import { AActor } from '../native/classes';
 import { uint8 } from '../native/primitive';
 import { LinearColor } from '../native/structs';
 
-export interface AFGColorGun {
+import { AFGWeaponInstantFire } from './AFGWeaponInstantFire';
+
+export interface AFGColorGun extends AFGWeaponInstantFire {
   /**
    * [DEPRECATED] This will be the color used when shooting
    */

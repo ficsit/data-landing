@@ -2,9 +2,10 @@ import { float } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
 import { AFGBuildable } from './AFGBuildable';
+import { AFGHologram } from './AFGHologram';
 import { UFGFactoryLegsComponent } from './UFGFactoryLegsComponent';
 
-export interface AFGBuildableHologram {
+export interface AFGBuildableHologram extends AFGHologram {
   /**
    * The maximum allowed angle on the floor for this hologram to be placed on (in degrees).
    */

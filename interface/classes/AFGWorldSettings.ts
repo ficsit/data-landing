@@ -1,3 +1,4 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { float } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 import { FExponentialFogSettings } from '../structs/FExponentialFogSettings';
@@ -12,7 +13,7 @@ import { AFGMinimapCaptureActor } from './AFGMinimapCaptureActor';
 import { AFGSkySphere } from './AFGSkySphere';
 import { AFGWaterVolume } from './AFGWaterVolume';
 
-export interface AFGWorldSettings {
+export interface AFGWorldSettings extends Unknown<'AWorldSettings'>, IFGSaveInterface {
   /**
    * All the fog volumes currently streamed in, sorted in ascending order of priority.
    */

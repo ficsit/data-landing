@@ -1,10 +1,10 @@
-import { AActor } from '../native/classes';
+import { AActor, UObject } from '../native/classes';
 import { float } from '../native/primitive';
 import { classReference } from '../native/references';
 
 import { UFGDamageType } from './UFGDamageType';
 
-export interface UFGDamageOverTime {
+export interface UFGDamageOverTime extends UObject {
   /**
    * How often should we damage actors inside of this cloud (in seconds)
    */

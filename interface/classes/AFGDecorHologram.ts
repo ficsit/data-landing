@@ -1,6 +1,8 @@
 import { UStaticMesh } from '../native/assets';
 
-export interface AFGDecorHologram {
+import { AFGBuildableHologram } from './AFGBuildableHologram';
+
+export interface AFGDecorHologram extends AFGBuildableHologram {
   /**
    * The mesh we want to set to our decor to
    */

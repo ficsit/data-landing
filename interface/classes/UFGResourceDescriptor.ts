@@ -3,7 +3,9 @@ import { float } from '../native/primitive';
 import { LinearColor } from '../native/structs';
 import { Unknown } from '../native/unknown';
 
-export interface UFGResourceDescriptor {
+import { UFGItemDescriptor } from './UFGItemDescriptor';
+
+export interface UFGResourceDescriptor extends UFGItemDescriptor {
   /**
    * The static mesh we want the Resource Deposit to use when it has this class selected
    */

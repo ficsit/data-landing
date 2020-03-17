@@ -2,7 +2,9 @@ import { int32 } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 import { FSignColorData } from '../structs/FSignColorData';
 
-export interface UFGSignSettings {
+import { UFGSettings } from './UFGSettings';
+
+export interface UFGSignSettings extends UFGSettings {
   /**
    * Base material to be used for text component material instances
    */

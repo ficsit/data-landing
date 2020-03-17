@@ -2,13 +2,14 @@ import { EResourceForm } from '../enums/EResourceForm';
 import { float, int32 } from '../native/primitive';
 import { classReference } from '../native/references';
 
+import { AFGBuildableGenerator } from './AFGBuildableGenerator';
 import { UFGFactoryConnectionComponent } from './UFGFactoryConnectionComponent';
 import { UFGInventoryComponent } from './UFGInventoryComponent';
 import { UFGItemDescriptor } from './UFGItemDescriptor';
 import { UFGPipeConnectionComponent } from './UFGPipeConnectionComponent';
 import { UFGReplicationDetailInventoryComponent } from './UFGReplicationDetailInventoryComponent';
 
-export interface AFGBuildableGeneratorFuel {
+export interface AFGBuildableGeneratorFuel extends AFGBuildableGenerator {
   /**
    * Maintainer of the active storage component for this actor. Use this to get the active inventory component.
    */

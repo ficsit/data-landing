@@ -1,13 +1,15 @@
+import { IFGRecipeProducerInterface } from '../interfaces/IFGRecipeProducerInterface';
 import { float } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 
+import { AFGBuildableFactory } from './AFGBuildableFactory';
 import { UFGFactoryConnectionComponent } from './UFGFactoryConnectionComponent';
 import { UFGInventoryComponent } from './UFGInventoryComponent';
 import { UFGPipeConnectionComponent } from './UFGPipeConnectionComponent';
 import { UFGRecipe } from './UFGRecipe';
 
-export interface AFGBuildableManufacturer {
+export interface AFGBuildableManufacturer extends AFGBuildableFactory, IFGRecipeProducerInterface {
   /**
    * Called when a new recipe has been set.
    */

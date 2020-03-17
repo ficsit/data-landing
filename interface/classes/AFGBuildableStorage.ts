@@ -1,9 +1,10 @@
 import { float, int32 } from '../native/primitive';
 import { FItemAmount } from '../structs/FItemAmount';
 
+import { AFGBuildableFactory } from './AFGBuildableFactory';
 import { UFGInventoryComponent } from './UFGInventoryComponent';
 
-export interface AFGBuildableStorage {
+export interface AFGBuildableStorage extends AFGBuildableFactory {
   /**
    * How far apart in Z do multiple storages stack.
    */

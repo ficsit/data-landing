@@ -1,7 +1,9 @@
 import { EHorizontalSignTextAlignment } from '../enums/EHorizontalSignTextAlignment';
 import { int32 } from '../native/primitive';
 
-export interface UFGSignTextData {
+import { UFGSignElementData } from './UFGSignElementData';
+
+export interface UFGSignTextData extends UFGSignElementData {
   /**
    * Text field to be displayed on the sign
    */

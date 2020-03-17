@@ -1,1 +1,3 @@
-export interface UFGCDPipeNoPathFound {}
+import { UFGConstructDisqualifier } from './UFGConstructDisqualifier';
+
+export interface UFGCDPipeNoPathFound extends UFGConstructDisqualifier {}

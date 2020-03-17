@@ -1,1 +1,3 @@
-export interface UFGCDConveyorTooSteep {}
+import { UFGConstructDisqualifier } from './UFGConstructDisqualifier';
+
+export interface UFGCDConveyorTooSteep extends UFGConstructDisqualifier {}

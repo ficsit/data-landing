@@ -1,1 +1,3 @@
-export interface AFGBuildableWindTurbine {}
+import { AFGBuildableFactory } from './AFGBuildableFactory';
+
+export interface AFGBuildableWindTurbine extends AFGBuildableFactory {}

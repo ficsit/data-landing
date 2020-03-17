@@ -1,6 +1,7 @@
+import { UObject } from '../native/classes';
 import { localized } from '../native/primitive';
 
-export interface UFGItemCategory {
+export interface UFGItemCategory extends UObject {
   /**
    * Name of this item category
    */

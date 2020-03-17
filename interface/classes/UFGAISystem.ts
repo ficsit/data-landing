@@ -1,7 +1,7 @@
 import { float, int32 } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
-export interface UFGAISystem {
+export interface UFGAISystem extends Unknown<'UAISystem'>, Unknown<'FTickableGameObject'> {
   /**
    * Called whenever a aggro target is added
    */

@@ -1,7 +1,9 @@
 import { float } from '../native/primitive';
 import { FQuantizedPumpIndicatorData } from '../structs/FQuantizedPumpIndicatorData';
 
-export interface AFGBuildablePipelinePump {
+import { AFGBuildablePipelineAttachment } from './AFGBuildablePipelineAttachment';
+
+export interface AFGBuildablePipelinePump extends AFGBuildablePipelineAttachment {
   /**
    * Maximum pressure this pump applies. [meters]
    */

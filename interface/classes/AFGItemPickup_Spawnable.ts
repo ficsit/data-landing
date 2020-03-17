@@ -1,6 +1,8 @@
 import { Unknown } from '../native/unknown';
 
-export interface AFGItemPickup_Spawnable {
+import { AFGItemPickup } from './AFGItemPickup';
+
+export interface AFGItemPickup_Spawnable extends AFGItemPickup {
   /**
    * The mesh to represent the item
    */

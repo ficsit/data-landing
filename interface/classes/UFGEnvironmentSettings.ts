@@ -1,6 +1,8 @@
 import { Unknown } from '../native/unknown';
 
-export interface UFGEnvironmentSettings {
+import { UFGSettings } from './UFGSettings';
+
+export interface UFGEnvironmentSettings extends UFGSettings {
   /**
    * The collection containing the world bounds
    */

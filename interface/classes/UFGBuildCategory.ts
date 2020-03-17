@@ -1,7 +1,8 @@
 import { FSlateBrush } from '../native/assets';
+import { UObject } from '../native/classes';
 import { localized } from '../native/primitive';
 
-export interface UFGBuildCategory {
+export interface UFGBuildCategory extends UObject {
   /**
    * Name of this build category
    */

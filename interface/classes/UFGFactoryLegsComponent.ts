@@ -1,9 +1,10 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { UStaticMesh } from '../native/assets';
 import { float } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 import { FFeetOffset } from '../structs/FFeetOffset';
 
-export interface UFGFactoryLegsComponent {
+export interface UFGFactoryLegsComponent extends Unknown<'USceneComponent'>, IFGSaveInterface {
   /**
    * Socket names on the parent mesh
    */

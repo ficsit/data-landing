@@ -1,5 +1,7 @@
 import { Unknown } from '../native/unknown';
 
-export interface UFGSignPixelData {
+import { UFGSignElementData } from './UFGSignElementData';
+
+export interface UFGSignPixelData extends UFGSignElementData {
   mDimensions: Unknown<'FVector2D'>;
 }

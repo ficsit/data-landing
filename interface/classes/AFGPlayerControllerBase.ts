@@ -3,7 +3,7 @@ import { Unknown } from '../native/unknown';
 import { AFGAdminInterface } from './AFGAdminInterface';
 import { UFGCheatManager } from './UFGCheatManager';
 
-export interface AFGPlayerControllerBase {
+export interface AFGPlayerControllerBase extends Unknown<'APlayerController'> {
   /**
    * Called when we rebind any key
    */

@@ -1,9 +1,11 @@
+import { IFGFluidIntegrantInterface } from '../interfaces/IFGFluidIntegrantInterface';
 import { float } from '../native/primitive';
 import { FFluidBox } from '../structs/FFluidBox';
 
+import { AFGBuildableFactory } from './AFGBuildableFactory';
 import { UFGPipeConnectionComponent } from './UFGPipeConnectionComponent';
 
-export interface AFGBuildableCheatFluidSink {
+export interface AFGBuildableCheatFluidSink extends AFGBuildableFactory, IFGFluidIntegrantInterface {
   /**
    * Sink rate of the fluid, 0 means sink everything. [m3/s]
    */

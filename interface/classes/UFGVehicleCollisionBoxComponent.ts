@@ -1,6 +1,7 @@
 import { float } from '../native/primitive';
+import { Unknown } from '../native/unknown';
 
-export interface UFGVehicleCollisionBoxComponent {
+export interface UFGVehicleCollisionBoxComponent extends Unknown<'UBoxComponent'> {
   /**
    * Multiplier for velocity change with all impacts.
    */

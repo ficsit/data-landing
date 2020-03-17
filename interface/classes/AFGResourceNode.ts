@@ -1,6 +1,10 @@
 import { EResourceAmount } from '../enums/EResourceAmount';
 import { EResourcePurity } from '../enums/EResourcePurity';
-import { UObject } from '../native/classes';
+import { IFGExtractableResourceInterface } from '../interfaces/IFGExtractableResourceInterface';
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
+import { IFGSignificanceInterface } from '../interfaces/IFGSignificanceInterface';
+import { IFGUseableInterface } from '../interfaces/IFGUseableInterface';
+import { AActor, UObject } from '../native/classes';
 import { int32 } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
@@ -8,7 +12,12 @@ import { FPurityTextPair } from '../structs/FPurityTextPair';
 
 import { UFGResourceDescriptor } from './UFGResourceDescriptor';
 
-export interface AFGResourceNode {
+export interface AFGResourceNode
+  extends AActor,
+    IFGExtractableResourceInterface,
+    IFGSaveInterface,
+    IFGUseableInterface,
+    IFGSignificanceInterface {
   /**
    * Type of resource
    */

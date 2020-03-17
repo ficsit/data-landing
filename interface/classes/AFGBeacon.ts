@@ -1,1 +1,3 @@
-export interface AFGBeacon {}
+import { AActor } from '../native/classes';
+
+export interface AFGBeacon extends AActor {}

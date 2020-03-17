@@ -1,6 +1,8 @@
 import { float } from '../native/primitive';
 
-export interface AFGBuildableGenerator {
+import { AFGBuildableFactory } from './AFGBuildableFactory';
+
+export interface AFGBuildableGenerator extends AFGBuildableFactory {
   /**
    * Amount of power this generator produces in MW.
    */

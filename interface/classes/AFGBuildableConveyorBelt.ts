@@ -2,9 +2,10 @@ import { UStaticMesh } from '../native/assets';
 import { float } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
+import { AFGBuildableConveyorBase } from './AFGBuildableConveyorBase';
 import { UFGSoundSplineComponent } from './UFGSoundSplineComponent';
 
-export interface AFGBuildableConveyorBelt {
+export interface AFGBuildableConveyorBelt extends AFGBuildableConveyorBase {
   /**
    * Mesh to use for his conveyor.
    */

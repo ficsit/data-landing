@@ -4,7 +4,7 @@ import { Unknown } from '../native/unknown';
 import { AFGActorRepresentationManager } from './AFGActorRepresentationManager';
 import { UFGCompassObjectWidget } from './UFGCompassObjectWidget';
 
-export interface UFGCompassWidget {
+export interface UFGCompassWidget extends Unknown<'UUserWidget'> {
   mCompassPanel: Unknown<'UCanvasPanel'>;
 
   mContentPanel: Unknown<'UCanvasPanel'>;

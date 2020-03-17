@@ -3,7 +3,7 @@ import { classReference } from '../native/references';
 
 import { UFGItemDescriptor } from './UFGItemDescriptor';
 
-export interface UFGItemDescriptorNuclearFuel {
+export interface UFGItemDescriptorNuclearFuel extends UFGItemDescriptor {
   /**
    * The descriptor to use when the fuel is removed from the reactor (waste).
    */

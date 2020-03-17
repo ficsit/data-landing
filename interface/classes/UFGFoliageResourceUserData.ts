@@ -5,7 +5,7 @@ import { FItemDropWithChance } from '../structs/FItemDropWithChance';
 
 import { UFGFoliageIdentifier } from './UFGFoliageIdentifier';
 
-export interface UFGFoliageResourceUserData {
+export interface UFGFoliageResourceUserData extends Unknown<'UAssetUserData'> {
   /**
    * Items we should gain when picking up the item, @todo: Remove BlueprintReadOnly
    */

@@ -1,11 +1,14 @@
+import { IFGSignificanceInterface } from '../interfaces/IFGSignificanceInterface';
+import { IFGSignInterface } from '../interfaces/IFGSignInterface';
 import { float, int32 } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 import { FSignData } from '../structs/FSignData';
 import { FSignElementConstraints } from '../structs/FSignElementConstraints';
 
+import { AFGBuildable } from './AFGBuildable';
 import { UFGColoredInstanceMeshProxy } from './UFGColoredInstanceMeshProxy';
 
-export interface AFGBuildableStandaloneSign {
+export interface AFGBuildableStandaloneSign extends AFGBuildable, IFGSignInterface, IFGSignificanceInterface {
   /**
    * Map of Element Ids to their associated component
    */

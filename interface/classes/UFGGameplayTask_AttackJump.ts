@@ -1,6 +1,8 @@
 import { Unknown } from '../native/unknown';
 
-export interface UFGGameplayTask_AttackJump {
+import { UFGGameplayTask_Attack } from './UFGGameplayTask_Attack';
+
+export interface UFGGameplayTask_AttackJump extends UFGGameplayTask_Attack {
   mOnJumpAttackFinished: Unknown<'FGenericGameplayTaskDelegate'>;
 
   mOnJumpAttackFailed: Unknown<'FGenericGameplayTaskDelegate'>;

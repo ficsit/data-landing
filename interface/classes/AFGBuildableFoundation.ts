@@ -1,7 +1,9 @@
 import { float } from '../native/primitive';
 import { FFoundationSideSelectionFlags } from '../structs/FFoundationSideSelectionFlags';
 
-export interface AFGBuildableFoundation {
+import { AFGBuildableFactoryBuilding } from './AFGBuildableFactoryBuilding';
+
+export interface AFGBuildableFoundation extends AFGBuildableFactoryBuilding {
   /**
    * Size of the foundation (size of one side of the square).
    */

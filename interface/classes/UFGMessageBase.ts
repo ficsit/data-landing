@@ -2,10 +2,11 @@ import { EMessageType } from '../enums/EMessageType';
 import { UTexture2D } from '../native/assets';
 import { localized } from '../native/primitive';
 import { classReference } from '../native/references';
+import { Unknown } from '../native/unknown';
 
 import { UFGMessageSender } from './UFGMessageSender';
 
-export interface UFGMessageBase {
+export interface UFGMessageBase extends Unknown<'UUserWidget'> {
   /**
    * I think this may be the title
    */

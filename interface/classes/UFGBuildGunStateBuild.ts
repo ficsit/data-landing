@@ -5,9 +5,10 @@ import { Unknown } from '../native/unknown';
 import { FFactoryClearanceData } from '../structs/FFactoryClearanceData';
 
 import { AFGHologram } from './AFGHologram';
+import { UFGBuildGunState } from './UFGBuildGunState';
 import { UFGRecipe } from './UFGRecipe';
 
-export interface UFGBuildGunStateBuild {
+export interface UFGBuildGunStateBuild extends UFGBuildGunState {
   OnSplineModeChangedDelegate: Unknown<'FSplineModeChangedDelegate'>;
 
   /**

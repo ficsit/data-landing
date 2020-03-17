@@ -1,11 +1,13 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 import { FResearchData } from '../structs/FResearchData';
 import { FResearchTime } from '../structs/FResearchTime';
 
+import { AFGSubsystem } from './AFGSubsystem';
 import { UFGResearchTree } from './UFGResearchTree';
 
-export interface AFGResearchManager {
+export interface AFGResearchManager extends AFGSubsystem, IFGSaveInterface {
   /**
    * Called when a research recipe is started
    */

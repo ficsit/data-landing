@@ -1,6 +1,6 @@
 import { Unknown } from '../native/unknown';
 
-export interface UFGSignElementListWidget {
+export interface UFGSignElementListWidget extends Unknown<'UUserWidget'> {
   /**
    * Button to add a new Text Element
    */

@@ -1,12 +1,13 @@
 import { float } from '../native/primitive';
 import { classReference } from '../native/references';
 
+import { AFGBuildableFactory } from './AFGBuildableFactory';
 import { AFGResourceSinkSubsystem } from './AFGResourceSinkSubsystem';
 import { UFGFactoryConnectionComponent } from './UFGFactoryConnectionComponent';
 import { UFGInventoryComponent } from './UFGInventoryComponent';
 import { UFGItemDescriptor } from './UFGItemDescriptor';
 
-export interface AFGBuildableResourceSink {
+export interface AFGBuildableResourceSink extends AFGBuildableFactory {
   mCouponInventory: UFGInventoryComponent;
 
   /**

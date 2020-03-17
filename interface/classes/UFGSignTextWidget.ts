@@ -1,6 +1,8 @@
 import { Unknown } from '../native/unknown';
 
-export interface UFGSignTextWidget {
+import { UFGSignElementWidget } from './UFGSignElementWidget';
+
+export interface UFGSignTextWidget extends UFGSignElementWidget {
   /**
    * /
    */

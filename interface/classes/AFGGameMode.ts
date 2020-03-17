@@ -1,9 +1,10 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { float, int32, uint8 } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
 import { UFGSaveSession } from './UFGSaveSession';
 
-export interface AFGGameMode {
+export interface AFGGameMode extends Unknown<'AGameMode'>, IFGSaveInterface {
   mSaveSession: UFGSaveSession;
 
   /**

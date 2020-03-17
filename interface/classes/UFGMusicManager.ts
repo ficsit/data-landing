@@ -1,7 +1,8 @@
+import { UObject } from '../native/classes';
 import { float } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
-export interface UFGMusicManager {
+export interface UFGMusicManager extends UObject {
   /**
    * How often (in seconds) we want to check if we are close to a factory
    */

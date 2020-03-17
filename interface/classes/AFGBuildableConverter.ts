@@ -1,6 +1,8 @@
 import { int32 } from '../native/primitive';
 
-export interface AFGBuildableConverter {
+import { AFGBuildableManufacturer } from './AFGBuildableManufacturer';
+
+export interface AFGBuildableConverter extends AFGBuildableManufacturer {
   /**
    * Number of ingredients needed to consume to produce
    */

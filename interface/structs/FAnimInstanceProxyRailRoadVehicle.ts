@@ -2,7 +2,7 @@ import { float, uint8 } from '../native/primitive';
 import { Vector } from '../native/structs';
 import { Unknown } from '../native/unknown';
 
-export interface FAnimInstanceProxyRailRoadVehicle {
+export interface FAnimInstanceProxyRailRoadVehicle extends Unknown<'FAnimInstanceProxy'> {
   /**
    * saved DT
    */

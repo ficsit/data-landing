@@ -1,7 +1,9 @@
 import { int32 } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
-export interface AFGWallAttachmentHologram {
+import { AFGBuildableHologram } from './AFGBuildableHologram';
+
+export interface AFGWallAttachmentHologram extends AFGBuildableHologram {
   /**
    * Are you allowed to rotate this attachment on the walls surface.
    */

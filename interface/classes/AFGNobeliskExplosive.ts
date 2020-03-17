@@ -1,7 +1,9 @@
 import { float } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
-export interface AFGNobeliskExplosive {
+import { AFGDestructiveProjectile } from './AFGDestructiveProjectile';
+
+export interface AFGNobeliskExplosive extends AFGDestructiveProjectile {
   mRotatingMovementComp: Unknown<'URotatingMovementComponent'>;
 
   /**

@@ -1,1 +1,3 @@
-export interface AFGGeoThermalGeneratorHologram {}
+import { AFGResourceExtractorHologram } from './AFGResourceExtractorHologram';
+
+export interface AFGGeoThermalGeneratorHologram extends AFGResourceExtractorHologram {}

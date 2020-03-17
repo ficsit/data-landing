@@ -7,9 +7,10 @@ import { AFGBuildablePipelineSupport } from './AFGBuildablePipelineSupport';
 import { AFGPipeBuilderTrail } from './AFGPipeBuilderTrail';
 import { AFGPipelineSupportHologram } from './AFGPipelineSupportHologram';
 import { AFGSplineHologram } from './AFGSplineHologram';
+import { AFGVehicle } from './AFGVehicle';
 import { UFGRecipe } from './UFGRecipe';
 
-export interface AFGPipeBuilder {
+export interface AFGPipeBuilder extends AFGVehicle {
   /**
    * The main skeletal mesh associated with this Vehicle
    */

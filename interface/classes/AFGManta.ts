@@ -1,9 +1,11 @@
+import { IFGSignificanceInterface } from '../interfaces/IFGSignificanceInterface';
+import { AActor } from '../native/classes';
 import { float } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
 import { AFGSplinePath } from './AFGSplinePath';
 
-export interface AFGManta {
+export interface AFGManta extends AActor, IFGSignificanceInterface {
   /**
    * Reference to the spline that was added in BP
    */

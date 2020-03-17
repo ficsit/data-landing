@@ -1,6 +1,8 @@
 import { int32 } from '../native/primitive';
 
-export interface UFGUnlockArmEquipmentSlot {
+import { UFGUnlock } from './UFGUnlock';
+
+export interface UFGUnlockArmEquipmentSlot extends UFGUnlock {
   /**
    * Number of arm equipment slots this unlock adds to the players inventory
    */

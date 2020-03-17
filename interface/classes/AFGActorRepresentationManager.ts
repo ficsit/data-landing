@@ -1,8 +1,9 @@
 import { Unknown } from '../native/unknown';
 
+import { AFGSubsystem } from './AFGSubsystem';
 import { UFGActorRepresentation } from './UFGActorRepresentation';
 
-export interface AFGActorRepresentationManager {
+export interface AFGActorRepresentationManager extends AFGSubsystem {
   /**
    * Called whenever a new representation is added
    */

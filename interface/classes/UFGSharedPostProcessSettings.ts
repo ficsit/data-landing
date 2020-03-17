@@ -1,7 +1,8 @@
+import { UObject } from '../native/classes';
 import { float } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
-export interface UFGSharedPostProcessSettings {
+export interface UFGSharedPostProcessSettings extends UObject {
   /**
    * Normal settings for post process
    */

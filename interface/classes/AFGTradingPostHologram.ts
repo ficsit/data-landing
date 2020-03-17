@@ -3,7 +3,7 @@ import { Unknown } from '../native/unknown';
 import { AFGBuildableHologram } from './AFGBuildableHologram';
 import { AFGFactoryHologram } from './AFGFactoryHologram';
 
-export interface AFGTradingPostHologram {
+export interface AFGTradingPostHologram extends AFGFactoryHologram {
   /**
    * The generator holograms
    */

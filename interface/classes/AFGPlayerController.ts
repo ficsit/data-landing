@@ -3,13 +3,14 @@ import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 
 import { AFGAttentionPingActor } from './AFGAttentionPingActor';
+import { AFGPlayerControllerBase } from './AFGPlayerControllerBase';
 import { AFGProximitySubsystem } from './AFGProximitySubsystem';
 import { UFGConsoleCommandManager } from './UFGConsoleCommandManager';
 import { UFGMapArea } from './UFGMapArea';
 import { UFGMapAreaTexture } from './UFGMapAreaTexture';
 import { UFGRemoteCallObject } from './UFGRemoteCallObject';
 
-export interface AFGPlayerController {
+export interface AFGPlayerController extends AFGPlayerControllerBase {
   /**
    * Called when the shortcuts layout have changed, e.g. shortcut added.
    */

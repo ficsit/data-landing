@@ -2,7 +2,9 @@ import { float } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 import { FAudioSubtitlePair } from '../structs/FAudioSubtitlePair';
 
-export interface UFGAudioMessage {
+import { UFGMessageBase } from './UFGMessageBase';
+
+export interface UFGAudioMessage extends UFGMessageBase {
   /**
    * The Ak component
    */

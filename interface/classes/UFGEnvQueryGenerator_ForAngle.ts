@@ -1,7 +1,7 @@
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 
-export interface UFGEnvQueryGenerator_ForAngle {
+export interface UFGEnvQueryGenerator_ForAngle extends Unknown<'UEnvQueryGenerator_ProjectedPoints'> {
   /**
    * Total distance for point generation
    */

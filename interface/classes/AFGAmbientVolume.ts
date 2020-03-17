@@ -1,10 +1,11 @@
+import { IFGSignificanceInterface } from '../interfaces/IFGSignificanceInterface';
 import { float } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 
 import { UFGAmbientSettings } from './UFGAmbientSettings';
 
-export interface AFGAmbientVolume {
+export interface AFGAmbientVolume extends Unknown<'AVolume'>, IFGSignificanceInterface {
   /**
    * The settings for the volume
    */

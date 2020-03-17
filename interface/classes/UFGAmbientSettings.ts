@@ -1,7 +1,8 @@
+import { UObject } from '../native/classes';
 import { uint8 } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
-export interface UFGAmbientSettings {
+export interface UFGAmbientSettings extends UObject {
   /**
    * Event to post when OnGetClose is triggered
    */

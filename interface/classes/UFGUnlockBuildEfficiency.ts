@@ -1,1 +1,3 @@
-export interface UFGUnlockBuildEfficiency {}
+import { UFGUnlock } from './UFGUnlock';
+
+export interface UFGUnlockBuildEfficiency extends UFGUnlock {}

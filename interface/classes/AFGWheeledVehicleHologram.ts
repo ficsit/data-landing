@@ -1,1 +1,3 @@
-export interface AFGWheeledVehicleHologram {}
+import { AFGVehicleHologram } from './AFGVehicleHologram';
+
+export interface AFGWheeledVehicleHologram extends AFGVehicleHologram {}

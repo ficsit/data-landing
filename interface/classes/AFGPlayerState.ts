@@ -1,4 +1,5 @@
 import { ERepresentationType } from '../enums/ERepresentationType';
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { int32, uint8 } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
@@ -12,7 +13,7 @@ import { UFGRecipe } from './UFGRecipe';
 import { UFGSchematicCategory } from './UFGSchematicCategory';
 import { UFGTutorialSubsystem } from './UFGTutorialSubsystem';
 
-export interface AFGPlayerState {
+export interface AFGPlayerState extends Unknown<'APlayerState'>, IFGSaveInterface {
   /**
    * Broadcast when a buildable or decor has been constructed.
    */

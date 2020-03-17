@@ -1,9 +1,10 @@
+import { AActor } from '../native/classes';
 import { float } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
 import { AFGBuildablePipeline } from './AFGBuildablePipeline';
 
-export interface AFGPipeBuilderTrail {
+export interface AFGPipeBuilderTrail extends AActor {
   /**
    * Saved pipelines we have to traverse
    */

@@ -1,1 +1,3 @@
-export interface UFGSplineMeshGenerationLibrary {}
+import { Unknown } from '../native/unknown';
+
+export interface UFGSplineMeshGenerationLibrary extends Unknown<'UBlueprintFunctionLibrary'> {}

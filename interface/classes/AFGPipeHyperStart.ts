@@ -1,6 +1,8 @@
 import { float } from '../native/primitive';
 
-export interface AFGPipeHyperStart {
+import { AFGBuildablePipeHyperPart } from './AFGBuildablePipeHyperPart';
+
+export interface AFGPipeHyperStart extends AFGBuildablePipeHyperPart {
   mOpeningOffset: float;
 
   /**

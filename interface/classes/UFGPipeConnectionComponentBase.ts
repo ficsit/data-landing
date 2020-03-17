@@ -1,9 +1,10 @@
 import { EPipeConnectionType } from '../enums/EPipeConnectionType';
 import { float } from '../native/primitive';
 
+import { UFGConnectionComponent } from './UFGConnectionComponent';
 import { UFGPipeConnectionComponentBase } from './UFGPipeConnectionComponentBase';
 
-export interface UFGPipeConnectionComponentBase {
+export interface UFGPipeConnectionComponentBase extends UFGConnectionComponent {
   /**
    * Specifies the type of connection this is, used to determine attachment potential
    */

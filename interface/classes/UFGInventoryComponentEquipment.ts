@@ -2,8 +2,9 @@ import { EEquipmentSlot } from '../enums/EEquipmentSlot';
 import { int32 } from '../native/primitive';
 
 import { AFGEquipment } from './AFGEquipment';
+import { UFGInventoryComponent } from './UFGInventoryComponent';
 
-export interface UFGInventoryComponentEquipment {
+export interface UFGInventoryComponentEquipment extends UFGInventoryComponent {
   mOverrideEquipmentInSlot: AFGEquipment;
 
   /**

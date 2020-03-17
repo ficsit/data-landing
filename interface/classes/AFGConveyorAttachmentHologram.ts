@@ -1,9 +1,10 @@
 import { float } from '../native/primitive';
 
 import { AFGBuildableConveyorBelt } from './AFGBuildableConveyorBelt';
+import { AFGFactoryHologram } from './AFGFactoryHologram';
 import { UFGFactoryConnectionComponent } from './UFGFactoryConnectionComponent';
 
-export interface AFGConveyorAttachmentHologram {
+export interface AFGConveyorAttachmentHologram extends AFGFactoryHologram {
   /**
    * Used to limit the placement in turns. What's the maximum offset to check from center to detect the curve.
    */

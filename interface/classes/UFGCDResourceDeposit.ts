@@ -1,1 +1,3 @@
-export interface UFGCDResourceDeposit {}
+import { UFGConstructDisqualifier } from './UFGConstructDisqualifier';
+
+export interface UFGCDResourceDeposit extends UFGConstructDisqualifier {}

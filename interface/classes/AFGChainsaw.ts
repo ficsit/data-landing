@@ -1,9 +1,10 @@
 import { float } from '../native/primitive';
 import { classReference } from '../native/references';
 
+import { AFGEquipment } from './AFGEquipment';
 import { UFGItemDescriptor } from './UFGItemDescriptor';
 
-export interface AFGChainsaw {
+export interface AFGChainsaw extends AFGEquipment {
   /**
    * The fuel we want to be able to use with the chainsaw
    */

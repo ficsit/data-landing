@@ -1,7 +1,8 @@
 import { ECompassViewDistance } from '../enums/ECompassViewDistance';
 import { float } from '../native/primitive';
+import { Unknown } from '../native/unknown';
 
-export interface UFGMapCompassSettings {
+export interface UFGMapCompassSettings extends Unknown<'UDeveloperSettings'> {
   mCompassViewDistances: Record<ECompassViewDistance, float>;
 
   mLowestWorldLocation: float;

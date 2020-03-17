@@ -5,7 +5,7 @@ import { FConnectionAlwaysRelevant_NodePair } from '../structs/FConnectionAlways
 
 import { UFGReplicationGraphNode_ConditionallyAlwaysRelevant } from './UFGReplicationGraphNode_ConditionallyAlwaysRelevant';
 
-export interface UFGReplicationGraph {
+export interface UFGReplicationGraph extends Unknown<'UReplicationGraph'> {
   mSpatializedClasses: Unknown<'UClass'>[];
 
   mNonSpatializedClasses: Unknown<'UClass'>[];

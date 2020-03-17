@@ -1,5 +1,7 @@
 import { FMaterialAndSlotName } from '../structs/FMaterialAndSlotName';
 
-export interface AFGSuitBase {
+import { AFGEquipment } from './AFGEquipment';
+
+export interface AFGSuitBase extends AFGEquipment {
   mSuit1PMeshMaterials: FMaterialAndSlotName[];
 }

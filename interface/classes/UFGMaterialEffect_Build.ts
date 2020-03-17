@@ -2,7 +2,9 @@ import { AActor } from '../native/classes';
 import { float } from '../native/primitive';
 import { FItemAmount } from '../structs/FItemAmount';
 
-export interface UFGMaterialEffect_Build {
+import { UFGMaterialEffectComponent } from './UFGMaterialEffectComponent';
+
+export interface UFGMaterialEffect_Build extends UFGMaterialEffectComponent {
   /**
    * Who built this
    */

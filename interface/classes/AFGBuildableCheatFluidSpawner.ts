@@ -1,11 +1,13 @@
+import { IFGFluidIntegrantInterface } from '../interfaces/IFGFluidIntegrantInterface';
 import { float } from '../native/primitive';
 import { classReference } from '../native/references';
 import { FFluidBox } from '../structs/FFluidBox';
 
+import { AFGBuildableFactory } from './AFGBuildableFactory';
 import { UFGItemDescriptor } from './UFGItemDescriptor';
 import { UFGPipeConnectionComponent } from './UFGPipeConnectionComponent';
 
-export interface AFGBuildableCheatFluidSpawner {
+export interface AFGBuildableCheatFluidSpawner extends AFGBuildableFactory, IFGFluidIntegrantInterface {
   /**
    * Resource type to spawn.
    */

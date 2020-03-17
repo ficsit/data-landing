@@ -1,7 +1,7 @@
 import { Unknown } from '../native/unknown';
 import { FAnimInstanceProxyRailRoadVehicle } from '../structs/FAnimInstanceProxyRailRoadVehicle';
 
-export interface UFGRailRoadVehicleAnim {
+export interface UFGRailRoadVehicleAnim extends Unknown<'UAnimInstance'> {
   mProxy: FAnimInstanceProxyRailRoadVehicle;
 
   /**

@@ -1,10 +1,12 @@
+import { IFGSignificanceInterface } from '../interfaces/IFGSignificanceInterface';
 import { UStaticMesh } from '../native/assets';
 import { float } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
+import { AFGBuildable } from './AFGBuildable';
 import { UFGPipeConnectionComponentBase } from './UFGPipeConnectionComponentBase';
 
-export interface AFGBuildablePipeBase {
+export interface AFGBuildablePipeBase extends AFGBuildable, IFGSignificanceInterface {
   /**
    * Mesh to use for his conveyor.
    */

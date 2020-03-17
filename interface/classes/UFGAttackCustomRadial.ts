@@ -1,1 +1,3 @@
-export interface UFGAttackCustomRadial {}
+import { UFGAttack } from './UFGAttack';
+
+export interface UFGAttackCustomRadial extends UFGAttack {}

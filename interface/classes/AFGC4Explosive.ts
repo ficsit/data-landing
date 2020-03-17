@@ -1,8 +1,9 @@
+import { AActor } from '../native/classes';
 import { float } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 
-export interface AFGC4Explosive {
+export interface AFGC4Explosive extends AActor {
   /**
    * Base damage used for the radial apply damage
    */

@@ -1,3 +1,4 @@
+import { UObject } from '../native/classes';
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 
@@ -9,7 +10,7 @@ import { UFGResourceSettings } from './UFGResourceSettings';
 import { UFGSignSettings } from './UFGSignSettings';
 import { UFGSubsystemClasses } from './UFGSubsystemClasses';
 
-export interface UFGGlobalSettings {
+export interface UFGGlobalSettings extends UObject {
   /**
    * Settings for resources
    */

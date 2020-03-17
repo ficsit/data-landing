@@ -2,9 +2,10 @@ import { int32 } from '../native/primitive';
 import { FConnectionItemStruct } from '../structs/FConnectionItemStruct';
 import { FConveyorSpaceData } from '../structs/FConveyorSpaceData';
 
+import { AFGBuildableConveyorAttachment } from './AFGBuildableConveyorAttachment';
 import { UFGFactoryConnectionComponent } from './UFGFactoryConnectionComponent';
 
-export interface AFGBuildableAttachmentSplitter {
+export interface AFGBuildableAttachmentSplitter extends AFGBuildableConveyorAttachment {
   /**
    * Cycles through the outputs, stores the output we want to put mItem on. Index is for the mOutputs array.
    */

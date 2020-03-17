@@ -4,13 +4,14 @@ import { float, int32 } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Vector } from '../native/structs';
 
+import { AFGBuildableFactory } from './AFGBuildableFactory';
 import { AFGResourceNode } from './AFGResourceNode';
 import { UFGConstructDisqualifier } from './UFGConstructDisqualifier';
 import { UFGInventoryComponent } from './UFGInventoryComponent';
 import { UFGPipeConnectionComponent } from './UFGPipeConnectionComponent';
 import { UFGResourceDescriptor } from './UFGResourceDescriptor';
 
-export interface AFGBuildableResourceExtractor {
+export interface AFGBuildableResourceExtractor extends AFGBuildableFactory {
   /**
    * Power up time for the extraction process, e.g. the time it takes for a drill to start spinning.
    */

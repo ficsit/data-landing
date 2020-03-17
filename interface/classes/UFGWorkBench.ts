@@ -1,12 +1,14 @@
+import { IFGRecipeProducerInterface } from '../interfaces/IFGRecipeProducerInterface';
 import { float, int32 } from '../native/primitive';
 import { classReference } from '../native/references';
+import { Unknown } from '../native/unknown';
 
 import { AFGCharacterPlayer } from './AFGCharacterPlayer';
 import { UFGInventoryComponent } from './UFGInventoryComponent';
 import { UFGManufacturingButton } from './UFGManufacturingButton';
 import { UFGRecipe } from './UFGRecipe';
 
-export interface UFGWorkBench {
+export interface UFGWorkBench extends Unknown<'USceneComponent'>, IFGRecipeProducerInterface {
   /**
    * The recipe we're currently running.
    */

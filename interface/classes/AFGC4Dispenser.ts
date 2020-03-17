@@ -2,8 +2,9 @@ import { float, int32 } from '../native/primitive';
 import { classReference } from '../native/references';
 
 import { AFGC4Explosive } from './AFGC4Explosive';
+import { AFGWeapon } from './AFGWeapon';
 
-export interface AFGC4Dispenser {
+export interface AFGC4Dispenser extends AFGWeapon {
   /**
    * What types of bombs we should spawn
    */

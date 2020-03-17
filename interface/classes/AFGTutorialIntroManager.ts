@@ -1,4 +1,5 @@
 import { EIntroTutorialSteps } from '../enums/EIntroTutorialSteps';
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { float, int32 } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
@@ -7,11 +8,12 @@ import { FTutorialHintData } from '../structs/FTutorialHintData';
 
 import { AFGBuildableTradingPost } from './AFGBuildableTradingPost';
 import { AFGStartingPod } from './AFGStartingPod';
+import { AFGSubsystem } from './AFGSubsystem';
 import { UFGBuildingDescriptor } from './UFGBuildingDescriptor';
 import { UFGItemDescriptor } from './UFGItemDescriptor';
 import { UFGSchematic } from './UFGSchematic';
 
-export interface AFGTutorialIntroManager {
+export interface AFGTutorialIntroManager extends AFGSubsystem, IFGSaveInterface {
   /**
    * Called when mHasCompletedIntroSequence updates
    */

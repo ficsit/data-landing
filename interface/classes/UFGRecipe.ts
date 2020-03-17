@@ -3,7 +3,7 @@ import { float, localized } from '../native/primitive';
 import { classReference } from '../native/references';
 import { FItemAmount } from '../structs/FItemAmount';
 
-export interface UFGRecipe {
+export interface UFGRecipe extends UObject {
   /**
    * If we override the display name or get it from the first products item name.
    */

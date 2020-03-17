@@ -2,10 +2,12 @@ import { UStaticMesh } from '../native/assets';
 import { float } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
+import { AFGBuildableConveyorBase } from './AFGBuildableConveyorBase';
+
 /**
  * Base for conveyor lifts.
  */
-export interface AFGBuildableConveyorLift {
+export interface AFGBuildableConveyorLift extends AFGBuildableConveyorBase {
   /**
    * What's the height of the meshes used.
    */

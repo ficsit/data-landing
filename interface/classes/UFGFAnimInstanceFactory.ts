@@ -1,7 +1,8 @@
 import { float } from '../native/primitive';
+import { Unknown } from '../native/unknown';
 import { FAnimInstanceProxyFactory } from '../structs/FAnimInstanceProxyFactory';
 
-export interface UFGFAnimInstanceFactory {
+export interface UFGFAnimInstanceFactory extends Unknown<'UAnimInstance'> {
   mProxy: FAnimInstanceProxyFactory;
 
   /**

@@ -1,8 +1,10 @@
+import { Unknown } from '../native/unknown';
+
 import { AFGBuildableConveyorBase } from './AFGBuildableConveyorBase';
 import { AFGBuildableFactory } from './AFGBuildableFactory';
 import { AFGBuildablePipeBase } from './AFGBuildablePipeBase';
 
-export interface UFGSignificanceManager {
+export interface UFGSignificanceManager extends Unknown<'USignificanceManager'> {
   /**
    * Is the manager enabled
    */

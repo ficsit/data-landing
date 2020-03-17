@@ -1,10 +1,12 @@
 import { IFGFluidIntegrantInterface } from '../interfaces/IFGFluidIntegrantInterface';
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { int32 } from '../native/primitive';
 import { ScriptInterface, classReference } from '../native/references';
+import { Unknown } from '../native/unknown';
 
 import { UFGItemDescriptor } from './UFGItemDescriptor';
 
-export interface AFGPipeNetwork {
+export interface AFGPipeNetwork extends Unknown<'AInfo'>, IFGSaveInterface {
   mPipeNetworkID: int32;
 
   /**

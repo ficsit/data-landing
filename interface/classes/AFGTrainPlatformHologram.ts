@@ -1,10 +1,11 @@
 import { classReference } from '../native/references';
 
+import { AFGFactoryHologram } from './AFGFactoryHologram';
 import { AFGRailroadTrackHologram } from './AFGRailroadTrackHologram';
 import { UFGRecipe } from './UFGRecipe';
 import { UFGTrainPlatformConnection } from './UFGTrainPlatformConnection';
 
-export interface AFGTrainPlatformHologram {
+export interface AFGTrainPlatformHologram extends AFGFactoryHologram {
   /**
    * Overrides floor snapping and forces platforms to only snap to other platforms (not true for stations, true for other platforms)
    */

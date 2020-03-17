@@ -5,9 +5,10 @@ import { ScriptInterface, classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 import { FAggroEntry } from '../structs/FAggroEntry';
 
+import { AFGCreatureController } from './AFGCreatureController';
 import { UFGAttack } from './UFGAttack';
 
-export interface AFGEnemyController {
+export interface AFGEnemyController extends AFGCreatureController {
   /**
    * Specifies how often we need to update all aggro
    */

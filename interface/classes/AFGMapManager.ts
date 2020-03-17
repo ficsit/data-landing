@@ -1,12 +1,14 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { UTexture2D } from '../native/assets';
 import { uint8 } from '../native/primitive';
 import { FFogOfWarQueuePair } from '../structs/FFogOfWarQueuePair';
 
 import { AFGActorRepresentationManager } from './AFGActorRepresentationManager';
 import { AFGMinimapCaptureActor } from './AFGMinimapCaptureActor';
+import { AFGSubsystem } from './AFGSubsystem';
 import { UFGActorRepresentation } from './UFGActorRepresentation';
 
-export interface AFGMapManager {
+export interface AFGMapManager extends AFGSubsystem, IFGSaveInterface {
   /**
    * The raw pixel data for the fog of war texture. Each element represents a channel for a pixel
    */

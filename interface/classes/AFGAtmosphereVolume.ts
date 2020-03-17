@@ -5,7 +5,10 @@ import { FExponentialFogSettings } from '../structs/FExponentialFogSettings';
 /**
  * @todo: Should be renamed to something else, as it does a lot more than give settings to fog
  */
-export interface AFGAtmosphereVolume {
+export interface AFGAtmosphereVolume
+  extends Unknown<'AVolume'>,
+    Unknown<'ICurvePanningInterface'>,
+    Unknown<'IInterface_PostProcessVolume'> {
   mPriority: float;
 
   /**

@@ -1,3 +1,4 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { UStaticMesh } from '../native/assets';
 import { AActor } from '../native/classes';
 import { float, int32, uint8 } from '../native/primitive';
@@ -8,10 +9,11 @@ import { FFactoryTickFunction } from '../structs/FFactoryTickFunction';
 
 import { AFGBuildable } from './AFGBuildable';
 import { AFGBuildableConveyorAttachment } from './AFGBuildableConveyorAttachment';
+import { AFGSubsystem } from './AFGSubsystem';
 import { UFGColoredInstanceManager } from './UFGColoredInstanceManager';
 import { UFGFactoryMaterialInstanceManager } from './UFGFactoryMaterialInstanceManager';
 
-export interface AFGBuildableSubsystem {
+export interface AFGBuildableSubsystem extends AFGSubsystem, IFGSaveInterface {
   /**
    * Distance used when calculating if a location is near a base
    */

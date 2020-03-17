@@ -3,8 +3,9 @@ import { classReference } from '../native/references';
 import { FItemAmount } from '../structs/FItemAmount';
 
 import { UFGSchematic } from './UFGSchematic';
+import { UFGSettings } from './UFGSettings';
 
-export interface UFGHardDriveSettings {
+export interface UFGHardDriveSettings extends UFGSettings {
   mUniqueItemCount: int32;
 
   /**

@@ -1,8 +1,10 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
+import { UObject } from '../native/classes';
 import { int32 } from '../native/primitive';
 
 import { AFGTargetPoint } from './AFGTargetPoint';
 
-export interface UFGTargetPointLinkedList {
+export interface UFGTargetPointLinkedList extends UObject, IFGSaveInterface {
   /**
    * First node in linked list
    */

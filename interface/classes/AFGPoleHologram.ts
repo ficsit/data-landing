@@ -2,7 +2,9 @@ import { float } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 import { FPoleHeightMesh } from '../structs/FPoleHeightMesh';
 
-export interface AFGPoleHologram {
+import { AFGFactoryHologram } from './AFGFactoryHologram';
+
+export interface AFGPoleHologram extends AFGFactoryHologram {
   /**
    * The most fitting mesh for our aim height.
    */

@@ -12,8 +12,9 @@ import { UFGDismantleShortcut } from './UFGDismantleShortcut';
 import { UFGItemDescriptor } from './UFGItemDescriptor';
 import { UFGMaterialEffect_Build } from './UFGMaterialEffect_Build';
 import { UFGRecipeShortcut } from './UFGRecipeShortcut';
+import { UFGSettings } from './UFGSettings';
 
-export interface UFGFactorySettings {
+export interface UFGFactorySettings extends UFGSettings {
   /**
    * Material on hologram for valid placement. @note Do not set in code!
    */

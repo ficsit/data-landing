@@ -1,7 +1,9 @@
 import { float, int32 } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
-export interface AFGBuildableRadarTower {
+import { AFGBuildableFactory } from './AFGBuildableFactory';
+
+export interface AFGBuildableRadarTower extends AFGBuildableFactory {
   OnRadarTowerRadiusUpdated: Unknown<'FRadarTowerRadiusUpdated'>;
 
   /**

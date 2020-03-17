@@ -1,6 +1,7 @@
 import { float } from '../native/primitive';
+import { Unknown } from '../native/unknown';
 
-export interface UFGVehicleWheel {
+export interface UFGVehicleWheel extends Unknown<'UVehicleWheel'> {
   /**
    * Set to true if a rear wheel. This can result in custom functionality for rear wheels.
    */

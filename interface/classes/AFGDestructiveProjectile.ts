@@ -1,7 +1,9 @@
 import { int32 } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
-export interface AFGDestructiveProjectile {
+import { AFGProjectile } from './AFGProjectile';
+
+export interface AFGDestructiveProjectile extends AFGProjectile {
   /**
    * Collision Component used to determine which objects should be considered for destruction
    */

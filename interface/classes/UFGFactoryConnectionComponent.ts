@@ -3,10 +3,11 @@ import { EFactoryConnectionDirection } from '../enums/EFactoryConnectionDirectio
 import { float, int32, uint8 } from '../native/primitive';
 
 import { AFGBuildable } from './AFGBuildable';
+import { UFGConnectionComponent } from './UFGConnectionComponent';
 import { UFGFactoryConnectionComponent } from './UFGFactoryConnectionComponent';
 import { UFGInventoryComponent } from './UFGInventoryComponent';
 
-export interface UFGFactoryConnectionComponent {
+export interface UFGFactoryConnectionComponent extends UFGConnectionComponent {
   /**
    * Physical type of connector used for this connection.
    */

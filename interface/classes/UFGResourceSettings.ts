@@ -9,8 +9,9 @@ import { FResourceDepositPackage } from '../structs/FResourceDepositPackage';
 import { AFGItemPickup_Spawnable } from './AFGItemPickup_Spawnable';
 import { AFGRenderTargetStage } from './AFGRenderTargetStage';
 import { UFGResourceDescriptor } from './UFGResourceDescriptor';
+import { UFGSettings } from './UFGSettings';
 
-export interface UFGResourceSettings {
+export interface UFGResourceSettings extends UFGSettings {
   /**
    * List of all available resource deposit packages
    */

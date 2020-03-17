@@ -1,10 +1,18 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
+import { IFGSignificanceInterface } from '../interfaces/IFGSignificanceInterface';
+import { IFGUseableInterface } from '../interfaces/IFGUseableInterface';
+import { AActor } from '../native/classes';
 import { float } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 import { FInventoryStack } from '../structs/FInventoryStack';
 
 import { AFGCharacterPlayer } from './AFGCharacterPlayer';
 
-export interface AFGItemPickup {
+export interface AFGItemPickup
+  extends AActor,
+    IFGUseableInterface,
+    IFGSaveInterface,
+    IFGSignificanceInterface {
   /**
    * The amount of time required to pickup < 0 == instant
    */

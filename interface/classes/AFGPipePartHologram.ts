@@ -1,9 +1,10 @@
 import { Unknown } from '../native/unknown';
 import { FPoleHeightMesh } from '../structs/FPoleHeightMesh';
 
+import { AFGFactoryHologram } from './AFGFactoryHologram';
 import { UFGPipeConnectionComponentBase } from './UFGPipeConnectionComponentBase';
 
-export interface AFGPipePartHologram {
+export interface AFGPipePartHologram extends AFGFactoryHologram {
   /**
    * The most fitting mesh for our aim height.
    */

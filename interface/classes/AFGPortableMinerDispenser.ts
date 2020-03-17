@@ -2,7 +2,9 @@ import { EResourceForm } from '../enums/EResourceForm';
 import { float } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
-export interface AFGPortableMinerDispenser {
+import { AFGEquipment } from './AFGEquipment';
+
+export interface AFGPortableMinerDispenser extends AFGEquipment {
   /**
    * What form can the overlapping resources be in.
    */

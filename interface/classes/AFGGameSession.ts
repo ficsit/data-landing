@@ -1,7 +1,7 @@
 import { int32 } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
-export interface AFGGameSession {
+export interface AFGGameSession extends Unknown<'AGameSession'> {
   /**
    * Used to keep track of players when they last tried to login and failed to detect brute force logins
    */

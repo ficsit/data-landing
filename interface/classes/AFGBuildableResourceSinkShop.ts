@@ -1,9 +1,10 @@
 import { int32 } from '../native/primitive';
 
+import { AFGBuildableFactory } from './AFGBuildableFactory';
 import { AFGResourceSinkSubsystem } from './AFGResourceSinkSubsystem';
 import { UFGInventoryComponent } from './UFGInventoryComponent';
 
-export interface AFGBuildableResourceSinkShop {
+export interface AFGBuildableResourceSinkShop extends AFGBuildableFactory {
   /**
    * The inventory that holds the purchases we made in the resource sink shop
    */

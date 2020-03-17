@@ -18,8 +18,9 @@ import { AFGStorySubsystem } from './AFGStorySubsystem';
 import { AFGTimeOfDaySubsystem } from './AFGTimeOfDaySubsystem';
 import { AFGTutorialIntroManager } from './AFGTutorialIntroManager';
 import { AFGUnlockSubsystem } from './AFGUnlockSubsystem';
+import { UFGSettings } from './UFGSettings';
 
-export interface UFGSubsystemClasses {
+export interface UFGSubsystemClasses extends UFGSettings {
   /**
    * The collection containing the world bounds
    */

@@ -6,10 +6,11 @@ import { objectReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 
 import { AFGCharacterPlayer } from './AFGCharacterPlayer';
+import { AFGRailroadVehicle } from './AFGRailroadVehicle';
 import { UFGInventoryComponent } from './UFGInventoryComponent';
 import { UFGRailroadVehicleMovementComponent } from './UFGRailroadVehicleMovementComponent';
 
-export interface AFGFreightWagon {
+export interface AFGFreightWagon extends AFGRailroadVehicle {
   /**
    * The current type of inventory this freight is holding. Default is FCT_Standard.
    */

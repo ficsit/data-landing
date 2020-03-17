@@ -1,1 +1,3 @@
-export interface AFGBuildableStair {}
+import { AFGBuildableFoundation } from './AFGBuildableFoundation';
+
+export interface AFGBuildableStair extends AFGBuildableFoundation {}

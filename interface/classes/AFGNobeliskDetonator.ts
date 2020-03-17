@@ -3,8 +3,9 @@ import { classReference } from '../native/references';
 import { FProjectileData } from '../structs/FProjectileData';
 
 import { AFGNobeliskExplosive } from './AFGNobeliskExplosive';
+import { AFGWeapon } from './AFGWeapon';
 
-export interface AFGNobeliskDetonator {
+export interface AFGNobeliskDetonator extends AFGWeapon {
   /**
    * Explosive Data (Applied to the explosive projectile on spawn)
    */

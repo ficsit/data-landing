@@ -2,7 +2,7 @@ import { AFGBuildableTrainPlatform } from './AFGBuildableTrainPlatform';
 import { AFGLocomotive } from './AFGLocomotive';
 import { AFGTrainStationIdentifier } from './AFGTrainStationIdentifier';
 
-export interface AFGBuildableRailroadStation {
+export interface AFGBuildableRailroadStation extends AFGBuildableTrainPlatform {
   /**
    * Light weight representation about this station, the railroad subsystem is responsible for this.
    */

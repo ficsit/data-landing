@@ -1,6 +1,8 @@
 import { Color } from '../native/structs';
 
-export interface AFGObjectScannerAttachment {
+import { AFGEquipmentAttachment } from './AFGEquipmentAttachment';
+
+export interface AFGObjectScannerAttachment extends AFGEquipmentAttachment {
   /**
    * True if scanner is beeping
    */

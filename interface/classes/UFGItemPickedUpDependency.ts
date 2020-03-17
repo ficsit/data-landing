@@ -1,8 +1,9 @@
 import { classReference } from '../native/references';
 
+import { UFGAvailabilityDependency } from './UFGAvailabilityDependency';
 import { UFGItemDescriptor } from './UFGItemDescriptor';
 
-export interface UFGItemPickedUpDependency {
+export interface UFGItemPickedUpDependency extends UFGAvailabilityDependency {
   /**
    * The items that should have been picked up for this dependency to be met
    */

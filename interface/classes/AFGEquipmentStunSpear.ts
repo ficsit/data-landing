@@ -2,9 +2,10 @@ import { float, int32 } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 
+import { AFGEquipment } from './AFGEquipment';
 import { UFGDamageType } from './UFGDamageType';
 
-export interface AFGEquipmentStunSpear {
+export interface AFGEquipmentStunSpear extends AFGEquipment {
   /**
    * Sphere collision component
    */

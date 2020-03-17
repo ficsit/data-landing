@@ -1,1 +1,3 @@
-export interface AFGBuildableRailroadSignal {}
+import { AFGBuildable } from './AFGBuildable';
+
+export interface AFGBuildableRailroadSignal extends AFGBuildable {}

@@ -2,9 +2,10 @@ import { UStaticMesh } from '../native/assets';
 import { float } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
+import { AFGBuildable } from './AFGBuildable';
 import { UFGRailroadTrackConnectionComponent } from './UFGRailroadTrackConnectionComponent';
 
-export interface AFGBuildableRailroadTrack {
+export interface AFGBuildableRailroadTrack extends AFGBuildable {
   /**
    * Mesh to use for his track.
    */

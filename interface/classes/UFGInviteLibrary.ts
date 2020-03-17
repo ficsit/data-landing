@@ -1,1 +1,3 @@
-export interface UFGInviteLibrary {}
+import { Unknown } from '../native/unknown';
+
+export interface UFGInviteLibrary extends Unknown<'UBlueprintFunctionLibrary'> {}

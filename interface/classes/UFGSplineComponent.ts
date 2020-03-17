@@ -3,7 +3,7 @@ import { float } from '../native/primitive';
 import { Vector } from '../native/structs';
 import { Unknown } from '../native/unknown';
 
-export interface UFGSplineComponent {
+export interface UFGSplineComponent extends Unknown<'USplineComponent'> {
   /**
    * The mesh to repeat on curved sections.
    */

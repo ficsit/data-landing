@@ -1,7 +1,10 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { int32 } from '../native/primitive';
 import { FBuilding } from '../structs/FBuilding';
 
-export interface AFGFoundationSubsystem {
+import { AFGSubsystem } from './AFGSubsystem';
+
+export interface AFGFoundationSubsystem extends AFGSubsystem, IFGSaveInterface {
   /**
    * All the buildings in the game, map with foundation ID and the building struct.
    */

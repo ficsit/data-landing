@@ -7,10 +7,11 @@ import { Unknown } from '../native/unknown';
 
 import { AFGBuildableConveyorBelt } from './AFGBuildableConveyorBelt';
 import { AFGConveyorPoleHologram } from './AFGConveyorPoleHologram';
+import { AFGSplineHologram } from './AFGSplineHologram';
 import { UFGFactoryConnectionComponent } from './UFGFactoryConnectionComponent';
 import { UFGRecipe } from './UFGRecipe';
 
-export interface AFGConveyorBeltHologram {
+export interface AFGConveyorBeltHologram extends AFGSplineHologram {
   /**
    * Used to redirect input and construct poles when needed
    */

@@ -4,13 +4,14 @@ import { Unknown } from '../native/unknown';
 import { FItemAmount } from '../structs/FItemAmount';
 
 import { AFGBuildable } from './AFGBuildable';
+import { AFGBuildableFactory } from './AFGBuildableFactory';
 import { AFGBuildableGenerator } from './AFGBuildableGenerator';
 import { AFGBuildableHubTerminal } from './AFGBuildableHubTerminal';
 import { AFGSchematicManager } from './AFGSchematicManager';
 import { UFGInventoryComponent } from './UFGInventoryComponent';
 import { UFGRecipe } from './UFGRecipe';
 
-export interface AFGBuildableTradingPost {
+export interface AFGBuildableTradingPost extends AFGBuildableFactory {
   /**
    * Class of generators to create with the trading post
    */

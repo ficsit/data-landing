@@ -3,11 +3,12 @@ import { classReference } from '../native/references';
 import { Vector } from '../native/structs';
 import { Unknown } from '../native/unknown';
 
+import { AFGBuildableHologram } from './AFGBuildableHologram';
 import { AFGPowerPoleHologram } from './AFGPowerPoleHologram';
 import { UFGCircuitConnectionComponent } from './UFGCircuitConnectionComponent';
 import { UFGRecipe } from './UFGRecipe';
 
-export interface AFGWireHologram {
+export interface AFGWireHologram extends AFGBuildableHologram {
   /**
    * The two connection components we connect.
    */

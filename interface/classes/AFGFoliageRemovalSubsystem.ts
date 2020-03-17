@@ -1,1 +1,3 @@
-export interface AFGFoliageRemovalSubsystem {}
+import { AFGSubsystem } from './AFGSubsystem';
+
+export interface AFGFoliageRemovalSubsystem extends AFGSubsystem {}

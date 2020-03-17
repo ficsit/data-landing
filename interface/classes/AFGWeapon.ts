@@ -2,11 +2,12 @@ import { float, int32 } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 
+import { AFGEquipment } from './AFGEquipment';
 import { AFGHUD } from './AFGHUD';
 import { UFGDamageType } from './UFGDamageType';
 import { UFGItemDescriptor } from './UFGItemDescriptor';
 
-export interface AFGWeapon {
+export interface AFGWeapon extends AFGEquipment {
   /**
    * [DavalliusA:Wed/20-03-2019] the base hud object will never get invalid during use, so we can use anormal pointer here to access it.
    */

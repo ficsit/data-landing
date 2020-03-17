@@ -1,7 +1,8 @@
 import { UTexture2D } from '../native/assets';
+import { UObject } from '../native/classes';
 import { localized } from '../native/primitive';
 
-export interface UFGMessageSender {
+export interface UFGMessageSender extends UObject {
   /**
    * Name of the sender
    */

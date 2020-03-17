@@ -1,13 +1,19 @@
 import { EStackSize } from '../enums/EStackSize';
+import { IFGReplicationDetailActorOwnerInterface } from '../interfaces/IFGReplicationDetailActorOwnerInterface';
+import { IFGSignificanceInterface } from '../interfaces/IFGSignificanceInterface';
 import { float, int32, uint8 } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 
+import { AFGBuildable } from './AFGBuildable';
 import { AFGReplicationDetailActor } from './AFGReplicationDetailActor';
 import { UFGInventoryComponent } from './UFGInventoryComponent';
 import { UFGPowerInfoComponent } from './UFGPowerInfoComponent';
 
-export interface AFGBuildableFactory {
+export interface AFGBuildableFactory
+  extends AFGBuildable,
+    IFGSignificanceInterface,
+    IFGReplicationDetailActorOwnerInterface {
   /**
    * Power consumption of this factory.
    */

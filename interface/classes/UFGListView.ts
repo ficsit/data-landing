@@ -1,6 +1,6 @@
 import { Unknown } from '../native/unknown';
 
-export interface UFGListView {
+export interface UFGListView extends Unknown<'UPanelWidget'> {
   /**
    * Delegate for constructing a UWidget for an item to display.
    */

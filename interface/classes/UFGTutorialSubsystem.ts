@@ -1,3 +1,4 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { UObject } from '../native/classes';
 import { classReference } from '../native/references';
 import { FTutorialData } from '../structs/FTutorialData';
@@ -5,7 +6,7 @@ import { FTutorialData } from '../structs/FTutorialData';
 import { AFGPlayerState } from './AFGPlayerState';
 import { UFGMessageBase } from './UFGMessageBase';
 
-export interface UFGTutorialSubsystem {
+export interface UFGTutorialSubsystem extends UObject, IFGSaveInterface {
   /**
    * classes of things we have build
    */

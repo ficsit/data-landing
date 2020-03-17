@@ -1,8 +1,9 @@
 import { Unknown } from '../native/unknown';
 
+import { AFGEquipment } from './AFGEquipment';
 import { AFGResourceNode } from './AFGResourceNode';
 
-export interface AFGResourceMiner {
+export interface AFGResourceMiner extends AFGEquipment {
   /**
    * The effect the spawn when picking.
    */

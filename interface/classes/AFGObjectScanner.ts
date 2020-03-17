@@ -2,7 +2,9 @@ import { AActor } from '../native/classes';
 import { float } from '../native/primitive';
 import { FScannableDetails } from '../structs/FScannableDetails';
 
-export interface AFGObjectScanner {
+import { AFGEquipment } from './AFGEquipment';
+
+export interface AFGObjectScanner extends AFGEquipment {
   /**
    * Maximum delay (in seconds) between each beep
    */

@@ -3,7 +3,7 @@ import { Unknown } from '../native/unknown';
 /**
  * We can't send the id of the instance to clients, as that requires us to maintain a commandbuffer with all done commands to be able to get the same id's a server/client
  */
-export interface FRemovedInstance {
+export interface FRemovedInstance extends Unknown<'FFastArraySerializerItem'> {
   /**
    * Stored in localspace. Compressed location to get the id of the item, @todo: Toy around with different FVector_NetQuantize and see what works best
    */

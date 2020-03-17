@@ -2,9 +2,10 @@ import { float, int32 } from '../native/primitive';
 import { classReference } from '../native/references';
 import { FNodeClusterData } from '../structs/FNodeClusterData';
 
+import { AFGEquipment } from './AFGEquipment';
 import { UFGResourceDescriptor } from './UFGResourceDescriptor';
 
-export interface AFGResourceScanner {
+export interface AFGResourceScanner extends AFGEquipment {
   /**
    * This is the resource class to scan for
    */

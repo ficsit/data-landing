@@ -1,12 +1,13 @@
 import { EIncludeInBuilds } from '../enums/EIncludeInBuilds';
 import { FSlateBrush } from '../native/assets';
+import { UObject } from '../native/classes';
 import { localized } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
 import { UFGAvailabilityDependency } from './UFGAvailabilityDependency';
 import { UFGResearchTreeNode } from './UFGResearchTreeNode';
 
-export interface UFGResearchTree {
+export interface UFGResearchTree extends UObject {
   /**
    * The name to be displayed to the player before the tree is unlocked
    */

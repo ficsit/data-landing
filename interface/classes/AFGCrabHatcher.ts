@@ -1,6 +1,8 @@
 import { float } from '../native/primitive';
 
-export interface AFGCrabHatcher {
+import { AFGEnemy } from './AFGEnemy';
+
+export interface AFGCrabHatcher extends AFGEnemy {
   /**
    * Indicates if a threat is nearby
    */

@@ -6,7 +6,7 @@ import { FCachedSplineMeshToMaterialObject } from '../structs/FCachedSplineMeshT
 
 import { UFGSplineComponent } from './UFGSplineComponent';
 
-export interface UFGOutlineComponent {
+export interface UFGOutlineComponent extends Unknown<'USceneComponent'> {
   mOutlineProxy: Unknown<'UStaticMeshComponent'>;
 
   mActiveOutlineActor: AActor;

@@ -4,7 +4,7 @@ import { Unknown } from '../native/unknown';
 
 import { AFGCharacterBase } from './AFGCharacterBase';
 
-export interface UFGCharacterAnimInstance {
+export interface UFGCharacterAnimInstance extends Unknown<'UAnimInstance'> {
   /**
    * in degrees
    */

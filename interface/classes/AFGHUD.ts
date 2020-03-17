@@ -3,10 +3,11 @@ import { AActor } from '../native/classes';
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 
+import { AFGHUDBase } from './AFGHUDBase';
 import { AFGRenderTargetStage } from './AFGRenderTargetStage';
 import { UFGGameUI } from './UFGGameUI';
 
-export interface AFGHUD {
+export interface AFGHUD extends AFGHUDBase {
   mGameUIClass: classReference<Unknown<'UUserWidget'>>;
 
   mRespawnUIClass: classReference<Unknown<'UUserWidget'>>;

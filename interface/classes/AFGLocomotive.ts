@@ -1,10 +1,11 @@
 import { Unknown } from '../native/unknown';
 
+import { AFGRailroadVehicle } from './AFGRailroadVehicle';
 import { UFGLocomotiveMovementComponent } from './UFGLocomotiveMovementComponent';
 import { UFGPowerConnectionComponent } from './UFGPowerConnectionComponent';
 import { UFGPowerInfoComponent } from './UFGPowerInfoComponent';
 
-export interface AFGLocomotive {
+export interface AFGLocomotive extends AFGRailroadVehicle {
   /**
    * The power consumption of this electric locomotive, min is idle power consumption and max is power consumption at maximum torque.
    */

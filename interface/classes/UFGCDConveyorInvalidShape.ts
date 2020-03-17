@@ -1,1 +1,3 @@
-export interface UFGCDConveyorInvalidShape {}
+import { UFGConstructDisqualifier } from './UFGConstructDisqualifier';
+
+export interface UFGCDConveyorInvalidShape extends UFGConstructDisqualifier {}

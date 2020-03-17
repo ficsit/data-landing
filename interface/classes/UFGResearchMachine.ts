@@ -1,3 +1,4 @@
+import { IFGRecipeProducerInterface } from '../interfaces/IFGRecipeProducerInterface';
 import { UStaticMesh } from '../native/assets';
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
@@ -5,7 +6,7 @@ import { Unknown } from '../native/unknown';
 import { AFGCharacterPlayer } from './AFGCharacterPlayer';
 import { UFGResearchRecipe } from './UFGResearchRecipe';
 
-export interface UFGResearchMachine {
+export interface UFGResearchMachine extends Unknown<'USceneComponent'>, IFGRecipeProducerInterface {
   mCurrentResearchRecipe: classReference<UFGResearchRecipe>;
 
   mPlayerUsingMachine: AFGCharacterPlayer;

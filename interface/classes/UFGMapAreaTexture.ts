@@ -1,4 +1,5 @@
 import { UTexture2D } from '../native/assets';
+import { UObject } from '../native/classes';
 import { int32, uint8 } from '../native/primitive';
 import { Color } from '../native/structs';
 import { FColorMapAreaPair } from '../structs/FColorMapAreaPair';
@@ -6,7 +7,7 @@ import { FColorMapAreaPair } from '../structs/FColorMapAreaPair';
 import { AFGGameState } from './AFGGameState';
 import { AFGMinimapCaptureActor } from './AFGMinimapCaptureActor';
 
-export interface UFGMapAreaTexture {
+export interface UFGMapAreaTexture extends UObject {
   /**
    * This is the texture that the level designers made to define areas on the map
    */

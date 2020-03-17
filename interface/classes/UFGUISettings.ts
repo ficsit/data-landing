@@ -1,7 +1,7 @@
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 
-export interface UFGUISettings {
+export interface UFGUISettings extends Unknown<'UDeveloperSettings'> {
   /**
    * Widget used to show that the user is setting up a server
    */

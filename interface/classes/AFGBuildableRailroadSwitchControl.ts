@@ -1,8 +1,9 @@
 import { int32 } from '../native/primitive';
 
+import { AFGBuildableFactory } from './AFGBuildableFactory';
 import { UFGRailroadTrackConnectionComponent } from './UFGRailroadTrackConnectionComponent';
 
-export interface AFGBuildableRailroadSwitchControl {
+export interface AFGBuildableRailroadSwitchControl extends AFGBuildableFactory {
   /**
    * Connection we control.
    */

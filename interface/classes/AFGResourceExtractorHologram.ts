@@ -3,10 +3,11 @@ import { IFGExtractableResourceInterface } from '../interfaces/IFGExtractableRes
 import { ScriptInterface, classReference } from '../native/references';
 
 import { AFGBuildableResourceExtractor } from './AFGBuildableResourceExtractor';
+import { AFGFactoryHologram } from './AFGFactoryHologram';
 import { UFGConstructDisqualifier } from './UFGConstructDisqualifier';
 import { UFGResourceDescriptor } from './UFGResourceDescriptor';
 
-export interface AFGResourceExtractorHologram {
+export interface AFGResourceExtractorHologram extends AFGFactoryHologram {
   /**
    * What form can the overlapping resources be in.
    */

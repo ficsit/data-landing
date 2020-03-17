@@ -6,7 +6,7 @@ import { UFGItemDescriptor } from './UFGItemDescriptor';
 import { UFGMessageBase } from './UFGMessageBase';
 import { UFGSchematic } from './UFGSchematic';
 
-export interface UFGResourceSinkSettings {
+export interface UFGResourceSinkSettings extends Unknown<'UDeveloperSettings'> {
   mPointsDataTable: objectReference<Unknown<'UDataTable'>>;
 
   mRewardLevelsDataTable: objectReference<Unknown<'UDataTable'>>;

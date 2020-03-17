@@ -3,7 +3,7 @@ import { Unknown } from '../native/unknown';
 import { FAudioVolumeMap } from '../structs/FAudioVolumeMap';
 import { FFGKeyMapping } from '../structs/FFGKeyMapping';
 
-export interface UFGGameUserSettings {
+export interface UFGGameUserSettings extends Unknown<'UGameUserSettings'> {
   /**
    * Called when arachnophobia mode is changed
    */

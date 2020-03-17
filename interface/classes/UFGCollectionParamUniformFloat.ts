@@ -4,7 +4,7 @@ import { Unknown } from '../native/unknown';
 /**
  *
  */
-export interface UFGCollectionParamUniformFloat {
+export interface UFGCollectionParamUniformFloat extends Unknown<'UDistributionVector'> {
   Collection: Unknown<'UMaterialParameterCollection'>;
 
   WindDirectionParamName: string;

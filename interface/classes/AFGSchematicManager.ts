@@ -1,12 +1,14 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { float, int32 } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 import { FSchematicCost } from '../structs/FSchematicCost';
 
+import { AFGSubsystem } from './AFGSubsystem';
 import { UFGMessageBase } from './UFGMessageBase';
 import { UFGSchematic } from './UFGSchematic';
 
-export interface AFGSchematicManager {
+export interface AFGSchematicManager extends AFGSubsystem, IFGSaveInterface {
   /**
    * Called when we players are granted a schematic.
    */

@@ -1,9 +1,10 @@
 import { Unknown } from '../native/unknown';
 
+import { AFGBuildable } from './AFGBuildable';
 import { UFGRoadConnectionComponent } from './UFGRoadConnectionComponent';
 import { UFGSplineComponent } from './UFGSplineComponent';
 
-export interface AFGBuildableRoad {
+export interface AFGBuildableRoad extends AFGBuildable {
   /**
    * First connection on track
    */

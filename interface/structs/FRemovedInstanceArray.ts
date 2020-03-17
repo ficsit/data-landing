@@ -1,11 +1,12 @@
 import { AFGFoliageRemoval } from '../classes/AFGFoliageRemoval';
+import { Unknown } from '../native/unknown';
 
 import { FRemovedInstance } from './FRemovedInstance';
 
 /**
  * Wrapper around the Items struct to enable custom delta serialization (we send a part of the data to the client every frame instead of sending it all in one frame)
  */
-export interface FRemovedInstanceArray {
+export interface FRemovedInstanceArray extends Unknown<'FFastArraySerializer'> {
   /**
    * @todogc: Investigate if we can move this into a TWeakObjectPointer to reduce strain on gc
    */

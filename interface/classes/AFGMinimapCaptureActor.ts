@@ -1,8 +1,9 @@
 import { float, int32 } from '../native/primitive';
+import { Unknown } from '../native/unknown';
 
 import { UFGMapAreaTexture } from './UFGMapAreaTexture';
 
-export interface AFGMinimapCaptureActor {
+export interface AFGMinimapCaptureActor extends Unknown<'ASceneCapture2D'> {
   /**
    * Do we want the foliage to be considered for the height data generation?
    */

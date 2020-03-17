@@ -3,7 +3,9 @@ import { Unknown } from '../native/unknown';
 import { FRailroadVehicleInputRate } from '../structs/FRailroadVehicleInputRate';
 import { FReplicatedRailroadVehicleState } from '../structs/FReplicatedRailroadVehicleState';
 
-export interface UFGLocomotiveMovementComponent {
+import { UFGRailroadVehicleMovementComponent } from './UFGRailroadVehicleMovementComponent';
+
+export interface UFGLocomotiveMovementComponent extends UFGRailroadVehicleMovementComponent {
   /**
    * replicated state of vehicle
    */

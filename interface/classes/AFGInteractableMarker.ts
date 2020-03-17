@@ -4,7 +4,7 @@ import { Unknown } from '../native/unknown';
 
 import { AFGPlayerController } from './AFGPlayerController';
 
-export interface AFGInteractableMarker {
+export interface AFGInteractableMarker extends AActor {
   mIconWidget: Unknown<'UWidgetComponent'>;
 
   mSplineMesh: Unknown<'USplineMeshComponent'>;

@@ -1,8 +1,9 @@
+import { UObject } from '../native/classes';
 import { float, int32 } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 
-export interface UFGAttack {
+export interface UFGAttack extends UObject {
   /**
    * Animation to play when attacking
    */

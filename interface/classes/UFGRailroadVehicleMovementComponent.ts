@@ -1,8 +1,9 @@
 import { float } from '../native/primitive';
+import { Unknown } from '../native/unknown';
 import { FCouplerSetup } from '../structs/FCouplerSetup';
 import { FWheelsetSetup } from '../structs/FWheelsetSetup';
 
-export interface UFGRailroadVehicleMovementComponent {
+export interface UFGRailroadVehicleMovementComponent extends Unknown<'UPawnMovementComponent'> {
   /**
    * Wheelsets for this train. Front is 0 and back is 1.
    */

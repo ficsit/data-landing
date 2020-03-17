@@ -1,3 +1,5 @@
+import { IFGSignificanceInterface } from '../interfaces/IFGSignificanceInterface';
+import { AActor } from '../native/classes';
 import { float } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
@@ -5,7 +7,10 @@ import { Unknown } from '../native/unknown';
 import { UFGDotComponent } from './UFGDotComponent';
 import { UFGSharedPostProcessSettings } from './UFGSharedPostProcessSettings';
 
-export interface AFGGasPillar {
+export interface AFGGasPillar
+  extends AActor,
+    IFGSignificanceInterface,
+    Unknown<'IInterface_PostProcessVolume'> {
   /**
    * Mesh for the gas pillar
    */

@@ -6,7 +6,7 @@ import { UFGSignElementData } from './UFGSignElementData';
 import { UFGSignElementDragWidget } from './UFGSignElementDragWidget';
 import { UFGSignElementSettingsWidget } from './UFGSignElementSettingsWidget';
 
-export interface UFGSignElementWidget {
+export interface UFGSignElementWidget extends Unknown<'UUserWidget'> {
   /**
    * Border widget to indicate object selection
    */

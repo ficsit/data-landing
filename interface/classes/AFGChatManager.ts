@@ -2,7 +2,9 @@ import { float, int32 } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 import { FChatMessageStruct } from '../structs/FChatMessageStruct';
 
-export interface AFGChatManager {
+import { AFGSubsystem } from './AFGSubsystem';
+
+export interface AFGChatManager extends AFGSubsystem {
   /**
    * Called when you get a new local message
    */

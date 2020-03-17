@@ -1,3 +1,4 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { float, int32 } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
@@ -25,7 +26,7 @@ import { UFGMapArea } from './UFGMapArea';
 import { UFGMessageBase } from './UFGMessageBase';
 import { UFGRecipe } from './UFGRecipe';
 
-export interface AFGGameState {
+export interface AFGGameState extends Unknown<'AGameState'>, IFGSaveInterface {
   /**
    * Called on all players when any player enters a new map area.
    */

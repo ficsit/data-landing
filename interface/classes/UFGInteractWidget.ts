@@ -3,7 +3,7 @@ import { float } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 
-export interface UFGInteractWidget {
+export interface UFGInteractWidget extends Unknown<'UUserWidget'> {
   /**
    * If we should take the keyboard input from the player. The player won't be able to move around.
    */

@@ -1,7 +1,9 @@
 import { float } from '../native/primitive';
 import { FFoundationSideSelectionFlags } from '../structs/FFoundationSideSelectionFlags';
 
-export interface AFGBuildableWalkway {
+import { AFGBuildableFactoryBuilding } from './AFGBuildableFactoryBuilding';
+
+export interface AFGBuildableWalkway extends AFGBuildableFactoryBuilding {
   /**
    * Size of the walkway (size of one side of the square part).
    */

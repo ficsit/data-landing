@@ -1,1 +1,3 @@
-export interface UFGUseState_ConveyorBeltFullInventory {}
+import { UFGUseState } from './UFGUseState';
+
+export interface UFGUseState_ConveyorBeltFullInventory extends UFGUseState {}

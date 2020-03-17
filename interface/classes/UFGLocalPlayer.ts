@@ -1,6 +1,6 @@
 import { Unknown } from '../native/unknown';
 
-export interface UFGLocalPlayer {
+export interface UFGLocalPlayer extends Unknown<'ULocalPlayer'> {
   mOnLoginStateChanged: Unknown<'FOnLoginStateChanged'>;
 
   /**

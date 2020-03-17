@@ -3,7 +3,9 @@ import { float } from '../native/primitive';
 import { Vector } from '../native/structs';
 import { Unknown } from '../native/unknown';
 
-export interface UFGConsumableDescriptor {
+import { UFGEquipmentDescriptor } from './UFGEquipmentDescriptor';
+
+export interface UFGConsumableDescriptor extends UFGEquipmentDescriptor {
   /**
    * Sound played when consuming
    */

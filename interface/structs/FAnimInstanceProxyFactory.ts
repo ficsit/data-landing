@@ -1,6 +1,7 @@
 import { float, uint8 } from '../native/primitive';
+import { Unknown } from '../native/unknown';
 
-export interface FAnimInstanceProxyFactory {
+export interface FAnimInstanceProxyFactory extends Unknown<'FAnimInstanceProxy'> {
   /**
    * saved DT
    */

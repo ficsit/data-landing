@@ -1,6 +1,7 @@
 import { float } from '../native/primitive';
+import { Unknown } from '../native/unknown';
 
-export interface UFGCameraModifierLimitLook {
+export interface UFGCameraModifierLimitLook extends Unknown<'UCameraModifier'> {
   /**
    * The max rotation in pitch ( abs value )
    */
