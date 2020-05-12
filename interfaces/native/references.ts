@@ -17,9 +17,9 @@ export type classReference<TClass> = packageReference<TClass>;
 export type objectReference<TClass> = packageReference<TClass>;
 
 /**
- * Templated version of [FScriptInterface](API\Runtime\CoreUObject\UObject\FScriptInterface),
+ * Templated version of [FScriptInterface](API\Runtime\CoreUObject\UObjectBase\FScriptInterface),
  * which provides accessors and operators for referencing the interface portion
- * of a [UObject](API\Runtime\CoreUObject\UObject\UObject) that implements a
+ * of a [UObjectBase](API\Runtime\CoreUObject\UObjectBase\UObjectBase) that implements a
  * native interface.
  *
  * https://docs.unrealengine.com/en-US/API/Runtime/CoreUObject/UObject/TScriptInterface/index.html
