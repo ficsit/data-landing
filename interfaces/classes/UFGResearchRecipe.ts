@@ -5,7 +5,6 @@ import { Unknown } from '../native/unknown';
 
 import { UFGItemDescriptor } from './UFGItemDescriptor';
 import { UFGRecipe } from './UFGRecipe';
-import { UFGResearchRecipe } from './UFGResearchRecipe';
 import { UFGSchematic } from './UFGSchematic';
 
 export interface UFGResearchRecipe extends UFGRecipe {

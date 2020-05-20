@@ -8,7 +8,6 @@ import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 import { FItemAmount } from '../structs/FItemAmount';
 
-import { UFGSchematic } from './UFGSchematic';
 import { UFGSchematicCategory } from './UFGSchematicCategory';
 import { UFGUnlock } from './UFGUnlock';
 

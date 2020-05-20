@@ -5,7 +5,6 @@ import { classReference } from '../native/references';
 import { Vector } from '../native/structs';
 import { Unknown } from '../native/unknown';
 
-import { AFGHologram } from './AFGHologram';
 import { UFGRecipe } from './UFGRecipe';
 
 export interface AFGHologram extends AActor, IFGConstructionMessageInterface {

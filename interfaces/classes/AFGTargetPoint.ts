@@ -2,7 +2,6 @@ import { AActor } from '../native/classes';
 import { float, int32 } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
-import { AFGTargetPoint } from './AFGTargetPoint';
 import { AFGWheeledVehicle } from './AFGWheeledVehicle';
 
 export interface AFGTargetPoint extends AActor, Unknown<'IFGSaveInterface'> {
