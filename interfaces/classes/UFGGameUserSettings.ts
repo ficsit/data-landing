@@ -84,7 +84,7 @@ export interface UFGGameUserSettings extends Unknown<'UGameUserSettings'> {
   /**
    * The changed values that we want to save to file
    */
-  mIntValues: Record<string, int32>;
+  mIntValues: Map<string, int32>;
 
-  mFloatValues: Record<string, float>;
+  mFloatValues: Map<string, float>;
 }

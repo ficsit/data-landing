@@ -23,7 +23,7 @@ export interface UFGRadiationSettings extends Unknown<'UDeveloperSettings'> {
 
   mRadiationFalloffByDistance: float;
 
-  mNodeRadiationPurityAmounts: Record<EResourcePurity, int32>;
+  mNodeRadiationPurityAmounts: Map<EResourcePurity, int32>;
 
   mCalculateNewValues: boolean;
 

@@ -43,12 +43,12 @@ export interface AFGBuildableSubsystem extends AFGSubsystem, Unknown<'IFGSaveInt
    */
   mBuildableInstancesActor: AActor;
 
-  mBuildableMeshInstances: Record<UStaticMesh, Unknown<'UProxyHierarchicalInstancedStaticMeshComponent'>>;
+  mBuildableMeshInstances: Map<UStaticMesh, Unknown<'UProxyHierarchicalInstancedStaticMeshComponent'>>;
 
   /**
    * /
    */
-  mColoredInstances: Record<UStaticMesh, UFGColoredInstanceManager>;
+  mColoredInstances: Map<UStaticMesh, UFGColoredInstanceManager>;
 
   mColorSlotsPrimary: Color;
 
@@ -59,7 +59,7 @@ export interface AFGBuildableSubsystem extends AFGSubsystem, Unknown<'IFGSaveInt
   /**
    * This is also used for non-colored materials, for example, the conveyor belt materials so that the same instance can be applied to many different belts
    */
-  mFactoryColoredMaterialMap: Record<string, UFGFactoryMaterialInstanceManager>;
+  mFactoryColoredMaterialMap: Map<string, UFGFactoryMaterialInstanceManager>;
 
   /**
    * Begin Fixed Factory Tick Config Parameters

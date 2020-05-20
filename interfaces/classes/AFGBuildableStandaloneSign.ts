@@ -12,7 +12,7 @@ export interface AFGBuildableStandaloneSign extends AFGBuildable, IFGSignInterfa
   /**
    * Map of Element Ids to their associated component
    */
-  mDataToComponentMap: Record<int32, Unknown<'USceneComponent'>>;
+  mDataToComponentMap: Map<int32, Unknown<'USceneComponent'>>;
 
   /**
    * Root Component that holds all the sign elements, text, mesh etc.

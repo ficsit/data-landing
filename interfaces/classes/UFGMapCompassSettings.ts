@@ -3,7 +3,7 @@ import { float } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
 export interface UFGMapCompassSettings extends Unknown<'UDeveloperSettings'> {
-  mCompassViewDistances: Record<ECompassViewDistance, float>;
+  mCompassViewDistances: Map<ECompassViewDistance, float>;
 
   mLowestWorldLocation: float;
 

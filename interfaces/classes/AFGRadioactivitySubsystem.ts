@@ -7,7 +7,7 @@ export interface AFGRadioactivitySubsystem extends AFGSubsystem {
   /**
    * All the radioactive sources.
    */
-  mSources: Record<UObject, FRadioactiveSource>;
+  mSources: Map<UObject, FRadioactiveSource>;
 
   /**
    * All actors that can take damage from radiation.

@@ -37,7 +37,7 @@ export interface UFGResourceSettings extends UFGSettings {
   /**
    * How many of diffrent items can be in the same stack
    */
-  mStackSizes: Record<int32, EStackSize>;
+  mStackSizes: Map<int32, EStackSize>;
 
   /**
    * The class of item we want to drop when we drop something

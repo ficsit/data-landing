@@ -28,5 +28,5 @@ export interface UFGDeveloperSettings extends Unknown<'UDeveloperSettings'> {
 
   mUnlockArmEquipmentClass: classReference<UFGUnlockArmEquipmentSlot>;
 
-  mSchematicCategoryMigrationData: Record<ESchematicCategory, classReference<UFGSchematicCategory>>;
+  mSchematicCategoryMigrationData: Map<ESchematicCategory, classReference<UFGSchematicCategory>>;
 }

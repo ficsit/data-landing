@@ -22,7 +22,7 @@ export interface AFGBuildableSplitterSmart extends AFGBuildableAttachmentSplitte
 
   mLastItem: FInventoryItem;
 
-  mItemToLastOutputMap: Record<classReference<UFGItemDescriptor>, uint8>;
+  mItemToLastOutputMap: Map<classReference<UFGItemDescriptor>, uint8>;
 
   mLastOutputIndex: int32;
 }

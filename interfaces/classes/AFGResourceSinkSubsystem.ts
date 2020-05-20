@@ -41,12 +41,12 @@ export interface AFGResourceSinkSubsystem extends AFGSubsystem, Unknown<'IFGSave
   /**
    * Cached points per itemdescriptor
    */
-  mResourceSinkPoints: Record<classReference<UFGItemDescriptor>, int32>;
+  mResourceSinkPoints: Map<classReference<UFGItemDescriptor>, int32>;
 
   /**
    * The messages that should play if the player tries to sink a item that you can't sink
    */
-  mFailedItemSinkMessages: Record<classReference<UFGItemDescriptor>, classReference<UFGMessageBase>>;
+  mFailedItemSinkMessages: Map<classReference<UFGItemDescriptor>, classReference<UFGMessageBase>>;
 
   /**
    * The items that the player tried to sink that you can't sink that is also present in mFailedItemSinkMessages

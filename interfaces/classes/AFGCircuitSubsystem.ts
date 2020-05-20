@@ -8,7 +8,7 @@ export interface AFGCircuitSubsystem extends AFGSubsystem, Unknown<'IFGSaveInter
   /**
    * Map with all circuits and the circuit ID as the key.
    */
-  mCircuits: Record<int32, UFGCircuit>;
+  mCircuits: Map<int32, UFGCircuit>;
 
   /**
    * @todo There is no support for TMap replication, fix something better than this.

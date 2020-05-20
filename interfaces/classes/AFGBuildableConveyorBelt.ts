@@ -19,7 +19,7 @@ export interface AFGBuildableConveyorBelt extends AFGBuildableConveyorBase {
   /**
    * Meshes for items.
    */
-  mItemMeshMap: Record<string, Unknown<'UInstancedStaticMeshComponent'>>;
+  mItemMeshMap: Map<string, Unknown<'UInstancedStaticMeshComponent'>>;
 
   /**
    * Compact representation of mSplineComponent, used for replication and save game

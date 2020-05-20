@@ -50,5 +50,5 @@ export interface AFGBuildableConveyorLift extends AFGBuildableConveyorBase {
   /**
    * Meshes for items.
    */
-  mItemMeshMap: Record<string, Unknown<'UInstancedStaticMeshComponent'>>;
+  mItemMeshMap: Map<string, Unknown<'UInstancedStaticMeshComponent'>>;
 }
