@@ -8,5 +8,5 @@ export interface AFGPipeSubsystem extends AFGSubsystem, Unknown<'IFGSaveInterfac
   /**
    * Map with all circuits and the circuit ID as the key.
    */
-  mNetworks: Record<int32, AFGPipeNetwork>;
+  mNetworks: Map<int32, AFGPipeNetwork>;
 }

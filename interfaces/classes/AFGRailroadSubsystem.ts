@@ -30,7 +30,7 @@ export interface AFGRailroadSubsystem extends AFGSubsystem, Unknown<'IFGSaveInte
   /**
    * All the train tracks in the world, separated by connectivity.
    */
-  mTrackGraphs: Record<int32, FTrackGraph>;
+  mTrackGraphs: Map<int32, FTrackGraph>;
 
   /**
    * All station identifiers in the world.

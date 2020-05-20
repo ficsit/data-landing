@@ -21,5 +21,5 @@ export interface AFGBuildableAttachmentSplitter extends AFGBuildableConveyorAtta
   /**
    * Store last cached available space and if an item have been grabbed by the connected components
    */
-  mConveyorSpaceData: Record<Unknown<'UFGFactoryConnectionComponent'>, FConveyorSpaceData>;
+  mConveyorSpaceData: Map<Unknown<'UFGFactoryConnectionComponent'>, FConveyorSpaceData>;
 }

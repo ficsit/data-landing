@@ -55,7 +55,7 @@ export interface AFGBuildable
   /**
    * Map of colorable mesh materials to their respective colored factory material instance manager
    */
-  mMaterialNameToInstanceManager: Record<string, UFGFactoryMaterialInstanceManager>;
+  mMaterialNameToInstanceManager: Map<string, UFGFactoryMaterialInstanceManager>;
 
   /**
    * The primary color of this buildable

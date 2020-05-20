@@ -17,7 +17,7 @@ export interface UFGOptionsSettings extends Unknown<'UDeveloperSettings'> {
 
   mUserInterfaceOptions: FOptionRowData[];
 
-  mOptionTypeWidgetsClasses: Record<EOptionType, classReference<UFGOptionsValueController>>;
+  mOptionTypeWidgetsClasses: Map<EOptionType, classReference<UFGOptionsValueController>>;
 
   mOptionRowWidgetClass: classReference<UFGDynamicOptionsRow>;
 }

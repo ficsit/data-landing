@@ -5,12 +5,12 @@ export interface AFGGameSession extends Unknown<'AGameSession'> {
   /**
    * Used to keep track of players when they last tried to login and failed to detect brute force logins
    */
-  mLastLoginFailTime: Record<Unknown<'APlayerController'>, Unknown<'double'>>;
+  mLastLoginFailTime: Map<Unknown<'APlayerController'>, Unknown<'double'>>;
 
   /**
    * Used to keep track of how many times a player has failed to login in a row
    */
-  mFailedLoginCount: Record<Unknown<'APlayerController'>, int32>;
+  mFailedLoginCount: Map<Unknown<'APlayerController'>, int32>;
 
   /**
    * List of logged in admins

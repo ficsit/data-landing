@@ -24,9 +24,9 @@ export interface FOptionRowData {
 
   DefaultSliderValue: float;
 
-  IntegerSelectionValues: Record<string, int32>;
+  IntegerSelectionValues: Map<string, int32>;
 
-  FloatSelectionValues: Record<string, float>;
+  FloatSelectionValues: Map<string, float>;
 
   DefaultSelectionValue: string;
 

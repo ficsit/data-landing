@@ -8,5 +8,5 @@ export interface AFGFoundationSubsystem extends AFGSubsystem, Unknown<'IFGSaveIn
   /**
    * All the buildings in the game, map with foundation ID and the building struct.
    */
-  mBuildings: Record<int32, FBuilding>;
+  mBuildings: Map<int32, FBuilding>;
 }

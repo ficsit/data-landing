@@ -13,11 +13,11 @@ export interface UFGOutlineComponent extends Unknown<'USceneComponent'> {
 
   mActiveMultiOutlineActors: AActor[];
 
-  mCachedActorMaterials: Record<AActor, FCachedMeshToMaterialObject>;
+  mCachedActorMaterials: Map<AActor, FCachedMeshToMaterialObject>;
 
-  mCachedSplineComponentMaterials: Record<UFGSplineComponent, FCachedSplineMeshToMaterialObject>;
+  mCachedSplineComponentMaterials: Map<UFGSplineComponent, FCachedSplineMeshToMaterialObject>;
 
-  mCachedProxyMeshMaterials: Record<
+  mCachedProxyMeshMaterials: Map<
     Unknown<'UProxyInstancedStaticMeshComponent'>,
     FCachedMaterialInterfaceArray
   >;

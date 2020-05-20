@@ -19,7 +19,7 @@ export interface UFGResourceSinkSettings extends Unknown<'UDeveloperSettings'> {
 
   mNumGlobalHistoryPoints: int32;
 
-  mFailedSinkMessages: Record<classReference<UFGItemDescriptor>, classReference<UFGMessageBase>>;
+  mFailedSinkMessages: Map<classReference<UFGItemDescriptor>, classReference<UFGMessageBase>>;
 
   mGenericFailedSinkMessage: classReference<UFGMessageBase>;
 
