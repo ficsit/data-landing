@@ -5,7 +5,6 @@ import { AFGBuildableRailroadSignal } from './AFGBuildableRailroadSignal';
 import { AFGBuildableRailroadStation } from './AFGBuildableRailroadStation';
 import { AFGBuildableRailroadSwitchControl } from './AFGBuildableRailroadSwitchControl';
 import { UFGConnectionComponent } from './UFGConnectionComponent';
-import { UFGRailroadTrackConnectionComponent } from './UFGRailroadTrackConnectionComponent';
 
 export interface UFGRailroadTrackConnectionComponent extends UFGConnectionComponent {
   /**

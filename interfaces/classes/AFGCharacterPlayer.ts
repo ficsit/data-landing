@@ -15,7 +15,6 @@ import { FUseState } from '../structs/FUseState';
 
 import { AFGBuildGun } from './AFGBuildGun';
 import { AFGCharacterBase } from './AFGCharacterBase';
-import { AFGCharacterPlayer } from './AFGCharacterPlayer';
 import { AFGDriveablePawn } from './AFGDriveablePawn';
 import { AFGEquipment } from './AFGEquipment';
 import { AFGEquipmentAttachment } from './AFGEquipmentAttachment';

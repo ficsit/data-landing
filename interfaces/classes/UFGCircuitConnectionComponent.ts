@@ -1,7 +1,6 @@
 import { int32, uint8 } from '../native/primitive';
 
 import { AFGBuildableWire } from './AFGBuildableWire';
-import { UFGCircuitConnectionComponent } from './UFGCircuitConnectionComponent';
 import { UFGConnectionComponent } from './UFGConnectionComponent';
 
 export interface UFGCircuitConnectionComponent extends UFGConnectionComponent {
