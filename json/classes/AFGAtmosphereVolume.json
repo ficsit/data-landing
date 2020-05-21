@@ -1,0 +1,758 @@
+{
+  "type": "object",
+  "properties": {
+    "mPriority": {
+      "description": "A floating point number.",
+      "type": "number"
+    },
+    "mBlendDistance": {
+      "description": "The distance that the fog blends over",
+      "type": "number"
+    },
+    "mFogHeight": {
+      "description": "Interpolate the fog height during the day"
+    },
+    "mFogDensity": {
+      "description": "Interpolate the fog height during the day"
+    },
+    "mFogInscatteringColor": {
+      "description": "Interpolate the fog height during the day"
+    },
+    "mFullyDirectionalInscatteringColorDistance": {
+      "description": "Interpolate the fog height during the day"
+    },
+    "mNonDirectionalInscatteringColorDistance": {
+      "description": "Interpolate the fog height during the day"
+    },
+    "mDirectionalInscatteringExponent": {
+      "description": "Interpolate the fog height during the day"
+    },
+    "mDirectionalInscatteringStartDistance": {
+      "description": "Interpolate the fog height during the day"
+    },
+    "mDirectionalInscatteringColor": {
+      "description": "Interpolate the fog height during the day"
+    },
+    "mFogHeightFalloff": {
+      "description": "Interpolate the fog height during the day"
+    },
+    "mFogMaxOpacity": {
+      "description": "Interpolate the fog height during the day"
+    },
+    "mStartDistance": {
+      "description": "Interpolate the fog height during the day"
+    },
+    "mFogCutoffDistance": {
+      "description": "Interpolate the fog height during the day"
+    },
+    "mHorizonColorCurve": {
+      "description": "How the color of the horizon changes during the day"
+    },
+    "mZenithColorCurve": {
+      "description": "How the color of the zenith changes during the day"
+    },
+    "mCloudColorCurve": {
+      "description": "How the color of clouds zenith changes during the day"
+    },
+    "mSunLightColorCurve": {
+      "description": "How the opakeness of the clouds change during the day"
+    },
+    "mMoonLightColorCurve": {
+      "description": "How the opakeness of the clouds change during the day"
+    },
+    "mSunIntensity": {
+      "description": "How the opakeness of the clouds change during the day"
+    },
+    "mMoonIntensity": {
+      "description": "How the opakeness of the clouds change during the day"
+    },
+    "mCloudOpacity": {
+      "description": "How the opakeness of the clouds change during the day"
+    },
+    "mBlendWeight": {
+      "description": "The blend weight of the post process volume",
+      "type": "number"
+    },
+    "mWhiteTemp": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
+    "mWhiteTint": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
+    "mColorSaturation": {
+      "description": "Color Correction controls"
+    },
+    "mColorContrast": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
+    "mColorGamma": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
+    "mColorGain": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
+    "mColorOffset": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
+    "mColorSaturationShadows": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
+    "mColorContrastShadows": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
+    "mColorGammaShadows": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
+    "mColorGainShadows": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
+    "mColorOffsetShadows": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
+    "mColorSaturationMidtones": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
+    "mColorContrastMidtones": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
+    "mColorGammaMidtones": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
+    "mColorGainMidtones": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
+    "mColorOffsetMidtones": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
+    "mColorSaturationHighlights": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
+    "mColorContrastHighlights": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
+    "mColorGammaHighlights": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
+    "mColorGainHighlights": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
+    "mColorOffsetHighlights": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
+    "mColorCorrectionHighlightsMin": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
+    "mColorCorrectionShadowsMax": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
+    "mBlueCorrection": {
+      "description": "Correct for artifacts with \"electric\" blues due to the ACEScg color space. Bright blue desaturates instead of going to violet."
+    },
+    "mExpandGamut": {
+      "description": "Expand bright saturated colors outside the sRGB gamut to fake wide gamut rendering."
+    },
+    "mSceneColorTint": {
+      "description": "Scene tint color"
+    },
+    "mFilmSlope": {
+      "description": "Film Controls"
+    },
+    "mFilmToe": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
+    "mFilmShoulder": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
+    "mFilmBlackClip": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
+    "mFilmWhiteClip": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
+    "mContrast_DEPRECATED": {
+      "description": "BEGIN DEPRECATED"
+    },
+    "mGain_DEPRECATED": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
+    "mSaturation_DEPRECATED": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
+    "mEnableContrast_DEPRECATED": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableGain_DEPRECATED": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableSaturation_DEPRECATED": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableFogHeight": {
+      "description": "Height fog bools",
+      "type": "number"
+    },
+    "mEnableFogDensity": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableFogInscatteringColor": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableFullyDirectionalInscatteringColorDistance": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableNonDirectionalInscatteringColorDistance": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableDirectionalInscatteringExponent": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableDirectionalInscatteringStartDistance": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableDirectionalInscatteringColor": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableFogHeightFalloff": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableFogMaxOpacity": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableStartDistance": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableFogCutoffDistance": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mOverrideHorizonColor": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mOverrideMoonIntensity": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mOverrideCloudOpacity": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mOverrideSunIntensity": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mOverrideZenithColor": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mOverrideCloudColor": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mOverrideSunLightColor": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mOverrideMoonLightColor": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableWhiteTemp": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableWhiteTint": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableColorSaturation": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableColorContrast": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableColorGamma": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableColorGain": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableColorOffset": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableFilmSlope": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableFilmToe": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableFilmShoulder": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableFilmBlackClip": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableFilmWhiteClip": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableColorSaturationShadows": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableColorContrastShadows": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableColorGammaShadows": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableColorGainShadows": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableColorOffsetShadows": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableColorSaturationMidtones": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableColorContrastMidtones": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableColorGammaMidtones": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableColorGainMidtones": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableColorOffsetMidtones": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableColorSaturationHighlights": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableColorContrastHighlights": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableColorGammaHighlights": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableColorGainHighlights": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableColorOffsetHighlights": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableColorCorrectionShadowsMax": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableColorCorrectionHighlightsMin": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableBlueCorrection": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableExpandGamut": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mEnableSceneColorTint": {
+      "description": "An 8-bit unsigned integer.",
+      "type": "number"
+    },
+    "mPreviewTime": {
+      "description": "A stampdown in time, where we want to show of the preview settings",
+      "type": "number"
+    },
+    "mPreviewSettings": {
+      "$ref": "#/definitions/FExponentialFogSettings",
+      "description": "A preview of all the settings in the current fog-volume"
+    }
+  },
+  "required": [
+    "mBlendDistance",
+    "mBlendWeight",
+    "mBlueCorrection",
+    "mCloudColorCurve",
+    "mCloudOpacity",
+    "mColorContrast",
+    "mColorContrastHighlights",
+    "mColorContrastMidtones",
+    "mColorContrastShadows",
+    "mColorCorrectionHighlightsMin",
+    "mColorCorrectionShadowsMax",
+    "mColorGain",
+    "mColorGainHighlights",
+    "mColorGainMidtones",
+    "mColorGainShadows",
+    "mColorGamma",
+    "mColorGammaHighlights",
+    "mColorGammaMidtones",
+    "mColorGammaShadows",
+    "mColorOffset",
+    "mColorOffsetHighlights",
+    "mColorOffsetMidtones",
+    "mColorOffsetShadows",
+    "mColorSaturation",
+    "mColorSaturationHighlights",
+    "mColorSaturationMidtones",
+    "mColorSaturationShadows",
+    "mContrast_DEPRECATED",
+    "mDirectionalInscatteringColor",
+    "mDirectionalInscatteringExponent",
+    "mDirectionalInscatteringStartDistance",
+    "mEnableBlueCorrection",
+    "mEnableColorContrast",
+    "mEnableColorContrastHighlights",
+    "mEnableColorContrastMidtones",
+    "mEnableColorContrastShadows",
+    "mEnableColorCorrectionHighlightsMin",
+    "mEnableColorCorrectionShadowsMax",
+    "mEnableColorGain",
+    "mEnableColorGainHighlights",
+    "mEnableColorGainMidtones",
+    "mEnableColorGainShadows",
+    "mEnableColorGamma",
+    "mEnableColorGammaHighlights",
+    "mEnableColorGammaMidtones",
+    "mEnableColorGammaShadows",
+    "mEnableColorOffset",
+    "mEnableColorOffsetHighlights",
+    "mEnableColorOffsetMidtones",
+    "mEnableColorOffsetShadows",
+    "mEnableColorSaturation",
+    "mEnableColorSaturationHighlights",
+    "mEnableColorSaturationMidtones",
+    "mEnableColorSaturationShadows",
+    "mEnableContrast_DEPRECATED",
+    "mEnableDirectionalInscatteringColor",
+    "mEnableDirectionalInscatteringExponent",
+    "mEnableDirectionalInscatteringStartDistance",
+    "mEnableExpandGamut",
+    "mEnableFilmBlackClip",
+    "mEnableFilmShoulder",
+    "mEnableFilmSlope",
+    "mEnableFilmToe",
+    "mEnableFilmWhiteClip",
+    "mEnableFogCutoffDistance",
+    "mEnableFogDensity",
+    "mEnableFogHeight",
+    "mEnableFogHeightFalloff",
+    "mEnableFogInscatteringColor",
+    "mEnableFogMaxOpacity",
+    "mEnableFullyDirectionalInscatteringColorDistance",
+    "mEnableGain_DEPRECATED",
+    "mEnableNonDirectionalInscatteringColorDistance",
+    "mEnableSaturation_DEPRECATED",
+    "mEnableSceneColorTint",
+    "mEnableStartDistance",
+    "mEnableWhiteTemp",
+    "mEnableWhiteTint",
+    "mExpandGamut",
+    "mFilmBlackClip",
+    "mFilmShoulder",
+    "mFilmSlope",
+    "mFilmToe",
+    "mFilmWhiteClip",
+    "mFogCutoffDistance",
+    "mFogDensity",
+    "mFogHeight",
+    "mFogHeightFalloff",
+    "mFogInscatteringColor",
+    "mFogMaxOpacity",
+    "mFullyDirectionalInscatteringColorDistance",
+    "mGain_DEPRECATED",
+    "mHorizonColorCurve",
+    "mMoonIntensity",
+    "mMoonLightColorCurve",
+    "mNonDirectionalInscatteringColorDistance",
+    "mOverrideCloudColor",
+    "mOverrideCloudOpacity",
+    "mOverrideHorizonColor",
+    "mOverrideMoonIntensity",
+    "mOverrideMoonLightColor",
+    "mOverrideSunIntensity",
+    "mOverrideSunLightColor",
+    "mOverrideZenithColor",
+    "mPreviewSettings",
+    "mPreviewTime",
+    "mPriority",
+    "mSaturation_DEPRECATED",
+    "mSceneColorTint",
+    "mStartDistance",
+    "mSunIntensity",
+    "mSunLightColorCurve",
+    "mWhiteTemp",
+    "mWhiteTint",
+    "mZenithColorCurve"
+  ],
+  "definitions": {
+    "UFGActorRepresentation": {
+      "type": "object",
+      "properties": {
+        "mRealActor": {
+          "$ref": "#/definitions/AActor",
+          "description": "This is the real actor that this representation represents"
+        },
+        "mActorLocation": {
+          "description": "This is the actor location"
+        },
+        "mActorRotation": {
+          "description": "This is the actor rotation"
+        },
+        "mIsStatic": {
+          "description": "If the actor is static or can be moved",
+          "type": "boolean"
+        },
+        "mRepresentationTexture": {
+          "description": "This is the texture to show for this actor representation",
+          "type": "object",
+          "properties": {
+            "package": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "package"
+          ]
+        },
+        "mRepresentationText": {
+          "description": "This is the text to show for this actor representation",
+          "type": "string"
+        },
+        "mRepresentationColor": {
+          "$ref": "#/definitions/LinearColor",
+          "description": "This is the color used for the representation of this actor"
+        },
+        "mRepresentationType": {
+          "$ref": "#/definitions/ERepresentationType",
+          "description": "This helps define how this actor representation should be presented"
+        },
+        "mFogOfWarRevealType": {
+          "$ref": "#/definitions/EFogOfWarRevealType"
+        },
+        "mFogOfWarRevealRadius": {
+          "description": "A floating point number.",
+          "type": "number"
+        },
+        "mShouldShowInCompass": {
+          "description": "If this should be shown in the compass or not",
+          "type": "boolean"
+        },
+        "mShouldShowOnMap": {
+          "description": "If this should be shown on the map or not",
+          "type": "boolean"
+        },
+        "mCompassViewDistance": {
+          "$ref": "#/definitions/ECompassViewDistance",
+          "description": "How far away this representation should be shown in the compass"
+        }
+      },
+      "required": [
+        "mActorLocation",
+        "mActorRotation",
+        "mCompassViewDistance",
+        "mFogOfWarRevealRadius",
+        "mFogOfWarRevealType",
+        "mIsStatic",
+        "mRealActor",
+        "mRepresentationColor",
+        "mRepresentationText",
+        "mRepresentationTexture",
+        "mRepresentationType",
+        "mShouldShowInCompass",
+        "mShouldShowOnMap"
+      ]
+    },
+    "AActor": {
+      "description": "Actor is the base class for an Object that can be placed or spawned in a level.\n\nhttps://docs.unrealengine.com/en-US/API/Runtime/Engine/GameFramework/AActor/index.html",
+      "type": "object"
+    },
+    "LinearColor": {
+      "description": "A linear, 32-bit/component floating point RGBA color.\n\nhttps://docs.unrealengine.com/en-US/API/Runtime/Core/Math/FLinearColor/index.html",
+      "type": "object",
+      "properties": {
+        "R": {
+          "description": "The color's red intensity.",
+          "type": "number"
+        },
+        "G": {
+          "description": "The color's green intensity.",
+          "type": "number"
+        },
+        "B": {
+          "description": "The color's blue intensity.",
+          "type": "number"
+        },
+        "A": {
+          "description": "The color's opacity.",
+          "type": "number"
+        }
+      },
+      "required": [
+        "A",
+        "B",
+        "G",
+        "R"
+      ]
+    },
+    "ERepresentationType": {
+      "enum": [
+        0,
+        1,
+        10,
+        11,
+        12,
+        13,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "type": "number"
+    },
+    "EFogOfWarRevealType": {
+      "enum": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "type": "number"
+    },
+    "ECompassViewDistance": {
+      "enum": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "type": "number"
+    },
+    "UFGSoundSplineComponent": {
+      "type": "object",
+      "properties": {
+        "mEmitterInterval": {
+          "description": "Distance beween each emitter on our parent spline, this might be scaled slightly so that we get a point on both start and end",
+          "type": "number"
+        }
+      },
+      "required": [
+        "mEmitterInterval"
+      ]
+    },
+    "FExponentialFogSettings": {
+      "type": "object",
+      "properties": {
+        "FogHeight": {
+          "description": "The ZValue of the fog",
+          "type": "number"
+        },
+        "FogDensity": {
+          "description": "Density of the fog",
+          "type": "number"
+        },
+        "FogInscatteringColor": {
+          "$ref": "#/definitions/LinearColor"
+        },
+        "FullyDirectionalInscatteringColorDistance": {
+          "description": "Distance at which InscatteringColorCubemap should be used directly for the Inscattering Color.",
+          "type": "number"
+        },
+        "NonDirectionalInscatteringColorDistance": {
+          "description": "Distance at which only the average color of InscatteringColorCubemap should be used as Inscattering Color.",
+          "type": "number"
+        },
+        "DirectionalInscatteringExponent": {
+          "description": "A floating point number.",
+          "type": "number"
+        },
+        "DirectionalInscatteringStartDistance": {
+          "description": "A floating point number.",
+          "type": "number"
+        },
+        "DirectionalInscatteringColor": {
+          "$ref": "#/definitions/LinearColor"
+        },
+        "FogHeightFalloff": {
+          "description": "A floating point number.",
+          "type": "number"
+        },
+        "FogMaxOpacity": {
+          "description": "A floating point number.",
+          "type": "number"
+        },
+        "StartDistance": {
+          "description": "Distance from the camera that the fog will start, in world units.",
+          "type": "number"
+        },
+        "FogCutoffDistance": {
+          "description": "Scene elements past this distance will not have fog applied.  This is useful for excluding skyboxes which already have fog baked in.",
+          "type": "number"
+        }
+      },
+      "required": [
+        "DirectionalInscatteringColor",
+        "DirectionalInscatteringExponent",
+        "DirectionalInscatteringStartDistance",
+        "FogCutoffDistance",
+        "FogDensity",
+        "FogHeight",
+        "FogHeightFalloff",
+        "FogInscatteringColor",
+        "FogMaxOpacity",
+        "FullyDirectionalInscatteringColorDistance",
+        "NonDirectionalInscatteringColorDistance",
+        "StartDistance"
+      ]
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}
