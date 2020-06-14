@@ -2,20 +2,8 @@
   "type": "object",
   "properties": {
     "mCurrentRecipe": {
-      "description": "The recipe we're currently running.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGRecipe>",
+      "description": "The recipe we're currently running."
     },
     "mCurrentManufacturingProgress": {
       "description": "Manufacturing progress in range [0,1].",

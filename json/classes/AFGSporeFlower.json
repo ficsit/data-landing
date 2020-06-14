@@ -6,19 +6,7 @@
       "description": "These actor types will trigger the spore flower to emit",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<AActor>"
       }
     },
     "mTriggerActors": {

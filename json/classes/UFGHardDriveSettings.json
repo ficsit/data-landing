@@ -10,20 +10,8 @@
       "description": "Fallback for returning hard drive if no research was available"
     },
     "mHardDriveResearchSchematic": {
-      "description": "The schematic which is used to research hard drives",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGSchematic>",
+      "description": "The schematic which is used to research hard drives"
     }
   },
   "required": [

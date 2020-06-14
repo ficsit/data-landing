@@ -6,15 +6,19 @@
       "type": "number"
     },
     "mFrontBogieRotation": {
+      "$ref": "#/definitions/Rotator",
       "description": "Front Bogie Rotation"
     },
     "mBackBogieRotation": {
+      "$ref": "#/definitions/Rotator",
       "description": "Front Bogie Rotation"
     },
     "mWheelRotation": {
+      "$ref": "#/definitions/Rotator",
       "description": "Wheel Rotation"
     },
     "mFrontConnectorRotation": {
+      "$ref": "#/definitions/Rotator",
       "description": "Front Connector Rotation"
     },
     "mFrontConnectorTranslation": {
@@ -22,6 +26,7 @@
       "description": "Front Connector Translation"
     },
     "mBackConnectorRotation": {
+      "$ref": "#/definitions/Rotator",
       "description": "Back Connector Rotation"
     },
     "mBackConnectorTranslation": {
@@ -29,6 +34,7 @@
       "description": "Back Connector Translation"
     },
     "mTrackCurvature": {
+      "$ref": "#/definitions/Rotator",
       "description": "Track curvature"
     },
     "mForwardSpeed": {

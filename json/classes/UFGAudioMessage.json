@@ -26,32 +26,20 @@
       "description": "An unknown type (likely an Unreal Engine or plugin type)."
     },
     "mTitle": {
-      "description": "I think this may be the title",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "I think this may be the title"
     },
     "mPreviewText": {
-      "description": "Preview text when a message is added",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "Preview text when a message is added"
     },
     "mIsPopup": {
       "description": "Should the message be displayed in a popup?",
       "type": "boolean"
     },
     "mSenderClass": {
-      "description": "Who sent the message",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGMessageSender>",
+      "description": "Who sent the message"
     },
     "mType": {
       "$ref": "#/definitions/EMessageType",
@@ -61,19 +49,7 @@
       "description": "Images to display in the codex",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/UTexture2D"
       }
     }
   },

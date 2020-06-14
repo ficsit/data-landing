@@ -2,20 +2,8 @@
   "type": "object",
   "properties": {
     "mDotClass": {
-      "description": "The dot we should apply to things in the primitive component we are attached to",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGDamageOverTime>",
+      "description": "The dot we should apply to things in the primitive component we are attached to"
     },
     "mActorsToDamage": {
       "description": "The actors we want to damage",

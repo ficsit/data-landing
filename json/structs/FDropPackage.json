@@ -3,8 +3,8 @@
   "type": "object",
   "properties": {
     "DropDisplayText": {
-      "description": "Text showing up when finding the drop.",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "Text showing up when finding the drop."
     },
     "DropChance": {
       "description": "Chance in roulette selection to get the package.",
@@ -18,20 +18,8 @@
       }
     },
     "RequiredSchematic": {
-      "description": "We can not find this package if we haven't purchased this schematic.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGSchematic>",
+      "description": "We can not find this package if we haven't purchased this schematic."
     }
   },
   "required": [

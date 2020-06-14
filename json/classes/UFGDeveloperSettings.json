@@ -5,119 +5,28 @@
       "type": "boolean"
     },
     "mUnlockRecipeClass": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGUnlockRecipe>"
     },
     "mUnlockScannerResourceClass": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGUnlockScannableResource>"
     },
     "mUnlockMapClass": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGUnlockMap>"
     },
     "mUnlockBuildEfficiencyClass": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGUnlockBuildEfficiency>"
     },
     "mUnlockBuildOverclockClass": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGUnlockBuildOverclock>"
     },
     "mUnlockInvetorySlotClass": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGUnlockInventorySlot>"
     },
     "mUnlockArmEquipmentClass": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGUnlockArmEquipmentSlot>"
     },
     "mSchematicCategoryMigrationData": {
-      "$ref": "#/definitions/Map<ESchematicCategory,packageReference<UFGSchematicCategory>>"
+      "$ref": "#/definitions/Map<ESchematicCategory,classReference<UFGSchematicCategory>>"
     }
   },
   "required": [

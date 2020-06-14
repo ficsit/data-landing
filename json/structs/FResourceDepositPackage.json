@@ -6,20 +6,8 @@
       "type": "number"
     },
     "ResourceClass": {
-      "description": "What resource class to use",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGResourceDescriptor>",
+      "description": "What resource class to use"
     },
     "MinAmount": {
       "description": "Amount of resources in deposit as minimum",

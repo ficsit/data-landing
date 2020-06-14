@@ -2,20 +2,7 @@
   "type": "object",
   "properties": {
     "mFogOfWarTexture": {
-      "description": "https://docs.unrealengine.com/en-US/API/Runtime/Engine/Engine/UTexture2D/index.html",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UTexture2D"
     },
     "mMapActors": {
       "type": "array",

@@ -12,20 +12,8 @@
       "description": "The component that will do the damage to actors"
     },
     "mPostProcessSettings": {
-      "description": "Some damage over time volumes will want a post process effect attached to it",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGSharedPostProcessSettings>",
+      "description": "Some damage over time volumes will want a post process effect attached to it"
     },
     "mSignificanceRange": {
       "description": "A floating point number.",

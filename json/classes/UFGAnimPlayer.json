@@ -87,6 +87,7 @@
       "type": "number"
     },
     "mRootRotation": {
+      "$ref": "#/definitions/Rotator",
       "description": "Rotation of root component"
     },
     "mTurnInPlaceLeft": {
@@ -124,6 +125,7 @@
       "type": "number"
     },
     "mActorRotationLastTick": {
+      "$ref": "#/definitions/Rotator",
       "description": "Last Rotation saved"
     },
     "mYawRotationStrength": {

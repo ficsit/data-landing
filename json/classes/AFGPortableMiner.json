@@ -18,20 +18,8 @@
       "type": "number"
     },
     "mInteractWidgetClass": {
-      "description": "The widget that will present our UI.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGInteractWidget>",
+      "description": "The widget that will present our UI."
     },
     "mInventorySize": {
       "description": "How many slots is the inventory",

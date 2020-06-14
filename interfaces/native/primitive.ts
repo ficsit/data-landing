@@ -40,4 +40,12 @@ export type uint32 = number;
 /**
  * A localizable string.
  */
-export type localized = string;
+export interface localized {
+  namespace: string;
+
+  /** The key of this string */
+  key: string;
+
+  /** The source of this string */
+  sourceString: string;
+}

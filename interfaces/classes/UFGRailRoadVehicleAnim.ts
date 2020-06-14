@@ -1,3 +1,4 @@
+import { UAkAudioEvent, UParticleSystem } from '../native/assets';
 import { Unknown } from '../native/unknown';
 import { FAnimInstanceProxyRailRoadVehicle } from '../structs/FAnimInstanceProxyRailRoadVehicle';
 
@@ -37,22 +38,22 @@ export interface UFGRailRoadVehicleAnim extends Unknown<'UAnimInstance'> {
   /**
    * Template for brake sparks particle
    */
-  mBrakeSparkTemplate: Unknown<'UParticleSystem'>;
+  mBrakeSparkTemplate: UParticleSystem;
 
   /**
    * Template for steam particle
    */
-  mSteamTemplate: Unknown<'UParticleSystem'>;
+  mSteamTemplate: UParticleSystem;
 
   /**
    * Sound for when braking stops and steam occurs
    */
-  mBrakeSound: Unknown<'UAkAudioEvent'>;
+  mBrakeSound: UAkAudioEvent;
 
   /**
    * Template for brake effect
    */
-  mHandBrakeVfxTemplate: Unknown<'UParticleSystem'>;
+  mHandBrakeVfxTemplate: UParticleSystem;
 
   /**
    * Template for brake effect

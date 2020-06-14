@@ -5,19 +5,7 @@
       "description": "The items that should have been picked up for this dependency to be met",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<UFGItemDescriptor>"
       }
     },
     "mRequireAllItemsToBePickedUp": {

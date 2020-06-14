@@ -2,24 +2,12 @@
   "type": "object",
   "properties": {
     "ScannableClass": {
-      "description": "Type of object to scan for",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AActor>",
+      "description": "Type of object to scan for"
     },
     "DisplayText": {
-      "description": "Name of object to scan for",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "Name of object to scan for"
     },
     "ScannerLightColor": {
       "$ref": "#/definitions/Color",
@@ -36,20 +24,8 @@
       "type": "number"
     },
     "RequiredSchematic": {
-      "description": "Required schematic to search for this object. None means no requirement.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/softClassReference<UFGSchematic>",
+      "description": "Required schematic to search for this object. None means no requirement."
     }
   },
   "required": [

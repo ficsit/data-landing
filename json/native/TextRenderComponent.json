@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "properties": {
+    "Text": {
+      "$ref": "#/definitions/TextProperty"
+    },
+    "TextMaterial": {
+      "$ref": "#/definitions/classReference<any>"
+    },
+    "Font": {
+      "$ref": "#/definitions/classReference<any>"
+    },
+    "HorizontalAlignment": {
+      "$ref": "#/definitions/EHorizTextAligment"
+    },
+    "TextRenderColor": {
+      "$ref": "#/definitions/Color"
+    },
+    "WorldSize": {
+      "type": "number"
+    },
+    "RelativeLocation": {
+      "$ref": "#/definitions/Vector"
+    },
+    "RelativeRotation": {
+      "$ref": "#/definitions/Rotator"
+    }
+  },
+  "required": [
+    "Font",
+    "HorizontalAlignment",
+    "RelativeLocation",
+    "RelativeRotation",
+    "Text",
+    "TextMaterial",
+    "TextRenderColor",
+    "WorldSize"
+  ]
+}

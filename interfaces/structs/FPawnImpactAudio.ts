@@ -1,5 +1,5 @@
+import { UAkAudioEvent } from '../native/assets';
 import { float } from '../native/primitive';
-import { Unknown } from '../native/unknown';
 
 export interface FPawnImpactAudio {
   /**
@@ -10,5 +10,5 @@ export interface FPawnImpactAudio {
   /**
    * Event to post if the pawn has the specified velocity
    */
-  ImpactEvent: Unknown<'UAkAudioEvent'>;
+  ImpactEvent: UAkAudioEvent;
 }

@@ -2,8 +2,8 @@
   "type": "object",
   "properties": {
     "mDisqfualifyingText": {
-      "description": "Text displayed to the player when they couldn't build",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "Text displayed to the player when they couldn't build"
     }
   },
   "required": [

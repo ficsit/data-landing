@@ -2,7 +2,7 @@
   "type": "object",
   "properties": {
     "Template": {
-      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+      "$ref": "#/definitions/UParticleSystem"
     },
     "Particle": {
       "description": "An unknown type (likely an Unreal Engine or plugin type)."

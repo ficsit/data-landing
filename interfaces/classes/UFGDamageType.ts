@@ -1,5 +1,6 @@
 import { EOverrideSetting } from '../enums/EOverrideSetting';
 import { EPlayOnDamageEvent } from '../enums/EPlayOnDamageEvent';
+import { UAkAudioEvent, UParticleSystem } from '../native/assets';
 import { float } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
@@ -7,7 +8,7 @@ export interface UFGDamageType extends Unknown<'UDamageType'> {
   /**
    * When pawn take damage from a source, they play this take damage event
    */
-  mImpactAudioEvent: Unknown<'UAkAudioEvent'>;
+  mImpactAudioEvent: UAkAudioEvent;
 
   mPlayImpactAudioOn: EPlayOnDamageEvent;
 
@@ -19,7 +20,7 @@ export interface UFGDamageType extends Unknown<'UDamageType'> {
   /**
    * When pawn take damage from a source, they play this take damage event
    */
-  mImpactParticle: Unknown<'UParticleSystem'>;
+  mImpactParticle: UParticleSystem;
 
   mPlayImpactParticleOn: EPlayOnDamageEvent;
 

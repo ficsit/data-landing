@@ -5,36 +5,12 @@
       "description": "Message to display",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<UFGMessageBase>"
       }
     },
     "SchematicUnlocked": {
-      "description": "Associated schematic",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/softClassReference<UFGSchematic>",
+      "description": "Associated schematic"
     }
   },
   "required": [

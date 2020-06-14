@@ -2,12 +2,15 @@
   "type": "object",
   "properties": {
     "mTextMaterial": {
+      "$ref": "#/definitions/UMaterial",
       "description": "Base material to be used for text component material instances"
     },
     "mIconMaterial": {
+      "$ref": "#/definitions/UMaterial",
       "description": "Base material to be used for icon material instances"
     },
     "mBackgroundMaterial": {
+      "$ref": "#/definitions/UMaterial",
       "description": "Base material to be used for sign background material instances"
     },
     "mBackgroundMeshMaterialIndex": {

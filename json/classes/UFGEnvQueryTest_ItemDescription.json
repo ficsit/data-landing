@@ -2,20 +2,8 @@
   "type": "object",
   "properties": {
     "mItemDescriptorClass": {
-      "description": "Class of what descriptor we are looking for",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGItemDescriptor>",
+      "description": "Class of what descriptor we are looking for"
     }
   },
   "required": [

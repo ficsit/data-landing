@@ -1,5 +1,5 @@
 import { float, int32 } from '../native/primitive';
-import { classReference, objectReference } from '../native/references';
+import { classReference, objectReference, softClassReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 
 import { UFGItemDescriptor } from './UFGItemDescriptor';
@@ -15,7 +15,7 @@ export interface UFGResourceSinkSettings extends Unknown<'UDeveloperSettings'> {
 
   mPointCalculationExpression: string;
 
-  mCouponClass: classReference<UFGItemDescriptor>;
+  mCouponClass: softClassReference<UFGItemDescriptor>;
 
   mNumGlobalHistoryPoints: int32;
 

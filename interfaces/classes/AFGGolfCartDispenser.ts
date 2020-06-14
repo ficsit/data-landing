@@ -1,5 +1,5 @@
+import { UMaterialInstance } from '../native/assets';
 import { float } from '../native/primitive';
-import { Unknown } from '../native/unknown';
 
 import { AFGEquipment } from './AFGEquipment';
 
@@ -12,10 +12,10 @@ export interface AFGGolfCartDispenser extends AFGEquipment {
   /**
    * Material on hologram for valid placement.
    */
-  mValidPlacementMaterial: Unknown<'UMaterialInstance'>;
+  mValidPlacementMaterial: UMaterialInstance;
 
   /**
    * Material on hologram for invalid placement.
    */
-  mInvalidPlacementMaterial: Unknown<'UMaterialInstance'>;
+  mInvalidPlacementMaterial: UMaterialInstance;
 }

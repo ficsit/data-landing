@@ -4,7 +4,7 @@ import { ERepresentationType } from '../enums/ERepresentationType';
 import { UTexture2D } from '../native/assets';
 import { AActor, UObject } from '../native/classes';
 import { float, localized } from '../native/primitive';
-import { LinearColor } from '../native/structs';
+import { LinearColor, Rotator } from '../native/structs';
 import { Unknown } from '../native/unknown';
 
 export interface UFGActorRepresentation extends UObject {
@@ -21,7 +21,7 @@ export interface UFGActorRepresentation extends UObject {
   /**
    * This is the actor rotation
    */
-  mActorRotation: Unknown<'FRotator'>;
+  mActorRotation: Rotator;
 
   /**
    * If the actor is static or can be moved

@@ -69,38 +69,14 @@
       "description": "Array with attacks that determine order of attacks",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<UFGAttack>"
       }
     },
     "mIgnoredAggroTargetClasses": {
       "description": "List of aggro target classes that we should not aggro against",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/softClassReference<AActor>"
       }
     },
     "mPanicIgnoreTime": {

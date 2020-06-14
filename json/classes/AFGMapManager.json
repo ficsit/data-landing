@@ -9,20 +9,8 @@
       }
     },
     "mFogOfWarTexture": {
-      "description": "The fog of war texture that is used for the map",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UTexture2D",
+      "description": "The fog of war texture that is used for the map"
     },
     "mCachedMinimapCaptureActor": {
       "$ref": "#/definitions/AFGMinimapCaptureActor",

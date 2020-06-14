@@ -5,19 +5,7 @@
       "description": "All recipes that are available to the producers, i.e. build gun, workbench, manufacturers etc.",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<UFGRecipe>"
       }
     }
   },

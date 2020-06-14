@@ -2,116 +2,30 @@
   "type": "object",
   "properties": {
     "mResourceSettings": {
-      "description": "Settings for resources",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGResourceSettings>",
+      "description": "Settings for resources"
     },
     "mFactorySettings": {
-      "description": "Settings for resources",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGFactorySettings>",
+      "description": "Settings for resources"
     },
     "mDropPodSettings": {
-      "description": "Settings for drop pods",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGDropPodSettings>",
+      "description": "Settings for drop pods"
     },
     "mHardDriveSettings": {
-      "description": "Settings for Hard Drive Research",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGHardDriveSettings>",
+      "description": "Settings for Hard Drive Research"
     },
     "mEnvironmentSettings": {
-      "description": "Settings for drop pods",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGEnvironmentSettings>",
+      "description": "Settings for drop pods"
     },
     "mSubsystemClasses": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGSubsystemClasses>"
     },
     "mSignSettings": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGSignSettings>"
     },
     "mGlobalSettingsClassName": {
       "description": "Default class for specifying the settings class"

@@ -21,20 +21,8 @@
       "type": "boolean"
     },
     "mTradingPostDescriptor": {
-      "description": "The class of the trading post",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGBuildingDescriptor>",
+      "description": "The class of the trading post"
     },
     "mTradingPost": {
       "$ref": "#/definitions/AFGBuildableTradingPost",
@@ -48,199 +36,79 @@
       }
     },
     "mIronOreDescriptor": {
-      "description": "Class of Iron Resource Descriptor",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGItemDescriptor>",
+      "description": "Class of Iron Resource Descriptor"
     },
     "mDidPickUpIronOre": {
       "type": "boolean"
     },
     "mDropPodItemClass": {
-      "description": "An item you receive when dismantling the drop pod so we can identify it",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGItemDescriptor>",
+      "description": "An item you receive when dismantling the drop pod so we can identify it"
     },
     "mDidDismantleDropPod": {
       "description": "Checks if we have dismantled the drop pod",
       "type": "boolean"
     },
     "mStunSpearItemClass": {
-      "description": "class to identify the stun spear",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGItemDescriptor>",
+      "description": "class to identify the stun spear"
     },
     "mDidEquipStunSpear": {
       "description": "Checks if we equipped the stun spear",
       "type": "boolean"
     },
     "mStep1UpgradeSchematic": {
-      "description": "Reference to the class step 1 tutorial schematic",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGSchematic>",
+      "description": "Reference to the class step 1 tutorial schematic"
     },
     "mDidStep1Upgrade": {
       "description": "Bool for the step 1 schematic",
       "type": "boolean"
     },
     "mStep1_5UpgradeSchematic": {
-      "description": "Reference to the class step 1.5 tutorial schematic",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGSchematic>",
+      "description": "Reference to the class step 1.5 tutorial schematic"
     },
     "mDidStep1_5Upgrade": {
       "description": "Bool for the step 1.5 schematic",
       "type": "boolean"
     },
     "mStep2UpgradeSchematic": {
-      "description": "Reference to the class step 2 tutorial schematic",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGSchematic>",
+      "description": "Reference to the class step 2 tutorial schematic"
     },
     "mDidStep2Upgrade": {
       "description": "Bool for the step 2 schematic",
       "type": "boolean"
     },
     "mStep3UpgradeSchematic": {
-      "description": "Reference to the class step 3 tutorial schematic",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGSchematic>",
+      "description": "Reference to the class step 3 tutorial schematic"
     },
     "mDidStep3Upgrade": {
       "description": "Bool for the step 3 schematic",
       "type": "boolean"
     },
     "mStep4UpgradeSchematic": {
-      "description": "Reference to the class step 4 tutorial schematic",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGSchematic>",
+      "description": "Reference to the class step 4 tutorial schematic"
     },
     "mDidStep4Upgrade": {
       "description": "Bool for the step 4 schematic",
       "type": "boolean"
     },
     "mStep5UpgradeSchematic": {
-      "description": "Reference to the class step 5 tutorial schematic",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGSchematic>",
+      "description": "Reference to the class step 5 tutorial schematic"
     },
     "mDidStep5Upgrade": {
       "description": "Bool for the step5 schematic",
       "type": "boolean"
     },
     "mStartingPodClass": {
-      "description": "Class of drop pod to spawn",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGStartingPod>",
+      "description": "Class of drop pod to spawn"
     },
     "mStartingPod": {
       "$ref": "#/definitions/AFGStartingPod",

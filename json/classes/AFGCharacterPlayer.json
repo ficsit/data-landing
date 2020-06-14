@@ -10,39 +10,15 @@
       "type": "number"
     },
     "mMesh1PAnimClass": {
-      "description": "The default arms animation when we're idle.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<any>",
+      "description": "The default arms animation when we're idle."
     },
     "mMesh3P": {
       "description": "Pawn mesh: 3rd person view"
     },
     "mFoliagePickupProxyClass": {
-      "description": "As we have no foliage actor to actually put pickup code in, we use this actor as a proxy",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGFoliagePickup>",
+      "description": "As we have no foliage actor to actually put pickup code in, we use this actor as a proxy"
     },
     "mFoliagePickupProxy": {
       "$ref": "#/definitions/AFGFoliagePickup",
@@ -69,36 +45,12 @@
       "description": "Of the usable actor we are looking at, UPROPERTY to prevent the AdditionalData to be garbage collected"
     },
     "mAnimInstanceClass": {
-      "description": "Anim instance class to use in third person",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<any>",
+      "description": "Anim instance class to use in third person"
     },
     "mAnimInstanceClass1P": {
-      "description": "Anim instance class to use in first person",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<any>",
+      "description": "Anim instance class to use in first person"
     },
     "mReviveDuration": {
       "description": "time (in seconds) it takes to revive a fellow player",
@@ -119,20 +71,7 @@
       }
     },
     "mDrownDamageDamageType": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGDamageType>"
     },
     "mDrownDamage": {
       "description": "The amount of damage to receive when drowning.",
@@ -164,7 +103,9 @@
     "m1PFootstepEvent": {
       "description": "Effects to play when a foot hits the ground in first person",
       "type": "array",
-      "items": {}
+      "items": {
+        "$ref": "#/definitions/UAkAudioEvent"
+      }
     },
     "mLastSafeGroundPositions": {
       "$ref": "#/definitions/Vector",
@@ -251,36 +192,12 @@
       "description": "The player that is reviving me"
     },
     "mDefaultWalkHeadBobShake": {
-      "description": "Reference to the default walk head bob shake",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<any>",
+      "description": "Reference to the default walk head bob shake"
     },
     "mDefaultSprintHeadBobShake": {
-      "description": "Reference to the default sprint head bob shake",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<any>",
+      "description": "Reference to the default sprint head bob shake"
     },
     "mDrivenVehicle": {
       "$ref": "#/definitions/AFGDriveablePawn",
@@ -368,7 +285,9 @@
     "mFootstepAudioEvents": {
       "description": "Audio event to play (where index in array is the feet index passed from AnimNotify_FootDown)",
       "type": "array",
-      "items": {}
+      "items": {
+        "$ref": "#/definitions/UAkAudioEvent"
+      }
     },
     "mMaxFootstepParticleSpawnDistance": {
       "description": "Maximum distance we want to play footstep particles at",
@@ -400,20 +319,7 @@
       "description": "Overrides the default fall damage curve, utilized by Equipment"
     },
     "mFallDamageDamageType": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGDamageType>"
     },
     "mMaxDeathStayTime": {
       "description": "The maximum time after death (in seconds) the pawn will stay in the world, so it will be removed even if it's in sight after this time",
@@ -428,15 +334,19 @@
       "type": "number"
     },
     "mTakeDamageSound": {
+      "$ref": "#/definitions/UAkAudioEvent",
       "description": "Sound played when pawn takes damage"
     },
     "mDeathSound": {
+      "$ref": "#/definitions/UAkAudioEvent",
       "description": "Sound played when pawn dies"
     },
     "mLandEvent": {
+      "$ref": "#/definitions/UAkAudioEvent",
       "description": "Event posted when landing"
     },
     "mTakeDamageParticle": {
+      "$ref": "#/definitions/UParticleSystem",
       "description": "Particle for when pawn takes damage"
     },
     "mMinVehiclePushVelocityForRagdoll": {
@@ -481,19 +391,7 @@
       "description": "Damage types that this character is immune to",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<any>"
       }
     },
     "mWeakspotMultiplier": {

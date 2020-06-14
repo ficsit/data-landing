@@ -2,6 +2,7 @@
   "type": "object",
   "properties": {
     "mAudioEvent": {
+      "$ref": "#/definitions/UAkAudioEvent",
       "description": "The audio event this river plays"
     },
     "mEmitterInterval": {

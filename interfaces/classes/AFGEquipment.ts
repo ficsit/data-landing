@@ -2,6 +2,7 @@ import { EArmEquipment } from '../enums/EArmEquipment';
 import { EBackEquipment } from '../enums/EBackEquipment';
 import { EEquipmentSlot } from '../enums/EEquipmentSlot';
 import { IFGReplicationDependencyActorInterface } from '../interfaces/IFGReplicationDependencyActorInterface';
+import { UAkAudioEvent } from '../native/assets';
 import { AActor } from '../native/classes';
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
@@ -37,12 +38,12 @@ export interface AFGEquipment
   /**
    * Sound played when equipping
    */
-  mEquipSound: Unknown<'UAkAudioEvent'>;
+  mEquipSound: UAkAudioEvent;
 
   /**
    * Sound played when unequipping
    */
-  mUnequipSound: Unknown<'UAkAudioEvent'>;
+  mUnequipSound: UAkAudioEvent;
 
   /**
    * Class of widget to add when equipping this equipment

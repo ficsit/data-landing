@@ -30,8 +30,8 @@
       "type": "number"
     },
     "mActionMessage": {
-      "description": "Text to show while action is in progress",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "Text to show while action is in progress"
     }
   },
   "required": [

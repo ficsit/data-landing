@@ -6,20 +6,8 @@
       "type": "boolean"
     },
     "MessageClass": {
-      "description": "What class is the message",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGMessageBase>",
+      "description": "What class is the message"
     }
   },
   "required": [

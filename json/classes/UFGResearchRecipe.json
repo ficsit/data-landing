@@ -5,19 +5,7 @@
       "description": "Items that make this research available once it enters the players inventory",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<UFGItemDescriptor>"
       }
     },
     "mIsRepeatable": {
@@ -31,38 +19,14 @@
       "description": "What research that will be unlocked in the research tree by completing this research",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/softClassReference<UFGResearchRecipe>"
       }
     },
     "mUnlockedSchematics": {
       "description": "What schematics that will be purchased by completing this research",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/softClassReference<UFGSchematic>"
       }
     },
     "mDecorPoints": {
@@ -89,8 +53,8 @@
       "type": "boolean"
     },
     "mDisplayName": {
-      "description": "Overridden name for this recipe, if mDisplayNameOverride is false the first product's item name is used.",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "Overridden name for this recipe, if mDisplayNameOverride is false the first product's item name is used."
     },
     "mIngredients": {
       "description": "Ingredients needed to produce the products.",
@@ -118,19 +82,7 @@
       "description": "Defines where this recipe can be produced",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/softClassReference<UObject>"
       }
     }
   },

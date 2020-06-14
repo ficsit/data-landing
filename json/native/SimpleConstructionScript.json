@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "properties": {
+    "RootNodes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/classReference<any>"
+      }
+    },
+    "AllNodes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/classReference<any>"
+      }
+    },
+    "DefaultSceneRootNode": {
+      "$ref": "#/definitions/classReference<any>"
+    }
+  },
+  "required": [
+    "AllNodes",
+    "DefaultSceneRootNode",
+    "RootNodes"
+  ]
+}

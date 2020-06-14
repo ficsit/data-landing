@@ -6,7 +6,7 @@
       "$ref": "#/definitions/Vector"
     },
     "DestroyedEffect": {
-      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+      "$ref": "#/definitions/UParticleSystem"
     },
     "Priority": {
       "description": "An 32-bit signed integer.",

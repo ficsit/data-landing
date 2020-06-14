@@ -14,20 +14,8 @@
       "description": "Should we also generate points for the negative angle value?"
     },
     "mCenterActor": {
-      "description": "The actor (or actors) that will generate a cone in their facing direction",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<any>",
+      "description": "The actor (or actors) that will generate a cone in their facing direction"
     }
   },
   "required": [

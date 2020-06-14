@@ -1,4 +1,4 @@
-import { UStaticMesh } from '../native/assets';
+import { UMaterial, UStaticMesh } from '../native/assets';
 import { AActor } from '../native/classes';
 import { float, int32, uint8 } from '../native/primitive';
 import { Color } from '../native/structs';
@@ -95,7 +95,7 @@ export interface AFGBuildableSubsystem extends AFGSubsystem, Unknown<'IFGSaveInt
   /**
    * used for comparing and finding materials of factory meshes
    */
-  mDefaultFactoryMaterial: Unknown<'UMaterial'>;
+  mDefaultFactoryMaterial: UMaterial;
 
   /**
    * Controls if we should receive Factory_Tick and how frequent.

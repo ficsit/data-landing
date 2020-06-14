@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "properties": {
+    "AnimClass": {
+      "$ref": "#/definitions/classReference<any>"
+    },
+    "ClothingSimulationFactory": {
+      "$ref": "#/definitions/classReference<any>"
+    },
+    "SkeletalMesh": {
+      "$ref": "#/definitions/classReference<any>"
+    },
+    "VisibilityBasedAnimTickOption": {
+      "$ref": "#/definitions/EVisibilityBasedAnimTickOption"
+    },
+    "bPerBoneMotionBlur": {
+      "type": "boolean"
+    },
+    "bComponentUseFixedSkelBounds": {
+      "type": "boolean"
+    },
+    "LDMaxDrawDistance": {
+      "type": "number"
+    },
+    "CachedMaxDrawDistance": {
+      "type": "number"
+    },
+    "bAllowCullDistanceVolume": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "AnimClass",
+    "CachedMaxDrawDistance",
+    "ClothingSimulationFactory",
+    "LDMaxDrawDistance",
+    "SkeletalMesh",
+    "VisibilityBasedAnimTickOption",
+    "bAllowCullDistanceVolume",
+    "bComponentUseFixedSkelBounds",
+    "bPerBoneMotionBlur"
+  ]
+}

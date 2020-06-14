@@ -1,0 +1,23 @@
+{
+  "description": "A translatable string",
+  "type": "object",
+  "properties": {
+    "namespace": {
+      "description": "The namespace of this string",
+      "type": "string"
+    },
+    "key": {
+      "description": "The key of this string",
+      "type": "string"
+    },
+    "sourceString": {
+      "description": "The source of this string",
+      "type": "string"
+    }
+  },
+  "required": [
+    "key",
+    "namespace",
+    "sourceString"
+  ]
+}

@@ -5,20 +5,7 @@
       "$ref": "#/definitions/Color"
     },
     "MapArea": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGMapArea>"
     },
     "MinX": {
       "description": "A top left pixel that together with MaxX/MaxY encompasses the entire area",

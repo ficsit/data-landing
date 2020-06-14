@@ -2,8 +2,8 @@
   "type": "object",
   "properties": {
     "Text": {
-      "description": "Localizable text",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "Localizable text"
     },
     "Purity": {
       "$ref": "#/definitions/EResourcePurity",

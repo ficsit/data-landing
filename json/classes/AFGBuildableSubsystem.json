@@ -31,10 +31,10 @@
       "description": "Hierarchical instances for the factory buildings."
     },
     "mBuildableMeshInstances": {
-      "$ref": "#/definitions/Map<packageReference<any>,any>"
+      "$ref": "#/definitions/Map<UStaticMesh,any>"
     },
     "mColoredInstances": {
-      "$ref": "#/definitions/Map<packageReference<any>,UFGColoredInstanceManager>",
+      "$ref": "#/definitions/Map<UStaticMesh,UFGColoredInstanceManager>",
       "description": "/"
     },
     "mColorSlotsPrimary": {
@@ -86,6 +86,7 @@
       "type": "number"
     },
     "mDefaultFactoryMaterial": {
+      "$ref": "#/definitions/UMaterial",
       "description": "used for comparing and finding materials of factory meshes"
     },
     "mFactoryTickFunction": {

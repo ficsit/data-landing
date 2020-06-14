@@ -12,20 +12,8 @@
       "description": "An unknown type (likely an Unreal Engine or plugin type)."
     },
     "mCreatureClass": {
-      "description": "The creature we should spawn",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGCreature>",
+      "description": "The creature we should spawn"
     },
     "mNumberOfCreatures": {
       "description": "The number of enemies to spawn, used offline"

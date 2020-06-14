@@ -9,37 +9,13 @@
       "type": "number"
     },
     "mPowerCircuitFuseTriggeredMessage": {
-      "description": "Message sent when a power fuse is triggered occurs.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGMessageBase>",
+      "description": "Message sent when a power fuse is triggered occurs."
     },
     "mAvailableRecipes": {
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<UFGRecipe>"
       }
     },
     "mTimeSubsystem": {
@@ -98,38 +74,14 @@
       "description": "This array keeps track of what map areas have been visited this game",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<UFGMapArea>"
       }
     },
     "mPickedUpItems": {
       "description": "All items we have picked up that also are relevant to know if we picked up",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<UFGItemDescriptor>"
       }
     },
     "mPlayDurationWhenLoaded": {
@@ -150,20 +102,8 @@
       "description": "Called at regular times when the restart time reaches specific thresholds"
     },
     "mHubPartClass": {
-      "description": "Class used to construct the hub, this is used to guarantee players always have one if they don't have a hub",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGItemDescriptor>",
+      "description": "Class used to construct the hub, this is used to guarantee players always have one if they don't have a hub"
     },
     "mForceAddHubPartOnSpawn": {
       "description": "Track if a hub part is needed for adding to player inventory when they respawn",

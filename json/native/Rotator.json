@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "pitch": {
+      "type": "number"
+    },
+    "yaw": {
+      "type": "number"
+    },
+    "roll": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "pitch",
+    "roll",
+    "yaw"
+  ]
+}

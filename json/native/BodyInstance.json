@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "properties": {
+    "ObjectType": {},
+    "CollisionProfileName": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "CollisionProfileName",
+    "ObjectType"
+  ]
+}

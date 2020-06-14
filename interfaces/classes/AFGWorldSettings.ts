@@ -1,3 +1,4 @@
+import { UAkAudioEvent } from '../native/assets';
 import { float } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 import { FExponentialFogSettings } from '../structs/FExponentialFogSettings';
@@ -51,7 +52,7 @@ export interface AFGWorldSettings extends Unknown<'AWorldSettings'>, Unknown<'IF
   /**
    * Different events for different levels, so they can start different playlists
    */
-  mLevelStartedEvent: Unknown<'UAkAudioEvent'>;
+  mLevelStartedEvent: UAkAudioEvent;
 
   /**
    * Save game that we should load by default when entering the map

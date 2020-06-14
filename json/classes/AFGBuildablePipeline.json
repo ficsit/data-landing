@@ -10,20 +10,8 @@
       "type": "number"
     },
     "mFlowIndicatorClass": {
-      "description": "Type of indicator to spawn on this pipe.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGPipelineFlowIndicatorComponent>",
+      "description": "Type of indicator to spawn on this pipe."
     },
     "mFlowIndicatorMinimumPipeLength": {
       "description": "Smaller pipes than this will not get a flow indicator. [cm]",
@@ -33,6 +21,7 @@
       "$ref": "#/definitions/UFGSoundSplineComponent"
     },
     "mSplineAudioEvent": {
+      "$ref": "#/definitions/UAkAudioEvent",
       "description": "The ak event to post for the sound spline"
     },
     "mPipeConnections": {
@@ -53,38 +42,13 @@
       "type": "number"
     },
     "mCachedFluidDescriptor": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGItemDescriptor>"
     },
     "mIgnoreActorsForIndicator": {
       "description": "Array of objects to ignore when performing the collision check in the indicator placement. This is needed during merge / split creation of new pipelines",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/objectReference<AActor>"
       }
     },
     "mFluidNames": {
@@ -115,26 +79,16 @@
       "type": "boolean"
     },
     "mStartRattleSoundEvent": {
+      "$ref": "#/definitions/UAkAudioEvent",
       "description": "Start rattle sound"
     },
     "mStopRattleSoundEvent": {
+      "$ref": "#/definitions/UAkAudioEvent",
       "description": "Stop rattle sound"
     },
     "mMesh": {
-      "description": "Mesh to use for his conveyor.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UStaticMesh",
+      "description": "Mesh to use for his conveyor."
     },
     "mMeshLength": {
       "description": "Length of the mesh to use for this conveyor.",
@@ -158,28 +112,16 @@
       "description": "The spline meshes for this train track."
     },
     "mHologramClass": {
-      "description": "The hologram class to use for constructing this object.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGHologram>",
+      "description": "The hologram class to use for constructing this object."
     },
     "mDisplayName": {
-      "description": "The human readable display name of this object.",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "The human readable display name of this object."
     },
     "mDescription": {
-      "description": "The human readable description of this object.",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "The human readable description of this object."
     },
     "MaxRenderDistance": {
       "description": "Max draw distance, inactive when < 0",
@@ -210,36 +152,12 @@
       "type": "number"
     },
     "mBuildEffectTemplate": {
-      "description": "What build effect to use when building this building",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGMaterialEffect_Build>",
+      "description": "What build effect to use when building this building"
     },
     "mDismantleEffectTemplate": {
-      "description": "What build effect to use when dismantling this building",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGMaterialEffect_Build>",
+      "description": "What build effect to use when dismantling this building"
     },
     "mBuildEffectInstignator": {
       "$ref": "#/definitions/AActor",
@@ -267,6 +185,7 @@
       "description": "Name read from config"
     },
     "mHighlightParticleSystemTemplate": {
+      "$ref": "#/definitions/UParticleSystem",
       "description": "Particle system component"
     },
     "mHighlightParticleSystemComponent": {
@@ -292,20 +211,8 @@
       "type": "number"
     },
     "mInteractWidgetClass": {
-      "description": "The widget that will present our UI.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGInteractWidget>",
+      "description": "The widget that will present our UI."
     },
     "mInteractingPlayers": {
       "description": "Players interacting with this building",
@@ -323,20 +230,8 @@
       "description": "ID given from server when constructed. Has not been assigned a value by server if 0."
     },
     "mBuiltWithRecipe": {
-      "description": "Recipe this building was built with, e.g. used for refunds and stats.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGRecipe>",
+      "description": "Recipe this building was built with, e.g. used for refunds and stats."
     },
     "mBuildTimeStamp": {
       "description": "Time when this building was built",

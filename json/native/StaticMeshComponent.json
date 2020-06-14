@@ -1,0 +1,27 @@
+{
+  "type": "object",
+  "properties": {
+    "StaticMesh": {
+      "$ref": "#/definitions/classReference<any>"
+    },
+    "BodyInstance": {
+      "$ref": "#/definitions/BodyInstance"
+    },
+    "RelativeLocation": {
+      "$ref": "#/definitions/Vector"
+    },
+    "RelativeScale3D": {
+      "$ref": "#/definitions/Vector"
+    },
+    "Mobility": {
+      "$ref": "#/definitions/EComponentMobility"
+    }
+  },
+  "required": [
+    "BodyInstance",
+    "Mobility",
+    "RelativeLocation",
+    "RelativeScale3D",
+    "StaticMesh"
+  ]
+}

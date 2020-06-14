@@ -1,7 +1,7 @@
 import { IFGAggroTargetInterface } from '../interfaces/IFGAggroTargetInterface';
 import { AActor } from '../native/classes';
 import { float } from '../native/primitive';
-import { ScriptInterface, classReference } from '../native/references';
+import { ScriptInterface, classReference, softClassReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 import { FAggroEntry } from '../structs/FAggroEntry';
 
@@ -83,7 +83,7 @@ export interface AFGEnemyController extends AFGCreatureController {
   /**
    * List of aggro target classes that we should not aggro against
    */
-  mIgnoredAggroTargetClasses: classReference<AActor>[];
+  mIgnoredAggroTargetClasses: softClassReference<AActor>[];
 
   /**
    * Time we should ignore targets when panicking

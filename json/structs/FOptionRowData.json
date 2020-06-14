@@ -2,8 +2,7 @@
   "type": "object",
   "properties": {
     "OptionName": {
-      "description": "A localizable string.",
-      "type": "string"
+      "$ref": "#/definitions/localized"
     },
     "OptionType": {
       "$ref": "#/definitions/EOptionType"
@@ -57,8 +56,7 @@
       "type": "boolean"
     },
     "Tooltip": {
-      "description": "A localizable string.",
-      "type": "string"
+      "$ref": "#/definitions/localized"
     }
   },
   "required": [

@@ -2,20 +2,7 @@
   "type": "object",
   "properties": {
     "Track": {
-      "description": "Reference to an instance of a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/objectReference<AFGBuildableRailroadTrack>"
     },
     "Offset": {
       "description": "Offset along the track.",

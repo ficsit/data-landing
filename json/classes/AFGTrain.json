@@ -20,8 +20,8 @@
       "description": "Physics simulation for the train"
     },
     "mTrainName": {
-      "description": "The name of this train.",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "The name of this train."
     },
     "mTrackGraphID": {
       "description": "The track this train is on.",

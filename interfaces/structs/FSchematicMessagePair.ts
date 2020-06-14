@@ -1,6 +1,6 @@
 import { UFGMessageBase } from '../classes/UFGMessageBase';
 import { UFGSchematic } from '../classes/UFGSchematic';
-import { classReference } from '../native/references';
+import { classReference, softClassReference } from '../native/references';
 
 export interface FSchematicMessagePair {
   /**
@@ -11,5 +11,5 @@ export interface FSchematicMessagePair {
   /**
    * Associated schematic
    */
-  SchematicUnlocked: classReference<UFGSchematic>;
+  SchematicUnlocked: softClassReference<UFGSchematic>;
 }

@@ -2,20 +2,7 @@
   "type": "object",
   "properties": {
     "InstanceMesh": {
-      "description": "A StaticMesh is a piece of geometry that consists of a static set of polygons.\n\nhttps://docs.unrealengine.com/en-US/API/Runtime/Engine/Engine/UStaticMesh/index.html",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UStaticMesh"
     },
     "Location": {
       "$ref": "#/definitions/Vector"

@@ -1,3 +1,4 @@
+import { UAkAudioEvent, UParticleSystem } from '../native/assets';
 import { int32 } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
@@ -14,27 +15,27 @@ export interface UFGFoliageResourceUserData extends Unknown<'UAssetUserData'> {
   /**
    * Audio event to be posted when picked up, @todo: Remove BlueprintReadOnly
    */
-  mPickupEvent: Unknown<'UAkAudioEvent'>;
+  mPickupEvent: UAkAudioEvent;
 
   /**
    * The effect to play where the pickup was, @todo: Remove BlueprintReadOnly
    */
-  mPickupEffect: Unknown<'UParticleSystem'>;
+  mPickupEffect: UParticleSystem;
 
   /**
    * Audio event to be posted when run over by a vehicle, @todo: Remove BlueprintReadOnly
    */
-  mVehicleDestroyedEvent: Unknown<'UAkAudioEvent'>;
+  mVehicleDestroyedEvent: UAkAudioEvent;
 
   /**
    * The effect to play when run over by a vehicle, @todo: Remove BlueprintReadOnly
    */
-  mVehicleDestroyedEffect: Unknown<'UParticleSystem'>;
+  mVehicleDestroyedEffect: UParticleSystem;
 
   /**
    * The effect to play when destroyed by an explosive. If one is not specified it may fall back to either the vehicle effect or pickup effect
    */
-  mExplosionDestroyedEffect: Unknown<'UParticleSystem'>;
+  mExplosionDestroyedEffect: UParticleSystem;
 
   /**
    * Specifies priority for spawning against other effects. Must be implemented by the spawning class. ex: FGDestructiveProjectile

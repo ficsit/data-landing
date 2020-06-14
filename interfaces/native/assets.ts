@@ -16,3 +16,10 @@ export type UTexture2D = packageReference<any>;
  * https://docs.unrealengine.com/en-US/API/Runtime/SlateCore/Styling/FSlateBrush/index.html
  */
 export type FSlateBrush = packageReference<any>;
+
+//TODO: Find proper instances for this.
+export type UMaterialInstance = packageReference<any>;
+export type UParticleSystem = packageReference<any>;
+export type UMaterial = packageReference<any>;
+export type UAkAudioEvent = packageReference<any>;
+export type USkeletalMesh = packageReference<any>;

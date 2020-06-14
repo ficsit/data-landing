@@ -1,4 +1,5 @@
 import { IFGFluidIntegrantInterface } from '../interfaces/IFGFluidIntegrantInterface';
+import { UAkAudioEvent } from '../native/assets';
 import { AActor } from '../native/classes';
 import { float } from '../native/primitive';
 import { classReference, objectReference } from '../native/references';
@@ -38,7 +39,7 @@ export interface AFGBuildablePipeline extends AFGBuildablePipeBase, IFGFluidInte
   /**
    * The ak event to post for the sound spline
    */
-  mSplineAudioEvent: Unknown<'UAkAudioEvent'>;
+  mSplineAudioEvent: UAkAudioEvent;
 
   /**
    * Cached array of pipe connections.
@@ -97,10 +98,10 @@ export interface AFGBuildablePipeline extends AFGBuildablePipeBase, IFGFluidInte
   /**
    * Start rattle sound
    */
-  mStartRattleSoundEvent: Unknown<'UAkAudioEvent'>;
+  mStartRattleSoundEvent: UAkAudioEvent;
 
   /**
    * Stop rattle sound
    */
-  mStopRattleSoundEvent: Unknown<'UAkAudioEvent'>;
+  mStopRattleSoundEvent: UAkAudioEvent;
 }

@@ -1,7 +1,7 @@
 import { UFGItemDescriptor } from '../classes/UFGItemDescriptor';
+import { UMaterial } from '../native/assets';
 import { int32 } from '../native/primitive';
 import { classReference } from '../native/references';
-import { Unknown } from '../native/unknown';
 
 export interface FItemSettings {
   /**
@@ -17,5 +17,5 @@ export interface FItemSettings {
   /**
    * Material that should be used for each icon, need to have a parameter named Texture
    */
-  MasterMaterial: Unknown<'UMaterial'>;
+  MasterMaterial: UMaterial;
 }

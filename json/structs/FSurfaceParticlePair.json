@@ -2,7 +2,7 @@
   "type": "object",
   "properties": {
     "EmitterTemplate": {
-      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+      "$ref": "#/definitions/UParticleSystem"
     },
     "Surface": {
       "description": "An unknown type (likely an Unreal Engine or plugin type)."

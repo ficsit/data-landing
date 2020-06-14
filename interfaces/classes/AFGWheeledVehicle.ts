@@ -1,3 +1,4 @@
+import { UMaterial } from '../native/assets';
 import { float, int32 } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Vector } from '../native/structs';
@@ -95,7 +96,7 @@ export interface AFGWheeledVehicle extends AFGVehicle {
   /**
    * default tire track decal. Can be empty for no default.
    */
-  mDefaultTireTrackDecal: Unknown<'UMaterial'>;
+  mDefaultTireTrackDecal: UMaterial;
 
   /**
    * tire track decal  settings

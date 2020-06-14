@@ -2,20 +2,8 @@
   "type": "object",
   "properties": {
     "ItemClass": {
-      "description": "Item class",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGItemDescriptor>",
+      "description": "Item class"
     },
     "NumItems": {
       "description": "Range of items you can get"

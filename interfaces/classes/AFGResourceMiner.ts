@@ -1,3 +1,4 @@
+import { UParticleSystem } from '../native/assets';
 import { Unknown } from '../native/unknown';
 
 import { AFGEquipment } from './AFGEquipment';
@@ -7,7 +8,7 @@ export interface AFGResourceMiner extends AFGEquipment {
   /**
    * The effect the spawn when picking.
    */
-  mPickParticleSystem: Unknown<'UParticleSystem'>;
+  mPickParticleSystem: UParticleSystem;
 
   /**
    * Animation to play when picking.

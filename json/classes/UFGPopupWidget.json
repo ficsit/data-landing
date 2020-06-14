@@ -47,20 +47,8 @@
       "description": "Object that we interacted with in order to show this widget ( can be nullPeter )"
     },
     "mDefaultFocusWidgetClass": {
-      "description": "Class of the default widget we want to give focus to",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<any>",
+      "description": "Class of the default widget we want to give focus to"
     },
     "mUseGamepadCursor": {
       "description": "Should gamepad act as cursor when using this widget?",

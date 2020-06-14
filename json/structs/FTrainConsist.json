@@ -5,19 +5,7 @@
       "description": "The vehicles in this consist.",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<AFGRailroadVehicle>"
       }
     },
     "Length": {

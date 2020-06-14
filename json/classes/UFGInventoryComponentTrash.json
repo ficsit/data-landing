@@ -36,19 +36,7 @@
       "description": "This are the allowed inventory items, this we we can \"filter\" in BluePrint as well.",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<UFGItemDescriptor>"
       }
     },
     "mCanBeRearrange": {

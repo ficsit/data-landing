@@ -2,24 +2,12 @@
   "type": "object",
   "properties": {
     "mDisplayName": {
-      "description": "Name of this build category",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "Name of this build category"
     },
     "mCategoryIcon": {
-      "description": "Icon for the category",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/FSlateBrush",
+      "description": "Icon for the category"
     }
   },
   "required": [

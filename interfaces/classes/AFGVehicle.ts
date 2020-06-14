@@ -4,6 +4,7 @@ import { IFGDismantleInterface } from '../interfaces/IFGDismantleInterface';
 import { IFGDockableInterface } from '../interfaces/IFGDockableInterface';
 import { IFGSignificanceInterface } from '../interfaces/IFGSignificanceInterface';
 import { IFGUseableInterface } from '../interfaces/IFGUseableInterface';
+import { UAkAudioEvent } from '../native/assets';
 import { float, localized, uint8 } from '../native/primitive';
 import { classReference } from '../native/references';
 import { LinearColor, Vector } from '../native/structs';
@@ -93,7 +94,7 @@ export interface AFGVehicle
   /**
    * Sound played when this vehicle is created
    */
-  mConstructSound: Unknown<'UAkAudioEvent'>;
+  mConstructSound: UAkAudioEvent;
 
   /**
    * Can this vehicle be destroyed by damage?

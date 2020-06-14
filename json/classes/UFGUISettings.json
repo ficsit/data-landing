@@ -2,36 +2,12 @@
   "type": "object",
   "properties": {
     "mSettingUpServerWidget": {
-      "description": "Widget used to show that the user is setting up a server",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<any>",
+      "description": "Widget used to show that the user is setting up a server"
     },
     "mJoinSessionWidget": {
-      "description": "Widget used to show the user when joining a session",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<any>",
+      "description": "Widget used to show the user when joining a session"
     }
   },
   "required": [

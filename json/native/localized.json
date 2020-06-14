@@ -1,4 +1,22 @@
 {
   "description": "A localizable string.",
-  "type": "string"
+  "type": "object",
+  "properties": {
+    "namespace": {
+      "type": "string"
+    },
+    "key": {
+      "description": "The key of this string",
+      "type": "string"
+    },
+    "sourceString": {
+      "description": "The source of this string",
+      "type": "string"
+    }
+  },
+  "required": [
+    "key",
+    "namespace",
+    "sourceString"
+  ]
 }

@@ -1,6 +1,6 @@
 import { EResourceForm } from '../enums/EResourceForm';
 import { float, int32 } from '../native/primitive';
-import { classReference } from '../native/references';
+import { classReference, softClassReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 
 import { AFGBuildableGenerator } from './AFGBuildableGenerator';
@@ -22,7 +22,7 @@ export interface AFGBuildableGeneratorFuel extends AFGBuildableGenerator {
   /**
    * Fuel classes this machine can run on. Leave empty if it does not run on fuel.
    */
-  mDefaultFuelClasses: classReference<UFGItemDescriptor>[];
+  mDefaultFuelClasses: softClassReference<UFGItemDescriptor>[];
 
   /**
    * Current fuel classes of the generator, useful for runtime adding of fuel classes

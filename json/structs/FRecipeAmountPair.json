@@ -2,20 +2,8 @@
   "type": "object",
   "properties": {
     "Recipe": {
-      "description": "Recipe to give player",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGRecipe>",
+      "description": "Recipe to give player"
     },
     "Amount": {
       "description": "How many of given recipe",

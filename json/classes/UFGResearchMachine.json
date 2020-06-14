@@ -2,20 +2,7 @@
   "type": "object",
   "properties": {
     "mCurrentResearchRecipe": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGResearchRecipe>"
     },
     "mPlayerUsingMachine": {
       "$ref": "#/definitions/AFGCharacterPlayer"
@@ -24,20 +11,8 @@
       "description": "An unknown type (likely an Unreal Engine or plugin type)."
     },
     "mResearchingMesh": {
-      "description": "This holds the actual mesh to be displayed by the assigned Static Mesh Component for mResearchingMeshComponent",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UStaticMesh",
+      "description": "This holds the actual mesh to be displayed by the assigned Static Mesh Component for mResearchingMeshComponent"
     },
     "mItemScaleCurve": {
       "description": "An unknown type (likely an Unreal Engine or plugin type)."

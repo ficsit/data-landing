@@ -2,36 +2,24 @@
   "type": "object",
   "properties": {
     "mPreUnlockDisplayName": {
-      "description": "The name to be displayed to the player before the tree is unlocked",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "The name to be displayed to the player before the tree is unlocked"
     },
     "mDisplayName": {
-      "description": "The name to be displayed to the player after the tree is unlocked",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "The name to be displayed to the player after the tree is unlocked"
     },
     "mPreUnlockDescription": {
-      "description": "The description to be displayed to the player before the tree is unlocked",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "The description to be displayed to the player before the tree is unlocked"
     },
     "mPostUnlockDescription": {
-      "description": "The description to be displayed to the player after the tree is unlocked",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "The description to be displayed to the player after the tree is unlocked"
     },
     "mResearchTreeIcon": {
-      "description": "Icon used when displaying this research tree",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/FSlateBrush",
+      "description": "Icon used when displaying this research tree"
     },
     "mUnlockDependencies": {
       "description": "The dependencies that needs to be satisfied before the player can use the tree",

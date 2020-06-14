@@ -2,31 +2,16 @@
   "type": "object",
   "properties": {
     "Title": {
-      "description": "A localizable string.",
-      "type": "string"
+      "$ref": "#/definitions/localized"
     },
     "Body": {
-      "description": "A localizable string.",
-      "type": "string"
+      "$ref": "#/definitions/localized"
     },
     "ID": {
       "$ref": "#/definitions/EPopupId"
     },
     "PopupClass": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<any>"
     },
     "Instigator": {
       "$ref": "#/definitions/UObject"

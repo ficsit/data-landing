@@ -6,36 +6,11 @@
       "type": "number"
     },
     "mFluidDescriptor": {
-      "description": "The type of liquid in this network.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGItemDescriptor>",
+      "description": "The type of liquid in this network."
     },
     "mPendingFluidDescriptor": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGItemDescriptor>"
     },
     "mFluidIntegrantScriptInterfaces": {
       "description": "Compiled during save, and Interface classes are extracted on load. Stores the mFluidIntegrants in a UPROPERTY type",

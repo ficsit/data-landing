@@ -14,20 +14,8 @@
       "description": "The average location of all the nodes"
     },
     "ResourceDescriptor": {
-      "description": "The resource descriptor of this cluster",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGResourceDescriptor>",
+      "description": "The resource descriptor of this cluster"
     }
   },
   "required": [

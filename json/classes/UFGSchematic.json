@@ -6,42 +6,18 @@
       "description": "What type of schematic is this."
     },
     "mDisplayName": {
-      "description": "The name to be displayed to the player",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "The name to be displayed to the player"
     },
     "mSchematicCategory": {
-      "description": "The category this schematic belongs to.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGSchematicCategory>",
+      "description": "The category this schematic belongs to."
     },
     "mSubCategories": {
       "description": "The sub categories this schematic belongs to.",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<UFGSchematicCategory>"
       }
     },
     "mTechTier": {
@@ -67,54 +43,18 @@
       }
     },
     "mSchematicIcon": {
-      "description": "Icon used when displaying this schematic",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/FSlateBrush",
+      "description": "Icon used when displaying this schematic"
     },
     "mDependsOnSchematic": {
-      "description": "Is this schematic dependant on any other for being unlocked?",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGSchematic>",
+      "description": "Is this schematic dependant on any other for being unlocked?"
     },
     "mAdditionalSchematicDependencies": {
       "description": "Additional list of schematics for more specific dependency checking",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<UFGSchematic>"
       }
     },
     "mSchematicCategoryDeprecated": {

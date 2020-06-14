@@ -10,20 +10,8 @@
       "type": "number"
     },
     "mDamageType": {
-      "description": "Damage type used for the radial apply damage",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<any>",
+      "description": "Damage type used for the radial apply damage"
     },
     "mIsDetonated": {
       "description": "Tells client to blow this shit up",

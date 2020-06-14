@@ -1,3 +1,4 @@
+import { TextRenderComponent } from '../native/structs';
 import { Unknown } from '../native/unknown';
 import { FSignWallData } from '../structs/FSignWallData';
 
@@ -17,7 +18,7 @@ export interface AFGBuildableSignWall extends AFGBuildableWall {
   /**
    * Front text render component
    */
-  mTextRenderComponent: Unknown<'UTextRenderComponent'>;
+  mTextRenderComponent: TextRenderComponent;
 
   mSignData: FSignWallData;
 }

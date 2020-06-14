@@ -1,6 +1,6 @@
 import { EIncludeInBuilds } from '../enums/EIncludeInBuilds';
 import { int32 } from '../native/primitive';
-import { classReference } from '../native/references';
+import { classReference, softClassReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 
 import { UFGItemDescriptor } from './UFGItemDescriptor';
@@ -23,12 +23,12 @@ export interface UFGResearchRecipe extends UFGRecipe {
   /**
    * What research that will be unlocked in the research tree by completing this research
    */
-  mUnlockedResearch: classReference<UFGResearchRecipe>[];
+  mUnlockedResearch: softClassReference<UFGResearchRecipe>[];
 
   /**
    * What schematics that will be purchased by completing this research
    */
-  mUnlockedSchematics: classReference<UFGSchematic>[];
+  mUnlockedSchematics: softClassReference<UFGSchematic>[];
 
   mDecorPoints: int32;
 

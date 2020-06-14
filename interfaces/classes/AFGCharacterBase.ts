@@ -1,3 +1,4 @@
+import { UAkAudioEvent, UParticleSystem } from '../native/assets';
 import { float } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Vector } from '../native/structs';
@@ -27,7 +28,7 @@ export interface AFGCharacterBase extends Unknown<'ACharacter'>, Unknown<'IFGSav
   /**
    * Audio event to play (where index in array is the feet index passed from AnimNotify_FootDown)
    */
-  mFootstepAudioEvents: Unknown<'UAkAudioEvent'>[];
+  mFootstepAudioEvents: UAkAudioEvent[];
 
   /**
    * Maximum distance we want to play footstep particles at
@@ -87,22 +88,22 @@ export interface AFGCharacterBase extends Unknown<'ACharacter'>, Unknown<'IFGSav
   /**
    * Sound played when pawn takes damage
    */
-  mTakeDamageSound: Unknown<'UAkAudioEvent'>;
+  mTakeDamageSound: UAkAudioEvent;
 
   /**
    * Sound played when pawn dies
    */
-  mDeathSound: Unknown<'UAkAudioEvent'>;
+  mDeathSound: UAkAudioEvent;
 
   /**
    * Event posted when landing
    */
-  mLandEvent: Unknown<'UAkAudioEvent'>;
+  mLandEvent: UAkAudioEvent;
 
   /**
    * Particle for when pawn takes damage
    */
-  mTakeDamageParticle: Unknown<'UParticleSystem'>;
+  mTakeDamageParticle: UParticleSystem;
 
   /**
    * Min push velocity required to start ragdoll

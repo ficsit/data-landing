@@ -5,20 +5,8 @@
       "description": "How many items to spawn, note that the upper limit is guaranteed while the lower limit is not."
     },
     "ItemClass": {
-      "description": "Item to create pickup for.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/softClassReference<UFGItemDescriptor>",
+      "description": "Item to create pickup for."
     }
   },
   "required": [

@@ -1,4 +1,5 @@
 {
+  "description": "Reference to an object described within another package.",
   "type": "object",
   "properties": {
     "package": {

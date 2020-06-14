@@ -2,20 +2,7 @@
   "type": "object",
   "properties": {
     "ActorClass": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGCrashSiteDebrisActor>"
     },
     "ActorTransform": {
       "description": "An unknown type (likely an Unreal Engine or plugin type)."

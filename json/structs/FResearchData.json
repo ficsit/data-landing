@@ -2,53 +2,17 @@
   "type": "object",
   "properties": {
     "Schematic": {
-      "description": "The schematic that holds the research data",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGSchematic>",
+      "description": "The schematic that holds the research data"
     },
     "InitiatingResearchTree": {
-      "description": "The research tree that initiated the research",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGResearchTree>",
+      "description": "The research tree that initiated the research"
     },
     "PendingRewards": {
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<UFGSchematic>"
       }
     }
   },

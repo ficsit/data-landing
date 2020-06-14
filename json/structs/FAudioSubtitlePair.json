@@ -2,27 +2,16 @@
   "type": "object",
   "properties": {
     "AudioEvent": {
+      "$ref": "#/definitions/UAkAudioEvent",
       "description": "Audio to play"
     },
     "Subtitle": {
-      "description": "Subtitle to display",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "Subtitle to display"
     },
     "SenderClass": {
-      "description": "Sender for this part of message",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGMessageSender>",
+      "description": "Sender for this part of message"
     }
   },
   "required": [

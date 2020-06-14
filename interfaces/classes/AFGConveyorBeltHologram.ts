@@ -1,7 +1,7 @@
 import { UStaticMesh } from '../native/assets';
 import { float, int32 } from '../native/primitive';
 import { classReference } from '../native/references';
-import { Vector } from '../native/structs';
+import { Rotator, Vector } from '../native/structs';
 import { Unknown } from '../native/unknown';
 
 import { AFGBuildableConveyorBelt } from './AFGBuildableConveyorBelt';
@@ -62,7 +62,7 @@ export interface AFGConveyorBeltHologram extends AFGSplineHologram {
 
   mConstructionPoleLocations: Vector;
 
-  mConstructionPoleRotations: Unknown<'FRotator'>;
+  mConstructionPoleRotations: Rotator;
 
   /**
    * All the generated spline meshes.

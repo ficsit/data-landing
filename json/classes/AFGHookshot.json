@@ -17,118 +17,48 @@
       "description": "Component handling our hookshot sounds"
     },
     "mAttachmentClass": {
-      "description": "This is the attachment for this class",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGEquipmentAttachment>",
+      "description": "This is the attachment for this class"
     },
     "mSecondaryAttachmentClass": {
-      "description": "This is the secondary attachment for this class",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGEquipmentAttachment>",
+      "description": "This is the secondary attachment for this class"
     },
     "mEquipmentSlot": {
       "$ref": "#/definitions/EEquipmentSlot",
       "description": "To what slot is this limited to?"
     },
     "mSprintHeadBobShake": {
-      "description": "Camera shake to play when sprinting",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<any>",
+      "description": "Camera shake to play when sprinting"
     },
     "mEquipSound": {
+      "$ref": "#/definitions/UAkAudioEvent",
       "description": "Sound played when equipping"
     },
     "mUnequipSound": {
+      "$ref": "#/definitions/UAkAudioEvent",
       "description": "Sound played when unequipping"
     },
     "mEquipmentWidget": {
-      "description": "Class of widget to add when equipping this equipment",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<any>",
+      "description": "Class of widget to add when equipping this equipment"
     },
     "mChildEquipment": {
       "$ref": "#/definitions/AFGEquipmentChild",
       "description": "Holds a reference to the child equipment that may be spawned with this"
     },
     "m1PAnimClass": {
-      "description": "The AnimBlueprint class to use for the 1p anim for our pawn, specifying none here means that the pawn default 1p anim will be used",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<any>",
+      "description": "The AnimBlueprint class to use for the 1p anim for our pawn, specifying none here means that the pawn default 1p anim will be used"
     },
     "mAttachSocket": {
       "description": "If this equipment should attach to a socket, this is the socket.",
       "type": "string"
     },
     "mChildEquipmentClass": {
-      "description": "The class (if any) to use to spawn a child equipment",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGEquipmentChild>",
+      "description": "The class (if any) to use to spawn a child equipment"
     },
     "mCostToUse": {
       "description": "The cost of using this equipment",

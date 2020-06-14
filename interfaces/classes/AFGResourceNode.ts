@@ -3,6 +3,7 @@ import { EResourcePurity } from '../enums/EResourcePurity';
 import { IFGExtractableResourceInterface } from '../interfaces/IFGExtractableResourceInterface';
 import { IFGSignificanceInterface } from '../interfaces/IFGSignificanceInterface';
 import { IFGUseableInterface } from '../interfaces/IFGUseableInterface';
+import { UParticleSystem } from '../native/assets';
 import { AActor, UObject } from '../native/classes';
 import { int32 } from '../native/primitive';
 import { classReference } from '../native/references';
@@ -80,7 +81,7 @@ export interface AFGResourceNode
   /**
    * Particle system component
    */
-  mHighlightParticleSystemTemplate: Unknown<'UParticleSystem'>;
+  mHighlightParticleSystemTemplate: UParticleSystem;
 
   /**
    * Particle system component

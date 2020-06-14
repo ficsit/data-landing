@@ -1,6 +1,6 @@
 import { UFGMapArea } from '../classes/UFGMapArea';
+import { UParticleSystem } from '../native/assets';
 import { classReference } from '../native/references';
-import { Unknown } from '../native/unknown';
 
 export interface FMapAreaParticleCollection {
   /**
@@ -11,5 +11,5 @@ export interface FMapAreaParticleCollection {
   /**
    * Particle associated with map areas
    */
-  Particle: Unknown<'UParticleSystem'>;
+  Particle: UParticleSystem;
 }

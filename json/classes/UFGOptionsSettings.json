@@ -32,23 +32,10 @@
       }
     },
     "mOptionTypeWidgetsClasses": {
-      "$ref": "#/definitions/Map<EOptionType,packageReference<UFGOptionsValueController>>"
+      "$ref": "#/definitions/Map<EOptionType,classReference<UFGOptionsValueController>>"
     },
     "mOptionRowWidgetClass": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGDynamicOptionsRow>"
     }
   },
   "required": [

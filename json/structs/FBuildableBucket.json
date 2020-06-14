@@ -2,20 +2,7 @@
   "type": "object",
   "properties": {
     "BuildableClass": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGBuildable>"
     },
     "Buildables": {
       "type": "array",

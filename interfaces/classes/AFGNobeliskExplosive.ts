@@ -1,4 +1,5 @@
 import { float } from '../native/primitive';
+import { Rotator } from '../native/structs';
 import { Unknown } from '../native/unknown';
 
 import { AFGDestructiveProjectile } from './AFGDestructiveProjectile';
@@ -13,5 +14,5 @@ export interface AFGNobeliskExplosive extends AFGDestructiveProjectile {
 
   mEnvironmentDestructionSphere: Unknown<'USphereComponent'>;
 
-  mThrowRotation: Unknown<'FRotator'>;
+  mThrowRotation: Rotator;
 }

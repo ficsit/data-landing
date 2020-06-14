@@ -32,20 +32,8 @@
       "type": "number"
     },
     "mDamageType": {
-      "description": "Damage type that this attack uses",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<any>",
+      "description": "Damage type that this attack uses"
     },
     "mAttackAngle": {
       "description": "Angle that target must be within in order to hit with attack ( 180 = full circle hit area )",

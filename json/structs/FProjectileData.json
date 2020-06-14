@@ -2,20 +2,8 @@
   "type": "object",
   "properties": {
     "ProjectileClass": {
-      "description": "projectile class",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGProjectile>",
+      "description": "projectile class"
     },
     "ProjectileLifeSpan": {
       "description": "life time",
@@ -50,36 +38,12 @@
       "type": "boolean"
     },
     "DamageType": {
-      "description": "type of damage used for impact damage",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGDamageType>",
+      "description": "type of damage used for impact damage"
     },
     "DamageTypeExplode": {
-      "description": "type of damage used for detonation",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGDamageType>",
+      "description": "type of damage used for detonation"
     }
   },
   "required": [

@@ -6,8 +6,8 @@
       "description": "The static mesh that will be rendered on the actual sign in the world"
     },
     "ColorName": {
-      "description": "A text name to display with the icon inside of menus",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "A text name to display with the icon inside of menus"
     },
     "TextMaterialInstance": {
       "description": "The TEXT material instance is created at runtime and stored here when it is needed"

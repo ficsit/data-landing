@@ -11,57 +11,21 @@
       "description": "All schematic assets that have been sucked up in the PopulateSchematicsList function. Contains cheats and all sort of schematic.",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<UFGSchematic>"
       }
     },
     "mAvailableSchematics": {
       "description": "All schematics that are available to the player",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<UFGSchematic>"
       }
     },
     "mPurchasedSchematics": {
       "description": "Once schematic is purchased it ends up here",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<UFGSchematic>"
       }
     },
     "mPaidOffSchematic": {
@@ -72,20 +36,8 @@
       }
     },
     "mActiveSchematic": {
-      "description": "The active schematic the resources is being sold towards.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGSchematic>",
+      "description": "The active schematic the resources is being sold towards."
     },
     "mOnActiveSchematicChanged": {
       "description": "Called when we the schematic has been changed ."
@@ -106,20 +58,8 @@
       "type": "number"
     },
     "mShipReturnedMessage": {
-      "description": "Message sent when trading post ship has returned",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGMessageBase>",
+      "description": "Message sent when trading post ship has returned"
     }
   },
   "required": [

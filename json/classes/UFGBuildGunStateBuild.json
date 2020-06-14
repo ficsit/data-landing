@@ -17,36 +17,11 @@
       "type": "boolean"
     },
     "mPendingRecipe": {
-      "description": "Recipe to activate when state is entered.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGRecipe>",
+      "description": "Recipe to activate when state is entered."
     },
     "mActiveRecipe": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGRecipe>"
     },
     "mHologram": {
       "$ref": "#/definitions/AFGHologram",
@@ -71,8 +46,8 @@
       "type": "number"
     },
     "mActionMessage": {
-      "description": "Text to show while action is in progress",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "Text to show while action is in progress"
     }
   },
   "required": [

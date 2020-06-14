@@ -2,8 +2,8 @@
   "type": "object",
   "properties": {
     "mErrorMessage": {
-      "description": "Localized error message that we can push",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "Localized error message that we can push"
     },
     "mErrorResponse": {
       "$ref": "#/definitions/EErrorResponse",

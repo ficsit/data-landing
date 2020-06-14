@@ -21,72 +21,23 @@
       }
     },
     "mWaterResourceDescriptor": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGResourceDescriptor>"
     },
     "mDefaultItemMesh": {
-      "description": "Mesh used on items that do not have their own specified.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UStaticMesh",
+      "description": "Mesh used on items that do not have their own specified."
     },
     "mStackSizes": {
       "$ref": "#/definitions/Map<number,EStackSize>",
       "description": "How many of diffrent items can be in the same stack"
     },
     "mItemDropClass": {
-      "description": "The class of item we want to drop when we drop something",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGItemPickup_Spawnable>",
+      "description": "The class of item we want to drop when we drop something"
     },
     "mStageClass": {
-      "description": "The stage that should be used to make icons",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGRenderTargetStage>",
+      "description": "The stage that should be used to make icons"
     },
     "mIconSettings": {
       "description": "Resolutions of different item classes",

@@ -9,18 +9,23 @@
       }
     },
     "mPickupEvent": {
+      "$ref": "#/definitions/UAkAudioEvent",
       "description": "Audio event to be posted when picked up, @todo: Remove BlueprintReadOnly"
     },
     "mPickupEffect": {
+      "$ref": "#/definitions/UParticleSystem",
       "description": "The effect to play where the pickup was, @todo: Remove BlueprintReadOnly"
     },
     "mVehicleDestroyedEvent": {
+      "$ref": "#/definitions/UAkAudioEvent",
       "description": "Audio event to be posted when run over by a vehicle, @todo: Remove BlueprintReadOnly"
     },
     "mVehicleDestroyedEffect": {
+      "$ref": "#/definitions/UParticleSystem",
       "description": "The effect to play when run over by a vehicle, @todo: Remove BlueprintReadOnly"
     },
     "mExplosionDestroyedEffect": {
+      "$ref": "#/definitions/UParticleSystem",
       "description": "The effect to play when destroyed by an explosive. If one is not specified it may fall back to either the vehicle effect or pickup effect"
     },
     "mFXPriority": {
@@ -31,19 +36,7 @@
       "description": "What does this foliage identify itself as",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<UFGFoliageIdentifier>"
       }
     }
   },

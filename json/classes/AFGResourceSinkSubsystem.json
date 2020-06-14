@@ -6,20 +6,8 @@
       "description": "The cached schematic manager"
     },
     "mCouponClass": {
-      "description": "The coupon class that we use for buying resource sink schematics",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGItemDescriptor>",
+      "description": "The coupon class that we use for buying resource sink schematics"
     },
     "mTotalResourceSinkPoints": {
       "description": "The total number of resource sink points we have accumulated in total"
@@ -40,30 +28,18 @@
       }
     },
     "mResourceSinkPoints": {
-      "$ref": "#/definitions/Map<packageReference<UFGItemDescriptor>,number>",
+      "$ref": "#/definitions/Map<classReference<UFGItemDescriptor>,number>",
       "description": "Cached points per itemdescriptor"
     },
     "mFailedItemSinkMessages": {
-      "$ref": "#/definitions/Map<packageReference<UFGItemDescriptor>,packageReference<UFGMessageBase>>",
+      "$ref": "#/definitions/Map<classReference<UFGItemDescriptor>,classReference<UFGMessageBase>>",
       "description": "The messages that should play if the player tries to sink a item that you can't sink"
     },
     "mItemsFailedToSink": {
       "description": "The items that the player tried to sink that you can't sink that is also present in mFailedItemSinkMessages",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<UFGItemDescriptor>"
       }
     },
     "mAnyGenericItemsFailedToSink": {

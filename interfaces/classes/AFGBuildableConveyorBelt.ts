@@ -1,4 +1,4 @@
-import { UStaticMesh } from '../native/assets';
+import { UAkAudioEvent, UStaticMesh } from '../native/assets';
 import { float } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
@@ -44,5 +44,5 @@ export interface AFGBuildableConveyorBelt extends AFGBuildableConveyorBase {
   /**
    * The ak event to post for the sound spline
    */
-  mSplineAudioEvent: Unknown<'UAkAudioEvent'>;
+  mSplineAudioEvent: UAkAudioEvent;
 }

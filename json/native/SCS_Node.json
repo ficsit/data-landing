@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "ComponentClass": {
+      "$ref": "#/definitions/classReference<any>"
+    },
+    "ComponentTemplate": {
+      "$ref": "#/definitions/classReference<any>"
+    },
+    "VariableGuid": {
+      "$ref": "#/definitions/Guid"
+    },
+    "InternalVariableName": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "ComponentClass",
+    "ComponentTemplate",
+    "InternalVariableName",
+    "VariableGuid"
+  ]
+}

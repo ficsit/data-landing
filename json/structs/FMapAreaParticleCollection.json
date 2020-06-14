@@ -5,22 +5,11 @@
       "description": "Array of map areas that all use the same particle",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<UFGMapArea>"
       }
     },
     "Particle": {
+      "$ref": "#/definitions/UParticleSystem",
       "description": "Particle associated with map areas"
     }
   },

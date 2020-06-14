@@ -12,20 +12,7 @@
       "description": "The target we are attacking"
     },
     "mAttackClass": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGAttack>"
     },
     "mCachedPawn": {
       "$ref": "#/definitions/AFGEnemy",

@@ -1,5 +1,5 @@
 import { UFGItemDescriptor } from '../classes/UFGItemDescriptor';
-import { classReference } from '../native/references';
+import { softClassReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 
 export interface FDebrisItemDrop {
@@ -11,5 +11,5 @@ export interface FDebrisItemDrop {
   /**
    * Item to create pickup for.
    */
-  ItemClass: classReference<UFGItemDescriptor>;
+  ItemClass: softClassReference<UFGItemDescriptor>;
 }

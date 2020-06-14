@@ -5,36 +5,11 @@
       "description": "Border widget to indicate object selection"
     },
     "mDragWidgetClass": {
-      "description": "Specify the widget to virually represent being dragged",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<any>",
+      "description": "Specify the widget to virually represent being dragged"
     },
     "mSignElementSettingsWidget": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGSignElementSettingsWidget>"
     },
     "mDragElement": {
       "$ref": "#/definitions/UFGSignElementDragWidget",

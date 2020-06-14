@@ -2,36 +2,12 @@
   "type": "object",
   "properties": {
     "SplineSupportRecipeClass": {
-      "description": "What recipe to use for the spline support",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGRecipe>",
+      "description": "What recipe to use for the spline support"
     },
     "SplineRecipeClass": {
-      "description": "What recipe to use for the spline",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGRecipe>",
+      "description": "What recipe to use for the spline"
     }
   },
   "required": [

@@ -35,15 +35,19 @@
       "items": {}
     },
     "mBrakeSparkTemplate": {
+      "$ref": "#/definitions/UParticleSystem",
       "description": "Template for brake sparks particle"
     },
     "mSteamTemplate": {
+      "$ref": "#/definitions/UParticleSystem",
       "description": "Template for steam particle"
     },
     "mBrakeSound": {
+      "$ref": "#/definitions/UAkAudioEvent",
       "description": "Sound for when braking stops and steam occurs"
     },
     "mHandBrakeVfxTemplate": {
+      "$ref": "#/definitions/UParticleSystem",
       "description": "Template for brake effect"
     },
     "mHandBrakeVfxComponent": {

@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "a": {
+      "type": "number"
+    },
+    "b": {
+      "type": "number"
+    },
+    "c": {
+      "type": "number"
+    },
+    "d": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ]
+}

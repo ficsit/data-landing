@@ -2,28 +2,16 @@
   "type": "object",
   "properties": {
     "mDisplayName": {
-      "description": "This is the name we at CSS gave this area",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "This is the name we at CSS gave this area"
     },
     "mZoneType": {
-      "description": "What kind of zone this is",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGMapAreaZoneDescriptor>",
+      "description": "What kind of zone this is"
     },
     "mUserSetDisplayName": {
-      "description": "This is the name the player has given this area",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "This is the name the player has given this area"
     }
   },
   "required": [

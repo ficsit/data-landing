@@ -5,30 +5,16 @@
       "$ref": "#/definitions/EIntroTutorialSteps"
     },
     "Title": {
-      "description": "A localizable string.",
-      "type": "string"
+      "$ref": "#/definitions/localized"
     },
     "HintTexts": {
       "type": "array",
       "items": {
-        "type": "string"
+        "$ref": "#/definitions/localized"
       }
     },
     "Message": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGMessageBase>"
     }
   },
   "required": [

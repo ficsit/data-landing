@@ -1,10 +1,10 @@
 /**
  * Reference to an object described within another package.
  */
-export type packageReference<TClass> = {
+export interface packageReference<TClass> {
   package: string;
   name: string;
-};
+}
 
 /**
  * Reference to a class.
@@ -25,3 +25,10 @@ export type objectReference<TClass> = packageReference<TClass>;
  * https://docs.unrealengine.com/en-US/API/Runtime/CoreUObject/UObject/TScriptInterface/index.html
  */
 export type ScriptInterface<TInterface> = TInterface;
+
+export interface softClassReference<TClass> {
+  package: string;
+  name: string;
+  subPath: string;
+  member: string;
+}

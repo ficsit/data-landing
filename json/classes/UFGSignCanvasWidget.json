@@ -8,68 +8,16 @@
       "description": "The canvas panel where actual sign elements will be added"
     },
     "mSelectionBrushTemplate": {
-      "description": "https://docs.unrealengine.com/en-US/API/Runtime/SlateCore/Styling/FSlateBrush/index.html",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/FSlateBrush"
     },
     "mDefaultElementClass": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGSignElementWidget>"
     },
     "mTextElementClass": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGSignElementWidget>"
     },
     "mIconElementClass": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGSignElementWidget>"
     },
     "mDragAndDrop": {
       "$ref": "#/definitions/UFGSignElementDragDrop"

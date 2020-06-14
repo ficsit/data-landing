@@ -1,0 +1,27 @@
+{
+  "type": "object",
+  "properties": {
+    "SourceRadius": {
+      "type": "number"
+    },
+    "SourceLength": {
+      "type": "number"
+    },
+    "SoftSourceRadius": {
+      "type": "number"
+    },
+    "LightFalloffExponent": {
+      "type": "number"
+    },
+    "bUseInverseSquaredFalloff": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "LightFalloffExponent",
+    "SoftSourceRadius",
+    "SourceLength",
+    "SourceRadius",
+    "bUseInverseSquaredFalloff"
+  ]
+}

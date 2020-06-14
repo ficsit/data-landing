@@ -2,20 +2,8 @@
   "type": "object",
   "properties": {
     "Recipe": {
-      "description": "Recipe analyzed, nullptr for leaf nodes.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGRecipe>",
+      "description": "Recipe analyzed, nullptr for leaf nodes."
     },
     "Depth": {
       "description": "At which depth in the dependency tree is this item, root is 0.",

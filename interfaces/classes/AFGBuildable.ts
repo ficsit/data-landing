@@ -1,6 +1,7 @@
 import { IFGColorInterface } from '../interfaces/IFGColorInterface';
 import { IFGDismantleInterface } from '../interfaces/IFGDismantleInterface';
 import { IFGUseableInterface } from '../interfaces/IFGUseableInterface';
+import { UParticleSystem } from '../native/assets';
 import { AActor } from '../native/classes';
 import { float, int32, localized, uint8 } from '../native/primitive';
 import { classReference } from '../native/references';
@@ -121,7 +122,7 @@ export interface AFGBuildable
   /**
    * Particle system component
    */
-  mHighlightParticleSystemTemplate: Unknown<'UParticleSystem'>;
+  mHighlightParticleSystemTemplate: UParticleSystem;
 
   /**
    * Particle system component

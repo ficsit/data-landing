@@ -9,6 +9,7 @@
       "description": "This is the actor location"
     },
     "mActorRotation": {
+      "$ref": "#/definitions/Rotator",
       "description": "This is the actor rotation"
     },
     "mIsStatic": {
@@ -16,24 +17,12 @@
       "type": "boolean"
     },
     "mRepresentationTexture": {
-      "description": "This is the texture to show for this actor representation",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UTexture2D",
+      "description": "This is the texture to show for this actor representation"
     },
     "mRepresentationText": {
-      "description": "This is the text to show for this actor representation",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "This is the text to show for this actor representation"
     },
     "mRepresentationColor": {
       "$ref": "#/definitions/LinearColor",

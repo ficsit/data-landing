@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "package": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "subPath": {
+      "type": "string"
+    },
+    "member": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "member",
+    "name",
+    "package",
+    "subPath"
+  ]
+}

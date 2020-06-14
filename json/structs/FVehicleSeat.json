@@ -2,20 +2,8 @@
   "type": "object",
   "properties": {
     "SeatClass": {
-      "description": "Seat class to spawn.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGPassengerSeat>",
+      "description": "Seat class to spawn."
     },
     "SitSocket": {
       "description": "Socket to attach character to.",

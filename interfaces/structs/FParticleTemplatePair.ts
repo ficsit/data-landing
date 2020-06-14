@@ -1,7 +1,8 @@
+import { UParticleSystem } from '../native/assets';
 import { Unknown } from '../native/unknown';
 
 export interface FParticleTemplatePair {
-  Template: Unknown<'UParticleSystem'>;
+  Template: UParticleSystem;
 
   Particle: Unknown<'UParticleSystemComponent'>;
 }

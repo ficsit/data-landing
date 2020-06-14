@@ -9,36 +9,12 @@
       }
     },
     "mLegMeshOverride": {
-      "description": "The mesh to be used as legs on factories",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UStaticMesh",
+      "description": "The mesh to be used as legs on factories"
     },
     "mFootMeshOverride": {
-      "description": "The mesh to be used as foots on factories",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UStaticMesh",
+      "description": "The mesh to be used as foots on factories"
     },
     "mMaxLegLengthOverride": {
       "description": "The maximum length the legs can be.",

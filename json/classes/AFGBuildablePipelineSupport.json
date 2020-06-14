@@ -20,20 +20,8 @@
       "description": "The scene component for adjusting the length of the support."
     },
     "mSupportMesh": {
-      "description": "Static mesh to use when rendering",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UStaticMesh",
+      "description": "Static mesh to use when rendering"
     },
     "mUseStaticHeight": {
       "description": "Should the stack height only be calculated using the mStackHeight?",
@@ -48,28 +36,16 @@
       "type": "number"
     },
     "mHologramClass": {
-      "description": "The hologram class to use for constructing this object.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGHologram>",
+      "description": "The hologram class to use for constructing this object."
     },
     "mDisplayName": {
-      "description": "The human readable display name of this object.",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "The human readable display name of this object."
     },
     "mDescription": {
-      "description": "The human readable description of this object.",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "The human readable description of this object."
     },
     "MaxRenderDistance": {
       "description": "Max draw distance, inactive when < 0",
@@ -100,36 +76,12 @@
       "type": "number"
     },
     "mBuildEffectTemplate": {
-      "description": "What build effect to use when building this building",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGMaterialEffect_Build>",
+      "description": "What build effect to use when building this building"
     },
     "mDismantleEffectTemplate": {
-      "description": "What build effect to use when dismantling this building",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGMaterialEffect_Build>",
+      "description": "What build effect to use when dismantling this building"
     },
     "mBuildEffectInstignator": {
       "$ref": "#/definitions/AActor",
@@ -157,6 +109,7 @@
       "description": "Name read from config"
     },
     "mHighlightParticleSystemTemplate": {
+      "$ref": "#/definitions/UParticleSystem",
       "description": "Particle system component"
     },
     "mHighlightParticleSystemComponent": {
@@ -182,20 +135,8 @@
       "type": "number"
     },
     "mInteractWidgetClass": {
-      "description": "The widget that will present our UI.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGInteractWidget>",
+      "description": "The widget that will present our UI."
     },
     "mInteractingPlayers": {
       "description": "Players interacting with this building",
@@ -213,20 +154,8 @@
       "description": "ID given from server when constructed. Has not been assigned a value by server if 0."
     },
     "mBuiltWithRecipe": {
-      "description": "Recipe this building was built with, e.g. used for refunds and stats.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGRecipe>",
+      "description": "Recipe this building was built with, e.g. used for refunds and stats."
     },
     "mBuildTimeStamp": {
       "description": "Time when this building was built",

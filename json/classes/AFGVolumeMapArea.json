@@ -2,20 +2,8 @@
   "type": "object",
   "properties": {
     "mMapArea": {
-      "description": "This is the area this map defines.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGMapArea>",
+      "description": "This is the area this map defines."
     }
   },
   "required": [

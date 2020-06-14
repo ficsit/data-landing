@@ -5,36 +5,12 @@
       "description": "Message to display",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<UFGMessageBase>"
       }
     },
     "ResearchTree": {
-      "description": "Associated research tree",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/softClassReference<UFGResearchTree>",
+      "description": "Associated research tree"
     }
   },
   "required": [

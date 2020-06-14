@@ -19,20 +19,8 @@
       "type": "number"
     },
     "CreatureClassOverride": {
-      "description": "Overriden subclass of creature to spawn",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGCreature>",
+      "description": "Overriden subclass of creature to spawn"
     }
   },
   "required": [

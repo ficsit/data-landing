@@ -8,20 +8,8 @@
       }
     },
     "mEquipmentClass": {
-      "description": "The class of the equipment that spawned this attachment",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGEquipment>",
+      "description": "The class of the equipment that spawned this attachment"
     },
     "mUseLocation": {
       "$ref": "#/definitions/Vector",

@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "BoxExtent": {
+      "$ref": "#/definitions/Vector"
+    },
+    "AreaClass": {
+      "$ref": "#/definitions/classReference<any>"
+    },
+    "RelativeLocation": {
+      "$ref": "#/definitions/Vector"
+    },
+    "Mobility": {
+      "$ref": "#/definitions/EComponentMobility"
+    }
+  },
+  "required": [
+    "AreaClass",
+    "BoxExtent",
+    "Mobility",
+    "RelativeLocation"
+  ]
+}

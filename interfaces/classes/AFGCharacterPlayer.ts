@@ -3,6 +3,7 @@ import { EResourceForm } from '../enums/EResourceForm';
 import { IFGAggroTargetInterface } from '../interfaces/IFGAggroTargetInterface';
 import { IFGRadiationInterface } from '../interfaces/IFGRadiationInterface';
 import { IFGUseableInterface } from '../interfaces/IFGUseableInterface';
+import { UAkAudioEvent } from '../native/assets';
 import { AActor } from '../native/classes';
 import { float, int32, int8 } from '../native/primitive';
 import { classReference } from '../native/references';
@@ -150,7 +151,7 @@ export interface AFGCharacterPlayer
   /**
    * Effects to play when a foot hits the ground in first person
    */
-  m1PFootstepEvent: Unknown<'UAkAudioEvent'>[];
+  m1PFootstepEvent: UAkAudioEvent[];
 
   /**
    * latest safe ground location positions

@@ -16,20 +16,8 @@
       "description": "If we upgrade another conveyor belt this is the belt we replaces."
     },
     "mDefaultConveyorPoleRecipe": {
-      "description": "Class of conveyor pole to place at the end.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGRecipe>",
+      "description": "Class of conveyor pole to place at the end."
     },
     "mBendRadius": {
       "description": "What radius will the bends have.",
@@ -53,7 +41,7 @@
       "$ref": "#/definitions/Vector"
     },
     "mConstructionPoleRotations": {
-      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+      "$ref": "#/definitions/Rotator"
     },
     "mSplineMeshes": {
       "description": "All the generated spline meshes.",
@@ -66,20 +54,8 @@
       "items": {}
     },
     "mMesh": {
-      "description": "Cached from the default buildable.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UStaticMesh",
+      "description": "Cached from the default buildable."
     },
     "mSplineComponent": {
       "description": "The spline component we're placing."
@@ -113,36 +89,12 @@
     "mValidHitClasses": {
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<AActor>"
       }
     },
     "mRecipe": {
-      "description": "The recipe for this hologram.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGRecipe>",
+      "description": "The recipe for this hologram."
     },
     "mLoopSound": {
       "description": "Looping sound to play on holograms"
@@ -155,9 +107,11 @@
       "type": "boolean"
     },
     "mValidPlacementMaterial": {
+      "$ref": "#/definitions/UMaterialInstance",
       "description": "Material on hologram for valid placement."
     },
     "mInvalidPlacementMaterial": {
+      "$ref": "#/definitions/UMaterialInstance",
       "description": "Material on hologram for invalid placement."
     },
     "mChildren": {
@@ -167,20 +121,8 @@
       }
     },
     "mBuildClass": {
-      "description": "The class for the build actor this hologram wants to construct. Set on spawn.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AActor>",
+      "description": "The class for the build actor this hologram wants to construct. Set on spawn."
     },
     "mUseBuildClearanceOverlapSnapp": {
       "type": "boolean"
@@ -205,6 +147,7 @@
       "description": "Temp memory holders for when holograms are serialized for construction messages (replication)"
     },
     "mConstructionRotation": {
+      "$ref": "#/definitions/Rotator",
       "description": "Temp memory holders for when holograms are serialized for construction messages (replication)"
     }
   },

@@ -12,7 +12,9 @@
     "mArachnophobiaModeMaterials": {
       "description": "Materials that may be used on arachnids",
       "type": "array",
-      "items": {}
+      "items": {
+        "$ref": "#/definitions/UMaterialInstance"
+      }
     },
     "mIsArachnid": {
       "description": "Is creature considered an arachnid",
@@ -23,20 +25,8 @@
       "description": "True if optimized by the AI system"
     },
     "mItemToDrop": {
-      "description": "Class of item to drop when dead",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGItemPickup>",
+      "description": "Class of item to drop when dead"
     },
     "mSpline": {
       "$ref": "#/definitions/AFGSplinePath",
@@ -61,25 +51,14 @@
       "type": "boolean"
     },
     "mActualAIControllerClass": {
-      "description": "We specify our own controller class because we need to delay the spawning. Set this instead of \"AIControllerClass",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<any>",
+      "description": "We specify our own controller class because we need to delay the spawning. Set this instead of \"AIControllerClass"
     },
     "mRotationTimerHandle": {
       "description": "Timer handle used when rotating the pawn with our custom rotate movement"
     },
     "mTargetRotation": {
+      "$ref": "#/definitions/Rotator",
       "description": "Target rotation for custom rotate movement"
     },
     "mCanSpawnDuringDay": {
@@ -139,7 +118,9 @@
     "mFootstepAudioEvents": {
       "description": "Audio event to play (where index in array is the feet index passed from AnimNotify_FootDown)",
       "type": "array",
-      "items": {}
+      "items": {
+        "$ref": "#/definitions/UAkAudioEvent"
+      }
     },
     "mMaxFootstepParticleSpawnDistance": {
       "description": "Maximum distance we want to play footstep particles at",
@@ -171,20 +152,7 @@
       "description": "Overrides the default fall damage curve, utilized by Equipment"
     },
     "mFallDamageDamageType": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGDamageType>"
     },
     "mMaxDeathStayTime": {
       "description": "The maximum time after death (in seconds) the pawn will stay in the world, so it will be removed even if it's in sight after this time",
@@ -199,15 +167,19 @@
       "type": "number"
     },
     "mTakeDamageSound": {
+      "$ref": "#/definitions/UAkAudioEvent",
       "description": "Sound played when pawn takes damage"
     },
     "mDeathSound": {
+      "$ref": "#/definitions/UAkAudioEvent",
       "description": "Sound played when pawn dies"
     },
     "mLandEvent": {
+      "$ref": "#/definitions/UAkAudioEvent",
       "description": "Event posted when landing"
     },
     "mTakeDamageParticle": {
+      "$ref": "#/definitions/UParticleSystem",
       "description": "Particle for when pawn takes damage"
     },
     "mMinVehiclePushVelocityForRagdoll": {
@@ -252,19 +224,7 @@
       "description": "Damage types that this character is immune to",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<any>"
       }
     },
     "mWeakspotMultiplier": {

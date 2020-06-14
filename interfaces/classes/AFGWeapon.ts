@@ -1,6 +1,6 @@
+import { UAkAudioEvent } from '../native/assets';
 import { float, int32 } from '../native/primitive';
 import { classReference } from '../native/references';
-import { Unknown } from '../native/unknown';
 
 import { AFGEquipment } from './AFGEquipment';
 import { AFGHUD } from './AFGHUD';
@@ -61,5 +61,5 @@ export interface AFGWeapon extends AFGEquipment {
   /**
    * Sound played when reloading
    */
-  mReloadSound: Unknown<'UAkAudioEvent'>;
+  mReloadSound: UAkAudioEvent;
 }

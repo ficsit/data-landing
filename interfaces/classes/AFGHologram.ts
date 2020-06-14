@@ -1,8 +1,9 @@
 import { IFGConstructionMessageInterface } from '../interfaces/IFGConstructionMessageInterface';
+import { UMaterialInstance } from '../native/assets';
 import { AActor } from '../native/classes';
 import { int32 } from '../native/primitive';
 import { classReference } from '../native/references';
-import { Vector } from '../native/structs';
+import { Rotator, Vector } from '../native/structs';
 import { Unknown } from '../native/unknown';
 
 import { UFGRecipe } from './UFGRecipe';
@@ -33,12 +34,12 @@ export interface AFGHologram extends AActor, IFGConstructionMessageInterface {
   /**
    * Material on hologram for valid placement.
    */
-  mValidPlacementMaterial: Unknown<'UMaterialInstance'>;
+  mValidPlacementMaterial: UMaterialInstance;
 
   /**
    * Material on hologram for invalid placement.
    */
-  mInvalidPlacementMaterial: Unknown<'UMaterialInstance'>;
+  mInvalidPlacementMaterial: UMaterialInstance;
 
   mChildren: AFGHologram[];
 
@@ -77,5 +78,5 @@ export interface AFGHologram extends AActor, IFGConstructionMessageInterface {
   /**
    * Temp memory holders for when holograms are serialized for construction messages (replication)
    */
-  mConstructionRotation: Unknown<'FRotator'>;
+  mConstructionRotation: Rotator;
 }

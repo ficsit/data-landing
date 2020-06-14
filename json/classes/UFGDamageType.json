@@ -2,6 +2,7 @@
   "type": "object",
   "properties": {
     "mImpactAudioEvent": {
+      "$ref": "#/definitions/UAkAudioEvent",
       "description": "When pawn take damage from a source, they play this take damage event"
     },
     "mPlayImpactAudioOn": {
@@ -12,6 +13,7 @@
       "description": "Specify if the audio from this damage type should overrride the damage sound in hit pawn, or add to it"
     },
     "mImpactParticle": {
+      "$ref": "#/definitions/UParticleSystem",
       "description": "When pawn take damage from a source, they play this take damage event"
     },
     "mPlayImpactParticleOn": {

@@ -1,6 +1,6 @@
 import { UFGMessageBase } from '../classes/UFGMessageBase';
 import { UFGResearchTree } from '../classes/UFGResearchTree';
-import { classReference } from '../native/references';
+import { classReference, softClassReference } from '../native/references';
 
 export interface FResearchTreeMessageData {
   /**
@@ -11,5 +11,5 @@ export interface FResearchTreeMessageData {
   /**
    * Associated research tree
    */
-  ResearchTree: classReference<UFGResearchTree>;
+  ResearchTree: softClassReference<UFGResearchTree>;
 }

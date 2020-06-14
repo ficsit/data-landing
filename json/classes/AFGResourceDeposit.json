@@ -21,36 +21,11 @@
       "description": "The mesh we use for displaying the resource deposit"
     },
     "mOverrideResourceClass": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGResourceDescriptor>"
     },
     "mResourceClass": {
-      "description": "Type of resource",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGResourceDescriptor>",
+      "description": "Type of resource"
     },
     "mPurity": {
       "$ref": "#/definitions/EResourcePurity",
@@ -101,6 +76,7 @@
       }
     },
     "mHighlightParticleSystemTemplate": {
+      "$ref": "#/definitions/UParticleSystem",
       "description": "Particle system component"
     },
     "mHighlightParticleSystemComponent": {

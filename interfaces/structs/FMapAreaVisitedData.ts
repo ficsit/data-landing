@@ -1,7 +1,7 @@
 import { UFGMapArea } from '../classes/UFGMapArea';
 import { UFGMessageBase } from '../classes/UFGMessageBase';
 import { UFGSchematic } from '../classes/UFGSchematic';
-import { classReference } from '../native/references';
+import { classReference, softClassReference } from '../native/references';
 
 export interface FMapAreaVisitedData {
   /**
@@ -17,5 +17,5 @@ export interface FMapAreaVisitedData {
   /**
    * Schematic to unlock ( if any )
    */
-  SchematicClass: classReference<UFGSchematic>;
+  SchematicClass: softClassReference<UFGSchematic>;
 }

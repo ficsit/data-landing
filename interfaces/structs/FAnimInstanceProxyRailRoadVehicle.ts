@@ -1,5 +1,5 @@
 import { float, uint8 } from '../native/primitive';
-import { Vector } from '../native/structs';
+import { Rotator, Vector } from '../native/structs';
 import { Unknown } from '../native/unknown';
 
 export interface FAnimInstanceProxyRailRoadVehicle extends Unknown<'FAnimInstanceProxy'> {
@@ -11,22 +11,22 @@ export interface FAnimInstanceProxyRailRoadVehicle extends Unknown<'FAnimInstanc
   /**
    * Front Bogie Rotation
    */
-  mFrontBogieRotation: Unknown<'FRotator'>;
+  mFrontBogieRotation: Rotator;
 
   /**
    * Front Bogie Rotation
    */
-  mBackBogieRotation: Unknown<'FRotator'>;
+  mBackBogieRotation: Rotator;
 
   /**
    * Wheel Rotation
    */
-  mWheelRotation: Unknown<'FRotator'>;
+  mWheelRotation: Rotator;
 
   /**
    * Front Connector Rotation
    */
-  mFrontConnectorRotation: Unknown<'FRotator'>;
+  mFrontConnectorRotation: Rotator;
 
   /**
    * Front Connector Translation
@@ -36,7 +36,7 @@ export interface FAnimInstanceProxyRailRoadVehicle extends Unknown<'FAnimInstanc
   /**
    * Back Connector Rotation
    */
-  mBackConnectorRotation: Unknown<'FRotator'>;
+  mBackConnectorRotation: Rotator;
 
   /**
    * Back Connector Translation
@@ -46,7 +46,7 @@ export interface FAnimInstanceProxyRailRoadVehicle extends Unknown<'FAnimInstanc
   /**
    * Track curvature
    */
-  mTrackCurvature: Unknown<'FRotator'>;
+  mTrackCurvature: Rotator;
 
   /**
    * Forward speed

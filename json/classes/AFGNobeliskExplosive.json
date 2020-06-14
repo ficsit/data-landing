@@ -12,7 +12,7 @@
       "description": "An unknown type (likely an Unreal Engine or plugin type)."
     },
     "mThrowRotation": {
-      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+      "$ref": "#/definitions/Rotator"
     },
     "mDestructionCollisionComp": {
       "description": "Collision Component used to determine which objects should be considered for destruction"

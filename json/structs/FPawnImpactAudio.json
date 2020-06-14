@@ -6,6 +6,7 @@
       "type": "number"
     },
     "ImpactEvent": {
+      "$ref": "#/definitions/UAkAudioEvent",
       "description": "Event to post if the pawn has the specified velocity"
     }
   },

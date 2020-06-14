@@ -2,26 +2,15 @@
   "type": "object",
   "properties": {
     "ResourceClass": {
-      "description": "The class (and it's subclasses) that we want to specify the resolution for",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGItemDescriptor>",
+      "description": "The class (and it's subclasses) that we want to specify the resolution for"
     },
     "Resolution": {
       "description": "The x and y resolution of the icon (must be power of 2), -1 means no icon",
       "type": "number"
     },
     "MasterMaterial": {
+      "$ref": "#/definitions/UMaterial",
       "description": "Material that should be used for each icon, need to have a parameter named Texture"
     }
   },

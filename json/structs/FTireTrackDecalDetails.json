@@ -5,6 +5,7 @@
       "description": "Surface material to override for"
     },
     "DecalMaterialOverride": {
+      "$ref": "#/definitions/UMaterial",
       "description": "Material to use as an override"
     }
   },

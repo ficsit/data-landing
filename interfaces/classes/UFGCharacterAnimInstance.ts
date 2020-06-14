@@ -1,5 +1,5 @@
 import { float } from '../native/primitive';
-import { Vector } from '../native/structs';
+import { Rotator, Vector } from '../native/structs';
 import { Unknown } from '../native/unknown';
 
 import { AFGCharacterBase } from './AFGCharacterBase';
@@ -98,7 +98,7 @@ export interface UFGCharacterAnimInstance extends Unknown<'UAnimInstance'> {
   /**
    * Rotation of root component
    */
-  mRootRotation: Unknown<'FRotator'>;
+  mRootRotation: Rotator;
 
   /**
    * should we turn left
@@ -148,7 +148,7 @@ export interface UFGCharacterAnimInstance extends Unknown<'UAnimInstance'> {
   /**
    * Last Rotation saved
    */
-  mActorRotationLastTick: Unknown<'FRotator'>;
+  mActorRotationLastTick: Rotator;
 
   /**
    * Editable for Bigges sake

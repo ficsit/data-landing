@@ -2,292 +2,76 @@
   "type": "object",
   "properties": {
     "mStorySubsystemClass": {
-      "description": "The collection containing the world bounds",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGStorySubsystem>",
+      "description": "The collection containing the world bounds"
     },
     "mTimeSubsystemClass": {
-      "description": "Subsystem to handle time of day.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGTimeOfDaySubsystem>",
+      "description": "Subsystem to handle time of day."
     },
     "mRailroadSubsystemClass": {
-      "description": "Subsystem that handles the rail network, signals and all the trains in the game.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGRailroadSubsystem>",
+      "description": "Subsystem that handles the rail network, signals and all the trains in the game."
     },
     "mCircuitSubsystemClass": {
-      "description": "Subsystem that handles all the circuit simulations in the game, e.g. power grid.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGCircuitSubsystem>",
+      "description": "Subsystem that handles all the circuit simulations in the game, e.g. power grid."
     },
     "mSchematicManagerClass": {
-      "description": "Subsystem to handle all schematics and recipes in the game.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGSchematicManager>",
+      "description": "Subsystem to handle all schematics and recipes in the game."
     },
     "mGamePhaseManagerClass": {
-      "description": "Subsystem to handle the game phase.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGGamePhaseManager>",
+      "description": "Subsystem to handle the game phase."
     },
     "mResearchManagerClass": {
-      "description": "Subsystem to handle all research (M.A.M.) done in the game",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGResearchManager>",
+      "description": "Subsystem to handle all research (M.A.M.) done in the game"
     },
     "mTutorialIntroManagerClass": {
-      "description": "Subsystem to handle the tutorial.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGTutorialIntroManager>",
+      "description": "Subsystem to handle the tutorial."
     },
     "mRadioactivitySubsystemClass": {
-      "description": "Subsystem that handles radioactivity in the world.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGRadioactivitySubsystem>",
+      "description": "Subsystem that handles radioactivity in the world."
     },
     "mChatManagerClass": {
-      "description": "Subsystem that handles the chat messages.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGChatManager>",
+      "description": "Subsystem that handles the chat messages."
     },
     "mCentralStorageSubsystemClass": {
-      "description": "Subsystem that handles the central storage.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGCentralStorageSubsystem>",
+      "description": "Subsystem that handles the central storage."
     },
     "mMapManagerClass": {
-      "description": "Subsystem that handles the map",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGMapManager>",
+      "description": "Subsystem that handles the map"
     },
     "mBuildableSubsystemClass": {
-      "description": "Subsystem to manage all the buildables in the game.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGBuildableSubsystem>",
+      "description": "Subsystem to manage all the buildables in the game."
     },
     "mFoliageRemovalSubsystemClass": {
-      "description": "Subsystem used to remove foliage on the map.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGFoliageRemovalSubsystem>",
+      "description": "Subsystem used to remove foliage on the map."
     },
     "mProximitySubsystemClass": {
-      "description": "Subsystem used to show effects near the player.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGProximitySubsystem>",
+      "description": "Subsystem used to show effects near the player."
     },
     "mUnlockSubsystem": {
-      "description": "Subsystem responsible for handling unlocks",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGUnlockSubsystem>",
+      "description": "Subsystem responsible for handling unlocks"
     },
     "mResourceSinkSubsystemClass": {
-      "description": "Subsystem that handles the resource sink system",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGResourceSinkSubsystem>",
+      "description": "Subsystem that handles the resource sink system"
     },
     "mAdminInterfaceClass": {
-      "description": "Handles administration task of servers",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGAdminInterface>",
+      "description": "Handles administration task of servers"
     }
   },
   "required": [

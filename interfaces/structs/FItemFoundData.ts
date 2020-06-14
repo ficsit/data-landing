@@ -1,7 +1,7 @@
 import { UFGItemDescriptor } from '../classes/UFGItemDescriptor';
 import { UFGMessageBase } from '../classes/UFGMessageBase';
 import { UFGSchematic } from '../classes/UFGSchematic';
-import { classReference } from '../native/references';
+import { classReference, softClassReference } from '../native/references';
 
 export interface FItemFoundData {
   /**
@@ -17,10 +17,10 @@ export interface FItemFoundData {
   /**
    * Schematic to unlock ( if any )
    */
-  SchematicClass: classReference<UFGSchematic>;
+  SchematicClass: softClassReference<UFGSchematic>;
 
   /**
    * Item descriptor we are looking for
    */
-  ItemClass: classReference<UFGItemDescriptor>;
+  ItemClass: softClassReference<UFGItemDescriptor>;
 }

@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "InnerConeAngle": {
+      "type": "number"
+    },
+    "LightShaftConeAngle": {
+      "type": "number"
+    },
+    "OuterConeAngle": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "InnerConeAngle",
+    "LightShaftConeAngle",
+    "OuterConeAngle"
+  ]
+}

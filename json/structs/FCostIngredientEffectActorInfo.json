@@ -2,20 +2,8 @@
   "type": "object",
   "properties": {
     "ItemClass": {
-      "description": "What class is this cost of",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGItemDescriptor>",
+      "description": "What class is this cost of"
     },
     "SpawnDelay": {
       "description": "Delay between this and the previous cost actor spawned",

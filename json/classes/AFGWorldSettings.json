@@ -38,6 +38,7 @@
       "description": "The minimap capture actor of this level, might be null"
     },
     "mLevelStartedEvent": {
+      "$ref": "#/definitions/UAkAudioEvent",
       "description": "Different events for different levels, so they can start different playlists"
     },
     "mDefaultLoadSave": {

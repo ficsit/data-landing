@@ -15,68 +15,16 @@
       "description": "Transform of the top part of the lift, in actor local space."
     },
     "mBottomMesh": {
-      "description": "A StaticMesh is a piece of geometry that consists of a static set of polygons.\n\nhttps://docs.unrealengine.com/en-US/API/Runtime/Engine/Engine/UStaticMesh/index.html",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UStaticMesh"
     },
     "mMidMesh": {
-      "description": "A StaticMesh is a piece of geometry that consists of a static set of polygons.\n\nhttps://docs.unrealengine.com/en-US/API/Runtime/Engine/Engine/UStaticMesh/index.html",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UStaticMesh"
     },
     "mTopMesh": {
-      "description": "A StaticMesh is a piece of geometry that consists of a static set of polygons.\n\nhttps://docs.unrealengine.com/en-US/API/Runtime/Engine/Engine/UStaticMesh/index.html",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UStaticMesh"
     },
     "mJointMesh": {
-      "description": "A StaticMesh is a piece of geometry that consists of a static set of polygons.\n\nhttps://docs.unrealengine.com/en-US/API/Runtime/Engine/Engine/UStaticMesh/index.html",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UStaticMesh"
     },
     "mArrowDirection": {
       "description": "Used to replicate the direction arrow."
@@ -116,36 +64,12 @@
     "mValidHitClasses": {
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<AActor>"
       }
     },
     "mRecipe": {
-      "description": "The recipe for this hologram.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGRecipe>",
+      "description": "The recipe for this hologram."
     },
     "mLoopSound": {
       "description": "Looping sound to play on holograms"
@@ -158,9 +82,11 @@
       "type": "boolean"
     },
     "mValidPlacementMaterial": {
+      "$ref": "#/definitions/UMaterialInstance",
       "description": "Material on hologram for valid placement."
     },
     "mInvalidPlacementMaterial": {
+      "$ref": "#/definitions/UMaterialInstance",
       "description": "Material on hologram for invalid placement."
     },
     "mChildren": {
@@ -170,20 +96,8 @@
       }
     },
     "mBuildClass": {
-      "description": "The class for the build actor this hologram wants to construct. Set on spawn.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AActor>",
+      "description": "The class for the build actor this hologram wants to construct. Set on spawn."
     },
     "mUseBuildClearanceOverlapSnapp": {
       "type": "boolean"
@@ -208,6 +122,7 @@
       "description": "Temp memory holders for when holograms are serialized for construction messages (replication)"
     },
     "mConstructionRotation": {
+      "$ref": "#/definitions/Rotator",
       "description": "Temp memory holders for when holograms are serialized for construction messages (replication)"
     }
   },

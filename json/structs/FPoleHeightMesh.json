@@ -2,20 +2,8 @@
   "type": "object",
   "properties": {
     "Mesh": {
-      "description": "Mesh for the current pole height.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UStaticMesh",
+      "description": "Mesh for the current pole height."
     },
     "Height": {
       "description": "Pole height for the current mesh.",

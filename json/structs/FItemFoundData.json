@@ -9,52 +9,16 @@
       "description": "Message that should be added when Class is found for the first time",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<UFGMessageBase>"
       }
     },
     "SchematicClass": {
-      "description": "Schematic to unlock ( if any )",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/softClassReference<UFGSchematic>",
+      "description": "Schematic to unlock ( if any )"
     },
     "ItemClass": {
-      "description": "Item descriptor we are looking for",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/softClassReference<UFGItemDescriptor>",
+      "description": "Item descriptor we are looking for"
     }
   },
   "required": [

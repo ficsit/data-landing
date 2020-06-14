@@ -5,12 +5,12 @@
       "description": "Fired when we get the result back from the HTTP Get request"
     },
     "mNewFeedText": {
-      "description": "Yeah yeah, this is only a prototype class it breaks code convention, fix it when we make a proper news feed",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "Yeah yeah, this is only a prototype class it breaks code convention, fix it when we make a proper news feed"
     },
     "mNewsFeedRequestFailedText": {
-      "description": "Display this text if we fail to get the news feed text",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "Display this text if we fail to get the news feed text"
     },
     "mNewsFeedURLs": {
       "type": "array",

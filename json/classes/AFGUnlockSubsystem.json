@@ -8,102 +8,30 @@
       "description": "SERVER ONLY: Called when we unlocked more arms slots"
     },
     "mMapUnlockedMessage": {
-      "description": "Message sent when the map is unlocked",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGMessageBase>",
+      "description": "Message sent when the map is unlocked"
     },
     "mInventorySlotUnlockedMessage": {
-      "description": "Message sent when unlocking inventory slot",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGMessageBase>",
+      "description": "Message sent when unlocking inventory slot"
     },
     "mBuildingEfficiencyUnlockedMessage": {
-      "description": "Message sent when unlocking building efficiency display",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGMessageBase>",
+      "description": "Message sent when unlocking building efficiency display"
     },
     "mBuildingOverclockUnlockedMessage": {
-      "description": "Message sent when unlocking overclocking of buildings",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGMessageBase>",
+      "description": "Message sent when unlocking overclocking of buildings"
     },
     "mArmEquipmentSlotUnlockedMessage": {
-      "description": "Message sent when unlocking arm equipment slot",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGMessageBase>",
+      "description": "Message sent when unlocking arm equipment slot"
     },
     "mScannableResources": {
       "description": "These are the resources the players can use their scanner to find",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<UFGResourceDescriptor>"
       }
     },
     "mIsMapUnlocked": {

@@ -10,24 +10,12 @@
       "type": "number"
     },
     "Name": {
-      "description": "Name of this phase.",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "Name of this phase."
     },
     "PhaseUnlockedMessage": {
-      "description": "Message sent when this phase is unlocked",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGMessageBase>",
+      "description": "Message sent when this phase is unlocked"
     }
   },
   "required": [

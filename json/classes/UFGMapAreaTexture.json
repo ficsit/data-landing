@@ -2,36 +2,12 @@
   "type": "object",
   "properties": {
     "mAreaTexture": {
-      "description": "This is the texture that the level designers made to define areas on the map",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UTexture2D",
+      "description": "This is the texture that the level designers made to define areas on the map"
     },
     "mFogOfWarTexture": {
-      "description": "The current fog of war is generated to this texture",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UTexture2D",
+      "description": "The current fog of war is generated to this texture"
     },
     "mAreaData": {
       "description": "This is where we store the raw data we generated from the texture",

@@ -1,6 +1,6 @@
 import { UObject } from '../native/classes';
 import { float, localized } from '../native/primitive';
-import { classReference } from '../native/references';
+import { softClassReference } from '../native/references';
 import { FItemAmount } from '../structs/FItemAmount';
 
 export interface UFGRecipe extends UObject {
@@ -37,5 +37,5 @@ export interface UFGRecipe extends UObject {
   /**
    * Defines where this recipe can be produced
    */
-  mProducedIn: classReference<UObject>[];
+  mProducedIn: softClassReference<UObject>[];
 }

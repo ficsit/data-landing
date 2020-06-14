@@ -2,20 +2,8 @@
   "type": "object",
   "properties": {
     "mSplineMesh": {
-      "description": "The mesh to repeat on curved sections.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UStaticMesh",
+      "description": "The mesh to repeat on curved sections."
     },
     "mSplineMeshLength": {
       "description": "The size of each spline mesh.",

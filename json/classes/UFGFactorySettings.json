@@ -2,345 +2,145 @@
   "type": "object",
   "properties": {
     "mDefaultValidPlacementMaterial": {
+      "$ref": "#/definitions/UMaterialInstance",
       "description": "Material on hologram for valid placement. @note Do not set in code!"
     },
     "mDefaultValidPlacementMaterialSimplified": {
+      "$ref": "#/definitions/UMaterialInstance",
       "description": "Material on hologram for valid placement. @note Do not set in code!"
     },
     "mDefaultInvalidPlacementMaterial": {
+      "$ref": "#/definitions/UMaterialInstance",
       "description": "Material on hologram for invalid placement. @note Do not set in code!"
     },
     "mDefaultInputConnectionMaterial": {
+      "$ref": "#/definitions/UMaterialInstance",
       "description": "Material on hologram for input connections. @note Do not set in code!"
     },
     "mDefaultOutputConnectionMaterial": {
+      "$ref": "#/definitions/UMaterialInstance",
       "description": "Material on hologram for output connections. @note Do not set in code!"
     },
     "mDefaultNeutralConnectionMaterial": {
+      "$ref": "#/definitions/UMaterialInstance",
       "description": "Material on hologram for directionally neutral connections. @note Do not set in code!"
     },
     "mDefaultPowerConnectionMaterial": {
+      "$ref": "#/definitions/UMaterialInstance",
       "description": "Material on hologram for power connections. @note Do not set in code!"
     },
     "mDefaultConveyorConnectionFrameMesh": {
-      "description": "Mesh used to visualize input or output connections location. @note Do not set in code!",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UStaticMesh",
+      "description": "Mesh used to visualize input or output connections location. @note Do not set in code!"
     },
     "mDefaultConveyorConnectionArrowMesh": {
-      "description": "Mesh used to visualize input or output connections direction. @note Do not set in code!",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UStaticMesh",
+      "description": "Mesh used to visualize input or output connections direction. @note Do not set in code!"
     },
     "mDefaultPipeConnectionFrameMesh": {
-      "description": "Mesh used to visualize pipeline connections location  @note Do not set in Code!",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UStaticMesh",
+      "description": "Mesh used to visualize pipeline connections location  @note Do not set in Code!"
     },
     "mDefaultPipeConnectionArrowMesh": {
-      "description": "Mesh used to visualize pipeline connections direction (Consumer / Producer) @note Do not set in code!",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UStaticMesh",
+      "description": "Mesh used to visualize pipeline connections direction (Consumer / Producer) @note Do not set in code!"
     },
     "mDefaultPowerConnectionMesh": {
-      "description": "Mesh used to visualize power connections. @note Do not set in code!",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UStaticMesh",
+      "description": "Mesh used to visualize power connections. @note Do not set in code!"
     },
     "mClearanceMesh": {
-      "description": "Mesh used to visualize the clearance mesh on factories @note Do not set in code!",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UStaticMesh",
+      "description": "Mesh used to visualize the clearance mesh on factories @note Do not set in code!"
     },
     "mClearanceMaterial": {
+      "$ref": "#/definitions/UMaterialInstance",
       "description": "Material on hologram for clearance. @note Do not set in code!"
     },
     "mHologramLoopSound": {
+      "$ref": "#/definitions/UAkAudioEvent",
       "description": "Default sound loop placed on holograms."
     },
     "mHologramSnapSound": {
+      "$ref": "#/definitions/UAkAudioEvent",
       "description": "Snapping sound for holograms, e.g. when a conveyor snaps to an output."
     },
     "mBuildGuideMesh": {
-      "description": "Mesh used to visualize alignment in build mode. @note Do not set in code!",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UStaticMesh",
+      "description": "Mesh used to visualize alignment in build mode. @note Do not set in code!"
     },
     "mBuildGuideMaterial": {
+      "$ref": "#/definitions/UMaterialInstance",
       "description": "Material applied to build guides to visualize alignment in build mode. @note Do not set in code!"
     },
     "mConveyorBuildGuideMaterial": {
+      "$ref": "#/definitions/UMaterialInstance",
       "description": "Material applied to build guides specifically for conveyor belts to visualize alignment in build mode. @note Do not set in code!"
     },
     "mInventoryDropCrate": {
-      "description": "Crate spawned when we dismantle an actor or when we die. It will be filled with the refund if it doesn't fit in the players inventory.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGCrate>",
+      "description": "Crate spawned when we dismantle an actor or when we die. It will be filled with the refund if it doesn't fit in the players inventory."
     },
     "mPowerShardClass": {
-      "description": "The default class we use for over clocking buildings",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGItemDescriptor>",
+      "description": "The default class we use for over clocking buildings"
     },
     "mConstructionSounds": {
       "description": "Default sound played when constructing a building, a random from the list is played.",
       "type": "array",
-      "items": {}
+      "items": {
+        "$ref": "#/definitions/UAkAudioEvent"
+      }
     },
     "mDismantleSounds": {
       "description": "Default sound played when dismantling a building, a random from the list is played.",
       "type": "array",
-      "items": {}
+      "items": {
+        "$ref": "#/definitions/UAkAudioEvent"
+      }
     },
     "mBuildEffect": {
-      "description": "Effect to play when a building is built\n[DavalliusA:Mon/01-04-2019] seems to only be used for replays? //@TODO: see if we can't store this in a way more suitable for replays... a waste to have it in a global class like this",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGMaterialEffect_Build>",
+      "description": "Effect to play when a building is built\n[DavalliusA:Mon/01-04-2019] seems to only be used for replays? //@TODO: see if we can't store this in a way more suitable for replays... a waste to have it in a global class like this"
     },
     "mDismantleEffect": {
-      "description": "Effect to play when a building is dismantled\n[DavalliusA:Mon/01-04-2019] seems to never ba used? //@TODO: see if we can't remove this",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGMaterialEffect_Build>",
+      "description": "Effect to play when a building is dismantled\n[DavalliusA:Mon/01-04-2019] seems to never ba used? //@TODO: see if we can't remove this"
     },
     "mDismantlePendingMaterial": {
       "description": "Material used when looking at buildings for dismantle"
     },
     "mBuildGunClass": {
-      "description": "The default buildgun class to spawn",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGBuildGun>",
+      "description": "The default buildgun class to spawn"
     },
     "mResourceScannerClass": {
-      "description": "The default resource scanner class to spawn",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGResourceScanner>",
+      "description": "The default resource scanner class to spawn"
     },
     "mResourceMinerClass": {
-      "description": "The default resource miner class to spawn",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGResourceMiner>",
+      "description": "The default resource miner class to spawn"
     },
     "mLegMesh": {
-      "description": "The mesh to be used as legs on factories",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UStaticMesh",
+      "description": "The mesh to be used as legs on factories"
     },
     "mFootMesh": {
-      "description": "The mesh to be used as foots on factories",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UStaticMesh",
+      "description": "The mesh to be used as foots on factories"
     },
     "mMaxFeetLength": {
       "description": "Maximum length when we want to spawn the legs",
       "type": "number"
     },
     "mDismantleShortcutClass": {
-      "description": "The class we want to spawn for dismantle shortcuts",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGDismantleShortcut>",
+      "description": "The class we want to spawn for dismantle shortcuts"
     },
     "mRecipeShortcutClass": {
-      "description": "The class we want to spawn for recipe shortcuts",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGRecipeShortcut>",
+      "description": "The class we want to spawn for recipe shortcuts"
     },
     "mShortcutMap": {
       "description": "Names if the input actions that defines the shortcuts. This maps directly to their index (so first entry here should mean that it should call ExecuteShortcut 0)",

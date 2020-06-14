@@ -41,40 +41,16 @@
       "description": "An unknown type (likely an Unreal Engine or plugin type)."
     },
     "mAttentionPingActorClass": {
-      "description": "The class of the attention ping actor we want to use",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGAttentionPingActor>",
+      "description": "The class of the attention ping actor we want to use"
     },
     "mMapAreaCheckInterval": {
       "description": "How often should we check which map area the pawn is in?",
       "type": "number"
     },
     "mCurrentMapArea": {
-      "description": "In what map area is our pawn right now ?",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGMapArea>",
+      "description": "In what map area is our pawn right now ?"
     },
     "mMovementWindComp": {
       "description": "An unknown type (likely an Unreal Engine or plugin type)."

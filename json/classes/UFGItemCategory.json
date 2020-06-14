@@ -2,8 +2,8 @@
   "type": "object",
   "properties": {
     "mDisplayName": {
-      "description": "Name of this item category",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "Name of this item category"
     }
   },
   "required": [

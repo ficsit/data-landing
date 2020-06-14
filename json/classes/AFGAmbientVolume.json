@@ -2,20 +2,8 @@
   "type": "object",
   "properties": {
     "mAmbientSettings": {
-      "description": "The settings for the volume",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGAmbientSettings>",
+      "description": "The settings for the volume"
     },
     "mAudioComponent": {
       "description": "The audio component we want to move around"

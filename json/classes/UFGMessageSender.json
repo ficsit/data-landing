@@ -2,28 +2,16 @@
   "type": "object",
   "properties": {
     "mSenderName": {
-      "description": "Name of the sender",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "Name of the sender"
     },
     "mSenderMail": {
-      "description": "Mail adress of the sender",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "Mail adress of the sender"
     },
     "mTexture": {
-      "description": "Image of the sender",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UTexture2D",
+      "description": "Image of the sender"
     }
   },
   "required": [

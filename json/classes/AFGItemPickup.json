@@ -24,6 +24,7 @@
       "description": "ak component that plays sound"
     },
     "mAudioEvent": {
+      "$ref": "#/definitions/UAkAudioEvent",
       "description": "The ak event to post for the sound"
     }
   },

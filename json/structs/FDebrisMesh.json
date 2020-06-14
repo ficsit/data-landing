@@ -2,20 +2,8 @@
   "type": "object",
   "properties": {
     "Mesh": {
-      "description": "Mesh to spawn.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UStaticMesh",
+      "description": "Mesh to spawn."
     },
     "Num": {
       "description": "How many to spawn, note that the upper limit is guaranteed while the lower limit is not."

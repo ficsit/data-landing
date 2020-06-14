@@ -5,19 +5,7 @@
       "description": "These are the resources that are scannable after this unlock",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<UFGResourceDescriptor>"
       }
     }
   },

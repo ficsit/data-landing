@@ -15,38 +15,14 @@
       "description": "Default recipes to have shortcuts to",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<UFGRecipe>"
       }
     },
     "mNewRecipes": {
       "description": "Recipes that are new to the player. This is only for UI feedback and doesn't affect the players ability to use the recipe",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<UFGRecipe>"
       }
     },
     "mSlotNum": {
@@ -77,20 +53,8 @@
       "description": "Each local player has their own tutorial subsystem"
     },
     "mTutorialSubsystemClass": {
-      "description": "Class of tutorial subsystem to spawn",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGTutorialSubsystem>",
+      "description": "Class of tutorial subsystem to spawn"
     },
     "mMessageData": {
       "description": "Data about all messages that can be displayed in the codex",
@@ -103,19 +67,7 @@
       "description": "List of equipment classes that have been equipped at least once.",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<AFGEquipment>"
       }
     },
     "mNumArmSlots": {
@@ -130,19 +82,7 @@
       "description": "The item categories that the user have collapsed in manufacturing widgets",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<UFGItemCategory>"
       }
     },
     "mFilteredOutMapTypes": {
@@ -158,20 +98,8 @@
       }
     },
     "mLastSelectedResourceSinkShopCategory": {
-      "description": "The last selected category in the resource sink shop so we can open the shop at the same category later",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGSchematicCategory>",
+      "description": "The last selected category in the resource sink shop so we can open the shop at the same category later"
     }
   },
   "required": [

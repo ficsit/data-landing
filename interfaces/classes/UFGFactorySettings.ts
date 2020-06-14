@@ -1,4 +1,4 @@
-import { UStaticMesh } from '../native/assets';
+import { UAkAudioEvent, UMaterialInstance, UStaticMesh } from '../native/assets';
 import { float, int32 } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
@@ -18,37 +18,37 @@ export interface UFGFactorySettings extends UFGSettings {
   /**
    * Material on hologram for valid placement. @note Do not set in code!
    */
-  mDefaultValidPlacementMaterial: Unknown<'UMaterialInstance'>;
+  mDefaultValidPlacementMaterial: UMaterialInstance;
 
   /**
    * Material on hologram for valid placement. @note Do not set in code!
    */
-  mDefaultValidPlacementMaterialSimplified: Unknown<'UMaterialInstance'>;
+  mDefaultValidPlacementMaterialSimplified: UMaterialInstance;
 
   /**
    * Material on hologram for invalid placement. @note Do not set in code!
    */
-  mDefaultInvalidPlacementMaterial: Unknown<'UMaterialInstance'>;
+  mDefaultInvalidPlacementMaterial: UMaterialInstance;
 
   /**
    * Material on hologram for input connections. @note Do not set in code!
    */
-  mDefaultInputConnectionMaterial: Unknown<'UMaterialInstance'>;
+  mDefaultInputConnectionMaterial: UMaterialInstance;
 
   /**
    * Material on hologram for output connections. @note Do not set in code!
    */
-  mDefaultOutputConnectionMaterial: Unknown<'UMaterialInstance'>;
+  mDefaultOutputConnectionMaterial: UMaterialInstance;
 
   /**
    * Material on hologram for directionally neutral connections. @note Do not set in code!
    */
-  mDefaultNeutralConnectionMaterial: Unknown<'UMaterialInstance'>;
+  mDefaultNeutralConnectionMaterial: UMaterialInstance;
 
   /**
    * Material on hologram for power connections. @note Do not set in code!
    */
-  mDefaultPowerConnectionMaterial: Unknown<'UMaterialInstance'>;
+  mDefaultPowerConnectionMaterial: UMaterialInstance;
 
   /**
    * Mesh used to visualize input or output connections location. @note Do not set in code!
@@ -83,17 +83,17 @@ export interface UFGFactorySettings extends UFGSettings {
   /**
    * Material on hologram for clearance. @note Do not set in code!
    */
-  mClearanceMaterial: Unknown<'UMaterialInstance'>;
+  mClearanceMaterial: UMaterialInstance;
 
   /**
    * Default sound loop placed on holograms.
    */
-  mHologramLoopSound: Unknown<'UAkAudioEvent'>;
+  mHologramLoopSound: UAkAudioEvent;
 
   /**
    * Snapping sound for holograms, e.g. when a conveyor snaps to an output.
    */
-  mHologramSnapSound: Unknown<'UAkAudioEvent'>;
+  mHologramSnapSound: UAkAudioEvent;
 
   /**
    * Mesh used to visualize alignment in build mode. @note Do not set in code!
@@ -103,12 +103,12 @@ export interface UFGFactorySettings extends UFGSettings {
   /**
    * Material applied to build guides to visualize alignment in build mode. @note Do not set in code!
    */
-  mBuildGuideMaterial: Unknown<'UMaterialInstance'>;
+  mBuildGuideMaterial: UMaterialInstance;
 
   /**
    * Material applied to build guides specifically for conveyor belts to visualize alignment in build mode. @note Do not set in code!
    */
-  mConveyorBuildGuideMaterial: Unknown<'UMaterialInstance'>;
+  mConveyorBuildGuideMaterial: UMaterialInstance;
 
   /**
    * Crate spawned when we dismantle an actor or when we die. It will be filled with the refund if it doesn't fit in the players inventory.
@@ -123,12 +123,12 @@ export interface UFGFactorySettings extends UFGSettings {
   /**
    * Default sound played when constructing a building, a random from the list is played.
    */
-  mConstructionSounds: Unknown<'UAkAudioEvent'>[];
+  mConstructionSounds: UAkAudioEvent[];
 
   /**
    * Default sound played when dismantling a building, a random from the list is played.
    */
-  mDismantleSounds: Unknown<'UAkAudioEvent'>[];
+  mDismantleSounds: UAkAudioEvent[];
 
   /**
    * Effect to play when a building is built

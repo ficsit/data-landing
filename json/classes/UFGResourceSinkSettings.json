@@ -2,36 +2,10 @@
   "type": "object",
   "properties": {
     "mPointsDataTable": {
-      "description": "Reference to an instance of a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/objectReference<any>"
     },
     "mRewardLevelsDataTable": {
-      "description": "Reference to an instance of a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/objectReference<any>"
     },
     "mMaxPointsForItem": {
       "description": "An 32-bit signed integer.",
@@ -41,59 +15,20 @@
       "type": "string"
     },
     "mCouponClass": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/softClassReference<UFGItemDescriptor>"
     },
     "mNumGlobalHistoryPoints": {
       "description": "An 32-bit signed integer.",
       "type": "number"
     },
     "mFailedSinkMessages": {
-      "$ref": "#/definitions/Map<packageReference<UFGItemDescriptor>,packageReference<UFGMessageBase>>"
+      "$ref": "#/definitions/Map<classReference<UFGItemDescriptor>,classReference<UFGMessageBase>>"
     },
     "mGenericFailedSinkMessage": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGMessageBase>"
     },
     "mCyberCouponSchematic": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGSchematic>"
     },
     "mMultiplier": {
       "description": "A floating point number.",

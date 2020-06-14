@@ -6,36 +6,12 @@
       "type": "number"
     },
     "mSwitchControlClass": {
-      "description": "Default switch control to place when building switches.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGBuildableRailroadSwitchControl>",
+      "description": "Default switch control to place when building switches."
     },
     "mVehicleSoundComponentClass": {
-      "description": "This is sound component used to play sounds on trains.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGRailroadVehicleSoundComponent>",
+      "description": "This is sound component used to play sounds on trains."
     },
     "mStationNames": {
       "description": "A random name is picked from here when placing a stop.",

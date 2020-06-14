@@ -14,76 +14,28 @@
       "description": "crosshair color used when aiming at a target that already have the same color slot as you are painting"
     },
     "mRedundantTargetCrosshairTexture": {
-      "description": "crosshair texture used when aiming at a target that already have the same color slot as you are painting",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UTexture2D",
+      "description": "crosshair texture used when aiming at a target that already have the same color slot as you are painting"
     },
     "mNoTargetCrosshairColor": {
       "$ref": "#/definitions/LinearColor",
       "description": "crosshair color used when aiming at a target too far away or not aiming at a target at all"
     },
     "mNoTargetCrosshairTexture": {
-      "description": "crosshair texture used when aiming at a target too far away or not aiming at a target at all",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UTexture2D",
+      "description": "crosshair texture used when aiming at a target too far away or not aiming at a target at all"
     },
     "mNonColorableTargetCrosshairColor": {
       "$ref": "#/definitions/LinearColor",
       "description": "crosshair color used when aiming at a target that can't be colored"
     },
     "mNonColorableTargetCrosshairTexture": {
-      "description": "crosshair texture used when aiming at a target that can't be colored",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UTexture2D",
+      "description": "crosshair texture used when aiming at a target that can't be colored"
     },
     "mValidTargetCrosshairTexture": {
-      "description": "crosshair texture used when aiming at a target isvalid",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UTexture2D",
+      "description": "crosshair texture used when aiming at a target isvalid"
     },
     "mColorSlot": {
       "description": "This will be the color slot used when shooting\n[DavalliusA:Fri/01-03-2019] don't use the first color as default, as it will make players maybe not notice when thye fire on a building already using the default color",
@@ -101,6 +53,7 @@
       "type": "number"
     },
     "mHitParticleEffect": {
+      "$ref": "#/definitions/UParticleSystem",
       "description": "The particle to use when hitting the ground"
     },
     "mAssosiatedHud": {
@@ -116,36 +69,12 @@
       "type": "number"
     },
     "mAmmunitionClass": {
-      "description": "The item we shoot",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGItemDescriptor>",
+      "description": "The item we shoot"
     },
     "mDamageTypeClass": {
-      "description": "Damage type to use when hitting others",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGDamageType>",
+      "description": "Damage type to use when hitting others"
     },
     "mReloadTime": {
       "description": "In seconds, how long time does it take to reload the weapon",
@@ -168,121 +97,52 @@
       "type": "boolean"
     },
     "mReloadSound": {
+      "$ref": "#/definitions/UAkAudioEvent",
       "description": "Sound played when reloading"
     },
     "mAttachmentClass": {
-      "description": "This is the attachment for this class",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGEquipmentAttachment>",
+      "description": "This is the attachment for this class"
     },
     "mSecondaryAttachmentClass": {
-      "description": "This is the secondary attachment for this class",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGEquipmentAttachment>",
+      "description": "This is the secondary attachment for this class"
     },
     "mEquipmentSlot": {
       "$ref": "#/definitions/EEquipmentSlot",
       "description": "To what slot is this limited to?"
     },
     "mSprintHeadBobShake": {
-      "description": "Camera shake to play when sprinting",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<any>",
+      "description": "Camera shake to play when sprinting"
     },
     "mEquipSound": {
+      "$ref": "#/definitions/UAkAudioEvent",
       "description": "Sound played when equipping"
     },
     "mUnequipSound": {
+      "$ref": "#/definitions/UAkAudioEvent",
       "description": "Sound played when unequipping"
     },
     "mEquipmentWidget": {
-      "description": "Class of widget to add when equipping this equipment",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<any>",
+      "description": "Class of widget to add when equipping this equipment"
     },
     "mChildEquipment": {
       "$ref": "#/definitions/AFGEquipmentChild",
       "description": "Holds a reference to the child equipment that may be spawned with this"
     },
     "m1PAnimClass": {
-      "description": "The AnimBlueprint class to use for the 1p anim for our pawn, specifying none here means that the pawn default 1p anim will be used",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<any>",
+      "description": "The AnimBlueprint class to use for the 1p anim for our pawn, specifying none here means that the pawn default 1p anim will be used"
     },
     "mAttachSocket": {
       "description": "If this equipment should attach to a socket, this is the socket.",
       "type": "string"
     },
     "mChildEquipmentClass": {
-      "description": "The class (if any) to use to spawn a child equipment",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGEquipmentChild>",
+      "description": "The class (if any) to use to spawn a child equipment"
     },
     "mCostToUse": {
       "description": "The cost of using this equipment",

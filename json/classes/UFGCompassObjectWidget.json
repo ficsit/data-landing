@@ -2,24 +2,10 @@
   "type": "object",
   "properties": {
     "mTexture": {
-      "description": "https://docs.unrealengine.com/en-US/API/Runtime/Engine/Engine/UTexture2D/index.html",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UTexture2D"
     },
     "mText": {
-      "description": "A localizable string.",
-      "type": "string"
+      "$ref": "#/definitions/localized"
     },
     "mPositionOffset": {
       "description": "An unknown type (likely an Unreal Engine or plugin type)."

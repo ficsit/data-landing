@@ -1,3 +1,4 @@
+import { UMaterial } from '../native/assets';
 import { Unknown } from '../native/unknown';
 
 export interface FTireTrackDecalDetails {
@@ -9,5 +10,5 @@ export interface FTireTrackDecalDetails {
   /**
    * Material to use as an override
    */
-  DecalMaterialOverride: Unknown<'UMaterial'>;
+  DecalMaterialOverride: UMaterial;
 }

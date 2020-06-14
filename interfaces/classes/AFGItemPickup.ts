@@ -1,5 +1,6 @@
 import { IFGSignificanceInterface } from '../interfaces/IFGSignificanceInterface';
 import { IFGUseableInterface } from '../interfaces/IFGUseableInterface';
+import { UAkAudioEvent } from '../native/assets';
 import { AActor } from '../native/classes';
 import { float } from '../native/primitive';
 import { Unknown } from '../native/unknown';
@@ -45,5 +46,5 @@ export interface AFGItemPickup
   /**
    * The ak event to post for the sound
    */
-  mAudioEvent: Unknown<'UAkAudioEvent'>;
+  mAudioEvent: UAkAudioEvent;
 }

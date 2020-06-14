@@ -2,180 +2,37 @@
   "type": "object",
   "properties": {
     "mGameUIClass": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<any>"
     },
     "mRespawnUIClass": {
-      "description": "Reference to a class.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<any>"
     },
     "mDefaultCrosshair": {
-      "description": "https://docs.unrealengine.com/en-US/API/Runtime/Engine/Engine/UTexture2D/index.html",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UTexture2D"
     },
     "mPickupCrosshair": {
-      "description": "https://docs.unrealengine.com/en-US/API/Runtime/Engine/Engine/UTexture2D/index.html",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UTexture2D"
     },
     "mVehicleCrosshair": {
-      "description": "https://docs.unrealengine.com/en-US/API/Runtime/Engine/Engine/UTexture2D/index.html",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UTexture2D"
     },
     "mWeaponCrosshair": {
-      "description": "https://docs.unrealengine.com/en-US/API/Runtime/Engine/Engine/UTexture2D/index.html",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UTexture2D"
     },
     "mWorkbenchCrosshair": {
-      "description": "https://docs.unrealengine.com/en-US/API/Runtime/Engine/Engine/UTexture2D/index.html",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UTexture2D"
     },
     "mBuildCrosshair": {
-      "description": "https://docs.unrealengine.com/en-US/API/Runtime/Engine/Engine/UTexture2D/index.html",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UTexture2D"
     },
     "mDismantleCrosshair": {
-      "description": "https://docs.unrealengine.com/en-US/API/Runtime/Engine/Engine/UTexture2D/index.html",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UTexture2D"
     },
     "mCustomCrosshair": {
-      "description": "https://docs.unrealengine.com/en-US/API/Runtime/Engine/Engine/UTexture2D/index.html",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UTexture2D"
     },
     "mGeneralCrosshair": {
-      "description": "https://docs.unrealengine.com/en-US/API/Runtime/Engine/Engine/UTexture2D/index.html",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UTexture2D"
     },
     "mRespawnInputComponent": {
       "description": "Input component for blocking input during respawn"
@@ -190,36 +47,12 @@
       "description": "A world for previewing the current building"
     },
     "mPreviewStageClass": {
-      "description": "Class that stages the preview building item",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGRenderTargetStage>",
+      "description": "Class that stages the preview building item"
     },
     "mPreviewActorClass": {
-      "description": "The actor class we want to preview, we don't use buildable as we want to support vehicles too",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AActor>",
+      "description": "The actor class we want to preview, we don't use buildable as we want to support vehicles too"
     },
     "mPawnHUD": {
       "description": "The latest created pawn HUD widget"

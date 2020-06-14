@@ -2,25 +2,15 @@
   "type": "object",
   "properties": {
     "mDepositMesh": {
-      "description": "The static mesh we want the Resource Deposit to use when it has this class selected",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UStaticMesh",
+      "description": "The static mesh we want the Resource Deposit to use when it has this class selected"
     },
     "mDepositMaterial": {
+      "$ref": "#/definitions/UMaterialInstance",
       "description": "The material this resource deposit use (if any)"
     },
     "mDecalMaterial": {
+      "$ref": "#/definitions/UMaterial",
       "description": "The decal this resource use (if any)"
     },
     "mDecalSize": {
@@ -36,28 +26,19 @@
       "type": "number"
     },
     "mCompassTexture": {
-      "description": "Texture to show in the compass when this resource has been scanned and found.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UTexture2D",
+      "description": "Texture to show in the compass when this resource has been scanned and found."
     },
     "mManualMiningParticle": {
+      "$ref": "#/definitions/UParticleSystem",
       "description": "Particle to show when mining by hand"
     },
     "mFactoryMiningParticle": {
+      "$ref": "#/definitions/UParticleSystem",
       "description": "Particle to show when mining with machine"
     },
     "mDestroyedParticle": {
+      "$ref": "#/definitions/UParticleSystem",
       "description": "Particle to show when mining with machine"
     },
     "mManualMiningAudioName": {
@@ -68,16 +49,16 @@
       "type": "boolean"
     },
     "mDisplayName": {
-      "description": "Readable name of the item",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "Readable name of the item"
     },
     "mDescription": {
-      "description": "Readable description of the item",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "Readable description of the item"
     },
     "mAbbreviatedDisplayName": {
-      "description": "Abbreviated name of the item",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "Abbreviated name of the item"
     },
     "mStackSize": {
       "$ref": "#/definitions/EStackSize",
@@ -104,88 +85,28 @@
       "description": "The state of this resource (cannot change during it's lifetime)."
     },
     "mInventoryIcon": {
-      "description": "Old brush used for UI, can't be DEPRECATED_ as it won't work in shipping builds during conversion then",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/FSlateBrush",
+      "description": "Old brush used for UI, can't be DEPRECATED_ as it won't work in shipping builds during conversion then"
     },
     "mSmallIcon": {
-      "description": "Small icon of the item, always in memory",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UTexture2D",
+      "description": "Small icon of the item, always in memory"
     },
     "mPersistentBigIcon": {
-      "description": "Big icon of the item, SHOULD only be loaded by demand, but right now persistent in memory",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UTexture2D",
+      "description": "Big icon of the item, SHOULD only be loaded by demand, but right now persistent in memory"
     },
     "mConveyorMesh": {
-      "description": "The static mesh we want for representing the resource when they are in the production line.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/UStaticMesh",
+      "description": "The static mesh we want for representing the resource when they are in the production line."
     },
     "mPreviewView": {
       "$ref": "#/definitions/FItemView",
       "description": "The view in the build menu for this item"
     },
     "mItemCategory": {
-      "description": "The category for this item",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGItemCategory>",
+      "description": "The category for this item"
     },
     "mIconYaw": {
       "description": "The jaw of the object when rendering the icon",

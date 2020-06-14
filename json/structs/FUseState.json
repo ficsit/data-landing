@@ -13,20 +13,8 @@
       "description": "Component that triggered the use"
     },
     "State": {
-      "description": "Contains the usable state of the object, might be a error code",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGUseState>",
+      "description": "Contains the usable state of the object, might be a error code"
     }
   },
   "required": [

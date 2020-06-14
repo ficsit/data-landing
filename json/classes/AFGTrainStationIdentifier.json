@@ -10,8 +10,8 @@
       "type": "number"
     },
     "mStationName": {
-      "description": "Cached here for clients.",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "Cached here for clients."
     }
   },
   "required": [

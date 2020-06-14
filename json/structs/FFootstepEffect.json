@@ -2,6 +2,7 @@
   "type": "object",
   "properties": {
     "Particle": {
+      "$ref": "#/definitions/UParticleSystem",
       "description": "The particle to use when hitting the ground"
     },
     "GroundDecals": {

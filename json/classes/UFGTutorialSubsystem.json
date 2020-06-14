@@ -5,19 +5,7 @@
       "description": "classes of things we have build",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<UObject>"
       }
     },
     "mHasSeenIntroTutorial": {
@@ -28,19 +16,7 @@
       "description": "Messages to display when first starting the game",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "package": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "name",
-          "package"
-        ]
+        "$ref": "#/definitions/classReference<UFGMessageBase>"
       }
     },
     "mTutorialData": {

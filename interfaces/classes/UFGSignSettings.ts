@@ -1,5 +1,5 @@
+import { UMaterial } from '../native/assets';
 import { int32 } from '../native/primitive';
-import { Unknown } from '../native/unknown';
 import { FSignColorData } from '../structs/FSignColorData';
 
 import { UFGSettings } from './UFGSettings';
@@ -8,17 +8,17 @@ export interface UFGSignSettings extends UFGSettings {
   /**
    * Base material to be used for text component material instances
    */
-  mTextMaterial: Unknown<'UMaterial'>;
+  mTextMaterial: UMaterial;
 
   /**
    * Base material to be used for icon material instances
    */
-  mIconMaterial: Unknown<'UMaterial'>;
+  mIconMaterial: UMaterial;
 
   /**
    * Base material to be used for sign background material instances
    */
-  mBackgroundMaterial: Unknown<'UMaterial'>;
+  mBackgroundMaterial: UMaterial;
 
   /**
    * The index in the sign mesh material array pointing to the screen / background material

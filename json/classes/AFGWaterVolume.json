@@ -2,74 +2,26 @@
   "type": "object",
   "properties": {
     "mAreaClass": {
-      "description": "Specify what typ of nav area blocker this is ( defaults to null )",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<any>",
+      "description": "Specify what typ of nav area blocker this is ( defaults to null )"
     },
     "mWaterAudio": {
-      "description": "Audio settings for the this water volume",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGWaterAudio>",
+      "description": "Audio settings for the this water volume"
     },
     "mCanPlaceExtractor": {
       "type": "boolean"
     },
     "mPostProcessSettings": {
-      "description": "A template of settings for our post process settings",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGSharedPostProcessSettings>",
+      "description": "A template of settings for our post process settings"
     },
     "mAssociatedPostProcessVolume_DEPRECATED": {
       "description": "Old deprecated data that isn't used anymore, but we want to be sure that the post process volumes will be deleted"
     },
     "mResourceClass": {
-      "description": "Reference to the Water Descriptor specified in FGResourceSettings. Assigned in begin play",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGResourceDescriptor>",
+      "description": "Reference to the Water Descriptor specified in FGResourceSettings. Assigned in begin play"
     }
   },
   "required": [

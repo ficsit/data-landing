@@ -40,20 +40,8 @@
       "type": "boolean"
     },
     "mCurrentFuelClass": {
-      "description": "Type of the currently burned piece of fuel.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGItemDescriptor>",
+      "description": "Type of the currently burned piece of fuel."
     },
     "mIsInAir": {
       "description": "Is vehicle in air",
@@ -75,6 +63,7 @@
       "type": "number"
     },
     "mDefaultTireTrackDecal": {
+      "$ref": "#/definitions/UMaterial",
       "description": "default tire track decal. Can be empty for no default."
     },
     "mTireTrackDecals": {
@@ -287,28 +276,16 @@
       "type": "boolean"
     },
     "mDisplayName": {
-      "description": "The human readable name for this vehicle.",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "The human readable name for this vehicle."
     },
     "mDescription": {
-      "description": "The human readable description for this vehicle.",
-      "type": "string"
+      "$ref": "#/definitions/localized",
+      "description": "The human readable description for this vehicle."
     },
     "mHologramClass": {
-      "description": "Hologram to build this class with.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<AFGHologram>",
+      "description": "Hologram to build this class with."
     },
     "mMesh": {
       "description": "The main skeletal mesh associated with this Vehicle"
@@ -329,20 +306,8 @@
       "description": "ID given from server when constructed. Has not been assigned a value by server if 0."
     },
     "mBuiltWithRecipe": {
-      "description": "Recipe this vehicle was built with, e.g. used for refunds and stats.",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGRecipe>",
+      "description": "Recipe this vehicle was built with, e.g. used for refunds and stats."
     },
     "mPrimaryColor": {
       "$ref": "#/definitions/LinearColor",
@@ -367,6 +332,7 @@
       }
     },
     "mConstructSound": {
+      "$ref": "#/definitions/UAkAudioEvent",
       "description": "Sound played when this vehicle is created"
     },
     "mIsDestructible": {
@@ -390,20 +356,8 @@
       "type": "number"
     },
     "mGasDamageType": {
-      "description": "Gas damage typ that should be redirected to the driver",
-      "type": "object",
-      "properties": {
-        "package": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "package"
-      ]
+      "$ref": "#/definitions/classReference<UFGDamageType>",
+      "description": "Gas damage typ that should be redirected to the driver"
     },
     "mSignificanceBias": {
       "description": "A bias to the significance value",

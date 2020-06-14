@@ -2,15 +2,19 @@
   "type": "object",
   "properties": {
     "mOnEnterOuterVolumeEvent": {
+      "$ref": "#/definitions/UAkAudioEvent",
       "description": "Event to post when OnGetClose is triggered"
     },
     "mOnExitOuterVolumeEvent": {
+      "$ref": "#/definitions/UAkAudioEvent",
       "description": "Event to post when OnGetFar is triggered"
     },
     "mOnEnterInnerVolumeEvent": {
+      "$ref": "#/definitions/UAkAudioEvent",
       "description": "Event to post when OnEnter is triggered"
     },
     "mOnExitInnerVolumeEvent": {
+      "$ref": "#/definitions/UAkAudioEvent",
       "description": "Event to post when OnExit is triggered"
     },
     "mIgnoreListenerRotation": {

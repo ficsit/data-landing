@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "SimpleConstructionScript": {
+      "$ref": "#/definitions/classReference<any>"
+    },
+    "UberGraphFramePointerProperty": {
+      "$ref": "#/definitions/classReference<any>"
+    },
+    "UberGraphFunction": {
+      "$ref": "#/definitions/classReference<any>"
+    }
+  },
+  "required": [
+    "SimpleConstructionScript",
+    "UberGraphFramePointerProperty",
+    "UberGraphFunction"
+  ]
+}

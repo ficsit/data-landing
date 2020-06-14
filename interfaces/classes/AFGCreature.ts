@@ -1,6 +1,8 @@
 import { EEnabled } from '../enums/EEnabled';
+import { UMaterialInstance } from '../native/assets';
 import { float } from '../native/primitive';
 import { classReference } from '../native/references';
+import { Rotator } from '../native/structs';
 import { Unknown } from '../native/unknown';
 import { FMoveSpeedPair } from '../structs/FMoveSpeedPair';
 
@@ -23,7 +25,7 @@ export interface AFGCreature extends AFGCharacterBase {
   /**
    * Materials that may be used on arachnids
    */
-  mArachnophobiaModeMaterials: Unknown<'UMaterialInstance'>[];
+  mArachnophobiaModeMaterials: UMaterialInstance[];
 
   /**
    * Is creature considered an arachnid
@@ -78,7 +80,7 @@ export interface AFGCreature extends AFGCharacterBase {
   /**
    * Target rotation for custom rotate movement
    */
-  mTargetRotation: Unknown<'FRotator'>;
+  mTargetRotation: Rotator;
 
   /**
    * Can creatures spawn during day?
