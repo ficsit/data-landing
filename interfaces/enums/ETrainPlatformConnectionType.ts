@@ -4,10 +4,8 @@ export enum ETrainPlatformConnectionType {
   ETPC_Neutral,
 }
 
-export namespace ETrainPlatformConnectionType {
-  export const DisplayName = {
-    [ETrainPlatformConnectionType.ETPC_Out]: 'Output',
-    [ETrainPlatformConnectionType.ETPC_In]: 'Input',
-    [ETrainPlatformConnectionType.ETPC_Neutral]: 'Neutral',
-  };
-}
+export const ETrainPlatformConnectionTypeDisplayName = {
+  [ETrainPlatformConnectionType.ETPC_Out]: 'Output',
+  [ETrainPlatformConnectionType.ETPC_In]: 'Input',
+  [ETrainPlatformConnectionType.ETPC_Neutral]: 'Neutral',
+};

@@ -10,16 +10,14 @@ export enum EHologramSplinePathMode {
   HSPM_MAX,
 }
 
-export namespace EHologramSplinePathMode {
-  export const DisplayName = {
-    [EHologramSplinePathMode.HSPM_AUTO]: 'Auto',
-    [EHologramSplinePathMode.HSPM_STRAIGHT_HORZ]: 'Straight Horizontal',
-    [EHologramSplinePathMode.HSPM_STRAIGHT_VERT]: 'Straight Vertical',
-    [EHologramSplinePathMode.HSPM_HORZ_TO_VERT]: 'Horizontal to Vertical',
-    [EHologramSplinePathMode.HSPM_VERT_TO_HORZ]: 'Vertical to Horizontal',
-    [EHologramSplinePathMode.HSPM_PATH_FIND]: 'Path Find',
-    [EHologramSplinePathMode.HSPM_AUTO_2D]: 'Auto 2D/Conveyor Mode',
-    [EHologramSplinePathMode.HSPM_NOODLE]: 'Noodle',
-    [EHologramSplinePathMode.HSPM_MAX]: '<HSPM_MAX>',
-  };
-}
+export const EHologramSplinePathModeDisplayName = {
+  [EHologramSplinePathMode.HSPM_AUTO]: 'Auto',
+  [EHologramSplinePathMode.HSPM_STRAIGHT_HORZ]: 'Straight Horizontal',
+  [EHologramSplinePathMode.HSPM_STRAIGHT_VERT]: 'Straight Vertical',
+  [EHologramSplinePathMode.HSPM_HORZ_TO_VERT]: 'Horizontal to Vertical',
+  [EHologramSplinePathMode.HSPM_VERT_TO_HORZ]: 'Vertical to Horizontal',
+  [EHologramSplinePathMode.HSPM_PATH_FIND]: 'Path Find',
+  [EHologramSplinePathMode.HSPM_AUTO_2D]: 'Auto 2D/Conveyor Mode',
+  [EHologramSplinePathMode.HSPM_NOODLE]: 'Noodle',
+  [EHologramSplinePathMode.HSPM_MAX]: '<HSPM_MAX>',
+};

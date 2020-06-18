@@ -8,14 +8,12 @@ export enum ECantJoinReason {
   CJR_Ok,
 }
 
-export namespace ECantJoinReason {
-  export const DisplayName = {
-    [ECantJoinReason.CJR_InvalidGame]: 'Invalid Game',
-    [ECantJoinReason.CJR_NotInAGame]: 'Not in a game',
-    [ECantJoinReason.CJR_PlayingOtherGame]: 'Playing Other Game',
-    [ECantJoinReason.CJR_PrivateGame]: 'Private Game',
-    [ECantJoinReason.CJR_DifferentVersion]: 'Different Version',
-    [ECantJoinReason.CJR_FullGame]: 'Full Game',
-    [ECantJoinReason.CJR_Ok]: 'Ok',
-  };
-}
+export const ECantJoinReasonDisplayName = {
+  [ECantJoinReason.CJR_InvalidGame]: 'Invalid Game',
+  [ECantJoinReason.CJR_NotInAGame]: 'Not in a game',
+  [ECantJoinReason.CJR_PlayingOtherGame]: 'Playing Other Game',
+  [ECantJoinReason.CJR_PrivateGame]: 'Private Game',
+  [ECantJoinReason.CJR_DifferentVersion]: 'Different Version',
+  [ECantJoinReason.CJR_FullGame]: 'Full Game',
+  [ECantJoinReason.CJR_Ok]: 'Ok',
+};

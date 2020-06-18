@@ -6,12 +6,10 @@ export enum EOptionCategory {
   OC_UserInterface,
 }
 
-export namespace EOptionCategory {
-  export const DisplayName = {
-    [EOptionCategory.OC_Gameplay]: 'Gameplay',
-    [EOptionCategory.OC_Audio]: 'Audio',
-    [EOptionCategory.OC_Video]: 'Video',
-    [EOptionCategory.OC_Controls]: 'Controls',
-    [EOptionCategory.OC_UserInterface]: 'User Interface',
-  };
-}
+export const EOptionCategoryDisplayName = {
+  [EOptionCategory.OC_Gameplay]: 'Gameplay',
+  [EOptionCategory.OC_Audio]: 'Audio',
+  [EOptionCategory.OC_Video]: 'Video',
+  [EOptionCategory.OC_Controls]: 'Controls',
+  [EOptionCategory.OC_UserInterface]: 'User Interface',
+};

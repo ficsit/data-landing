@@ -4,10 +4,8 @@ export enum EGameVersion {
   GV_Other,
 }
 
-export namespace EGameVersion {
-  export const DisplayName = {
-    [EGameVersion.GV_Main]: 'Main',
-    [EGameVersion.GV_Experimental]: 'Experimental',
-    [EGameVersion.GV_Other]: 'Other',
-  };
-}
+export const EGameVersionDisplayName = {
+  [EGameVersion.GV_Main]: 'Main',
+  [EGameVersion.GV_Experimental]: 'Experimental',
+  [EGameVersion.GV_Other]: 'Other',
+};

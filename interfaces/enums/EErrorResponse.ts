@@ -15,10 +15,8 @@ export enum EErrorResponse {
   ER_Quit,
 }
 
-export namespace EErrorResponse {
-  export const DisplayName = {
-    [EErrorResponse.ER_NonIntrusivePopup]: 'NonIntrusivePopup',
-    [EErrorResponse.ER_SendToMainMenu]: 'SendToMainMenu',
-    [EErrorResponse.ER_Quit]: 'Quit',
-  };
-}
+export const EErrorResponseDisplayName = {
+  [EErrorResponse.ER_NonIntrusivePopup]: 'NonIntrusivePopup',
+  [EErrorResponse.ER_SendToMainMenu]: 'SendToMainMenu',
+  [EErrorResponse.ER_Quit]: 'Quit',
+};

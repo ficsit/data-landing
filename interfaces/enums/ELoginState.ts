@@ -5,11 +5,9 @@ export enum ELoginState {
   LS_FailedToLogin,
 }
 
-export namespace ELoginState {
-  export const DisplayName = {
-    [ELoginState.LS_NotLoggedIn]: 'NotLoggedIn',
-    [ELoginState.LS_LoggingIn]: 'LoggingIn',
-    [ELoginState.LS_LoggedIn]: 'LoggedIn',
-    [ELoginState.LS_FailedToLogin]: 'FailedToLogin',
-  };
-}
+export const ELoginStateDisplayName = {
+  [ELoginState.LS_NotLoggedIn]: 'NotLoggedIn',
+  [ELoginState.LS_LoggingIn]: 'LoggingIn',
+  [ELoginState.LS_LoggedIn]: 'LoggedIn',
+  [ELoginState.LS_FailedToLogin]: 'FailedToLogin',
+};

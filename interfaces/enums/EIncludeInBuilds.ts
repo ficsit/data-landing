@@ -8,11 +8,9 @@ export enum EIncludeInBuilds {
   IIB_PublicBuilds,
 }
 
-export namespace EIncludeInBuilds {
-  export const DisplayName = {
-    [EIncludeInBuilds.IIB_Never]: 'Never',
-    [EIncludeInBuilds.IIB_Development]: 'Development',
-    [EIncludeInBuilds.IIB_PrivateBuilds]: 'PrivateBuilds',
-    [EIncludeInBuilds.IIB_PublicBuilds]: 'PublicBuilds',
-  };
-}
+export const EIncludeInBuildsDisplayName = {
+  [EIncludeInBuilds.IIB_Never]: 'Never',
+  [EIncludeInBuilds.IIB_Development]: 'Development',
+  [EIncludeInBuilds.IIB_PrivateBuilds]: 'PrivateBuilds',
+  [EIncludeInBuilds.IIB_PublicBuilds]: 'PublicBuilds',
+};

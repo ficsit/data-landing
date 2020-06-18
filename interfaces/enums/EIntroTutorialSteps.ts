@@ -17,20 +17,18 @@ export enum EIntroTutorialSteps {
   ITS_DONE,
 }
 
-export namespace EIntroTutorialSteps {
-  export const DisplayName = {
-    [EIntroTutorialSteps.ITS_NONE]: 'No tutorial',
-    [EIntroTutorialSteps.ITS_INTRO]: 'Intro state with message',
-    [EIntroTutorialSteps.ITS_DISMANTLE_POD]: 'Dismantle drop pod',
-    [EIntroTutorialSteps.ITS_STUN_SPEAR]: 'Equip stun spear',
-    [EIntroTutorialSteps.ITS_IRON_ORE]: 'Pick up iron ore',
-    [EIntroTutorialSteps.ITS_HUB]: 'Build a hub',
-    [EIntroTutorialSteps.ITS_HUB_LVL1]: 'Upgrade Hub to lvl 1',
-    [EIntroTutorialSteps.ITS_HUB_LVL1_5]: 'Upgrade Hub to lvl 1.5',
-    [EIntroTutorialSteps.ITS_HUB_LVL2]: 'Upgrade Hub to lvl 2',
-    [EIntroTutorialSteps.ITS_HUB_LVL3]: 'Upgrade Hub to lvl 3',
-    [EIntroTutorialSteps.ITS_HUB_LVL4]: 'Upgrade Hub to lvl 4',
-    [EIntroTutorialSteps.ITS_HUB_LVL5]: 'Upgrade Hub to lvl 5',
-    [EIntroTutorialSteps.ITS_DONE]: 'Done with intro',
-  };
-}
+export const EIntroTutorialStepsDisplayName = {
+  [EIntroTutorialSteps.ITS_NONE]: 'No tutorial',
+  [EIntroTutorialSteps.ITS_INTRO]: 'Intro state with message',
+  [EIntroTutorialSteps.ITS_DISMANTLE_POD]: 'Dismantle drop pod',
+  [EIntroTutorialSteps.ITS_STUN_SPEAR]: 'Equip stun spear',
+  [EIntroTutorialSteps.ITS_IRON_ORE]: 'Pick up iron ore',
+  [EIntroTutorialSteps.ITS_HUB]: 'Build a hub',
+  [EIntroTutorialSteps.ITS_HUB_LVL1]: 'Upgrade Hub to lvl 1',
+  [EIntroTutorialSteps.ITS_HUB_LVL1_5]: 'Upgrade Hub to lvl 1.5',
+  [EIntroTutorialSteps.ITS_HUB_LVL2]: 'Upgrade Hub to lvl 2',
+  [EIntroTutorialSteps.ITS_HUB_LVL3]: 'Upgrade Hub to lvl 3',
+  [EIntroTutorialSteps.ITS_HUB_LVL4]: 'Upgrade Hub to lvl 4',
+  [EIntroTutorialSteps.ITS_HUB_LVL5]: 'Upgrade Hub to lvl 5',
+  [EIntroTutorialSteps.ITS_DONE]: 'Done with intro',
+};

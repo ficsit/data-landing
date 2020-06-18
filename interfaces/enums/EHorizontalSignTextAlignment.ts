@@ -4,10 +4,8 @@ export enum EHorizontalSignTextAlignment {
   EHSTA_Right,
 }
 
-export namespace EHorizontalSignTextAlignment {
-  export const DisplayName = {
-    [EHorizontalSignTextAlignment.EHSTA_Left]: 'Left',
-    [EHorizontalSignTextAlignment.EHSTA_Center]: 'Center',
-    [EHorizontalSignTextAlignment.EHSTA_Right]: 'Right',
-  };
-}
+export const EHorizontalSignTextAlignmentDisplayName = {
+  [EHorizontalSignTextAlignment.EHSTA_Left]: 'Left',
+  [EHorizontalSignTextAlignment.EHSTA_Center]: 'Center',
+  [EHorizontalSignTextAlignment.EHSTA_Right]: 'Right',
+};

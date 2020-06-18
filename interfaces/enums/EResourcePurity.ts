@@ -8,11 +8,9 @@ export enum EResourcePurity {
   RP_MAX,
 }
 
-export namespace EResourcePurity {
-  export const DisplayName = {
-    [EResourcePurity.RP_Inpure]: 'Impure',
-    [EResourcePurity.RP_Normal]: 'Normal',
-    [EResourcePurity.RP_Pure]: 'Pure',
-    [EResourcePurity.RP_MAX]: '<RP_MAX>',
-  };
-}
+export const EResourcePurityDisplayName = {
+  [EResourcePurity.RP_Inpure]: 'Impure',
+  [EResourcePurity.RP_Normal]: 'Normal',
+  [EResourcePurity.RP_Pure]: 'Pure',
+  [EResourcePurity.RP_MAX]: '<RP_MAX>',
+};

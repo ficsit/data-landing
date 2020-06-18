@@ -5,11 +5,9 @@ export enum EMoveSpeed {
   MS_Sprint,
 }
 
-export namespace EMoveSpeed {
-  export const DisplayName = {
-    [EMoveSpeed.MS_Undefined]: '<MS_Undefined>',
-    [EMoveSpeed.MS_Walk]: 'Slow speed',
-    [EMoveSpeed.MS_Run]: 'Normal',
-    [EMoveSpeed.MS_Sprint]: 'Extra fast',
-  };
-}
+export const EMoveSpeedDisplayName = {
+  [EMoveSpeed.MS_Undefined]: '<MS_Undefined>',
+  [EMoveSpeed.MS_Walk]: 'Slow speed',
+  [EMoveSpeed.MS_Run]: 'Normal',
+  [EMoveSpeed.MS_Sprint]: 'Extra fast',
+};

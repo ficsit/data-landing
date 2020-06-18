@@ -10,16 +10,14 @@ export enum ECrosshairState {
   ECS_Custom,
 }
 
-export namespace ECrosshairState {
-  export const DisplayName = {
-    [ECrosshairState.ECS_Default]: 'Default',
-    [ECrosshairState.ECS_GeneralUse]: 'General',
-    [ECrosshairState.ECS_PickUp]: 'Pickup',
-    [ECrosshairState.ECS_Vehicle]: 'Vehicle',
-    [ECrosshairState.ECS_Weapon]: 'Weapon',
-    [ECrosshairState.ECS_Workbench]: 'Workbench',
-    [ECrosshairState.ECS_Dismantle]: 'Dismantle',
-    [ECrosshairState.ECS_Build]: 'Build',
-    [ECrosshairState.ECS_Custom]: 'Cutom',
-  };
-}
+export const ECrosshairStateDisplayName = {
+  [ECrosshairState.ECS_Default]: 'Default',
+  [ECrosshairState.ECS_GeneralUse]: 'General',
+  [ECrosshairState.ECS_PickUp]: 'Pickup',
+  [ECrosshairState.ECS_Vehicle]: 'Vehicle',
+  [ECrosshairState.ECS_Weapon]: 'Weapon',
+  [ECrosshairState.ECS_Workbench]: 'Workbench',
+  [ECrosshairState.ECS_Dismantle]: 'Dismantle',
+  [ECrosshairState.ECS_Build]: 'Build',
+  [ECrosshairState.ECS_Custom]: 'Cutom',
+};

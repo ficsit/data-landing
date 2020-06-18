@@ -4,10 +4,8 @@ export enum ESessionVisibility {
   SV_Invalid,
 }
 
-export namespace ESessionVisibility {
-  export const DisplayName = {
-    [ESessionVisibility.SV_Private]: 'Private',
-    [ESessionVisibility.SV_FriendsOnly]: 'FriendsOnly',
-    [ESessionVisibility.SV_Invalid]: '<SV_Invalid>',
-  };
-}
+export const ESessionVisibilityDisplayName = {
+  [ESessionVisibility.SV_Private]: 'Private',
+  [ESessionVisibility.SV_FriendsOnly]: 'FriendsOnly',
+  [ESessionVisibility.SV_Invalid]: '<SV_Invalid>',
+};

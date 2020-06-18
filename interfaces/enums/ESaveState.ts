@@ -5,11 +5,9 @@ export enum ESaveState {
   SS_Newer,
 }
 
-export namespace ESaveState {
-  export const DisplayName = {
-    [ESaveState.SS_Unsupported]: 'Unsupported',
-    [ESaveState.SS_Volatile]: 'Volatile',
-    [ESaveState.SS_Supported]: 'Supported',
-    [ESaveState.SS_Newer]: 'Newer',
-  };
-}
+export const ESaveStateDisplayName = {
+  [ESaveState.SS_Unsupported]: 'Unsupported',
+  [ESaveState.SS_Volatile]: 'Volatile',
+  [ESaveState.SS_Supported]: 'Supported',
+  [ESaveState.SS_Newer]: 'Newer',
+};

@@ -3,9 +3,7 @@ export enum EGuideLineType {
   GLT_ConveyorBelt,
 }
 
-export namespace EGuideLineType {
-  export const DisplayName = {
-    [EGuideLineType.GLT_Default]: 'Default',
-    [EGuideLineType.GLT_ConveyorBelt]: 'Conveyor Belt',
-  };
-}
+export const EGuideLineTypeDisplayName = {
+  [EGuideLineType.GLT_Default]: 'Default',
+  [EGuideLineType.GLT_ConveyorBelt]: 'Conveyor Belt',
+};

@@ -6,12 +6,10 @@ export enum ECompassViewDistance {
   CVD_Always,
 }
 
-export namespace ECompassViewDistance {
-  export const DisplayName = {
-    [ECompassViewDistance.CVD_Off]: 'Off',
-    [ECompassViewDistance.CVD_Near]: 'Near',
-    [ECompassViewDistance.CVD_Mid]: 'Mid',
-    [ECompassViewDistance.CVD_Far]: 'Far',
-    [ECompassViewDistance.CVD_Always]: 'Always',
-  };
-}
+export const ECompassViewDistanceDisplayName = {
+  [ECompassViewDistance.CVD_Off]: 'Off',
+  [ECompassViewDistance.CVD_Near]: 'Near',
+  [ECompassViewDistance.CVD_Mid]: 'Mid',
+  [ECompassViewDistance.CVD_Far]: 'Far',
+  [ECompassViewDistance.CVD_Always]: 'Always',
+};

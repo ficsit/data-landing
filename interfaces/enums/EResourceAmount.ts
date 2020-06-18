@@ -9,12 +9,10 @@ export enum EResourceAmount {
   RA_MAX,
 }
 
-export namespace EResourceAmount {
-  export const DisplayName = {
-    [EResourceAmount.RA_Poor]: 'Poor',
-    [EResourceAmount.RA_Normal]: 'Normal',
-    [EResourceAmount.RA_Rich]: 'Rich',
-    [EResourceAmount.RA_Infinite]: 'Infinite',
-    [EResourceAmount.RA_MAX]: '<RA_MAX>',
-  };
-}
+export const EResourceAmountDisplayName = {
+  [EResourceAmount.RA_Poor]: 'Poor',
+  [EResourceAmount.RA_Normal]: 'Normal',
+  [EResourceAmount.RA_Rich]: 'Rich',
+  [EResourceAmount.RA_Infinite]: 'Infinite',
+  [EResourceAmount.RA_MAX]: '<RA_MAX>',
+};

@@ -8,11 +8,9 @@ export enum EFreightCargoType {
   FCT_MAX,
 }
 
-export namespace EFreightCargoType {
-  export const DisplayName = {
-    [EFreightCargoType.FCT_NONE]: 'None',
-    [EFreightCargoType.FCT_Standard]: 'Standard',
-    [EFreightCargoType.FCT_Liquid]: 'Liquid',
-    [EFreightCargoType.FCT_MAX]: '<FCT_MAX>',
-  };
-}
+export const EFreightCargoTypeDisplayName = {
+  [EFreightCargoType.FCT_NONE]: 'None',
+  [EFreightCargoType.FCT_Standard]: 'Standard',
+  [EFreightCargoType.FCT_Liquid]: 'Liquid',
+  [EFreightCargoType.FCT_MAX]: '<FCT_MAX>',
+};

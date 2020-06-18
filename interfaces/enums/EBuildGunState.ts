@@ -6,12 +6,10 @@ export enum EBuildGunState {
   BGS_MAX,
 }
 
-export namespace EBuildGunState {
-  export const DisplayName = {
-    [EBuildGunState.BGS_NONE]: 'None',
-    [EBuildGunState.BGS_MENU]: 'Menu',
-    [EBuildGunState.BGS_BUILD]: 'Build',
-    [EBuildGunState.BGS_DISMANTLE]: 'Dismantle',
-    [EBuildGunState.BGS_MAX]: '<BGS_MAX>',
-  };
-}
+export const EBuildGunStateDisplayName = {
+  [EBuildGunState.BGS_NONE]: 'None',
+  [EBuildGunState.BGS_MENU]: 'Menu',
+  [EBuildGunState.BGS_BUILD]: 'Build',
+  [EBuildGunState.BGS_DISMANTLE]: 'Dismantle',
+  [EBuildGunState.BGS_MAX]: '<BGS_MAX>',
+};

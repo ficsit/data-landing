@@ -6,12 +6,10 @@ export enum ERailroadSignalAspect {
   RSA_Dock,
 }
 
-export namespace ERailroadSignalAspect {
-  export const DisplayName = {
-    [ERailroadSignalAspect.RSA_None]: 'None',
-    [ERailroadSignalAspect.RSA_Clear]: 'Clear',
-    [ERailroadSignalAspect.RSA_ClearThenStop]: 'Clear Then Stop',
-    [ERailroadSignalAspect.RSA_Stop]: 'Stop',
-    [ERailroadSignalAspect.RSA_Dock]: 'Dock',
-  };
-}
+export const ERailroadSignalAspectDisplayName = {
+  [ERailroadSignalAspect.RSA_None]: 'None',
+  [ERailroadSignalAspect.RSA_Clear]: 'Clear',
+  [ERailroadSignalAspect.RSA_ClearThenStop]: 'Clear Then Stop',
+  [ERailroadSignalAspect.RSA_Stop]: 'Stop',
+  [ERailroadSignalAspect.RSA_Dock]: 'Dock',
+};

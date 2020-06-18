@@ -4,10 +4,8 @@ export enum EMultipleUnitControl {
   MUC_Slave,
 }
 
-export namespace EMultipleUnitControl {
-  export const DisplayName = {
-    [EMultipleUnitControl.MUC_Disabled]: 'Disabled',
-    [EMultipleUnitControl.MUC_Master]: 'Master',
-    [EMultipleUnitControl.MUC_Slave]: 'Slave',
-  };
-}
+export const EMultipleUnitControlDisplayName = {
+  [EMultipleUnitControl.MUC_Disabled]: 'Disabled',
+  [EMultipleUnitControl.MUC_Master]: 'Master',
+  [EMultipleUnitControl.MUC_Slave]: 'Slave',
+};

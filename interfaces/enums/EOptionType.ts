@@ -5,11 +5,9 @@ export enum EOptionType {
   OT_Slider,
 }
 
-export namespace EOptionType {
-  export const DisplayName = {
-    [EOptionType.OT_Checkbox]: 'Checkbox',
-    [EOptionType.OT_IntegerSelection]: 'IntegerSelection (NO SUPPORT YET)',
-    [EOptionType.OT_FloatSelection]: 'FloatSelection (NO SUPPORT YET)',
-    [EOptionType.OT_Slider]: 'Slider',
-  };
-}
+export const EOptionTypeDisplayName = {
+  [EOptionType.OT_Checkbox]: 'Checkbox',
+  [EOptionType.OT_IntegerSelection]: 'IntegerSelection (NO SUPPORT YET)',
+  [EOptionType.OT_FloatSelection]: 'FloatSelection (NO SUPPORT YET)',
+  [EOptionType.OT_Slider]: 'Slider',
+};

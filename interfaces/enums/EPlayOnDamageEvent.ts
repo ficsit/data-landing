@@ -4,10 +4,8 @@ export enum EPlayOnDamageEvent {
   PODE_OnTakeRadialDamage,
 }
 
-export namespace EPlayOnDamageEvent {
-  export const DisplayName = {
-    [EPlayOnDamageEvent.PODE_OnTakeAnyDamage]: 'OnTakeAnyDamage',
-    [EPlayOnDamageEvent.PODE_OnTakePointDamage]: 'OnTakePointDamage',
-    [EPlayOnDamageEvent.PODE_OnTakeRadialDamage]: 'OnTakeRadialDamage',
-  };
-}
+export const EPlayOnDamageEventDisplayName = {
+  [EPlayOnDamageEvent.PODE_OnTakeAnyDamage]: 'OnTakeAnyDamage',
+  [EPlayOnDamageEvent.PODE_OnTakePointDamage]: 'OnTakePointDamage',
+  [EPlayOnDamageEvent.PODE_OnTakeRadialDamage]: 'OnTakeRadialDamage',
+};

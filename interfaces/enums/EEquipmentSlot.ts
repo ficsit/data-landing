@@ -8,11 +8,9 @@ export enum EEquipmentSlot {
   ES_MAX,
 }
 
-export namespace EEquipmentSlot {
-  export const DisplayName = {
-    [EEquipmentSlot.ES_NONE]: 'Please specify a slot.',
-    [EEquipmentSlot.ES_ARMS]: 'Arms',
-    [EEquipmentSlot.ES_BACK]: 'Body',
-    [EEquipmentSlot.ES_MAX]: '<ES_MAX>',
-  };
-}
+export const EEquipmentSlotDisplayName = {
+  [EEquipmentSlot.ES_NONE]: 'Please specify a slot.',
+  [EEquipmentSlot.ES_ARMS]: 'Arms',
+  [EEquipmentSlot.ES_BACK]: 'Body',
+  [EEquipmentSlot.ES_MAX]: '<ES_MAX>',
+};

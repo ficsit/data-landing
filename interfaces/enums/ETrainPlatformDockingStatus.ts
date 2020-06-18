@@ -7,13 +7,11 @@ export enum ETrainPlatformDockingStatus {
   ETPDS_Complete,
 }
 
-export namespace ETrainPlatformDockingStatus {
-  export const DisplayName = {
-    [ETrainPlatformDockingStatus.ETPDS_None]: 'None',
-    [ETrainPlatformDockingStatus.ETPDS_WaitingToStart]: 'WaitingToStart',
-    [ETrainPlatformDockingStatus.ETPDS_Loading]: 'Loading',
-    [ETrainPlatformDockingStatus.ETPDS_Unloading]: 'Unloading',
-    [ETrainPlatformDockingStatus.ETPDS_WaitingForTransfer]: 'WaitingTransfer',
-    [ETrainPlatformDockingStatus.ETPDS_Complete]: 'Complete',
-  };
-}
+export const ETrainPlatformDockingStatusDisplayName = {
+  [ETrainPlatformDockingStatus.ETPDS_None]: 'None',
+  [ETrainPlatformDockingStatus.ETPDS_WaitingToStart]: 'WaitingToStart',
+  [ETrainPlatformDockingStatus.ETPDS_Loading]: 'Loading',
+  [ETrainPlatformDockingStatus.ETPDS_Unloading]: 'Unloading',
+  [ETrainPlatformDockingStatus.ETPDS_WaitingForTransfer]: 'WaitingTransfer',
+  [ETrainPlatformDockingStatus.ETPDS_Complete]: 'Complete',
+};
