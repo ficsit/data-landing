@@ -1,3 +1,4 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { UObject } from '../native/classes';
 import { float, int32 } from '../native/primitive';
 import { Unknown } from '../native/unknown';
@@ -5,7 +6,7 @@ import { Unknown } from '../native/unknown';
 /**
  * @todoSigns : Change all blueprint read / write properties over to getters / setters where applicable
  */
-export interface UFGSignElementData extends UObject, Unknown<'IFGSaveInterface'> {
+export interface UFGSignElementData extends UObject, IFGSaveInterface {
   /**
    * unique id to identify this element by buildable signs
    */

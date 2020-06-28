@@ -45,9 +45,11 @@
       "description": "All the locally simulated resource offsets on the conveyor belt."
     },
     "mConnection0": {
+      "$ref": "#/definitions/UFGFactoryConnectionComponent",
       "description": "First connection on conveyor belt, Connections are always in the same order, mConnection0 is the input, mConnection1 is the output."
     },
     "mConnection1": {
+      "$ref": "#/definitions/UFGFactoryConnectionComponent",
       "description": "Second connection on conveyor belt"
     },
     "mHologramClass": {
@@ -78,6 +80,14 @@
       "$ref": "#/definitions/Map<string,UFGFactoryMaterialInstanceManager>",
       "description": "Map of colorable mesh materials to their respective colored factory material instance manager"
     },
+    "mBlockSharingMaterialInstanceMapping": {
+      "type": "boolean"
+    },
+    "mExcludeFromMaterialInstancing": {
+      "description": "Array of mesh elements to selectively block material instancing on. Used in the event that certain buildable components should not attempt to use a shared material instance.",
+      "type": "array",
+      "items": {}
+    },
     "mPrimaryColor": {
       "$ref": "#/definitions/LinearColor",
       "description": "The primary color of this buildable"
@@ -97,6 +107,10 @@
     "mDismantleEffectTemplate": {
       "$ref": "#/definitions/classReference<UFGMaterialEffect_Build>",
       "description": "What build effect to use when dismantling this building"
+    },
+    "mActiveBuildEffect": {
+      "$ref": "#/definitions/UFGMaterialEffect_Build",
+      "description": "Store the active effect so we can cancel an old one if we need to start a new."
     },
     "mBuildEffectInstignator": {
       "$ref": "#/definitions/AActor",
@@ -178,12 +192,18 @@
     },
     "mCachedShapeComponent": {
       "description": "Caching the shape component once we have gotten it"
+    },
+    "mHideOnBuildEffectStart": {
+      "description": "Should the building start as hidden when playing the build effect",
+      "type": "boolean"
     }
   },
   "required": [
     "MaxRenderDistance",
     "PresistentConveyorPackagingDataObject",
+    "mActiveBuildEffect",
     "mAllowCleranceSeparationEvenIfStackedOn",
+    "mBlockSharingMaterialInstanceMapping",
     "mBuildEffectClassName",
     "mBuildEffectInstignator",
     "mBuildEffectSpeed",
@@ -201,8 +221,10 @@
     "mDismantleEffectClassName",
     "mDismantleEffectTemplate",
     "mDisplayName",
+    "mExcludeFromMaterialInstancing",
     "mFactoryTickFunction",
     "mForceNetUpdateOnRegisterPlayer",
+    "mHideOnBuildEffectStart",
     "mHighlightParticleClassName",
     "mHighlightParticleSystemComponent",
     "mHighlightParticleSystemTemplate",

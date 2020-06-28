@@ -25,6 +25,9 @@ export interface UFGRadiationSettings extends Unknown<'UDeveloperSettings'> {
 
   mNodeRadiationPurityAmounts: Map<EResourcePurity, int32>;
 
+  /**
+   * #if WITH_EDITORONLY_DATA
+   */
   mCalculateNewValues: boolean;
 
   mVisualizations: FRadiationVisualization[];

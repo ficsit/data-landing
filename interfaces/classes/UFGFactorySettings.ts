@@ -8,7 +8,6 @@ import { AFGBuildGun } from './AFGBuildGun';
 import { AFGCrate } from './AFGCrate';
 import { AFGResourceMiner } from './AFGResourceMiner';
 import { AFGResourceScanner } from './AFGResourceScanner';
-import { UFGDismantleShortcut } from './UFGDismantleShortcut';
 import { UFGItemDescriptor } from './UFGItemDescriptor';
 import { UFGMaterialEffect_Build } from './UFGMaterialEffect_Build';
 import { UFGRecipeShortcut } from './UFGRecipeShortcut';
@@ -178,11 +177,6 @@ export interface UFGFactorySettings extends UFGSettings {
   mMaxFeetLength: float;
 
   /**
-   * The class we want to spawn for dismantle shortcuts
-   */
-  mDismantleShortcutClass: classReference<UFGDismantleShortcut>;
-
-  /**
    * The class we want to spawn for recipe shortcuts
    */
   mRecipeShortcutClass: classReference<UFGRecipeShortcut>;
@@ -191,6 +185,21 @@ export interface UFGFactorySettings extends UFGSettings {
    * Names if the input actions that defines the shortcuts. This maps directly to their index (so first entry here should mean that it should call ExecuteShortcut 0)
    */
   mShortcutMap: string[];
+
+  /**
+   * The number of hotbars
+   */
+  mNumHotbars: int32;
+
+  /**
+   * The max number of preset hotbars
+   */
+  mNumPresetHotbars: int32;
+
+  /**
+   * The number of starting hot bars
+   */
+  mNumSlotsPerHotbar: int32;
 
   /**
    * Default rate of converting FluidBox content into inventory stacks. Measured in Liters / Second

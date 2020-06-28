@@ -2,9 +2,10 @@ import { EResourceForm } from '../enums/EResourceForm';
 import { EStackSize } from '../enums/EStackSize';
 import { FSlateBrush, UStaticMesh, UTexture2D } from '../native/assets';
 import { UObject } from '../native/classes';
-import { float, localized } from '../native/primitive';
+import { float, int32, localized } from '../native/primitive';
 import { classReference } from '../native/references';
-import { Color } from '../native/structs';
+import { Color, Rotator } from '../native/structs';
+import { Unknown } from '../native/unknown';
 import { FItemView } from '../structs/FItemView';
 
 import { UFGItemCategory } from './UFGItemCategory';
@@ -94,6 +95,31 @@ export interface UFGItemDescriptor extends UObject {
    */
   mIconView: FItemView;
 
+  /**
+   * The transform used for icon capture
+   */
+  mIconCameraTransform: Unknown<'FTransform'>;
+
+  /**
+   * The FOV used for icon capture
+   */
+  mIconFOV: float;
+
+  /**
+   * The object orientation used for icon capture
+   */
+  mIconObjectOrientation: Rotator;
+
+  /**
+   * The spring arm distance used for icon capture
+   */
+  mIconCameraDistance: float;
+
+  /**
+   * The sky orientation used for icon capture
+   */
+  mIconSkyOrientation: Rotator;
+
   mFluidDensity: float;
 
   mFluidViscosity: float;
@@ -101,4 +127,6 @@ export interface UFGItemDescriptor extends UObject {
   mFluidFriction: float;
 
   mFluidColor: Color;
+
+  mResourceSinkPoints: int32;
 }

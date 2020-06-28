@@ -1,11 +1,12 @@
 import { EResourceForm } from '../enums/EResourceForm';
 import { float, int32 } from '../native/primitive';
 import { classReference, softClassReference } from '../native/references';
-import { Unknown } from '../native/unknown';
 
 import { AFGBuildableGenerator } from './AFGBuildableGenerator';
+import { UFGFactoryConnectionComponent } from './UFGFactoryConnectionComponent';
 import { UFGInventoryComponent } from './UFGInventoryComponent';
 import { UFGItemDescriptor } from './UFGItemDescriptor';
+import { UFGPipeConnectionComponent } from './UFGPipeConnectionComponent';
 import { UFGReplicationDetailInventoryComponent } from './UFGReplicationDetailInventoryComponent';
 
 export interface AFGBuildableGeneratorFuel extends AFGBuildableGenerator {
@@ -59,12 +60,12 @@ export interface AFGBuildableGeneratorFuel extends AFGBuildableGenerator {
   /**
    * Cached input connections
    */
-  mCachedInputConnections: Unknown<'UFGFactoryConnectionComponent'>[];
+  mCachedInputConnections: UFGFactoryConnectionComponent[];
 
   /**
    * Cached pipe input connections
    */
-  mCachedPipeInputConnections: Unknown<'UFGPipeConnectionComponent'>[];
+  mCachedPipeInputConnections: UFGPipeConnectionComponent[];
 
   /**
    * Amount left of the currently burned piece of fuel. In megawatt seconds (MWs).

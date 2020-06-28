@@ -26,6 +26,34 @@
     "mAudioEvent": {
       "$ref": "#/definitions/UAkAudioEvent",
       "description": "The ak event to post for the sound"
+    },
+    "mRespawnTimeInDays": {
+      "description": "How many days before item can respawn",
+      "type": "number"
+    },
+    "mUpdatedOnDayNr": {
+      "description": "What day count was the item last updated",
+      "type": "number"
+    },
+    "mItemState": {
+      "$ref": "#/definitions/EItemState",
+      "description": "Current state for this item"
+    },
+    "mGrowTimeInDays": {
+      "description": "How many days before item has grown from seed",
+      "type": "number"
+    },
+    "mSavedNumItems": {
+      "description": "Current state for this item",
+      "type": "number"
+    },
+    "mMaxRespawns": {
+      "description": "How many respawns are allowed on this item",
+      "type": "number"
+    },
+    "mNumRespawns": {
+      "description": "How many respawns are allowed on this item",
+      "type": "number"
     }
   },
   "required": [
@@ -33,8 +61,15 @@
     "mCollectingTimerHandle",
     "mCollector",
     "mDestroyOnPickup",
+    "mGrowTimeInDays",
+    "mItemState",
+    "mMaxRespawns",
+    "mNumRespawns",
     "mPickupItems",
+    "mRespawnTimeInDays",
+    "mSavedNumItems",
     "mSoundComponent",
-    "mTimeToPickUp"
+    "mTimeToPickUp",
+    "mUpdatedOnDayNr"
   ]
 }

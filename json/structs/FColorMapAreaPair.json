@@ -2,7 +2,8 @@
   "type": "object",
   "properties": {
     "PaletteColor": {
-      "$ref": "#/definitions/Color"
+      "$ref": "#/definitions/Color",
+      "description": "#if WITH_EDITORONLY_DATA"
     },
     "MapArea": {
       "$ref": "#/definitions/classReference<UFGMapArea>"

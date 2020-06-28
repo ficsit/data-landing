@@ -132,6 +132,11 @@ export interface AFGVehicle
   mSignificanceBias: float;
 
   /**
+   * Is the movement being simulated?
+   */
+  mIsSimulated: boolean;
+
+  /**
    * Indicates if the vehicle should be handled by significance manager
    */
   mAddToSignificanceManager: uint8;
@@ -140,4 +145,9 @@ export interface AFGVehicle
    * Range that this vehicle should be significant within
    */
   mSignificanceRange: float;
+
+  /**
+   * Range after we disable simulation (remove collision)
+   */
+  mSimulationDistance: float;
 }

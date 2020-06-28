@@ -1,9 +1,9 @@
 import { UStaticMesh } from '../native/assets';
 import { float } from '../native/primitive';
-import { Unknown } from '../native/unknown';
 
 import { AFGBuildableFactory } from './AFGBuildableFactory';
 import { UFGColoredInstanceMeshProxy } from './UFGColoredInstanceMeshProxy';
+import { UFGPipeConnectionComponentBase } from './UFGPipeConnectionComponentBase';
 
 export interface AFGBuildablePipePart extends AFGBuildableFactory {
   /**
@@ -29,7 +29,7 @@ export interface AFGBuildablePipePart extends AFGBuildableFactory {
   /**
    * OST BE SET FROM CONSTRUCTION SCRIPT OR IT WILL BE NULL!
    */
-  mConnection0: Unknown<'UFGPipeConnectionComponentBase'>;
+  mConnection0: UFGPipeConnectionComponentBase;
 
   /**
    * Static mesh to use when rendering

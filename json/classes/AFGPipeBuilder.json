@@ -144,12 +144,20 @@
       "description": "A bias to the significance value",
       "type": "number"
     },
+    "mIsSimulated": {
+      "description": "Is the movement being simulated?",
+      "type": "boolean"
+    },
     "mAddToSignificanceManager": {
       "description": "Indicates if the vehicle should be handled by significance manager",
       "type": "number"
     },
     "mSignificanceRange": {
       "description": "Range that this vehicle should be significant within",
+      "type": "number"
+    },
+    "mSimulationDistance": {
+      "description": "Range after we disable simulation (remove collision)",
       "type": "number"
     },
     "mShouldAttachDriver": {
@@ -203,6 +211,7 @@
     "mIsDriverVisible",
     "mIsDriving",
     "mIsSelfDriving",
+    "mIsSimulated",
     "mIsSubmergedInWater",
     "mMesh",
     "mMoveTime",
@@ -215,6 +224,7 @@
     "mShouldAttachDriver",
     "mSignificanceBias",
     "mSignificanceRange",
+    "mSimulationDistance",
     "mSplineAndSupportData",
     "mSplineHologram",
     "mStoredPhysicsData",

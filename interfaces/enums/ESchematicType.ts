@@ -11,6 +11,7 @@ export enum ESchematicType {
   EST_MAM,
   EST_ResourceSink,
   EST_HardDrive,
+  EST_Prototype,
 }
 
 export const ESchematicTypeDisplayName = {
@@ -23,4 +24,5 @@ export const ESchematicTypeDisplayName = {
   [ESchematicType.EST_MAM]: 'MAM',
   [ESchematicType.EST_ResourceSink]: 'Resource Sink',
   [ESchematicType.EST_HardDrive]: 'Hard Drive',
+  [ESchematicType.EST_Prototype]: 'Prototype',
 };

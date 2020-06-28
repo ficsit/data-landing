@@ -1,10 +1,10 @@
 import { EFGCrateIconType } from '../enums/EFGCrateIconType';
-import { Unknown } from '../native/unknown';
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 
 import { AFGInteractActor } from './AFGInteractActor';
 import { UFGInventoryComponent } from './UFGInventoryComponent';
 
-export interface AFGCrate extends AFGInteractActor, Unknown<'IFGSaveInterface'> {
+export interface AFGCrate extends AFGInteractActor, IFGSaveInterface {
   /**
    * The inventory of this crate
    */

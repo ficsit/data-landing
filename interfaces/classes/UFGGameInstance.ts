@@ -45,11 +45,6 @@ export interface UFGGameInstance extends Unknown<'UGameInstance'> {
   mOnNatTypeUpdated: Unknown<'FOnNatTypeUpdated'>;
 
   /**
-   * The handle for the Epic Online Services manager. Is initialized in Init().
-   */
-  mCachedEOSManager: Unknown<'UEOSManager'>;
-
-  /**
    * Mod packages found - valid or invalid
    */
   ModPackages: FFGModPackage[];

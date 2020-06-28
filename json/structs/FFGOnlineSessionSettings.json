@@ -16,21 +16,25 @@
       "description": "The build version on the form ++FactoryGame+Main-4.20-CL-123456",
       "type": "string"
     },
-    "SessionName": {
+    "SaveSessionName": {
       "description": "Name of the session, same as the name exposed in the Save/Load menus",
       "type": "string"
     },
+    "CSS_SessionId": {
+      "description": "A unique identifier of a game session",
+      "type": "string"
+    },
     "NATType": {
-      "$ref": "#/definitions/ECachedNATType",
       "description": "Hosts nat type"
     }
   },
   "required": [
     "BuildVersion",
+    "CSS_SessionId",
     "HostId",
     "NATType",
     "NumConnectedPlayers",
     "PlayDuration",
-    "SessionName"
+    "SaveSessionName"
   ]
 }

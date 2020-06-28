@@ -1,15 +1,15 @@
 import { IFGExplosiveDestroyableInterface } from '../interfaces/IFGExplosiveDestroyableInterface';
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { IFGSignificanceInterface } from '../interfaces/IFGSignificanceInterface';
 import { AActor } from '../native/classes';
 import { classReference } from '../native/references';
-import { Unknown } from '../native/unknown';
 
 /**
  * todo: (a bigish one) this is just a start of what should be a much more complete nativization of the spore flower
  */
 export interface AFGSporeFlower
   extends AActor,
-    Unknown<'IFGSaveInterface'>,
+    IFGSaveInterface,
     IFGSignificanceInterface,
     IFGExplosiveDestroyableInterface {
   /**

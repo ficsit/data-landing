@@ -4,7 +4,9 @@ import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 
 import { AFGBuildableFactory } from './AFGBuildableFactory';
+import { UFGFactoryConnectionComponent } from './UFGFactoryConnectionComponent';
 import { UFGInventoryComponent } from './UFGInventoryComponent';
+import { UFGPipeConnectionComponent } from './UFGPipeConnectionComponent';
 import { UFGRecipe } from './UFGRecipe';
 
 export interface AFGBuildableManufacturer extends AFGBuildableFactory, IFGRecipeProducerInterface {
@@ -31,22 +33,22 @@ export interface AFGBuildableManufacturer extends AFGBuildableFactory, IFGRecipe
   /**
    * Cached factory input connections
    */
-  mFactoryInputConnections: Unknown<'UFGFactoryConnectionComponent'>[];
+  mFactoryInputConnections: UFGFactoryConnectionComponent[];
 
   /**
    * Cached input pipe connections
    */
-  mPipeInputConnections: Unknown<'UFGPipeConnectionComponent'>[];
+  mPipeInputConnections: UFGPipeConnectionComponent[];
 
   /**
    * Cached factory output connections
    */
-  mFactoryOutputConnections: Unknown<'UFGFactoryConnectionComponent'>[];
+  mFactoryOutputConnections: UFGFactoryConnectionComponent[];
 
   /**
    * Cached output pipe connections
    */
-  mPipeOutputConnections: Unknown<'UFGPipeConnectionComponent'>[];
+  mPipeOutputConnections: UFGPipeConnectionComponent[];
 
   /**
    * Our output inventory, shared for all output connections.

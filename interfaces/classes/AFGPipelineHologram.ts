@@ -5,6 +5,7 @@ import { Unknown } from '../native/unknown';
 
 import { AFGPipelineSupportHologram } from './AFGPipelineSupportHologram';
 import { AFGSplineHologram } from './AFGSplineHologram';
+import { UFGPipeConnectionComponentBase } from './UFGPipeConnectionComponentBase';
 import { UFGRecipe } from './UFGRecipe';
 
 export interface AFGPipelineHologram extends AFGSplineHologram {
@@ -16,12 +17,12 @@ export interface AFGPipelineHologram extends AFGSplineHologram {
   /**
    * The two connection components for this pipeline.
    */
-  mConnectionComponents: Unknown<'UFGPipeConnectionComponentBase'>;
+  mConnectionComponents: UFGPipeConnectionComponentBase;
 
   /**
    * The connections we've made.
    */
-  mSnappedConnectionComponents: Unknown<'UFGPipeConnectionComponentBase'>;
+  mSnappedConnectionComponents: UFGPipeConnectionComponentBase;
 
   /**
    * Class of conveyor pole to place at the end.

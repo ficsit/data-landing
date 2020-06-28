@@ -6,9 +6,11 @@
       "description": "Used to redirect input and construct poles when needed"
     },
     "mConnectionComponents": {
+      "$ref": "#/definitions/UFGPipeConnectionComponentBase",
       "description": "The two connection components for this pipeline."
     },
     "mSnappedConnectionComponents": {
+      "$ref": "#/definitions/UFGPipeConnectionComponentBase",
       "description": "The connections we've made."
     },
     "mDefaultPipelineSupportRecipe": {

@@ -5,16 +5,17 @@
       "type": "array",
       "items": {}
     },
-    "MeshFNames": {
+    "MeshFName": {
       "description": "Component FName for each material interface",
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
+      "type": "string"
+    },
+    "MeshComponent": {
+      "$ref": "#/definitions/objectReference<any>"
     }
   },
   "required": [
     "MaterialInterfaces",
-    "MeshFNames"
+    "MeshComponent",
+    "MeshFName"
   ]
 }

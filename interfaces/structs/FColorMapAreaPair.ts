@@ -4,6 +4,9 @@ import { classReference } from '../native/references';
 import { Color } from '../native/structs';
 
 export interface FColorMapAreaPair {
+  /**
+   * #if WITH_EDITORONLY_DATA
+   */
   PaletteColor: Color;
 
   MapArea: classReference<UFGMapArea>;

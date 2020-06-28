@@ -3,6 +3,7 @@ import { Unknown } from '../native/unknown';
 import { FPoleHeightMesh } from '../structs/FPoleHeightMesh';
 
 import { AFGFactoryHologram } from './AFGFactoryHologram';
+import { UFGPipeConnectionComponentBase } from './UFGPipeConnectionComponentBase';
 
 export interface AFGPipelineSupportHologram extends AFGFactoryHologram {
   /**
@@ -18,7 +19,7 @@ export interface AFGPipelineSupportHologram extends AFGFactoryHologram {
   /**
    * The connection conveyors snap to, used when placing a support automatically.
    */
-  mSnapConnection: Unknown<'UFGPipeConnectionComponentBase'>;
+  mSnapConnection: UFGPipeConnectionComponentBase;
 
   /**
    * Used to rotate the connection and top part vetically

@@ -19,6 +19,14 @@
       "description": "Multiplier for time per character to display",
       "type": "number"
     },
+    "mOverrideText": {
+      "$ref": "#/definitions/localized",
+      "description": "Text that can be displayed instead for (or added to) subtitle text when displaying the message"
+    },
+    "mShowOnlyOverrideText": {
+      "description": "Multiplier for time per character to display",
+      "type": "boolean"
+    },
     "mAudioMessageConcluded": {
       "description": "An unknown type (likely an Unreal Engine or plugin type)."
     },
@@ -61,8 +69,10 @@
     "mCurrentDialogue",
     "mImages",
     "mIsPopup",
+    "mOverrideText",
     "mPreviewText",
     "mSenderClass",
+    "mShowOnlyOverrideText",
     "mSubtitleTimeMultiplier",
     "mTitle",
     "mType"

@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "properties": {
+    "ActionMappingName": {
+      "type": "string"
+    },
+    "DisplayName": {
+      "$ref": "#/definitions/localized"
+    }
+  },
+  "required": [
+    "ActionMappingName",
+    "DisplayName"
+  ]
+}

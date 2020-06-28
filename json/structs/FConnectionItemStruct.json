@@ -2,6 +2,7 @@
   "type": "object",
   "properties": {
     "Connection": {
+      "$ref": "#/definitions/UFGFactoryConnectionComponent",
       "description": "The connection to put the item on"
     },
     "Item": {

@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "properties": {
+    "PresetName": {
+      "$ref": "#/definitions/localized"
+    },
+    "IconIndex": {
+      "description": "The shortcut in the hotbar with this index will decide the icon for the preset",
+      "type": "number"
+    },
+    "Hotbar": {
+      "$ref": "#/definitions/FHotbar",
+      "description": "The hotbar shortcuts for this preset"
+    }
+  },
+  "required": [
+    "Hotbar",
+    "IconIndex",
+    "PresetName"
+  ]
+}

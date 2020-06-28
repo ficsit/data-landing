@@ -1,9 +1,9 @@
 import { IFGFluidIntegrantInterface } from '../interfaces/IFGFluidIntegrantInterface';
 import { float } from '../native/primitive';
-import { Unknown } from '../native/unknown';
 import { FFluidBox } from '../structs/FFluidBox';
 
 import { AFGBuildableFactory } from './AFGBuildableFactory';
+import { UFGPipeConnectionComponent } from './UFGPipeConnectionComponent';
 
 export interface AFGBuildableCheatFluidSink extends AFGBuildableFactory, IFGFluidIntegrantInterface {
   /**
@@ -29,7 +29,7 @@ export interface AFGBuildableCheatFluidSink extends AFGBuildableFactory, IFGFlui
   /**
    * Cached input component from blueprint.
    */
-  mInputConnection: Unknown<'UFGPipeConnectionComponent'>;
+  mInputConnection: UFGPipeConnectionComponent;
 
   /**
    * Simulation data for this fluid integrant.

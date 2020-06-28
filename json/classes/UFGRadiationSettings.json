@@ -36,6 +36,7 @@
       "$ref": "#/definitions/Map<EResourcePurity,number>"
     },
     "mCalculateNewValues": {
+      "description": "#if WITH_EDITORONLY_DATA",
       "type": "boolean"
     },
     "mVisualizations": {

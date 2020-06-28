@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "HotbarShortcuts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/UFGHotbarShortcut"
+      }
+    }
+  },
+  "required": [
+    "HotbarShortcuts"
+  ]
+}

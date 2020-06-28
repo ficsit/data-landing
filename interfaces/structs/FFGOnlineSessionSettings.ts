@@ -1,4 +1,3 @@
-import { ECachedNATType } from '../enums/ECachedNATType';
 import { int32 } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
@@ -26,10 +25,15 @@ export interface FFGOnlineSessionSettings {
   /**
    * Name of the session, same as the name exposed in the Save/Load menus
    */
-  SessionName: string;
+  SaveSessionName: string;
+
+  /**
+   * A unique identifier of a game session
+   */
+  CSS_SessionId: string;
 
   /**
    * Hosts nat type
    */
-  NATType: ECachedNATType;
+  NATType: Unknown<'ECachedNATType'>;
 }

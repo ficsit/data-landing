@@ -1,3 +1,4 @@
+import { objectReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 
 export interface FCachedMaterialArray {
@@ -6,5 +7,7 @@ export interface FCachedMaterialArray {
   /**
    * Component FName for each material interface
    */
-  MeshFNames: string[];
+  MeshFName: string;
+
+  MeshComponent: objectReference<Unknown<'UMeshComponent'>>;
 }

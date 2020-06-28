@@ -78,6 +78,11 @@ export interface AFGCreature extends AFGCharacterBase {
   mRotationTimerHandle: Unknown<'FTimerHandle'>;
 
   /**
+   * Timer handle used for killing orphan creatures ( orphan = missing a reference to a spawner )
+   */
+  mKillOrphanHandle: Unknown<'FTimerHandle'>;
+
+  /**
    * Target rotation for custom rotate movement
    */
   mTargetRotation: Rotator;
@@ -131,4 +136,19 @@ export interface AFGCreature extends AFGCharacterBase {
    * Reference to the spawner that handles this creature
    */
   mOwningSpawner: AFGCreatureSpawner;
+
+  /**
+   * How much weight this creature adds to spawn calculation
+   */
+  mSpawnWeight: float;
+
+  /**
+   * Does this creature need a spawner in order to exist
+   */
+  mNeedsSpawner: boolean;
+
+  /**
+   * At what distance this creature can spawn from
+   */
+  mSpawnDistance: float;
 }

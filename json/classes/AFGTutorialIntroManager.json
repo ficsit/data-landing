@@ -139,11 +139,16 @@
       "items": {
         "$ref": "#/definitions/FRecipeAmountPair"
       }
+    },
+    "mDidOpenCodex": {
+      "description": "Bool for when codex has been opened",
+      "type": "boolean"
     }
   },
   "required": [
     "mDidDismantleDropPod",
     "mDidEquipStunSpear",
+    "mDidOpenCodex",
     "mDidPickUpIronOre",
     "mDidStep1Upgrade",
     "mDidStep1_5Upgrade",

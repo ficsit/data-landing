@@ -1,5 +1,5 @@
 import { AFGCreature } from '../classes/AFGCreature';
-import { int32 } from '../native/primitive';
+import { float, int32 } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Vector } from '../native/structs';
 
@@ -31,4 +31,9 @@ export interface FSpawnData {
    * Overriden subclass of creature to spawn
    */
   CreatureClassOverride: classReference<AFGCreature>;
+
+  /**
+   * How much weight this creature adds to spawn calculations
+   */
+  SpawnWeight: float;
 }

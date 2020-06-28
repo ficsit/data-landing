@@ -1,6 +1,18 @@
 {
   "type": "object",
   "properties": {
+    "mAxisBindingsDisplayNames": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/FAxisMappingDisplayName"
+      }
+    },
+    "mActionBindingsDisplayNames": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/FActionMappingDisplayName"
+      }
+    },
     "mGameplayOptions": {
       "type": "array",
       "items": {
@@ -39,7 +51,9 @@
     }
   },
   "required": [
+    "mActionBindingsDisplayNames",
     "mAudioOptions",
+    "mAxisBindingsDisplayNames",
     "mControlsOptions",
     "mGameplayOptions",
     "mOptionRowWidgetClass",

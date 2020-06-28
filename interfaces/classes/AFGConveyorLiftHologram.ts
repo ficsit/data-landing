@@ -1,19 +1,21 @@
+import { EFactoryConnectionDirection } from '../enums/EFactoryConnectionDirection';
 import { UStaticMesh } from '../native/assets';
 import { Unknown } from '../native/unknown';
 
 import { AFGBuildableConveyorLift } from './AFGBuildableConveyorLift';
 import { AFGSplineHologram } from './AFGSplineHologram';
+import { UFGFactoryConnectionComponent } from './UFGFactoryConnectionComponent';
 
 export interface AFGConveyorLiftHologram extends AFGSplineHologram {
   /**
    * The two connection components for this conveyor.
    */
-  mConnectionComponents: Unknown<'UFGFactoryConnectionComponent'>;
+  mConnectionComponents: UFGFactoryConnectionComponent;
 
   /**
    * The connections we've made.
    */
-  mSnappedConnectionComponents: Unknown<'UFGFactoryConnectionComponent'>;
+  mSnappedConnectionComponents: UFGFactoryConnectionComponent;
 
   /**
    * If we upgrade another conveyor lift this is the belt we replace.
@@ -36,7 +38,7 @@ export interface AFGConveyorLiftHologram extends AFGSplineHologram {
   /**
    * Used to replicate the direction arrow.
    */
-  mArrowDirection: Unknown<'EFactoryConnectionDirection'>;
+  mArrowDirection: EFactoryConnectionDirection;
 
   /**
    * Arrow to indicate the direction of the lift while placing it.

@@ -1,8 +1,8 @@
 import { float } from '../native/primitive';
-import { Unknown } from '../native/unknown';
 
 import { AFGBuildableConveyorBelt } from './AFGBuildableConveyorBelt';
 import { AFGFactoryHologram } from './AFGFactoryHologram';
+import { UFGFactoryConnectionComponent } from './UFGFactoryConnectionComponent';
 
 export interface AFGConveyorAttachmentHologram extends AFGFactoryHologram {
   /**
@@ -23,5 +23,5 @@ export interface AFGConveyorAttachmentHologram extends AFGFactoryHologram {
   /**
    * The connection we snapped to.
    */
-  mSnappedConection: Unknown<'UFGFactoryConnectionComponent'>;
+  mSnappedConection: UFGFactoryConnectionComponent;
 }

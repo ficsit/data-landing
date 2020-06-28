@@ -46,6 +46,13 @@
       "$ref": "#/definitions/FSlateBrush",
       "description": "Icon used when displaying this schematic"
     },
+    "mSchematicDependencies": {
+      "description": "Is this schematic dependant on anything to be available for purchase?",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/UFGAvailabilityDependency"
+      }
+    },
     "mDependsOnSchematic": {
       "$ref": "#/definitions/classReference<UFGSchematic>",
       "description": "Is this schematic dependant on any other for being unlocked?"
@@ -78,6 +85,7 @@
     "mIncludeInBuilds",
     "mSchematicCategory",
     "mSchematicCategoryDeprecated",
+    "mSchematicDependencies",
     "mSchematicIcon",
     "mSubCategories",
     "mTechTier",

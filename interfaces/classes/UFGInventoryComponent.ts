@@ -1,3 +1,4 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { int32 } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
@@ -5,7 +6,7 @@ import { FInventoryStack } from '../structs/FInventoryStack';
 
 import { UFGItemDescriptor } from './UFGItemDescriptor';
 
-export interface UFGInventoryComponent extends Unknown<'UActorComponent'>, Unknown<'IFGSaveInterface'> {
+export interface UFGInventoryComponent extends Unknown<'UActorComponent'>, IFGSaveInterface {
   /**
    * Called when this inventory has been resized
    */

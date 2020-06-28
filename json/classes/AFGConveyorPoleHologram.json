@@ -2,6 +2,7 @@
   "type": "object",
   "properties": {
     "mSnapConnection": {
+      "$ref": "#/definitions/UFGFactoryConnectionComponent",
       "description": "The connection conveyors snap to, used when placing a pole automatically."
     },
     "mPoleMesh": {

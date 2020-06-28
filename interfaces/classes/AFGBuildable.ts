@@ -1,5 +1,6 @@
 import { IFGColorInterface } from '../interfaces/IFGColorInterface';
 import { IFGDismantleInterface } from '../interfaces/IFGDismantleInterface';
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { IFGUseableInterface } from '../interfaces/IFGUseableInterface';
 import { UParticleSystem } from '../native/assets';
 import { AActor } from '../native/classes';
@@ -20,7 +21,7 @@ import { UFGRecipe } from './UFGRecipe';
 export interface AFGBuildable
   extends AActor,
     IFGDismantleInterface,
-    Unknown<'IFGSaveInterface'>,
+    IFGSaveInterface,
     IFGColorInterface,
     IFGUseableInterface {
   /**
@@ -58,6 +59,13 @@ export interface AFGBuildable
    */
   mMaterialNameToInstanceManager: Map<string, UFGFactoryMaterialInstanceManager>;
 
+  mBlockSharingMaterialInstanceMapping: boolean;
+
+  /**
+   * Array of mesh elements to selectively block material instancing on. Used in the event that certain buildable components should not attempt to use a shared material instance.
+   */
+  mExcludeFromMaterialInstancing: Unknown<'UMeshComponent'>[];
+
   /**
    * The primary color of this buildable
    */
@@ -82,6 +90,11 @@ export interface AFGBuildable
    * What build effect to use when dismantling this building
    */
   mDismantleEffectTemplate: classReference<UFGMaterialEffect_Build>;
+
+  /**
+   * Store the active effect so we can cancel an old one if we need to start a new.
+   */
+  mActiveBuildEffect: UFGMaterialEffect_Build;
 
   /**
    * Used to sync and start build effect on buildings when created, but not after creation. Set's to true when creating a building, turns off in the construction effect finish play.
@@ -185,4 +198,9 @@ export interface AFGBuildable
    * Caching the shape component once we have gotten it
    */
   mCachedShapeComponent: Unknown<'UShapeComponent'>;
+
+  /**
+   * Should the building start as hidden when playing the build effect
+   */
+  mHideOnBuildEffectStart: boolean;
 }

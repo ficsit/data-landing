@@ -3,13 +3,13 @@ import { UAkAudioEvent } from '../native/assets';
 import { AActor } from '../native/classes';
 import { float } from '../native/primitive';
 import { classReference, objectReference } from '../native/references';
-import { Unknown } from '../native/unknown';
 import { FFluidBox } from '../structs/FFluidBox';
 import { FQuantizedPipelineIndicatorData } from '../structs/FQuantizedPipelineIndicatorData';
 import { FStringPair } from '../structs/FStringPair';
 
 import { AFGBuildablePipeBase } from './AFGBuildablePipeBase';
 import { UFGItemDescriptor } from './UFGItemDescriptor';
+import { UFGPipeConnectionComponent } from './UFGPipeConnectionComponent';
 import { UFGPipelineFlowIndicatorComponent } from './UFGPipelineFlowIndicatorComponent';
 import { UFGSoundSplineComponent } from './UFGSoundSplineComponent';
 
@@ -44,7 +44,7 @@ export interface AFGBuildablePipeline extends AFGBuildablePipeBase, IFGFluidInte
   /**
    * Cached array of pipe connections.
    */
-  mPipeConnections: Unknown<'UFGPipeConnectionComponent'>[];
+  mPipeConnections: UFGPipeConnectionComponent[];
 
   /**
    * Simulation data.

@@ -1,25 +1,16 @@
-import { float, int32, uint8 } from '../native/primitive';
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
+import { float, uint8 } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
 import { UFGSaveSession } from './UFGSaveSession';
 
-export interface AFGGameMode extends Unknown<'AGameMode'>, Unknown<'IFGSaveInterface'> {
+export interface AFGGameMode extends Unknown<'AGameMode'>, IFGSaveInterface {
   mSaveSession: UFGSaveSession;
 
   /**
    * Last autosave was this id
    */
   mLastAutosaveId: uint8;
-
-  /**
-   * The save session (should actually be SaveSessionId
-   */
-  mSessionId_DEPRECATED: int32;
-
-  /**
-   * The name of the session we are playing, migrated over to mSaveSessionName
-   */
-  mSessionIDString_DEPRECATED: string;
 
   /**
    * The name of the session we are playing
@@ -30,6 +21,11 @@ export interface AFGGameMode extends Unknown<'AGameMode'>, Unknown<'IFGSaveInter
    * Selected starting point
    */
   mStartingPointTagName: string;
+
+  /**
+   * Command line param -PossesAny will allow players using authorization to posses other players on startup regardless of if their UniqueIds match
+   */
+  mAllowPossessAny: boolean;
 
   /**
    * Overriding selected starting point when respawning.

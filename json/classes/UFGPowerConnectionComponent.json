@@ -19,7 +19,7 @@
         "$ref": "#/definitions/AFGBuildableWire"
       }
     },
-    "mNbWiresConnected": {
+    "mNumWiresConnected": {
       "description": "The wired connections to this.",
       "type": "number"
     },
@@ -40,7 +40,7 @@
     "mHiddenConnections",
     "mIsHiddenConnection",
     "mMaxNumConnectionLinks",
-    "mNbWiresConnected",
+    "mNumWiresConnected",
     "mPowerInfo",
     "mWires"
   ]

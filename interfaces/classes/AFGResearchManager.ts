@@ -1,12 +1,14 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 import { FResearchData } from '../structs/FResearchData';
 import { FResearchTime } from '../structs/FResearchTime';
 
+import { AFGBuildable } from './AFGBuildable';
 import { AFGSubsystem } from './AFGSubsystem';
 import { UFGResearchTree } from './UFGResearchTree';
 
-export interface AFGResearchManager extends AFGSubsystem, Unknown<'IFGSaveInterface'> {
+export interface AFGResearchManager extends AFGSubsystem, IFGSaveInterface {
   /**
    * Called when a research recipe is started
    */
@@ -55,4 +57,11 @@ export interface AFGResearchManager extends AFGSubsystem, Unknown<'IFGSaveInterf
    * Used save the current ongoing research, saved research is restarted on load
    */
   mSavedOngoingResearch: FResearchTime[];
+
+  mIsActivated: boolean;
+
+  /**
+   * What class the MAM is
+   */
+  mMAMClass: classReference<AFGBuildable>;
 }

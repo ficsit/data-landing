@@ -20,6 +20,11 @@ export interface UFGPowerCircuit extends UFGCircuit {
   mPowerConsumed: float;
 
   /**
+   * The maximum power that can be demanded by all connected infos.
+   */
+  mMaximumPowerDemand: float;
+
+  /**
    * true if the fuse was triggered.
    */
   mIsFuseTriggered: boolean;

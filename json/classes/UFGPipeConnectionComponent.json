@@ -1,0 +1,52 @@
+{
+  "type": "object",
+  "properties": {
+    "mConnectionInventory": {
+      "$ref": "#/definitions/UFGInventoryComponent",
+      "description": "The inventory of this connection. This can be null in many cases."
+    },
+    "mInventoryAccessIndex": {
+      "description": "An 32-bit signed integer.",
+      "type": "number"
+    },
+    "mPipeNetworkID": {
+      "description": "An 32-bit signed integer.",
+      "type": "number"
+    },
+    "mFluidDescriptor": {
+      "$ref": "#/definitions/classReference<UFGItemDescriptor>",
+      "description": "we need this to work for the play test so for now lets go with ugly."
+    },
+    "mPipeConnectionType": {
+      "$ref": "#/definitions/EPipeConnectionType",
+      "description": "Specifies the type of connection this is, used to determine attachment potential"
+    },
+    "mConnectorClearance": {
+      "description": "How long the connector is extending, indicates where the connected pipe may start turning.",
+      "type": "number"
+    },
+    "mPipeType": {
+      "description": "used to find matching types for snapping and so on",
+      "type": "string"
+    },
+    "mConnectedComponent": {
+      "$ref": "#/definitions/UFGPipeConnectionComponentBase",
+      "description": "Connection to another component. If this is set we're connected."
+    },
+    "mHasConnectedComponent": {
+      "description": "Light-weight connected indication for clients.",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "mConnectedComponent",
+    "mConnectionInventory",
+    "mConnectorClearance",
+    "mFluidDescriptor",
+    "mHasConnectedComponent",
+    "mInventoryAccessIndex",
+    "mPipeConnectionType",
+    "mPipeNetworkID",
+    "mPipeType"
+  ]
+}

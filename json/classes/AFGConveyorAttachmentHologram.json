@@ -14,6 +14,7 @@
       "description": "The conveyor we snapped to."
     },
     "mSnappedConection": {
+      "$ref": "#/definitions/UFGFactoryConnectionComponent",
       "description": "The connection we snapped to."
     },
     "mClearanceMeshComponent": {

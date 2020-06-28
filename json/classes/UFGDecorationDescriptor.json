@@ -18,7 +18,7 @@
       "description": "The static mesh we want for representing the decoration when equipped in 3p."
     },
     "mDecorationActorClass": {
-      "$ref": "#/definitions/classReference<AFGDecorationActor>",
+      "$ref": "#/definitions/classReference<AActor>",
       "description": "The actor to spawn on primary fire press if we want one, can be null"
     },
     "mEquipmentClass": {
@@ -96,6 +96,25 @@
       "$ref": "#/definitions/FItemView",
       "description": "The distance to the object when rendering the icon"
     },
+    "mIconCameraTransform": {
+      "description": "The transform used for icon capture"
+    },
+    "mIconFOV": {
+      "description": "The FOV used for icon capture",
+      "type": "number"
+    },
+    "mIconObjectOrientation": {
+      "$ref": "#/definitions/Rotator",
+      "description": "The object orientation used for icon capture"
+    },
+    "mIconCameraDistance": {
+      "description": "The spring arm distance used for icon capture",
+      "type": "number"
+    },
+    "mIconSkyOrientation": {
+      "$ref": "#/definitions/Rotator",
+      "description": "The sky orientation used for icon capture"
+    },
     "mFluidDensity": {
       "description": "A floating point number.",
       "type": "number"
@@ -110,6 +129,10 @@
     },
     "mFluidColor": {
       "$ref": "#/definitions/Color"
+    },
+    "mResourceSinkPoints": {
+      "description": "An 32-bit signed integer.",
+      "type": "number"
     }
   },
   "required": [
@@ -128,6 +151,11 @@
     "mForm",
     "mGroundMesh",
     "mGroundMeshScale",
+    "mIconCameraDistance",
+    "mIconCameraTransform",
+    "mIconFOV",
+    "mIconObjectOrientation",
+    "mIconSkyOrientation",
     "mIconView",
     "mIconYaw",
     "mInventoryIcon",
@@ -138,6 +166,7 @@
     "mPreviewView",
     "mRadioactiveDecay",
     "mRememberPickUp",
+    "mResourceSinkPoints",
     "mSmallIcon",
     "mStackSize",
     "mUseDisplayNameAndDescription"

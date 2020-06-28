@@ -44,9 +44,51 @@
         "$ref": "#/definitions/AFGSplinePath"
       }
     },
+    "mCachedIsNearBase": {
+      "description": "cached value to see if spawner is near a base",
+      "type": "boolean"
+    },
+    "mSpawnerDistance": {
+      "description": "cached value for what distance to activate this spawner on. Less than zero means we use AISystems default",
+      "type": "number"
+    },
+    "mIsPendingDestroy": {
+      "description": "Indicates that this spawner has been deactivated and want to destroy its creatures",
+      "type": "boolean"
+    },
+    "mIsPendingSpawn": {
+      "description": "Indicates that this spawner has been activated and want to spawn its creatures",
+      "type": "boolean"
+    },
+    "mCurrentCreatureToSpawnIndex": {
+      "description": "Indicates how far into mSpawnData we have gotten with spawning -1 means that no spawning should occur",
+      "type": "number"
+    },
+    "mPendingDestroyTimer": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
+    "mIsMonsterCloset": {
+      "description": "Is this spawner a monster closet? (spawning one creature at a time )",
+      "type": "boolean"
+    },
+    "mMonsterClosetSpawnDelay": {
+      "description": "Delay in seconds when next creature spawns after current creature died",
+      "type": "number"
+    },
+    "mMonsterClosetTimerHandle": {
+      "description": "Timer handle for monster closet spawning"
+    },
+    "mSpawnDistanceOverride": {
+      "description": "This spawn distance will override both the one set in creature and the one in aisystem",
+      "type": "number"
+    },
     "mRandomSeed": {
       "description": "An 32-bit signed integer.",
       "type": "number"
+    },
+    "mVisualizeSpawnDistance": {
+      "description": "Should this spawner draw a sphere showing its spawn distance in editor",
+      "type": "boolean"
     },
     "mRespawnTimeIndays": {
       "description": "How many days should pass before creatures start to respawn ( -1 means never )",
@@ -54,17 +96,28 @@
     }
   },
   "required": [
+    "mCachedIsNearBase",
     "mCapsuleComponent",
     "mCreatureClass",
+    "mCurrentCreatureToSpawnIndex",
     "mDebugComponent",
     "mEditorSprite",
     "mIsActive",
+    "mIsMonsterCloset",
+    "mIsPendingDestroy",
+    "mIsPendingSpawn",
+    "mMonsterClosetSpawnDelay",
+    "mMonsterClosetTimerHandle",
     "mNumberOfCreatures",
+    "mPendingDestroyTimer",
     "mRandomSeed",
     "mRespawnTimeIndays",
     "mSpawnData",
+    "mSpawnDistanceOverride",
     "mSpawnHalfHeight",
     "mSpawnRadius",
-    "mSplines"
+    "mSpawnerDistance",
+    "mSplines",
+    "mVisualizeSpawnDistance"
   ]
 }

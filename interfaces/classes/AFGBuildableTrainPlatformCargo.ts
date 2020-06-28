@@ -3,7 +3,9 @@ import { float, int8, uint8 } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
 import { AFGBuildableTrainPlatform } from './AFGBuildableTrainPlatform';
+import { UFGFactoryConnectionComponent } from './UFGFactoryConnectionComponent';
 import { UFGInventoryComponent } from './UFGInventoryComponent';
+import { UFGPipeConnectionComponent } from './UFGPipeConnectionComponent';
 
 export interface AFGBuildableTrainPlatformCargo extends AFGBuildableTrainPlatform {
   /**
@@ -74,17 +76,17 @@ export interface AFGBuildableTrainPlatformCargo extends AFGBuildableTrainPlatfor
   /**
    * All factory connections that can pull to our storage
    */
-  mStorageInputConnections: Unknown<'UFGFactoryConnectionComponent'>[];
+  mStorageInputConnections: UFGFactoryConnectionComponent[];
 
   /**
    * All pipe connections that can pull to our storage
    */
-  mPipeInputConnections: Unknown<'UFGPipeConnectionComponent'>[];
+  mPipeInputConnections: UFGPipeConnectionComponent[];
 
   /**
    * All pipe connections that can push to pipelines from our storage
    */
-  mPipeOutputConnections: Unknown<'UFGPipeConnectionComponent'>[];
+  mPipeOutputConnections: UFGPipeConnectionComponent[];
 
   /**
    * Inventory where we transfer items to when unloading from a vehicle. Never reference this pointer directly. Use mCargoInventoryHandler->GetActiveInventory().

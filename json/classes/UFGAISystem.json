@@ -24,12 +24,54 @@
       "type": "number"
     },
     "mActivateSpawnerDistance": {
-      "description": "Distance for when we should activate a spawner",
+      "description": "Distance for when we should activate a spawner, this distance is used if the spawner does not specify a custom distance",
       "type": "number"
     },
     "mDisablePawnMovement": {
       "description": "Indicates if we also want to disable pawn movement when we disable the AI",
       "type": "boolean"
+    },
+    "mAllAggroTargets": {
+      "description": "Cached list of all aggro targets, not guaranteed to have the same order",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/IFGAggroTargetInterface"
+      }
+    },
+    "mAllCreatures": {
+      "description": "Cached list of all enemies, used for optimizing enemies depending on distance",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/AFGCreature"
+      }
+    },
+    "mAllPlayers": {
+      "description": "Cached list of all players, used for checking distance to all enemies",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/AFGCharacterPlayer"
+      }
+    },
+    "mAllCreatureSpawners": {
+      "description": "Cached list of all enemy spawners. Used to spawn enemies based on distance to player",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/AFGCreatureSpawner"
+      }
+    },
+    "mPardonedActors": {
+      "description": "Actors that have been given pardon from being targeted by enemies",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/AActor"
+      }
+    },
+    "mPendingActiveSpawners": {
+      "description": "Cached list of creature spawners that are trying to activate",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/AFGCreatureSpawner"
+      }
     },
     "mMaxCreatureIterationsPerTick": {
       "description": "How many creatures can we iterate over per tick",
@@ -38,18 +80,47 @@
     "mMaxSpawnerIterationsPerTick": {
       "description": "How many spawners can we iterate over per tick",
       "type": "number"
+    },
+    "mPotentialSpawnersInfo": {
+      "description": "Spawners that want to spawn",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/FSpawnerInfo"
+      }
+    },
+    "mMaxSpawnWeight": {
+      "description": "Total weight of spawners that can be active, by default one creature will add 1.0f to a spawners weight",
+      "type": "number"
+    },
+    "mMinSpawnDistance": {
+      "description": "Minimum distance to a spawner for it to be able to spawn.",
+      "type": "number"
+    },
+    "mKeepAliveDistanceToPlayer": {
+      "description": "If a creature is withing this distance to an active player then it should not despawn",
+      "type": "number"
     }
   },
   "required": [
     "mActivateSpawnerDistance",
+    "mAllAggroTargets",
+    "mAllCreatureSpawners",
+    "mAllCreatures",
+    "mAllPlayers",
     "mDisableAIDistance",
     "mDisablePawnMovement",
+    "mKeepAliveDistanceToPlayer",
     "mMaxCreatureIterationsPerTick",
+    "mMaxSpawnWeight",
     "mMaxSpawnerIterationsPerTick",
     "mMeshTickEnableDistance",
     "mMeshUpdateDistance",
+    "mMinSpawnDistance",
     "mNavWalkingDistance",
     "mOnAggroTargetAdded",
-    "mOnAggroTargetRemoved"
+    "mOnAggroTargetRemoved",
+    "mPardonedActors",
+    "mPendingActiveSpawners",
+    "mPotentialSpawnersInfo"
   ]
 }

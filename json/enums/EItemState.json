@@ -1,0 +1,9 @@
+{
+  "description": "State that an item pickup can be in",
+  "enum": [
+    0,
+    1,
+    2
+  ],
+  "type": "number"
+}

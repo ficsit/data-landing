@@ -1,4 +1,4 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { UObject } from '../native/classes';
-import { Unknown } from '../native/unknown';
 
-export interface UFGHotbarShortcut extends UObject, Unknown<'IFGSaveInterface'> {}
+export interface UFGHotbarShortcut extends UObject, IFGSaveInterface {}

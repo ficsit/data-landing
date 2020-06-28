@@ -1,9 +1,10 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { Vector } from '../native/structs';
 import { Unknown } from '../native/unknown';
 
 import { AFGCharacterPlayer } from './AFGCharacterPlayer';
 
-export interface AFGDriveablePawn extends Unknown<'APawn'>, Unknown<'IFGSaveInterface'> {
+export interface AFGDriveablePawn extends Unknown<'APawn'>, IFGSaveInterface {
   /**
    * True if the driver should be attached, false if this is a "remote controlled" pawn.
    */

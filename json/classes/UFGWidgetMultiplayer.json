@@ -9,11 +9,15 @@
     },
     "mTitle": {
       "type": "string"
+    },
+    "mMultiplayerButtonType": {
+      "$ref": "#/definitions/EMultiplayerButtonType"
     }
   },
   "required": [
     "mIsOnline",
     "mIsPlayingSatisfactory",
+    "mMultiplayerButtonType",
     "mTitle"
   ]
 }

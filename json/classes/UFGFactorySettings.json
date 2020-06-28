@@ -134,10 +134,6 @@
       "description": "Maximum length when we want to spawn the legs",
       "type": "number"
     },
-    "mDismantleShortcutClass": {
-      "$ref": "#/definitions/classReference<UFGDismantleShortcut>",
-      "description": "The class we want to spawn for dismantle shortcuts"
-    },
     "mRecipeShortcutClass": {
       "$ref": "#/definitions/classReference<UFGRecipeShortcut>",
       "description": "The class we want to spawn for recipe shortcuts"
@@ -148,6 +144,18 @@
       "items": {
         "type": "string"
       }
+    },
+    "mNumHotbars": {
+      "description": "The number of hotbars",
+      "type": "number"
+    },
+    "mNumPresetHotbars": {
+      "description": "The max number of preset hotbars",
+      "type": "number"
+    },
+    "mNumSlotsPerHotbar": {
+      "description": "The number of starting hot bars",
+      "type": "number"
     },
     "mFluidToInventoryStackRate": {
       "description": "Default rate of converting FluidBox content into inventory stacks. Measured in Liters / Second",
@@ -192,7 +200,6 @@
     "mDefaultValidPlacementMaterialSimplified",
     "mDismantleEffect",
     "mDismantlePendingMaterial",
-    "mDismantleShortcutClass",
     "mDismantleSounds",
     "mFluidToInventoryStackRate",
     "mFootMesh",
@@ -202,6 +209,9 @@
     "mInventoryStackToFluidRate",
     "mLegMesh",
     "mMaxFeetLength",
+    "mNumHotbars",
+    "mNumPresetHotbars",
+    "mNumSlotsPerHotbar",
     "mPowerShardClass",
     "mRecipeShortcutClass",
     "mResourceMinerClass",

@@ -57,6 +57,9 @@
     },
     "Tooltip": {
       "$ref": "#/definitions/localized"
+    },
+    "NetmodeAvailability": {
+      "$ref": "#/definitions/ENetmodeAvailability"
     }
   },
   "required": [
@@ -71,6 +74,7 @@
     "MaxValue",
     "MinDisplayValue",
     "MinValue",
+    "NetmodeAvailability",
     "OptionName",
     "OptionType",
     "RequireRestart",

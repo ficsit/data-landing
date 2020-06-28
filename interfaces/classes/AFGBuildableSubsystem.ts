@@ -1,7 +1,8 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { UMaterial, UStaticMesh } from '../native/assets';
 import { AActor } from '../native/classes';
 import { float, int32, uint8 } from '../native/primitive';
-import { Color } from '../native/structs';
+import { Color, LinearColor } from '../native/structs';
 import { Unknown } from '../native/unknown';
 import { FDistanceBasedTickRate } from '../structs/FDistanceBasedTickRate';
 import { FFactoryTickFunction } from '../structs/FFactoryTickFunction';
@@ -12,7 +13,7 @@ import { AFGSubsystem } from './AFGSubsystem';
 import { UFGColoredInstanceManager } from './UFGColoredInstanceManager';
 import { UFGFactoryMaterialInstanceManager } from './UFGFactoryMaterialInstanceManager';
 
-export interface AFGBuildableSubsystem extends AFGSubsystem, Unknown<'IFGSaveInterface'> {
+export interface AFGBuildableSubsystem extends AFGSubsystem, IFGSaveInterface {
   /**
    * Distance used when calculating if a location is near a base
    */
@@ -50,10 +51,23 @@ export interface AFGBuildableSubsystem extends AFGSubsystem, Unknown<'IFGSaveInt
    */
   mColoredInstances: Map<UStaticMesh, UFGColoredInstanceManager>;
 
+  /**
+   * DEPRECATED - Use Linear Color instead
+   */
   mColorSlotsPrimary: Color;
 
+  /**
+   * DEPRECATED - Use Linear Color instead
+   */
   mColorSlotsSecondary: Color;
 
+  mColorSlotsPrimary_Linear: LinearColor[];
+
+  mColorSlotsSecondary_Linear: LinearColor[];
+
+  /**
+   * The number of color slots players can adjust/define, this can be less than the total number of color slots actually present
+   */
   mNbPlayerExposedSlots: uint8;
 
   /**

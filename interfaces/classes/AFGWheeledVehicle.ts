@@ -24,16 +24,6 @@ export interface AFGWheeledVehicle extends AFGVehicle {
   mUpdateMovementHandle: Unknown<'FTimerHandle'>;
 
   /**
-   * Forces vehicle to be in simulation mode
-   */
-  mForceSimulationMode: boolean;
-
-  /**
-   * Forces vehicle to be in real mode
-   */
-  mForceRealMode: boolean;
-
-  /**
    * Broadcast when transfer status is updated
    */
   TranferStatusChangedDelegate: Unknown<'FTranferStatusChanged'>;
@@ -147,16 +137,6 @@ export interface AFGWheeledVehicle extends AFGVehicle {
    * Collision box for detecting overlaps with foliage only. Shape modified in BP
    */
   mFoliageCollideBox: Unknown<'UBoxComponent'>;
-
-  /**
-   * Is the movement being simulated?
-   */
-  mIsSimulated: boolean;
-
-  /**
-   * Distance from player at which simulation begins
-   */
-  mSimulationDistance: float;
 
   /**
    * Our component used for simulated movement

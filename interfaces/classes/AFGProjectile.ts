@@ -1,3 +1,4 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { AActor } from '../native/classes';
 import { Vector } from '../native/structs';
 import { Unknown } from '../native/unknown';
@@ -5,7 +6,7 @@ import { FProjectileData } from '../structs/FProjectileData';
 
 import { AFGPlayerController } from './AFGPlayerController';
 
-export interface AFGProjectile extends AActor, Unknown<'IFGSaveInterface'> {
+export interface AFGProjectile extends AActor, IFGSaveInterface {
   /**
    * projectile data
    */

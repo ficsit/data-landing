@@ -55,19 +55,19 @@
       "description": "How the color of clouds zenith changes during the day"
     },
     "mSunLightColorCurve": {
-      "description": "How the opakeness of the clouds change during the day"
+      "description": "How the opaqueness of the clouds change during the day"
     },
     "mMoonLightColorCurve": {
-      "description": "How the opakeness of the clouds change during the day"
+      "description": "How the opaqueness of the clouds change during the day"
     },
     "mSunIntensity": {
-      "description": "How the opakeness of the clouds change during the day"
+      "description": "How the opaqueness of the clouds change during the day"
     },
     "mMoonIntensity": {
-      "description": "How the opakeness of the clouds change during the day"
+      "description": "How the opaqueness of the clouds change during the day"
     },
     "mCloudOpacity": {
-      "description": "How the opakeness of the clouds change during the day"
+      "description": "How the opaqueness of the clouds change during the day"
     },
     "mBlendWeight": {
       "description": "The blend weight of the post process volume",
@@ -170,7 +170,7 @@
       "description": "An unknown type (likely an Unreal Engine or plugin type)."
     },
     "mContrast_DEPRECATED": {
-      "description": "BEGIN DEPRECATED"
+      "description": "BEGIN DEPRECATED @todo Just found this, when do we clean up the code? -G2 2020-04-15"
     },
     "mGain_DEPRECATED": {
       "description": "An unknown type (likely an Unreal Engine or plugin type)."
@@ -247,7 +247,7 @@
       "type": "number"
     },
     "mOverrideCloudOpacity": {
-      "description": "An 8-bit unsigned integer.",
+      "description": "This is disabled for now, see FGAtmosphereUpdater.cpp",
       "type": "number"
     },
     "mOverrideSunIntensity": {

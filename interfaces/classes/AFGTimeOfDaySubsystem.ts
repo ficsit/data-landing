@@ -1,9 +1,10 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { float, int32 } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
 import { AFGSubsystem } from './AFGSubsystem';
 
-export interface AFGTimeOfDaySubsystem extends AFGSubsystem, Unknown<'IFGSaveInterface'> {
+export interface AFGTimeOfDaySubsystem extends AFGSubsystem, IFGSaveInterface {
   /**
    * How often (in seconds) we should synchronize the time of day with the server
    */

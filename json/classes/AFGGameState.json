@@ -12,11 +12,11 @@
       "$ref": "#/definitions/classReference<UFGMessageBase>",
       "description": "Message sent when a power fuse is triggered occurs."
     },
-    "mAvailableRecipes": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/classReference<UFGRecipe>"
-      }
+    "mOnAutoSaveTimeNotification": {
+      "description": "Broadcast a notification when we are about to autosave"
+    },
+    "mOnAutoSaveFinished": {
+      "description": "Broadcast a notification when we are finished auto saving"
     },
     "mTimeSubsystem": {
       "$ref": "#/definitions/AFGTimeOfDaySubsystem",
@@ -70,6 +70,12 @@
     "mResourceSinkSubsystem": {
       "$ref": "#/definitions/AFGResourceSinkSubsystem"
     },
+    "mItemRegrowSubsystem": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
+    "mVehicleSubsystem": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
     "mVisitedMapAreas": {
       "description": "This array keeps track of what map areas have been visited this game",
       "type": "array",
@@ -91,8 +97,25 @@
     "mReplicatedSessionName": {
       "type": "string"
     },
-    "mBuildingColorSlots": {
-      "$ref": "#/definitions/FFGBuildingColorSlotStruct"
+    "mReplicatedOnlineSessionName": {
+      "description": "A value of auto should be evaluated to a generated name on first use/at session creation",
+      "type": "string"
+    },
+    "mReplicadedOnlineNumPubliclConnections": {
+      "description": "An 8-bit signed integer.",
+      "type": "number"
+    },
+    "mBuildingColorSlotsPrimary_Linear": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/LinearColor"
+      }
+    },
+    "mBuildingColorSlotsSecondary_Linear": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/LinearColor"
+      }
     },
     "mPlannedRestartTime": {
       "description": "Next time the server is planned to restart",
@@ -133,8 +156,8 @@
   "required": [
     "MapAreaVisistedDelegate",
     "mActorRepresentationManager",
-    "mAvailableRecipes",
-    "mBuildingColorSlots",
+    "mBuildingColorSlotsPrimary_Linear",
+    "mBuildingColorSlotsSecondary_Linear",
     "mCentralStorageSubsystem",
     "mChatManager",
     "mCheatNoCost",
@@ -146,7 +169,10 @@
     "mHubPartClass",
     "mIsSpaceElevatorBuilt",
     "mIsTradingPostBuilt",
+    "mItemRegrowSubsystem",
     "mMapManager",
+    "mOnAutoSaveFinished",
+    "mOnAutoSaveTimeNotification",
     "mOnRestartTimeNotification",
     "mPickedUpItems",
     "mPipeSubsystem",
@@ -156,6 +182,8 @@
     "mRadioactivitySubsystem",
     "mRailroadSubsystem",
     "mRecipeManager",
+    "mReplicadedOnlineNumPubliclConnections",
+    "mReplicatedOnlineSessionName",
     "mReplicatedSessionName",
     "mResearchManager",
     "mResourceSinkSubsystem",
@@ -165,6 +193,7 @@
     "mTurboModeMultiplier",
     "mTutorialIntroManager",
     "mUnlockSubsystem",
+    "mVehicleSubsystem",
     "mVisitedMapAreas"
   ]
 }

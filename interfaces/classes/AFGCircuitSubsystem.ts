@@ -1,10 +1,10 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { int32 } from '../native/primitive';
-import { Unknown } from '../native/unknown';
 
 import { AFGSubsystem } from './AFGSubsystem';
 import { UFGCircuit } from './UFGCircuit';
 
-export interface AFGCircuitSubsystem extends AFGSubsystem, Unknown<'IFGSaveInterface'> {
+export interface AFGCircuitSubsystem extends AFGSubsystem, IFGSaveInterface {
   /**
    * Map with all circuits and the circuit ID as the key.
    */

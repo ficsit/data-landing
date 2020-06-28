@@ -1,6 +1,9 @@
 {
   "type": "object",
   "properties": {
+    "mInitializingFromInterface": {
+      "description": "Initial Material Interface used to Init this manager"
+    },
     "mMaterialInstances": {
       "description": "All materials are the same but their params are set to match the colors specified by the color gun",
       "type": "array",
@@ -14,6 +17,7 @@
     }
   },
   "required": [
+    "mInitializingFromInterface",
     "mInstanceNames",
     "mMaterialInstances"
   ]

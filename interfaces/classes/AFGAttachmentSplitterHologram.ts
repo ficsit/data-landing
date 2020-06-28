@@ -1,7 +1,6 @@
-import { Unknown } from '../native/unknown';
-
 import { AFGBuildableAttachmentSplitter } from './AFGBuildableAttachmentSplitter';
 import { AFGConveyorAttachmentHologram } from './AFGConveyorAttachmentHologram';
+import { UFGFactoryConnectionComponent } from './UFGFactoryConnectionComponent';
 
 export interface AFGAttachmentSplitterHologram extends AFGConveyorAttachmentHologram {
   /**
@@ -12,5 +11,5 @@ export interface AFGAttachmentSplitterHologram extends AFGConveyorAttachmentHolo
   /**
    * Used when upgrading.
    */
-  mSnappedConnectionComponents: Unknown<'UFGFactoryConnectionComponent'>[];
+  mSnappedConnectionComponents: UFGFactoryConnectionComponent[];
 }

@@ -1,7 +1,8 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { float, uint8 } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
-export interface UFGHealthComponent extends Unknown<'UActorComponent'>, Unknown<'IFGSaveInterface'> {
+export interface UFGHealthComponent extends Unknown<'UActorComponent'>, IFGSaveInterface {
   OnTakeAnyDamageDelegate: Unknown<'FTakeAnyDamageDelegate'>;
 
   OnTakePointDamageDelegate: Unknown<'FTakePointDamageSignature'>;

@@ -2,6 +2,7 @@ import { EArmEquipment } from '../enums/EArmEquipment';
 import { EBackEquipment } from '../enums/EBackEquipment';
 import { EEquipmentSlot } from '../enums/EEquipmentSlot';
 import { IFGReplicationDependencyActorInterface } from '../interfaces/IFGReplicationDependencyActorInterface';
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { UAkAudioEvent } from '../native/assets';
 import { AActor } from '../native/classes';
 import { classReference } from '../native/references';
@@ -11,10 +12,7 @@ import { FItemAmount } from '../structs/FItemAmount';
 import { AFGEquipmentAttachment } from './AFGEquipmentAttachment';
 import { AFGEquipmentChild } from './AFGEquipmentChild';
 
-export interface AFGEquipment
-  extends AActor,
-    Unknown<'IFGSaveInterface'>,
-    IFGReplicationDependencyActorInterface {
+export interface AFGEquipment extends AActor, IFGSaveInterface, IFGReplicationDependencyActorInterface {
   /**
    * This is the attachment for this class
    */

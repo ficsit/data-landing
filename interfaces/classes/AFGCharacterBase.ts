@@ -1,3 +1,4 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { UAkAudioEvent, UParticleSystem } from '../native/assets';
 import { float } from '../native/primitive';
 import { classReference } from '../native/references';
@@ -9,7 +10,7 @@ import { FFootstepEffectSurface } from '../structs/FFootstepEffectSurface';
 import { UFGDamageType } from './UFGDamageType';
 import { UFGHealthComponent } from './UFGHealthComponent';
 
-export interface AFGCharacterBase extends Unknown<'ACharacter'>, Unknown<'IFGSaveInterface'> {
+export interface AFGCharacterBase extends Unknown<'ACharacter'>, IFGSaveInterface {
   /**
    * When receiving FootDown on index 2, then we will trace from mFeetNames[2] socket for ground
    */

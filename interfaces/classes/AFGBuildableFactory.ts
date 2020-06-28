@@ -41,6 +41,11 @@ export interface AFGBuildableFactory
    */
   mOnHasProductionChanged: Unknown<'FBuildingStateChanged'>;
 
+  /**
+   * So that you can listen for when standby is toggled. True == Standby is active False == Standby was disabled
+   */
+  mOnHasStandbyChanged: Unknown<'FBuildingStateChanged'>;
+
   mMinimumProducingTime: float;
 
   mMinimumStoppedTime: float;

@@ -6,9 +6,11 @@
       "description": "Used to redirect input and construct poles when needed"
     },
     "mConnectionComponents": {
+      "$ref": "#/definitions/UFGFactoryConnectionComponent",
       "description": "The two connection components for this conveyor."
     },
     "mSnappedConnectionComponents": {
+      "$ref": "#/definitions/UFGFactoryConnectionComponent",
       "description": "The connections we've made."
     },
     "mUpgradedConveyorBelt": {
@@ -32,6 +34,7 @@
       "type": "number"
     },
     "mConnectionArrowComponentDirection": {
+      "$ref": "#/definitions/EFactoryConnectionDirection",
       "description": "Used to replicate the direction arrow."
     },
     "mConnectionArrowComponent": {

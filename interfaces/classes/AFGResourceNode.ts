@@ -1,6 +1,7 @@
 import { EResourceAmount } from '../enums/EResourceAmount';
 import { EResourcePurity } from '../enums/EResourcePurity';
 import { IFGExtractableResourceInterface } from '../interfaces/IFGExtractableResourceInterface';
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { IFGSignificanceInterface } from '../interfaces/IFGSignificanceInterface';
 import { IFGUseableInterface } from '../interfaces/IFGUseableInterface';
 import { UParticleSystem } from '../native/assets';
@@ -15,7 +16,7 @@ import { UFGResourceDescriptor } from './UFGResourceDescriptor';
 export interface AFGResourceNode
   extends AActor,
     IFGExtractableResourceInterface,
-    Unknown<'IFGSaveInterface'>,
+    IFGSaveInterface,
     IFGUseableInterface,
     IFGSignificanceInterface {
   /**
@@ -92,4 +93,9 @@ export interface AFGResourceNode
    * Bool for is we should spawn particle - @todo Do we really need to save this? //[Dylan 3/2/2020]
    */
   mDoSpawnParticle: boolean;
+
+  /**
+   * Should this be handled by significance manager
+   */
+  mAddToSignificanceManager: boolean;
 }

@@ -4,6 +4,7 @@ import { Unknown } from '../native/unknown';
 
 import { AFGBuildablePipeline } from './AFGBuildablePipeline';
 import { AFGFactoryHologram } from './AFGFactoryHologram';
+import { UFGPipeConnectionComponent } from './UFGPipeConnectionComponent';
 
 export interface AFGPipelineAttachmentHologram extends AFGFactoryHologram {
   /**
@@ -54,7 +55,7 @@ export interface AFGPipelineAttachmentHologram extends AFGFactoryHologram {
   /**
    * Cached list of all connections in this attachment hologram
    */
-  mPipeConnectionComponents: Unknown<'UFGPipeConnectionComponent'>[];
+  mPipeConnectionComponents: UFGPipeConnectionComponent[];
 
-  mSnappedConnectionComponent: Unknown<'UFGPipeConnectionComponent'>;
+  mSnappedConnectionComponent: UFGPipeConnectionComponent;
 }

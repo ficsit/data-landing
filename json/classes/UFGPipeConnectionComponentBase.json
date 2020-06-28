@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "properties": {
+    "mPipeConnectionType": {
+      "$ref": "#/definitions/EPipeConnectionType",
+      "description": "Specifies the type of connection this is, used to determine attachment potential"
+    },
+    "mConnectorClearance": {
+      "description": "How long the connector is extending, indicates where the connected pipe may start turning.",
+      "type": "number"
+    },
+    "mPipeType": {
+      "description": "used to find matching types for snapping and so on",
+      "type": "string"
+    },
+    "mConnectedComponent": {
+      "$ref": "#/definitions/UFGPipeConnectionComponentBase",
+      "description": "Connection to another component. If this is set we're connected."
+    },
+    "mHasConnectedComponent": {
+      "description": "Light-weight connected indication for clients.",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "mConnectedComponent",
+    "mConnectorClearance",
+    "mHasConnectedComponent",
+    "mPipeConnectionType",
+    "mPipeType"
+  ]
+}

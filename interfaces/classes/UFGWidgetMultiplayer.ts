@@ -1,3 +1,4 @@
+import { EMultiplayerButtonType } from '../enums/EMultiplayerButtonType';
 import { Unknown } from '../native/unknown';
 
 export interface UFGWidgetMultiplayer extends Unknown<'UUserWidget'> {
@@ -6,4 +7,6 @@ export interface UFGWidgetMultiplayer extends Unknown<'UUserWidget'> {
   mIsPlayingSatisfactory: boolean;
 
   mTitle: string;
+
+  mMultiplayerButtonType: EMultiplayerButtonType;
 }

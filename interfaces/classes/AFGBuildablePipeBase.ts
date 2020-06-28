@@ -4,6 +4,7 @@ import { float } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
 import { AFGBuildable } from './AFGBuildable';
+import { UFGPipeConnectionComponentBase } from './UFGPipeConnectionComponentBase';
 
 export interface AFGBuildablePipeBase extends AFGBuildable, IFGSignificanceInterface {
   /**
@@ -16,9 +17,9 @@ export interface AFGBuildablePipeBase extends AFGBuildable, IFGSignificanceInter
    */
   mMeshLength: float;
 
-  mConnection0: Unknown<'UFGPipeConnectionComponentBase'>;
+  mConnection0: UFGPipeConnectionComponentBase;
 
-  mConnection1: Unknown<'UFGPipeConnectionComponentBase'>;
+  mConnection1: UFGPipeConnectionComponentBase;
 
   /**
    * Compact representation of mSplineComponent, used for replication and save game

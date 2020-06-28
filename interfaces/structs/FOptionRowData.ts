@@ -1,3 +1,4 @@
+import { ENetmodeAvailability } from '../enums/ENetmodeAvailability';
 import { EOptionType } from '../enums/EOptionType';
 import { float, int32, localized } from '../native/primitive';
 
@@ -35,4 +36,6 @@ export interface FOptionRowData {
   RequireRestart: boolean;
 
   Tooltip: localized;
+
+  NetmodeAvailability: ENetmodeAvailability;
 }

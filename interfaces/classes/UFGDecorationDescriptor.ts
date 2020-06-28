@@ -1,8 +1,8 @@
 import { UStaticMesh } from '../native/assets';
+import { AActor } from '../native/classes';
 import { classReference } from '../native/references';
 import { Vector } from '../native/structs';
 
-import { AFGDecorationActor } from './AFGDecorationActor';
 import { UFGEquipmentDescriptor } from './UFGEquipmentDescriptor';
 
 export interface UFGDecorationDescriptor extends UFGEquipmentDescriptor {
@@ -29,5 +29,5 @@ export interface UFGDecorationDescriptor extends UFGEquipmentDescriptor {
   /**
    * The actor to spawn on primary fire press if we want one, can be null
    */
-  mDecorationActorClass: classReference<AFGDecorationActor>;
+  mDecorationActorClass: classReference<AActor>;
 }

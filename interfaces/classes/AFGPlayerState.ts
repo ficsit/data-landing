@@ -1,18 +1,20 @@
 import { ERepresentationType } from '../enums/ERepresentationType';
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { int32, uint8 } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
+import { FHotbar } from '../structs/FHotbar';
 import { FMessageData } from '../structs/FMessageData';
+import { FPresetHotbar } from '../structs/FPresetHotbar';
 import { FSlotData } from '../structs/FSlotData';
 
 import { AFGEquipment } from './AFGEquipment';
-import { UFGHotbarShortcut } from './UFGHotbarShortcut';
 import { UFGItemCategory } from './UFGItemCategory';
 import { UFGRecipe } from './UFGRecipe';
 import { UFGSchematicCategory } from './UFGSchematicCategory';
 import { UFGTutorialSubsystem } from './UFGTutorialSubsystem';
 
-export interface AFGPlayerState extends Unknown<'APlayerState'>, Unknown<'IFGSaveInterface'> {
+export interface AFGPlayerState extends Unknown<'APlayerState'>, IFGSaveInterface {
   /**
    * Broadcast when a buildable or decor has been constructed.
    */
@@ -21,7 +23,17 @@ export interface AFGPlayerState extends Unknown<'APlayerState'>, Unknown<'IFGSav
   /**
    * All hotbar actions assigned
    */
-  mHotbarShortcuts: UFGHotbarShortcut[];
+  mHotbars: FHotbar[];
+
+  /**
+   * All hotbar actions assigned to presets. A preset is a saved set of shortcuts that can be assigned to the hotbar
+   */
+  mPresetHotbars: FPresetHotbar[];
+
+  /**
+   * The index of the current hotbar
+   */
+  mCurrentHotbarIndex: int32;
 
   /**
    * Default recipes to have shortcuts to
@@ -52,11 +64,6 @@ export interface AFGPlayerState extends Unknown<'APlayerState'>, Unknown<'IFGSav
    * Set to true after we have received our initial items
    */
   mHasReceivedInitialItems: uint8;
-
-  /**
-   * Set to true after we have setup our initial shortcuts
-   */
-  mHasSetupDefaultShortcuts: uint8;
 
   /**
    * If true, then we are server admin
@@ -106,4 +113,9 @@ export interface AFGPlayerState extends Unknown<'APlayerState'>, Unknown<'IFGSav
    * The last selected category in the resource sink shop so we can open the shop at the same category later
    */
   mLastSelectedResourceSinkShopCategory: classReference<UFGSchematicCategory>;
+
+  /**
+   * How many inventory slots the player has observed that they have. Used to show when we have new available slots in the UI
+   */
+  mNumObservedInventorySlots: int32;
 }

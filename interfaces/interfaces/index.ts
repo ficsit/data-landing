@@ -13,6 +13,7 @@ export { IFGPipeHyperInterface } from './IFGPipeHyperInterface';
 export { IFGPopupInstigatorInterface } from './IFGPopupInstigatorInterface';
 export { IFGRadiationInterface } from './IFGRadiationInterface';
 export { IFGRecipeProducerInterface } from './IFGRecipeProducerInterface';
+export { IFGSaveInterface } from './IFGSaveInterface';
 export { IFGSignificanceInterface } from './IFGSignificanceInterface';
 export { IFGSignInterface } from './IFGSignInterface';
 export { IFGUseableInterface } from './IFGUseableInterface';

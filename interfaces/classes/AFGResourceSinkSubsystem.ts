@@ -1,3 +1,4 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { int32 } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
@@ -7,7 +8,7 @@ import { AFGSubsystem } from './AFGSubsystem';
 import { UFGItemDescriptor } from './UFGItemDescriptor';
 import { UFGMessageBase } from './UFGMessageBase';
 
-export interface AFGResourceSinkSubsystem extends AFGSubsystem, Unknown<'IFGSaveInterface'> {
+export interface AFGResourceSinkSubsystem extends AFGSubsystem, IFGSaveInterface {
   /**
    * The cached schematic manager
    */

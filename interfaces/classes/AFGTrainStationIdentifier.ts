@@ -1,9 +1,10 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { int32, localized } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
 import { AFGBuildableRailroadStation } from './AFGBuildableRailroadStation';
 
-export interface AFGTrainStationIdentifier extends Unknown<'AInfo'>, Unknown<'IFGSaveInterface'> {
+export interface AFGTrainStationIdentifier extends Unknown<'AInfo'>, IFGSaveInterface {
   /**
    * The station this info represents.
    */

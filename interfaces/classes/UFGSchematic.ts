@@ -8,6 +8,7 @@ import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 import { FItemAmount } from '../structs/FItemAmount';
 
+import { UFGAvailabilityDependency } from './UFGAvailabilityDependency';
 import { UFGSchematicCategory } from './UFGSchematicCategory';
 import { UFGUnlock } from './UFGUnlock';
 
@@ -56,6 +57,11 @@ export interface UFGSchematic extends UObject {
    * Icon used when displaying this schematic
    */
   mSchematicIcon: FSlateBrush;
+
+  /**
+   * Is this schematic dependant on anything to be available for purchase?
+   */
+  mSchematicDependencies: UFGAvailabilityDependency[];
 
   /**
    * Is this schematic dependant on any other for being unlocked?

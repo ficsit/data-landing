@@ -7,6 +7,9 @@
     "mOnRecipeChanged": {
       "description": "Called when the build gun build state receives a new recipe. This May be called prior to OnStateChanged."
     },
+    "mOnRecipeSampled": {
+      "description": "Called when the build gun have sampled a new recipe."
+    },
     "mBuildDistanceMax": {
       "description": "Trace distance for this build gun when building and dismantling.",
       "type": "number"
@@ -142,6 +145,7 @@
     "mIdlePoseAnimation3p",
     "mMenuStateClass",
     "mOnRecipeChanged",
+    "mOnRecipeSampled",
     "mOnStateChanged",
     "mSecondaryAttachment",
     "mSecondaryAttachmentClass",

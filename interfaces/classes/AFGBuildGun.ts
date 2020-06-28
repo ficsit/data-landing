@@ -21,6 +21,11 @@ export interface AFGBuildGun extends AFGEquipment, IFGRecipeProducerInterface {
   mOnRecipeChanged: Unknown<'FOnBuildGunRecipeChanged'>;
 
   /**
+   * Called when the build gun have sampled a new recipe.
+   */
+  mOnRecipeSampled: Unknown<'FOnRecipeSampled'>;
+
+  /**
    * Trace distance for this build gun when building and dismantling.
    */
   mBuildDistanceMax: float;

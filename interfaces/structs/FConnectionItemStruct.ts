@@ -1,4 +1,4 @@
-import { Unknown } from '../native/unknown';
+import { UFGFactoryConnectionComponent } from '../classes/UFGFactoryConnectionComponent';
 
 import { FInventoryItem } from './FInventoryItem';
 
@@ -6,7 +6,7 @@ export interface FConnectionItemStruct {
   /**
    * The connection to put the item on
    */
-  Connection: Unknown<'UFGFactoryConnectionComponent'>;
+  Connection: UFGFactoryConnectionComponent;
 
   /**
    * The item to put on the connection

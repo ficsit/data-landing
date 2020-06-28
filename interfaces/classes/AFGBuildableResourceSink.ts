@@ -1,9 +1,9 @@
 import { float } from '../native/primitive';
 import { classReference } from '../native/references';
-import { Unknown } from '../native/unknown';
 
 import { AFGBuildableFactory } from './AFGBuildableFactory';
 import { AFGResourceSinkSubsystem } from './AFGResourceSinkSubsystem';
+import { UFGFactoryConnectionComponent } from './UFGFactoryConnectionComponent';
 import { UFGInventoryComponent } from './UFGInventoryComponent';
 import { UFGItemDescriptor } from './UFGItemDescriptor';
 
@@ -13,7 +13,7 @@ export interface AFGBuildableResourceSink extends AFGBuildableFactory {
   /**
    * Cached factory input connections
    */
-  mFactoryInputConnections: Unknown<'UFGFactoryConnectionComponent'>[];
+  mFactoryInputConnections: UFGFactoryConnectionComponent[];
 
   /**
    * Cached resource sink subsystem

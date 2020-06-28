@@ -1,7 +1,8 @@
-import { float, int32 } from '../native/primitive';
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
+import { float, int32, int8 } from '../native/primitive';
 import { classReference } from '../native/references';
+import { LinearColor } from '../native/structs';
 import { Unknown } from '../native/unknown';
-import { FFGBuildingColorSlotStruct } from '../structs/FFGBuildingColorSlotStruct';
 
 import { AFGActorRepresentationManager } from './AFGActorRepresentationManager';
 import { AFGCentralStorageSubsystem } from './AFGCentralStorageSubsystem';
@@ -23,9 +24,8 @@ import { AFGUnlockSubsystem } from './AFGUnlockSubsystem';
 import { UFGItemDescriptor } from './UFGItemDescriptor';
 import { UFGMapArea } from './UFGMapArea';
 import { UFGMessageBase } from './UFGMessageBase';
-import { UFGRecipe } from './UFGRecipe';
 
-export interface AFGGameState extends Unknown<'AGameState'>, Unknown<'IFGSaveInterface'> {
+export interface AFGGameState extends Unknown<'AGameState'>, IFGSaveInterface {
   /**
    * Called on all players when any player enters a new map area.
    */
@@ -42,10 +42,14 @@ export interface AFGGameState extends Unknown<'AGameState'>, Unknown<'IFGSaveInt
   mPowerCircuitFuseTriggeredMessage: classReference<UFGMessageBase>;
 
   /**
-   * @todo @save 2019-02-26 If this is cleaned up alpha saves will lose recipes unlocked by other means than through schematics, i.e. probably alternate recipes.
-   * _DEPRECATED
+   * Broadcast a notification when we are about to autosave
    */
-  mAvailableRecipes: classReference<UFGRecipe>[];
+  mOnAutoSaveTimeNotification: Unknown<'FOnAutoSaveTimeNotification'>;
+
+  /**
+   * Broadcast a notification when we are finished auto saving
+   */
+  mOnAutoSaveFinished: Unknown<'FOnAutoSaveFinished'>;
 
   /**
    * Spawned subsystems
@@ -84,6 +88,10 @@ export interface AFGGameState extends Unknown<'AGameState'>, Unknown<'IFGSaveInt
 
   mResourceSinkSubsystem: AFGResourceSinkSubsystem;
 
+  mItemRegrowSubsystem: Unknown<'AFGItemRegrowSubsystem'>;
+
+  mVehicleSubsystem: Unknown<'AFGVehicleSubsystem'>;
+
   /**
    * This array keeps track of what map areas have been visited this game
    */
@@ -101,7 +109,16 @@ export interface AFGGameState extends Unknown<'AGameState'>, Unknown<'IFGSaveInt
 
   mReplicatedSessionName: string;
 
-  mBuildingColorSlots: FFGBuildingColorSlotStruct;
+  /**
+   * A value of auto should be evaluated to a generated name on first use/at session creation
+   */
+  mReplicatedOnlineSessionName: string;
+
+  mReplicadedOnlineNumPubliclConnections: int8;
+
+  mBuildingColorSlotsPrimary_Linear: LinearColor[];
+
+  mBuildingColorSlotsSecondary_Linear: LinearColor[];
 
   /**
    * Next time the server is planned to restart

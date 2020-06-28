@@ -52,6 +52,13 @@
       "items": {
         "$ref": "#/definitions/FResearchTime"
       }
+    },
+    "mIsActivated": {
+      "type": "boolean"
+    },
+    "mMAMClass": {
+      "$ref": "#/definitions/classReference<AFGBuildable>",
+      "description": "What class the MAM is"
     }
   },
   "required": [
@@ -63,6 +70,8 @@
     "mAllResearchTrees",
     "mCanConductMultipleResearch",
     "mCompletedResearch",
+    "mIsActivated",
+    "mMAMClass",
     "mOngoingResearch",
     "mSavedOngoingResearch",
     "mUnlockedResearchTrees"

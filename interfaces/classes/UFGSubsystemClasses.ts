@@ -1,4 +1,5 @@
 import { classReference } from '../native/references';
+import { Unknown } from '../native/unknown';
 
 import { AFGAdminInterface } from './AFGAdminInterface';
 import { AFGBuildableSubsystem } from './AFGBuildableSubsystem';
@@ -110,4 +111,14 @@ export interface UFGSubsystemClasses extends UFGSettings {
    * Handles administration task of servers
    */
   mAdminInterfaceClass: classReference<AFGAdminInterface>;
+
+  /**
+   * Handles regrowth of item pickups
+   */
+  mItemRegrowSubsystemClass: classReference<Unknown<'AFGItemRegrowSubsystem'>>;
+
+  /**
+   * Handles all vehicles
+   */
+  mVehicleSubsystemClass: classReference<Unknown<'AFGVehicleSubsystem'>>;
 }

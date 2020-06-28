@@ -4,6 +4,7 @@ import { Unknown } from '../native/unknown';
 
 import { AFGBuildablePoleBase } from './AFGBuildablePoleBase';
 import { UFGColoredInstanceMeshProxy } from './UFGColoredInstanceMeshProxy';
+import { UFGPipeConnectionComponentBase } from './UFGPipeConnectionComponentBase';
 
 export interface AFGBuildablePipelineSupport extends AFGBuildablePoleBase {
   /**
@@ -24,7 +25,7 @@ export interface AFGBuildablePipelineSupport extends AFGBuildablePoleBase {
   /**
    * OST BE SET FROM CONSTRUCTION SCRIPT OR IT WILL BE NULL!
    */
-  mSnapOnly0: Unknown<'UFGPipeConnectionComponentBase'>;
+  mSnapOnly0: UFGPipeConnectionComponentBase;
 
   /**
    * The scene component for adjusting the length of the support.

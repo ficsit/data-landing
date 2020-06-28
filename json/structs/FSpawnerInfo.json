@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "Spawner": {
+      "$ref": "#/definitions/AFGCreatureSpawner"
+    },
+    "WithinSpawnRange": {
+      "type": "boolean"
+    },
+    "DistanceSq": {
+      "description": "A floating point number.",
+      "type": "number"
+    }
+  },
+  "required": [
+    "DistanceSq",
+    "Spawner",
+    "WithinSpawnRange"
+  ]
+}

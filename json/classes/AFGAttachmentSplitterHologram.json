@@ -8,7 +8,9 @@
     "mSnappedConnectionComponents": {
       "description": "Used when upgrading.",
       "type": "array",
-      "items": {}
+      "items": {
+        "$ref": "#/definitions/UFGFactoryConnectionComponent"
+      }
     },
     "mMaxValidTurnOffset": {
       "description": "Used to limit the placement in turns. What's the maximum offset to check from center to detect the curve.",
@@ -23,6 +25,7 @@
       "description": "The conveyor we snapped to."
     },
     "mSnappedConection": {
+      "$ref": "#/definitions/UFGFactoryConnectionComponent",
       "description": "The connection we snapped to."
     },
     "mClearanceMeshComponent": {

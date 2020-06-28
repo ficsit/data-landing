@@ -1,11 +1,12 @@
 import { EGamePhase } from '../enums/EGamePhase';
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { Unknown } from '../native/unknown';
 import { FPhaseCost } from '../structs/FPhaseCost';
 import { FPhaseTierInfo } from '../structs/FPhaseTierInfo';
 
 import { AFGSubsystem } from './AFGSubsystem';
 
-export interface AFGGamePhaseManager extends AFGSubsystem, Unknown<'IFGSaveInterface'> {
+export interface AFGGamePhaseManager extends AFGSubsystem, IFGSaveInterface {
   /**
    * Current GamePhase
    */

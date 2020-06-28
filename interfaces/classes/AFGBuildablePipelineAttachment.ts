@@ -1,11 +1,11 @@
 import { IFGFluidIntegrantInterface } from '../interfaces/IFGFluidIntegrantInterface';
 import { float } from '../native/primitive';
 import { classReference } from '../native/references';
-import { Unknown } from '../native/unknown';
 import { FFluidBox } from '../structs/FFluidBox';
 
 import { AFGBuildableFactory } from './AFGBuildableFactory';
 import { UFGItemDescriptor } from './UFGItemDescriptor';
+import { UFGPipeConnectionComponent } from './UFGPipeConnectionComponent';
 
 export interface AFGBuildablePipelineAttachment extends AFGBuildableFactory, IFGFluidIntegrantInterface {
   /**
@@ -26,7 +26,7 @@ export interface AFGBuildablePipelineAttachment extends AFGBuildableFactory, IFG
   /**
    * Cached pipe connections from the blueprint.
    */
-  mPipeConnections: Unknown<'UFGPipeConnectionComponent'>[];
+  mPipeConnections: UFGPipeConnectionComponent[];
 
   mCachedFluidDescriptor: classReference<UFGItemDescriptor>;
 }

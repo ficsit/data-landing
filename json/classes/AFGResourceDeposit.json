@@ -85,9 +85,14 @@
     "mDoSpawnParticle": {
       "description": "Bool for is we should spawn particle - @todo Do we really need to save this? //[Dylan 3/2/2020]",
       "type": "boolean"
+    },
+    "mAddToSignificanceManager": {
+      "description": "Should this be handled by significance manager",
+      "type": "boolean"
     }
   },
   "required": [
+    "mAddToSignificanceManager",
     "mAmount",
     "mBoxComponent",
     "mCanPlaceResourceExtractor",

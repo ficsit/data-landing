@@ -31,6 +31,9 @@
     "mOnHasProductionChanged": {
       "description": "So that you can listen for when production has changed"
     },
+    "mOnHasStandbyChanged": {
+      "description": "So that you can listen for when standby is toggled. True == Standby is active False == Standby was disabled"
+    },
     "mMinimumProducingTime": {
       "description": "A floating point number.",
       "type": "number"
@@ -149,6 +152,14 @@
       "$ref": "#/definitions/Map<string,UFGFactoryMaterialInstanceManager>",
       "description": "Map of colorable mesh materials to their respective colored factory material instance manager"
     },
+    "mBlockSharingMaterialInstanceMapping": {
+      "type": "boolean"
+    },
+    "mExcludeFromMaterialInstancing": {
+      "description": "Array of mesh elements to selectively block material instancing on. Used in the event that certain buildable components should not attempt to use a shared material instance.",
+      "type": "array",
+      "items": {}
+    },
     "mPrimaryColor": {
       "$ref": "#/definitions/LinearColor",
       "description": "The primary color of this buildable"
@@ -168,6 +179,10 @@
     "mDismantleEffectTemplate": {
       "$ref": "#/definitions/classReference<UFGMaterialEffect_Build>",
       "description": "What build effect to use when dismantling this building"
+    },
+    "mActiveBuildEffect": {
+      "$ref": "#/definitions/UFGMaterialEffect_Build",
+      "description": "Store the active effect so we can cancel an old one if we need to start a new."
     },
     "mBuildEffectInstignator": {
       "$ref": "#/definitions/AActor",
@@ -249,13 +264,19 @@
     },
     "mCachedShapeComponent": {
       "description": "Caching the shape component once we have gotten it"
+    },
+    "mHideOnBuildEffectStart": {
+      "description": "Should the building start as hidden when playing the build effect",
+      "type": "boolean"
     }
   },
   "required": [
     "MaxRenderDistance",
     "OnReplicationDetailActorCreatedEvent",
+    "mActiveBuildEffect",
     "mAddToSignificanceManager",
     "mAllowCleranceSeparationEvenIfStackedOn",
+    "mBlockSharingMaterialInstanceMapping",
     "mBuildEffectClassName",
     "mBuildEffectInstignator",
     "mBuildEffectSpeed",
@@ -275,12 +296,14 @@
     "mDismantleEffectTemplate",
     "mDisplayName",
     "mEffectUpdateInterval",
+    "mExcludeFromMaterialInstancing",
     "mFactoryTickFunction",
     "mFluidStackSizeDefault",
     "mFluidStackSizeMultiplier",
     "mForceNetUpdateOnRegisterPlayer",
     "mGamePhaseManager",
     "mHasPower",
+    "mHideOnBuildEffectStart",
     "mHighlightParticleClassName",
     "mHighlightParticleSystemComponent",
     "mHighlightParticleSystemTemplate",
@@ -303,6 +326,7 @@
     "mNumCyclesForProductivity",
     "mOnHasPowerChanged",
     "mOnHasProductionChanged",
+    "mOnHasStandbyChanged",
     "mPendingPotential",
     "mPowerConsumption",
     "mPowerConsumptionExponent",

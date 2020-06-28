@@ -22,6 +22,16 @@ export interface AFGPlayerController extends AFGPlayerControllerBase {
   OnShortcutChanged: Unknown<'FOnShortcutChanged'>;
 
   /**
+   * Called when a shortcut has changed, e.g. activated or inactivated
+   */
+  OnPresetHotbarChanged: Unknown<'FOnPresetHotbarChanged'>;
+
+  /**
+   * Called when we change hotbar index has changed
+   */
+  OnHotbarIndexChanged: Unknown<'FOnHotbarIndexChanged'>;
+
+  /**
    * Called when the player opens or closes the inventory
    */
   OnToggleInventory: Unknown<'FOnToggleInventory'>;
@@ -86,6 +96,11 @@ export interface AFGPlayerController extends AFGPlayerControllerBase {
    * Cached info about the map areas
    */
   mCachedMapAreaTexture: UFGMapAreaTexture;
+
+  /**
+   * If the tutorial is currently active and affecting the player controller
+   */
+  mInTutorialMode: boolean;
 
   /**
    * Did we died

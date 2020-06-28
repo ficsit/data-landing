@@ -13,6 +13,10 @@
       "description": "Total amount of energy consumed in the circuit.",
       "type": "number"
     },
+    "mMaximumPowerDemand": {
+      "description": "The maximum power that can be demanded by all connected infos.",
+      "type": "number"
+    },
     "mIsFuseTriggered": {
       "description": "true if the fuse was triggered.",
       "type": "boolean"
@@ -54,6 +58,7 @@
     "mHasChanged",
     "mInteractingPlayers",
     "mIsFuseTriggered",
+    "mMaximumPowerDemand",
     "mNeedFullRebuild",
     "mPowerConsumed",
     "mPowerProduced",

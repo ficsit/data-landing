@@ -1,0 +1,52 @@
+{
+  "type": "object",
+  "properties": {
+    "mConnector": {
+      "$ref": "#/definitions/EFactoryConnectionConnector",
+      "description": "Physical type of connector used for this connection."
+    },
+    "mDirection": {
+      "$ref": "#/definitions/EFactoryConnectionDirection",
+      "description": "Direction for this connection."
+    },
+    "mConnectorClearance": {
+      "description": "How long the connector is extending, indicates where the connected conveyor may start turning.",
+      "type": "number"
+    },
+    "mConnectedComponent": {
+      "$ref": "#/definitions/UFGFactoryConnectionComponent",
+      "description": "Connection to another component. If this is set we're connected."
+    },
+    "mHasConnectedComponent": {
+      "description": "Light-weight connected indication for clients.",
+      "type": "boolean"
+    },
+    "mConnectionInventory": {
+      "$ref": "#/definitions/UFGInventoryComponent",
+      "description": "The inventory of this connection"
+    },
+    "mInventoryAccessIndex": {
+      "description": "The inventory index utilized by this connection ( -1 for none specified )",
+      "type": "number"
+    },
+    "mOuterBuildable": {
+      "$ref": "#/definitions/AFGBuildable",
+      "description": "Buildable owning us, cached for performance"
+    },
+    "mForwardPeekAndGrabToBuildable": {
+      "description": "Forward implementation details to our owner.",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "mConnectedComponent",
+    "mConnectionInventory",
+    "mConnector",
+    "mConnectorClearance",
+    "mDirection",
+    "mForwardPeekAndGrabToBuildable",
+    "mHasConnectedComponent",
+    "mInventoryAccessIndex",
+    "mOuterBuildable"
+  ]
+}

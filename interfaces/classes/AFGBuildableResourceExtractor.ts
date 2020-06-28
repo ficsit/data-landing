@@ -3,12 +3,12 @@ import { AActor } from '../native/classes';
 import { float, int32 } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Vector } from '../native/structs';
-import { Unknown } from '../native/unknown';
 
 import { AFGBuildableFactory } from './AFGBuildableFactory';
 import { AFGResourceNode } from './AFGResourceNode';
 import { UFGConstructDisqualifier } from './UFGConstructDisqualifier';
 import { UFGInventoryComponent } from './UFGInventoryComponent';
+import { UFGPipeConnectionComponent } from './UFGPipeConnectionComponent';
 import { UFGResourceDescriptor } from './UFGResourceDescriptor';
 
 export interface AFGBuildableResourceExtractor extends AFGBuildableFactory {
@@ -83,7 +83,7 @@ export interface AFGBuildableResourceExtractor extends AFGBuildableFactory {
   /**
    * Cached pipe output connections
    */
-  mPipeOutputConnections: Unknown<'UFGPipeConnectionComponent'>[];
+  mPipeOutputConnections: UFGPipeConnectionComponent[];
 
   /**
    * Our output inventory,

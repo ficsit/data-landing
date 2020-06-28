@@ -4,12 +4,23 @@
     "BuildableConstructedDelegate": {
       "description": "Broadcast when a buildable or decor has been constructed."
     },
-    "mHotbarShortcuts": {
+    "mHotbars": {
       "description": "All hotbar actions assigned",
       "type": "array",
       "items": {
-        "$ref": "#/definitions/UFGHotbarShortcut"
+        "$ref": "#/definitions/FHotbar"
       }
+    },
+    "mPresetHotbars": {
+      "description": "All hotbar actions assigned to presets. A preset is a saved set of shortcuts that can be assigned to the hotbar",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/FPresetHotbar"
+      }
+    },
+    "mCurrentHotbarIndex": {
+      "description": "The index of the current hotbar",
+      "type": "number"
     },
     "mDefaultRecipeShortcuts": {
       "description": "Default recipes to have shortcuts to",
@@ -38,10 +49,6 @@
     },
     "mHasReceivedInitialItems": {
       "description": "Set to true after we have received our initial items",
-      "type": "number"
-    },
-    "mHasSetupDefaultShortcuts": {
-      "description": "Set to true after we have setup our initial shortcuts",
       "type": "number"
     },
     "mIsServerAdmin": {
@@ -100,24 +107,30 @@
     "mLastSelectedResourceSinkShopCategory": {
       "$ref": "#/definitions/classReference<UFGSchematicCategory>",
       "description": "The last selected category in the resource sink shop so we can open the shop at the same category later"
+    },
+    "mNumObservedInventorySlots": {
+      "description": "How many inventory slots the player has observed that they have. Used to show when we have new available slots in the UI",
+      "type": "number"
     }
   },
   "required": [
     "BuildableConstructedDelegate",
     "mCollapsedItemCategories",
+    "mCurrentHotbarIndex",
     "mDefaultRecipeShortcuts",
     "mFilteredOutCompassTypes",
     "mFilteredOutMapTypes",
     "mHasReceivedInitialItems",
-    "mHasSetupDefaultShortcuts",
-    "mHotbarShortcuts",
+    "mHotbars",
     "mIsServerAdmin",
     "mLastSelectedResourceSinkShopCategory",
     "mMessageData",
     "mNewRecipes",
     "mNumArmSlots",
+    "mNumObservedInventorySlots",
     "mOnlyShowAffordableRecipes",
     "mOwnedPawn",
+    "mPresetHotbars",
     "mRememberedFirstTimeEquipmentClasses",
     "mSlotData",
     "mSlotNum",

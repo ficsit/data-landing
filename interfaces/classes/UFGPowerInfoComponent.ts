@@ -1,7 +1,8 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { float, int32, uint8 } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 
-export interface UFGPowerInfoComponent extends Unknown<'UActorComponent'>, Unknown<'IFGSaveInterface'> {
+export interface UFGPowerInfoComponent extends Unknown<'UActorComponent'>, IFGSaveInterface {
   mCircuitID: int32;
 
   /**

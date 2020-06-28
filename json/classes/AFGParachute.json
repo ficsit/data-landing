@@ -5,6 +5,14 @@
       "description": "The velocity we fall at using the parachute.",
       "type": "number"
     },
+    "mIsDeployed": {
+      "description": "If we are actually deployed or not",
+      "type": "boolean"
+    },
+    "mCachedMovementComponent": {
+      "$ref": "#/definitions/UFGCharacterMovementComponent",
+      "description": "A cached instance of the instigators movement"
+    },
     "mAttachmentClass": {
       "$ref": "#/definitions/classReference<AFGEquipmentAttachment>",
       "description": "This is the attachment for this class"
@@ -94,6 +102,7 @@
     "mAttachment",
     "mAttachmentClass",
     "mBackAnimation",
+    "mCachedMovementComponent",
     "mChildEquipment",
     "mChildEquipmentClass",
     "mCostToUse",
@@ -103,6 +112,7 @@
     "mHasPersistentOwner",
     "mIdlePoseAnimation",
     "mIdlePoseAnimation3p",
+    "mIsDeployed",
     "mSecondaryAttachment",
     "mSecondaryAttachmentClass",
     "mSprintHeadBobShake",

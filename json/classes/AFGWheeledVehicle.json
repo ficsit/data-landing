@@ -8,14 +8,6 @@
     "mUpdateMovementHandle": {
       "description": "An unknown type (likely an Unreal Engine or plugin type)."
     },
-    "mForceSimulationMode": {
-      "description": "Forces vehicle to be in simulation mode",
-      "type": "boolean"
-    },
-    "mForceRealMode": {
-      "description": "Forces vehicle to be in real mode",
-      "type": "boolean"
-    },
     "TranferStatusChangedDelegate": {
       "description": "Broadcast when transfer status is updated"
     },
@@ -119,14 +111,6 @@
     },
     "mFoliageCollideBox": {
       "description": "Collision box for detecting overlaps with foliage only. Shape modified in BP"
-    },
-    "mIsSimulated": {
-      "description": "Is the movement being simulated?",
-      "type": "boolean"
-    },
-    "mSimulationDistance": {
-      "description": "Distance from player at which simulation begins",
-      "type": "number"
     },
     "mSimulationMovementComponent": {
       "description": "Our component used for simulated movement"
@@ -363,12 +347,20 @@
       "description": "A bias to the significance value",
       "type": "number"
     },
+    "mIsSimulated": {
+      "description": "Is the movement being simulated?",
+      "type": "boolean"
+    },
     "mAddToSignificanceManager": {
       "description": "Indicates if the vehicle should be handled by significance manager",
       "type": "number"
     },
     "mSignificanceRange": {
       "description": "Range that this vehicle should be significant within",
+      "type": "number"
+    },
+    "mSimulationDistance": {
+      "description": "Range after we disable simulation (remove collision)",
       "type": "number"
     },
     "mShouldAttachDriver": {
@@ -432,8 +424,6 @@
     "mDriverSeatSocket",
     "mFoliageCollideBox",
     "mFoliageDestroyRadius",
-    "mForceRealMode",
-    "mForceSimulationMode",
     "mFuelConsumption",
     "mFuelInventory",
     "mGasDamageType",

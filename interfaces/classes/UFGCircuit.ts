@@ -1,11 +1,11 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { UObject } from '../native/classes';
 import { int32, uint8 } from '../native/primitive';
-import { Unknown } from '../native/unknown';
 
 import { AFGCharacterPlayer } from './AFGCharacterPlayer';
 import { UFGCircuitConnectionComponent } from './UFGCircuitConnectionComponent';
 
-export interface UFGCircuit extends UObject, Unknown<'IFGSaveInterface'> {
+export interface UFGCircuit extends UObject, IFGSaveInterface {
   /**
    * The id used to identify this circuit.
    */

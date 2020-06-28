@@ -21,6 +21,10 @@
     "CreatureClassOverride": {
       "$ref": "#/definitions/classReference<AFGCreature>",
       "description": "Overriden subclass of creature to spawn"
+    },
+    "SpawnWeight": {
+      "description": "How much weight this creature adds to spawn calculations",
+      "type": "number"
     }
   },
   "required": [
@@ -28,6 +32,7 @@
     "CreatureClassOverride",
     "KilledOnDayNr",
     "SpawnLocation",
+    "SpawnWeight",
     "WasKilled"
   ]
 }

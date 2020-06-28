@@ -1,5 +1,6 @@
 import { ESelfDrivingLocomotiveError } from '../enums/ESelfDrivingLocomotiveError';
 import { ETrainDockingState } from '../enums/ETrainDockingState';
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { IFGSignificanceInterface } from '../interfaces/IFGSignificanceInterface';
 import { AActor } from '../native/classes';
 import { int32, localized } from '../native/primitive';
@@ -13,7 +14,7 @@ import { AFGRailroadTimeTable } from './AFGRailroadTimeTable';
 import { AFGRailroadVehicle } from './AFGRailroadVehicle';
 import { UFGRailroadVehicleSoundComponent } from './UFGRailroadVehicleSoundComponent';
 
-export interface AFGTrain extends AActor, Unknown<'IFGSaveInterface'>, IFGSignificanceInterface {
+export interface AFGTrain extends AActor, IFGSaveInterface, IFGSignificanceInterface {
   /**
    * Called when the self driving is turn on or off.
    */

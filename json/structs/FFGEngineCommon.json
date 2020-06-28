@@ -9,14 +9,14 @@
       "type": "array",
       "items": {}
     },
-    "HeightFogUpdater": {
+    "AtmosphereUpdater": {
       "$ref": "#/definitions/UFGAtmosphereUpdater",
       "description": "Height fog properties that's controlled from camera"
     }
   },
   "required": [
+    "AtmosphereUpdater",
     "CreatedWorlds",
-    "Engine",
-    "HeightFogUpdater"
+    "Engine"
   ]
 }

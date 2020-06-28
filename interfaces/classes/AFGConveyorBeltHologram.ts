@@ -1,3 +1,4 @@
+import { EFactoryConnectionDirection } from '../enums/EFactoryConnectionDirection';
 import { UStaticMesh } from '../native/assets';
 import { float, int32 } from '../native/primitive';
 import { classReference } from '../native/references';
@@ -7,6 +8,7 @@ import { Unknown } from '../native/unknown';
 import { AFGBuildableConveyorBelt } from './AFGBuildableConveyorBelt';
 import { AFGConveyorPoleHologram } from './AFGConveyorPoleHologram';
 import { AFGSplineHologram } from './AFGSplineHologram';
+import { UFGFactoryConnectionComponent } from './UFGFactoryConnectionComponent';
 import { UFGRecipe } from './UFGRecipe';
 
 export interface AFGConveyorBeltHologram extends AFGSplineHologram {
@@ -18,12 +20,12 @@ export interface AFGConveyorBeltHologram extends AFGSplineHologram {
   /**
    * The two connection components for this conveyor.
    */
-  mConnectionComponents: Unknown<'UFGFactoryConnectionComponent'>;
+  mConnectionComponents: UFGFactoryConnectionComponent;
 
   /**
    * The connections we've made.
    */
-  mSnappedConnectionComponents: Unknown<'UFGFactoryConnectionComponent'>;
+  mSnappedConnectionComponents: UFGFactoryConnectionComponent;
 
   /**
    * If we upgrade another conveyor belt this is the belt we replaces.
@@ -53,7 +55,7 @@ export interface AFGConveyorBeltHologram extends AFGSplineHologram {
   /**
    * Used to replicate the direction arrow.
    */
-  mConnectionArrowComponentDirection: Unknown<'EFactoryConnectionDirection'>;
+  mConnectionArrowComponentDirection: EFactoryConnectionDirection;
 
   /**
    * Arrow to indicate the direction of the conveyor while placing it.

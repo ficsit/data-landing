@@ -1,3 +1,4 @@
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { int32 } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
@@ -6,7 +7,7 @@ import { AFGSubsystem } from './AFGSubsystem';
 import { UFGMessageBase } from './UFGMessageBase';
 import { UFGResourceDescriptor } from './UFGResourceDescriptor';
 
-export interface AFGUnlockSubsystem extends AFGSubsystem, Unknown<'IFGSaveInterface'> {
+export interface AFGUnlockSubsystem extends AFGSubsystem, IFGSaveInterface {
   /**
    * SERVER ONLY: Called when we unlocked more inventory slots
    */

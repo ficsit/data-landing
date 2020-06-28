@@ -10,6 +10,7 @@
       "type": "boolean"
     },
     "mSnapConnection": {
+      "$ref": "#/definitions/UFGPipeConnectionComponentBase",
       "description": "The connection conveyors snap to, used when placing a support automatically."
     },
     "mVerticalAngle": {

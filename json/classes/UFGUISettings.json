@@ -8,9 +8,14 @@
     "mJoinSessionWidget": {
       "$ref": "#/definitions/classReference<any>",
       "description": "Widget used to show the user when joining a session"
+    },
+    "mConnectAccountsWidget": {
+      "$ref": "#/definitions/classReference<any>",
+      "description": "Widget used to show the user when linking accounts"
     }
   },
   "required": [
+    "mConnectAccountsWidget",
     "mJoinSessionWidget",
     "mSettingUpServerWidget"
   ]

@@ -8,14 +8,6 @@
       "description": "Last autosave was this id",
       "type": "number"
     },
-    "mSessionId_DEPRECATED": {
-      "description": "The save session (should actually be SaveSessionId",
-      "type": "number"
-    },
-    "mSessionIDString_DEPRECATED": {
-      "description": "The name of the session we are playing, migrated over to mSaveSessionName",
-      "type": "string"
-    },
     "mSaveSessionName": {
       "description": "The name of the session we are playing",
       "type": "string"
@@ -23,6 +15,10 @@
     "mStartingPointTagName": {
       "description": "Selected starting point",
       "type": "string"
+    },
+    "mAllowPossessAny": {
+      "description": "Command line param -PossesAny will allow players using authorization to posses other players on startup regardless of if their UniqueIds match",
+      "type": "boolean"
     },
     "mDebugStartingPointTagName": {
       "description": "Overriding selected starting point when respawning.",
@@ -46,6 +42,7 @@
     }
   },
   "required": [
+    "mAllowPossessAny",
     "mDebugStartingPointTagName",
     "mDefaultRemoteCallObjectsClassNames",
     "mIsMainMenu",
@@ -53,8 +50,6 @@
     "mSaveSession",
     "mSaveSessionName",
     "mServerRestartTimeHours",
-    "mSessionIDString_DEPRECATED",
-    "mSessionId_DEPRECATED",
     "mSkipTutorialInPIE",
     "mStartingPointTagName"
   ]

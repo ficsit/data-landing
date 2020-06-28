@@ -12,5 +12,5 @@ export interface FFGEngineCommon {
   /**
    * Height fog properties that's controlled from camera
    */
-  HeightFogUpdater: UFGAtmosphereUpdater;
+  AtmosphereUpdater: UFGAtmosphereUpdater;
 }

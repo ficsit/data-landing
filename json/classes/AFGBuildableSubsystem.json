@@ -38,13 +38,27 @@
       "description": "/"
     },
     "mColorSlotsPrimary": {
-      "$ref": "#/definitions/Color"
+      "$ref": "#/definitions/Color",
+      "description": "DEPRECATED - Use Linear Color instead"
     },
     "mColorSlotsSecondary": {
-      "$ref": "#/definitions/Color"
+      "$ref": "#/definitions/Color",
+      "description": "DEPRECATED - Use Linear Color instead"
+    },
+    "mColorSlotsPrimary_Linear": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/LinearColor"
+      }
+    },
+    "mColorSlotsSecondary_Linear": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/LinearColor"
+      }
     },
     "mNbPlayerExposedSlots": {
-      "description": "An 8-bit unsigned integer.",
+      "description": "The number of color slots players can adjust/define, this can be less than the total number of color slots actually present",
       "type": "number"
     },
     "mFactoryColoredMaterialMap": {
@@ -100,7 +114,9 @@
     "mBuildableMeshInstances",
     "mBuildables",
     "mColorSlotsPrimary",
+    "mColorSlotsPrimary_Linear",
     "mColorSlotsSecondary",
+    "mColorSlotsSecondary_Linear",
     "mColoredInstances",
     "mConveyorAttachments",
     "mDefaultFactoryMaterial",

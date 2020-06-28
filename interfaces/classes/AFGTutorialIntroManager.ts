@@ -1,4 +1,5 @@
 import { EIntroTutorialSteps } from '../enums/EIntroTutorialSteps';
+import { IFGSaveInterface } from '../interfaces/IFGSaveInterface';
 import { float, int32 } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
@@ -12,7 +13,7 @@ import { UFGBuildingDescriptor } from './UFGBuildingDescriptor';
 import { UFGItemDescriptor } from './UFGItemDescriptor';
 import { UFGSchematic } from './UFGSchematic';
 
-export interface AFGTutorialIntroManager extends AFGSubsystem, Unknown<'IFGSaveInterface'> {
+export interface AFGTutorialIntroManager extends AFGSubsystem, IFGSaveInterface {
   /**
    * Called when mHasCompletedIntroSequence updates
    */
@@ -176,4 +177,9 @@ export interface AFGTutorialIntroManager extends AFGSubsystem, Unknown<'IFGSaveI
    * List of recipes that player should get the items of if the player chooses to skip the tutorial
    */
   mRecipesToGivePlayersSkippingTutorial: FRecipeAmountPair[];
+
+  /**
+   * Bool for when codex has been opened
+   */
+  mDidOpenCodex: boolean;
 }

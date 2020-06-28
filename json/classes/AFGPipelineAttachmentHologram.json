@@ -39,10 +39,12 @@
     "mPipeConnectionComponents": {
       "description": "Cached list of all connections in this attachment hologram",
       "type": "array",
-      "items": {}
+      "items": {
+        "$ref": "#/definitions/UFGPipeConnectionComponent"
+      }
     },
     "mSnappedConnectionComponent": {
-      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+      "$ref": "#/definitions/UFGPipeConnectionComponent"
     },
     "mClearanceMeshComponent": {
       "description": "Mesh component used to display the clearance mesh"

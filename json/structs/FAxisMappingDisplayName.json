@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "AxisMappingName": {
+      "type": "string"
+    },
+    "DisplayNamePositiveScale": {
+      "$ref": "#/definitions/localized"
+    },
+    "DisplayNameNegativeScale": {
+      "$ref": "#/definitions/localized"
+    }
+  },
+  "required": [
+    "AxisMappingName",
+    "DisplayNameNegativeScale",
+    "DisplayNamePositiveScale"
+  ]
+}

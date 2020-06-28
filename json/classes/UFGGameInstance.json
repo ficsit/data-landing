@@ -31,9 +31,6 @@
     "mOnNatTypeUpdated": {
       "description": "Called when nat-type is updated"
     },
-    "mCachedEOSManager": {
-      "description": "The handle for the Epic Online Services manager. Is initialized in Init()."
-    },
     "ModPackages": {
       "description": "Mod packages found - valid or invalid",
       "type": "array",
@@ -49,7 +46,6 @@
   "required": [
     "ModPackages",
     "mAnalyticsService",
-    "mCachedEOSManager",
     "mErrorList",
     "mJoinSessionData",
     "mMusicManager",

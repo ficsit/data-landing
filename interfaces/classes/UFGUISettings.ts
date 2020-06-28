@@ -11,4 +11,9 @@ export interface UFGUISettings extends Unknown<'UDeveloperSettings'> {
    * Widget used to show the user when joining a session
    */
   mJoinSessionWidget: classReference<Unknown<'UUserWidget'>>;
+
+  /**
+   * Widget used to show the user when linking accounts
+   */
+  mConnectAccountsWidget: classReference<Unknown<'UUserWidget'>>;
 }

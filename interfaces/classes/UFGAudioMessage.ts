@@ -1,4 +1,4 @@
-import { float } from '../native/primitive';
+import { float, localized } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 import { FAudioSubtitlePair } from '../structs/FAudioSubtitlePair';
 
@@ -24,6 +24,16 @@ export interface UFGAudioMessage extends UFGMessageBase {
    * Multiplier for time per character to display
    */
   mSubtitleTimeMultiplier: float;
+
+  /**
+   * Text that can be displayed instead for (or added to) subtitle text when displaying the message
+   */
+  mOverrideText: localized;
+
+  /**
+   * Multiplier for time per character to display
+   */
+  mShowOnlyOverrideText: boolean;
 
   mAudioMessageConcluded: Unknown<'FAudioMessageConcludedDelegate'>;
 

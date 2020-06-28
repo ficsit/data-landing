@@ -7,6 +7,12 @@
     "OnShortcutChanged": {
       "description": "Called when a shortcut has changed, e.g. activated or inactivated"
     },
+    "OnPresetHotbarChanged": {
+      "description": "Called when a shortcut has changed, e.g. activated or inactivated"
+    },
+    "OnHotbarIndexChanged": {
+      "description": "Called when we change hotbar index has changed"
+    },
     "OnToggleInventory": {
       "description": "Called when the player opens or closes the inventory"
     },
@@ -63,6 +69,10 @@
       "$ref": "#/definitions/UFGMapAreaTexture",
       "description": "Cached info about the map areas"
     },
+    "mInTutorialMode": {
+      "description": "If the tutorial is currently active and affecting the player controller",
+      "type": "boolean"
+    },
     "mRespawnFromDeath": {
       "description": "Did we died",
       "type": "boolean"
@@ -113,7 +123,9 @@
   },
   "required": [
     "MapAreaEntered",
+    "OnHotbarIndexChanged",
     "OnInputChanged",
+    "OnPresetHotbarChanged",
     "OnShortcutChanged",
     "OnShortcutsLayoutChanged",
     "OnToggleInteractionUI",
@@ -129,6 +141,7 @@
     "mDisableInputComponent",
     "mDisabledInputGateChanged",
     "mEnableInputComponent",
+    "mInTutorialMode",
     "mInputComponentChords",
     "mIsRespawning",
     "mMapAreaCheckInterval",

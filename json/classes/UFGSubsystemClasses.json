@@ -72,6 +72,14 @@
     "mAdminInterfaceClass": {
       "$ref": "#/definitions/classReference<AFGAdminInterface>",
       "description": "Handles administration task of servers"
+    },
+    "mItemRegrowSubsystemClass": {
+      "$ref": "#/definitions/classReference<any>",
+      "description": "Handles regrowth of item pickups"
+    },
+    "mVehicleSubsystemClass": {
+      "$ref": "#/definitions/classReference<any>",
+      "description": "Handles all vehicles"
     }
   },
   "required": [
@@ -82,6 +90,7 @@
     "mCircuitSubsystemClass",
     "mFoliageRemovalSubsystemClass",
     "mGamePhaseManagerClass",
+    "mItemRegrowSubsystemClass",
     "mMapManagerClass",
     "mProximitySubsystemClass",
     "mRadioactivitySubsystemClass",
@@ -92,6 +101,7 @@
     "mStorySubsystemClass",
     "mTimeSubsystemClass",
     "mTutorialIntroManagerClass",
-    "mUnlockSubsystem"
+    "mUnlockSubsystem",
+    "mVehicleSubsystemClass"
   ]
 }

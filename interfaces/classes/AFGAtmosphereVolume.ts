@@ -2,13 +2,13 @@ import { float, uint8 } from '../native/primitive';
 import { Unknown } from '../native/unknown';
 import { FExponentialFogSettings } from '../structs/FExponentialFogSettings';
 
-/**
- * @todo: Should be renamed to something else, as it does a lot more than give settings to fog
- */
 export interface AFGAtmosphereVolume
   extends Unknown<'AVolume'>,
     Unknown<'ICurvePanningInterface'>,
     Unknown<'IInterface_PostProcessVolume'> {
+  /**
+   * @todoFog change to int since people use it like that anyway.
+   */
   mPriority: float;
 
   /**
@@ -92,27 +92,27 @@ export interface AFGAtmosphereVolume
   mCloudColorCurve: Unknown<'FRuntimeCurveLinearColor'>;
 
   /**
-   * How the opakeness of the clouds change during the day
+   * How the opaqueness of the clouds change during the day
    */
   mSunLightColorCurve: Unknown<'FRuntimeCurveLinearColor'>;
 
   /**
-   * How the opakeness of the clouds change during the day
+   * How the opaqueness of the clouds change during the day
    */
   mMoonLightColorCurve: Unknown<'FRuntimeCurveLinearColor'>;
 
   /**
-   * How the opakeness of the clouds change during the day
+   * How the opaqueness of the clouds change during the day
    */
   mSunIntensity: Unknown<'FRuntimeFloatCurve'>;
 
   /**
-   * How the opakeness of the clouds change during the day
+   * How the opaqueness of the clouds change during the day
    */
   mMoonIntensity: Unknown<'FRuntimeFloatCurve'>;
 
   /**
-   * How the opakeness of the clouds change during the day
+   * How the opaqueness of the clouds change during the day
    */
   mCloudOpacity: Unknown<'FRuntimeFloatCurve'>;
 
@@ -201,7 +201,7 @@ export interface AFGAtmosphereVolume
   mFilmWhiteClip: Unknown<'FRuntimeFloatCurve'>;
 
   /**
-   * BEGIN DEPRECATED
+   * BEGIN DEPRECATED @todo Just found this, when do we clean up the code? -G2 2020-04-15
    */
   mContrast_DEPRECATED: Unknown<'FRuntimeCurveLinearColor'>;
 
@@ -246,6 +246,9 @@ export interface AFGAtmosphereVolume
 
   mOverrideMoonIntensity: uint8;
 
+  /**
+   * This is disabled for now, see FGAtmosphereUpdater.cpp
+   */
   mOverrideCloudOpacity: uint8;
 
   mOverrideSunIntensity: uint8;

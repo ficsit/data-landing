@@ -22,7 +22,7 @@ export interface UFGCircuitConnectionComponent extends UFGConnectionComponent {
   /**
    * The wired connections to this.
    */
-  mNbWiresConnected: uint8;
+  mNumWiresConnected: uint8;
 
   /**
    * The non-wired (if this or the other is hidden) connections to this.

@@ -32,6 +32,8 @@ import IFGReplicationDependencyActorInterfaceJSON from './IFGReplicationDependen
 export { IFGReplicationDependencyActorInterfaceJSON };
 import IFGReplicationDetailActorOwnerInterfaceJSON from './IFGReplicationDetailActorOwnerInterface.json';
 export { IFGReplicationDetailActorOwnerInterfaceJSON };
+import IFGSaveInterfaceJSON from './IFGSaveInterface.json';
+export { IFGSaveInterfaceJSON };
 import IFGSignificanceInterfaceJSON from './IFGSignificanceInterface.json';
 export { IFGSignificanceInterfaceJSON };
 import IFGSignInterfaceJSON from './IFGSignInterface.json';

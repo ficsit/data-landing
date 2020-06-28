@@ -10,11 +10,12 @@
       "description": "The component we want to use with the pole"
     },
     "mSnapOnly0": {
+      "$ref": "#/definitions/UFGFactoryConnectionComponent",
       "description": "Connection component used"
     },
     "mPoleMesh": {
       "$ref": "#/definitions/UStaticMesh",
-      "description": "This poles mesh. @save 2018-10-24, this is here so old poles < alpha 2 path will still have a correct mesh, resaving an old save"
+      "description": "This poles mesh."
     },
     "mUseStaticHeight": {
       "description": "Should the stack height only be calculated using the mStackHeight?",
@@ -56,6 +57,14 @@
       "$ref": "#/definitions/Map<string,UFGFactoryMaterialInstanceManager>",
       "description": "Map of colorable mesh materials to their respective colored factory material instance manager"
     },
+    "mBlockSharingMaterialInstanceMapping": {
+      "type": "boolean"
+    },
+    "mExcludeFromMaterialInstancing": {
+      "description": "Array of mesh elements to selectively block material instancing on. Used in the event that certain buildable components should not attempt to use a shared material instance.",
+      "type": "array",
+      "items": {}
+    },
     "mPrimaryColor": {
       "$ref": "#/definitions/LinearColor",
       "description": "The primary color of this buildable"
@@ -75,6 +84,10 @@
     "mDismantleEffectTemplate": {
       "$ref": "#/definitions/classReference<UFGMaterialEffect_Build>",
       "description": "What build effect to use when dismantling this building"
+    },
+    "mActiveBuildEffect": {
+      "$ref": "#/definitions/UFGMaterialEffect_Build",
+      "description": "Store the active effect so we can cancel an old one if we need to start a new."
     },
     "mBuildEffectInstignator": {
       "$ref": "#/definitions/AActor",
@@ -156,11 +169,17 @@
     },
     "mCachedShapeComponent": {
       "description": "Caching the shape component once we have gotten it"
+    },
+    "mHideOnBuildEffectStart": {
+      "description": "Should the building start as hidden when playing the build effect",
+      "type": "boolean"
     }
   },
   "required": [
     "MaxRenderDistance",
+    "mActiveBuildEffect",
     "mAllowCleranceSeparationEvenIfStackedOn",
+    "mBlockSharingMaterialInstanceMapping",
     "mBuildEffectClassName",
     "mBuildEffectInstignator",
     "mBuildEffectSpeed",
@@ -177,9 +196,11 @@
     "mDismantleEffectClassName",
     "mDismantleEffectTemplate",
     "mDisplayName",
+    "mExcludeFromMaterialInstancing",
     "mFactoryTickFunction",
     "mForceNetUpdateOnRegisterPlayer",
     "mHeight",
+    "mHideOnBuildEffectStart",
     "mHighlightParticleClassName",
     "mHighlightParticleSystemComponent",
     "mHighlightParticleSystemTemplate",
