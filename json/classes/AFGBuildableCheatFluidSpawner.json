@@ -1,6 +1,10 @@
 {
   "type": "object",
   "properties": {
+    "mIsEnabled": {
+      "description": "Is the spawner outputting anything, useful for testing setups where multiple spawners are used.",
+      "type": "boolean"
+    },
     "mResourceType": {
       "$ref": "#/definitions/classReference<UFGItemDescriptor>",
       "description": "Resource type to spawn."
@@ -328,6 +332,7 @@
     "mInteractWidgetClass",
     "mInteractingPlayers",
     "mInventoryPotential",
+    "mIsEnabled",
     "mIsProducing",
     "mIsProductionPaused",
     "mIsUseable",

@@ -9,8 +9,12 @@
       "description": "When the pump is working above this pressure, it's working outside of it's specifications, range [0, max pressure), unit [meters]",
       "type": "number"
     },
-    "mFlowLimit": {
+    "mDefaultFlowLimit": {
       "description": "Maximum flow rate of this pump. [m3/s]",
+      "type": "number"
+    },
+    "mUserFlowLimit": {
+      "description": "The user set flow limit used for this pump. If this is negative the max limit is used, otherwise the value is treated as a limit.",
       "type": "number"
     },
     "mMinimumFlowPercentForStandby": {
@@ -25,8 +29,8 @@
       "description": "Radius of the pipes this connects too, used to approximate a volume.",
       "type": "number"
     },
-    "mFluidBoxVolumeScale": {
-      "description": "Fluid Box volume scale. WIll multiply the determined volume by this scalar ( useful if the object is physically smaller than its desired volume )",
+    "mFluidBoxVolume": {
+      "description": "Volume of the fluid box inside this attachment. [m3]",
       "type": "number"
     },
     "mFluidBox": {
@@ -325,6 +329,7 @@
     "mColorSlot",
     "mCurrentPotential",
     "mCurrentProductivity",
+    "mDefaultFlowLimit",
     "mDescription",
     "mDesignPressure",
     "mDidFirstTimeUse",
@@ -334,9 +339,8 @@
     "mEffectUpdateInterval",
     "mExcludeFromMaterialInstancing",
     "mFactoryTickFunction",
-    "mFlowLimit",
     "mFluidBox",
-    "mFluidBoxVolumeScale",
+    "mFluidBoxVolume",
     "mFluidStackSizeDefault",
     "mFluidStackSizeMultiplier",
     "mForceNetUpdateOnRegisterPlayer",
@@ -381,6 +385,7 @@
     "mSignificanceBias",
     "mSignificanceRange",
     "mSkipBuildEffect",
-    "mTimeSinceStartStopProducing"
+    "mTimeSinceStartStopProducing",
+    "mUserFlowLimit"
   ]
 }

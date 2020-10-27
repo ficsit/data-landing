@@ -8,7 +8,13 @@
     "mPowerPole": {
       "$ref": "#/definitions/AFGPowerPoleHologram"
     },
+    "mPowerPoleWall": {
+      "description": "An unknown type (likely an Unreal Engine or plugin type)."
+    },
     "mDefaultPowerPoleRecipe": {
+      "$ref": "#/definitions/classReference<UFGRecipe>"
+    },
+    "mDefaultPowerPoleWallRecipe": {
       "$ref": "#/definitions/classReference<UFGRecipe>"
     },
     "mStartLocation": {
@@ -112,6 +118,7 @@
     "mConstructionRotation",
     "mCurrentConnection",
     "mDefaultPowerPoleRecipe",
+    "mDefaultPowerPoleWallRecipe",
     "mInitialScrollModeValue",
     "mInvalidPlacementMaterial",
     "mIsChanged",
@@ -121,6 +128,7 @@
     "mMaxPlacementFloorAngle",
     "mPlacementMaterial",
     "mPowerPole",
+    "mPowerPoleWall",
     "mRecipe",
     "mSnappedBuilding",
     "mStartLocation",

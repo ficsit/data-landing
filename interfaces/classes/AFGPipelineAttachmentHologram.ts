@@ -1,3 +1,4 @@
+import { EPipelineAttachmentBuildStep } from '../enums/EPipelineAttachmentBuildStep';
 import { float, uint8 } from '../native/primitive';
 import { Vector } from '../native/structs';
 import { Unknown } from '../native/unknown';
@@ -7,6 +8,11 @@ import { AFGFactoryHologram } from './AFGFactoryHologram';
 import { UFGPipeConnectionComponent } from './UFGPipeConnectionComponent';
 
 export interface AFGPipelineAttachmentHologram extends AFGFactoryHologram {
+  /**
+   * The current build step of the attachment.
+   */
+  mBuildStep: EPipelineAttachmentBuildStep;
+
   /**
    * Used to limit the placement in turns. What's the maximum offset to check from center to detect the curve.
    */
@@ -41,6 +47,11 @@ export interface AFGPipelineAttachmentHologram extends AFGFactoryHologram {
    * When snapping to a Wall apply this offset on the wall.
    */
   mWallSnapOffset: Unknown<'FVector2D'>;
+
+  /**
+   * Whether or not this hologram uses the second build step, where it rotates around the pipe.
+   */
+  mHasPipeRotationBuildStep: boolean;
 
   /**
    * Directional indicator. Added to visualize "Producer" type pipe connection components direction

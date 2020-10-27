@@ -5,8 +5,8 @@
       "description": "Radius of the pipes this connects too, used to approximate a volume.",
       "type": "number"
     },
-    "mFluidBoxVolumeScale": {
-      "description": "Fluid Box volume scale. WIll multiply the determined volume by this scalar ( useful if the object is physically smaller than its desired volume )",
+    "mFluidBoxVolume": {
+      "description": "Volume of the fluid box inside this attachment. [m3]",
       "type": "number"
     },
     "mFluidBox": {
@@ -314,7 +314,7 @@
     "mExcludeFromMaterialInstancing",
     "mFactoryTickFunction",
     "mFluidBox",
-    "mFluidBoxVolumeScale",
+    "mFluidBoxVolume",
     "mFluidStackSizeDefault",
     "mFluidStackSizeMultiplier",
     "mForceNetUpdateOnRegisterPlayer",

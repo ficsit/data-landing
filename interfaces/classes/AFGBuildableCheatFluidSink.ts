@@ -7,6 +7,11 @@ import { UFGPipeConnectionComponent } from './UFGPipeConnectionComponent';
 
 export interface AFGBuildableCheatFluidSink extends AFGBuildableFactory, IFGFluidIntegrantInterface {
   /**
+   * Is the spawner outputting anything, useful for testing setups where multiple spawners are used.
+   */
+  mIsEnabled: boolean;
+
+  /**
    * Sink rate of the fluid, 0 means sink everything. [m3/s]
    */
   mSinkRate: float;

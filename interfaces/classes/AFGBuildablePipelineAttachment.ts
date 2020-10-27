@@ -14,9 +14,9 @@ export interface AFGBuildablePipelineAttachment extends AFGBuildableFactory, IFG
   mRadius: float;
 
   /**
-   * Fluid Box volume scale. WIll multiply the determined volume by this scalar ( useful if the object is physically smaller than its desired volume )
+   * Volume of the fluid box inside this attachment. [m3]
    */
-  mFluidBoxVolumeScale: float;
+  mFluidBoxVolume: float;
 
   /**
    * Fluid box belonging to this integrant

@@ -1,6 +1,6 @@
 import { EFactoryConnectionDirection } from '../enums/EFactoryConnectionDirection';
 import { UStaticMesh } from '../native/assets';
-import { float, int32 } from '../native/primitive';
+import { float } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Rotator, Vector } from '../native/structs';
 import { Unknown } from '../native/unknown';
@@ -45,7 +45,7 @@ export interface AFGConveyorBeltHologram extends AFGSplineHologram {
   /**
    * What is the maximum length of one segment.
    */
-  mMaxLength: int32;
+  mMaxSplineLength: float;
 
   /**
    * What is the maximum incline of the conveyor belt (degrees).

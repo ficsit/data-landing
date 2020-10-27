@@ -13,6 +13,10 @@
       "$ref": "#/definitions/UFGPipeConnectionComponentBase",
       "description": "The connections we've made."
     },
+    "mUpgradedPipeline": {
+      "$ref": "#/definitions/AFGBuildablePipeline",
+      "description": "If we upgrade another pipeline this is the pipeline we replace."
+    },
     "mDefaultPipelineSupportRecipe": {
       "$ref": "#/definitions/classReference<UFGRecipe>",
       "description": "Class of conveyor pole to place at the end."
@@ -29,7 +33,7 @@
       "description": "The minimum allowed bend radius before the shape get's invalid",
       "type": "number"
     },
-    "mMaxLength": {
+    "mMaxSplineLength": {
       "description": "Maximum number of meshes per pipe",
       "type": "number"
     },
@@ -167,8 +171,8 @@
     "mIsDisabled",
     "mLegs",
     "mLoopSound",
-    "mMaxLength",
     "mMaxPlacementFloorAngle",
+    "mMaxSplineLength",
     "mMesh",
     "mMinBendRadius",
     "mPlacementMaterial",
@@ -178,6 +182,7 @@
     "mSplineComponent",
     "mSplineData",
     "mSplineMeshes",
+    "mUpgradedPipeline",
     "mUseBuildClearanceOverlapSnapp",
     "mValidHitClasses",
     "mValidPlacementMaterial"

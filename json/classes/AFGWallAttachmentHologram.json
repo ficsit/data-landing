@@ -5,12 +5,24 @@
       "description": "Are you allowed to rotate this attachment on the walls surface.",
       "type": "boolean"
     },
+    "mCanSnapToFoundationCeiling": {
+      "description": "Whether or not it is possible to snap to the ceiling.",
+      "type": "boolean"
+    },
+    "mCanSnapToFoundationSide": {
+      "description": "Whether or not it is possible to snap to the side of foundations.",
+      "type": "boolean"
+    },
     "mRotationStep": {
       "description": "The rotation step for when rotating, if 0 then use the default granularity.",
       "type": "number"
     },
     "mSnapOffset": {
       "description": "Snapping offset of this attachment on the walls surface."
+    },
+    "mFoundationSnappingInset": {
+      "description": "Distance to inset the hologram when attaching to a foundation.",
+      "type": "number"
     },
     "mMaxPlacementFloorAngle": {
       "description": "The maximum allowed angle on the floor for this hologram to be placed on (in degrees).",
@@ -93,12 +105,15 @@
   },
   "required": [
     "mBuildClass",
+    "mCanSnapToFoundationCeiling",
+    "mCanSnapToFoundationSide",
     "mChildren",
     "mClearanceBox",
     "mClearanceDetector",
     "mConstructionInstigator",
     "mConstructionPosition",
     "mConstructionRotation",
+    "mFoundationSnappingInset",
     "mInitialScrollModeValue",
     "mInvalidPlacementMaterial",
     "mIsChanged",

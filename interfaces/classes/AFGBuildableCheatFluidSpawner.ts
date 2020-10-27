@@ -9,6 +9,11 @@ import { UFGPipeConnectionComponent } from './UFGPipeConnectionComponent';
 
 export interface AFGBuildableCheatFluidSpawner extends AFGBuildableFactory, IFGFluidIntegrantInterface {
   /**
+   * Is the spawner outputting anything, useful for testing setups where multiple spawners are used.
+   */
+  mIsEnabled: boolean;
+
+  /**
    * Resource type to spawn.
    */
   mResourceType: classReference<UFGItemDescriptor>;

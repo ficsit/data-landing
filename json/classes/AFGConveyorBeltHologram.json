@@ -25,7 +25,7 @@
       "description": "What radius will the bends have.",
       "type": "number"
     },
-    "mMaxLength": {
+    "mMaxSplineLength": {
       "description": "What is the maximum length of one segment.",
       "type": "number"
     },
@@ -180,8 +180,8 @@
     "mLegs",
     "mLoopSound",
     "mMaxIncline",
-    "mMaxLength",
     "mMaxPlacementFloorAngle",
+    "mMaxSplineLength",
     "mMesh",
     "mPlacementMaterial",
     "mRecipe",

@@ -1,6 +1,10 @@
 {
   "type": "object",
   "properties": {
+    "mIsEnabled": {
+      "description": "Is the spawner outputting anything, useful for testing setups where multiple spawners are used.",
+      "type": "boolean"
+    },
     "mSinkRate": {
       "description": "Sink rate of the fluid, 0 means sink everything. [m3/s]",
       "type": "number"
@@ -329,6 +333,7 @@
     "mInteractWidgetClass",
     "mInteractingPlayers",
     "mInventoryPotential",
+    "mIsEnabled",
     "mIsProducing",
     "mIsProductionPaused",
     "mIsUseable",

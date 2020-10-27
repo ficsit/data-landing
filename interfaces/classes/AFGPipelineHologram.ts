@@ -1,8 +1,9 @@
 import { UStaticMesh } from '../native/assets';
-import { float, int32 } from '../native/primitive';
+import { float } from '../native/primitive';
 import { classReference } from '../native/references';
 import { Unknown } from '../native/unknown';
 
+import { AFGBuildablePipeline } from './AFGBuildablePipeline';
 import { AFGPipelineSupportHologram } from './AFGPipelineSupportHologram';
 import { AFGSplineHologram } from './AFGSplineHologram';
 import { UFGPipeConnectionComponentBase } from './UFGPipeConnectionComponentBase';
@@ -23,6 +24,11 @@ export interface AFGPipelineHologram extends AFGSplineHologram {
    * The connections we've made.
    */
   mSnappedConnectionComponents: UFGPipeConnectionComponentBase;
+
+  /**
+   * If we upgrade another pipeline this is the pipeline we replace.
+   */
+  mUpgradedPipeline: AFGBuildablePipeline;
 
   /**
    * Class of conveyor pole to place at the end.
@@ -48,7 +54,7 @@ export interface AFGPipelineHologram extends AFGSplineHologram {
   /**
    * Maximum number of meshes per pipe
    */
-  mMaxLength: int32;
+  mMaxSplineLength: float;
 
   /**
    * Arrow to indicate the direction of the conveyor while placing it.

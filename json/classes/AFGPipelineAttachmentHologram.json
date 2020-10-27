@@ -1,6 +1,10 @@
 {
   "type": "object",
   "properties": {
+    "mBuildStep": {
+      "$ref": "#/definitions/EPipelineAttachmentBuildStep",
+      "description": "The current build step of the attachment."
+    },
     "mMaxValidTurnOffset": {
       "description": "Used to limit the placement in turns. What's the maximum offset to check from center to detect the curve.",
       "type": "number"
@@ -26,6 +30,10 @@
     },
     "mWallSnapOffset": {
       "description": "When snapping to a Wall apply this offset on the wall."
+    },
+    "mHasPipeRotationBuildStep": {
+      "description": "Whether or not this hologram uses the second build step, where it rotates around the pipe.",
+      "type": "boolean"
     },
     "mProducerComponentArrows": {
       "description": "Directional indicator. Added to visualize \"Producer\" type pipe connection components direction",
@@ -137,6 +145,7 @@
   },
   "required": [
     "mBuildClass",
+    "mBuildStep",
     "mChildren",
     "mClearanceBox",
     "mClearanceDetector",
@@ -146,6 +155,7 @@
     "mConstructionInstigator",
     "mConstructionPosition",
     "mConstructionRotation",
+    "mHasPipeRotationBuildStep",
     "mIncrementSnappedConnectionOnScroll",
     "mInitialScrollModeValue",
     "mInvalidPlacementMaterial",

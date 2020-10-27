@@ -8,4 +8,5 @@ export enum EDebugPipeVisualization {
   DPV_PressureGroup,
   DPV_DeltaPressure,
   DPV_Flow,
+  DPV_MoveToOverfillRatio,
 }

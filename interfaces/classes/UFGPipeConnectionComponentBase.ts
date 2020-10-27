@@ -23,9 +23,4 @@ export interface UFGPipeConnectionComponentBase extends UFGConnectionComponent {
    * Connection to another component. If this is set we're connected.
    */
   mConnectedComponent: UFGPipeConnectionComponentBase;
-
-  /**
-   * Light-weight connected indication for clients.
-   */
-  mHasConnectedComponent: boolean;
 }

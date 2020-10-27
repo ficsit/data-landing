@@ -1,5 +1,6 @@
 export { EIgnore } from './EIgnore';
 export { EProductionStatus } from './EProductionStatus';
+export { EFoundationSide } from './EFoundationSide';
 export { ETrainPlatformDockingStatus } from './ETrainPlatformDockingStatus';
 export { EArmEquipment } from './EArmEquipment';
 export { EBackEquipment } from './EBackEquipment';
@@ -64,6 +65,7 @@ export { EWheelOrder6W } from './EWheelOrder6W';
 export { EGuideLineType } from './EGuideLineType';
 export { EHologramScrollMode } from './EHologramScrollMode';
 export { EHologramGraphAStarResult } from './EHologramGraphAStarResult';
+export { EPipelineAttachmentBuildStep } from './EPipelineAttachmentBuildStep';
 export { ESplineHologramBuildStep } from './ESplineHologramBuildStep';
 export { EHologramSplinePathMode } from './EHologramSplinePathMode';
 export { EIncludeInBuilds } from './EIncludeInBuilds';

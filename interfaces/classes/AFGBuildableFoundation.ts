@@ -23,4 +23,9 @@ export interface AFGBuildableFoundation extends AFGBuildableFactoryBuilding {
    * Disable snapping on specific sides.
    */
   mDisableSnapOn: FFoundationSideSelectionFlags;
+
+  /**
+   * Disable attachment snapping on specific sides.
+   */
+  mDisableAttachmentSnapOn: FFoundationSideSelectionFlags;
 }

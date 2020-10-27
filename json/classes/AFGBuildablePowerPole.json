@@ -7,17 +7,16 @@
     "mConnectionWidgetClass": {
       "$ref": "#/definitions/classReference<any>"
     },
-    "mPowerConnection": {
-      "$ref": "#/definitions/UFGPowerConnectionComponent",
-      "description": "The connection on this pole."
+    "mPowerConnections": {
+      "description": "The connection on this pole.",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/UFGPowerConnectionComponent"
+      }
     },
     "mMeshComponentProxy": {
       "$ref": "#/definitions/UFGColoredInstanceMeshProxy",
       "description": "The mesh component for this pole."
-    },
-    "mCachedNumConnectionsToPole": {
-      "description": "An 32-bit signed integer.",
-      "type": "number"
     },
     "mHologramClass": {
       "$ref": "#/definitions/classReference<AFGHologram>",
@@ -177,7 +176,6 @@
     "mBuildTimeStamp",
     "mBuildingID",
     "mBuiltWithRecipe",
-    "mCachedNumConnectionsToPole",
     "mCachedShapeComponent",
     "mCameraDistanceSq",
     "mColorSlot",
@@ -203,7 +201,7 @@
     "mMaterialNameToInstanceManager",
     "mMeshComponentProxy",
     "mNetConstructionID",
-    "mPowerConnection",
+    "mPowerConnections",
     "mPrimaryColor",
     "mSecondaryColor",
     "mShouldShowHighlight",

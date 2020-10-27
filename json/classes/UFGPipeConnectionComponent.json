@@ -32,10 +32,6 @@
     "mConnectedComponent": {
       "$ref": "#/definitions/UFGPipeConnectionComponentBase",
       "description": "Connection to another component. If this is set we're connected."
-    },
-    "mHasConnectedComponent": {
-      "description": "Light-weight connected indication for clients.",
-      "type": "boolean"
     }
   },
   "required": [
@@ -43,7 +39,6 @@
     "mConnectionInventory",
     "mConnectorClearance",
     "mFluidDescriptor",
-    "mHasConnectedComponent",
     "mInventoryAccessIndex",
     "mPipeConnectionType",
     "mPipeNetworkID",

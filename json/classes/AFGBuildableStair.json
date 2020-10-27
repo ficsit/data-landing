@@ -17,6 +17,10 @@
       "$ref": "#/definitions/FFoundationSideSelectionFlags",
       "description": "Disable snapping on specific sides."
     },
+    "mDisableAttachmentSnapOn": {
+      "$ref": "#/definitions/FFoundationSideSelectionFlags",
+      "description": "Disable attachment snapping on specific sides."
+    },
     "mMeshComponentProxy": {
       "$ref": "#/definitions/UFGColoredInstanceMeshProxy",
       "description": "Mesh component for the factory building."
@@ -184,6 +188,7 @@
     "mColorSlot",
     "mDescription",
     "mDidFirstTimeUse",
+    "mDisableAttachmentSnapOn",
     "mDisableSnapOn",
     "mDismantleEffectClassName",
     "mDismantleEffectTemplate",

@@ -1,6 +1,10 @@
 {
   "type": "object",
   "properties": {
+    "mFluidBoxVolume": {
+      "description": "Volume of the fluid box inside this attachment. [m3]",
+      "type": "number"
+    },
     "mApplyAdditionalPressure": {
       "description": "If this connection is a producer type, should it apply the factory settings default pressure?",
       "type": "boolean"
@@ -36,10 +40,6 @@
     "mConnectedComponent": {
       "$ref": "#/definitions/UFGPipeConnectionComponentBase",
       "description": "Connection to another component. If this is set we're connected."
-    },
-    "mHasConnectedComponent": {
-      "description": "Light-weight connected indication for clients.",
-      "type": "boolean"
     }
   },
   "required": [
@@ -47,8 +47,8 @@
     "mConnectedComponent",
     "mConnectionInventory",
     "mConnectorClearance",
+    "mFluidBoxVolume",
     "mFluidDescriptor",
-    "mHasConnectedComponent",
     "mInventoryAccessIndex",
     "mPipeConnectionType",
     "mPipeNetworkID",

@@ -17,7 +17,12 @@ export interface AFGBuildablePipelinePump extends AFGBuildablePipelineAttachment
   /**
    * Maximum flow rate of this pump. [m3/s]
    */
-  mFlowLimit: float;
+  mDefaultFlowLimit: float;
+
+  /**
+   * The user set flow limit used for this pump. If this is negative the max limit is used, otherwise the value is treated as a limit.
+   */
+  mUserFlowLimit: float;
 
   /**
    * Minimum Flow percent acceptable before entering StandBy mode on indicator

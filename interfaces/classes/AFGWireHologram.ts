@@ -16,7 +16,11 @@ export interface AFGWireHologram extends AFGBuildableHologram {
 
   mPowerPole: AFGPowerPoleHologram;
 
+  mPowerPoleWall: Unknown<'AFGPowerPoleWallHologram'>;
+
   mDefaultPowerPoleRecipe: classReference<UFGRecipe>;
+
+  mDefaultPowerPoleWallRecipe: classReference<UFGRecipe>;
 
   /**
    * The start location of this wire

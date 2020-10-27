@@ -120,12 +120,6 @@ export interface UFGItemDescriptor extends UObject {
    */
   mIconSkyOrientation: Rotator;
 
-  mFluidDensity: float;
-
-  mFluidViscosity: float;
-
-  mFluidFriction: float;
-
   mFluidColor: Color;
 
   mResourceSinkPoints: int32;

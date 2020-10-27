@@ -4,9 +4,17 @@
     "mNetworks": {
       "$ref": "#/definitions/Map<number,AFGPipeNetwork>",
       "description": "Map with all circuits and the circuit ID as the key."
+    },
+    "mDisplayDebugNetworkList": {
+      "description": "List of networks to show debug for, if empty all networks are displayed.",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/AFGPipeNetwork"
+      }
     }
   },
   "required": [
+    "mDisplayDebugNetworkList",
     "mNetworks"
   ]
 }

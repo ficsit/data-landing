@@ -106,18 +106,6 @@
       "$ref": "#/definitions/Rotator",
       "description": "The sky orientation used for icon capture"
     },
-    "mFluidDensity": {
-      "description": "A floating point number.",
-      "type": "number"
-    },
-    "mFluidViscosity": {
-      "description": "A floating point number.",
-      "type": "number"
-    },
-    "mFluidFriction": {
-      "description": "A floating point number.",
-      "type": "number"
-    },
     "mFluidColor": {
       "$ref": "#/definitions/Color"
     },
@@ -136,9 +124,6 @@
     "mDisplayName",
     "mEnergyValue",
     "mFluidColor",
-    "mFluidDensity",
-    "mFluidFriction",
-    "mFluidViscosity",
     "mForm",
     "mIconCameraDistance",
     "mIconCameraTransform",
